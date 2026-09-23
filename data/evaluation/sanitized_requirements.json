@@ -1,0 +1,167 @@
+{
+  "description": "Sanitized reference requirements derived from selected RFP chunks. Verbatim source text and evidence have been removed.",
+  "source_scope": {
+    "documents": 2,
+    "chunks_evaluated": 5,
+    "note": "This is a selected evaluation subset, not an exhaustive representation of the source RFPs."
+  },
+  "chunks": [
+    {
+      "chunk_id": 1,
+      "requirements": [
+        {
+          "text": "Bidders must report discrepancies in the RfS within the specified period after issuance.",
+          "page": 1
+        },
+        {
+          "text": "Bidders must independently assess, verify, and validate the provided information before submitting bids.",
+          "page": 1
+        },
+        {
+          "text": "The bidder is responsible for all costs associated with preparation and submission of the bid.",
+          "page": 2
+        },
+        {
+          "text": "Solar power may only be sold to eligible beneficiary department connections under the specified VNM arrangement during the agreement tenure.",
+          "page": 4
+        },
+        {
+          "text": "The selected SPG is responsible for design, survey, supply, installation, testing, commissioning, and O&M for the specified contract period.",
+          "page": 4
+        },
+        {
+          "text": "The solar power plants, associated 11kV line, and RMS must be installed under the specified RESCO arrangement.",
+          "page": 4
+        },
+        {
+          "text": "Bidders must quote the tariff on a firm basis without price variation.",
+          "page": 5
+        },
+        {
+          "text": "The bidder must furnish bid security for the quoted capacity.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "chunk_id": 2,
+      "requirements": [
+        {
+          "text": "The bidder must furnish bid security for the quoted capacity.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "chunk_id": 3,
+      "requirements": [
+        {
+          "text": "The project must deploy the specified Solar PV technology types, with or without trackers.",
+          "page": 10
+        },
+        {
+          "text": "Only commercially established and operational technologies may be used.",
+          "page": 10
+        },
+        {
+          "text": "The project must achieve the specified annual CUF range.",
+          "page": 10
+        },
+        {
+          "text": "Technical and financial bids must be submitted through the specified electronic bidding portal.",
+          "page": 11
+        },
+        {
+          "text": "Bid security must be submitted in physical form and as a scanned copy with the technical bid.",
+          "page": 11
+        },
+        {
+          "text": "Successful bidders must provide performance security equal to the specified percentage of estimated project cost.",
+          "page": 12
+        },
+        {
+          "text": "The Power Delivery Agreement must be executed within the specified period after submission of the performance security.",
+          "page": 12
+        },
+        {
+          "text": "Project commissioning must be completed within the specified period from agreement signing.",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "chunk_id": 4,
+      "requirements": [
+        {
+          "text": "Participating bidders must submit the specified original documents by the deadline and upload scanned copies with the technical bid.",
+          "page": 14
+        },
+        {
+          "text": "Every non-exempt bidder must furnish bid security.",
+          "page": 15
+        },
+        {
+          "text": "Bid security must remain valid for the specified period beyond the original bid validity and applicable extensions.",
+          "page": 15
+        },
+        {
+          "text": "Both hard-copy and online scanned-copy submission of bid-security documents are required.",
+          "page": 15
+        },
+        {
+          "text": "Bidders must not quote deviations.",
+          "page": 15
+        },
+        {
+          "text": "Bidders must provide complete information at submission and provide requested clarifications or documents within the specified period.",
+          "page": 15
+        },
+        {
+          "text": "All required information must be provided in the prescribed formats.",
+          "page": 15
+        },
+        {
+          "text": "The SPG must use the specified indigenous solar panels, modules, and cells and comply with the applicable ALMM requirements.",
+          "page": 17
+        }
+      ]
+    },
+    {
+      "chunk_id": 5,
+      "requirements": [
+        {
+          "text": "All components used for the solar power plants must conform to applicable BIS, MNRE, and quality-control requirements.",
+          "page": 17
+        },
+        {
+          "text": "The SPG must provide a layout plan covering the plant and control room.",
+          "page": 17
+        },
+        {
+          "text": "The SPG must install sufficient panels and equipment to achieve the specified annual CUF range.",
+          "page": 17
+        },
+        {
+          "text": "The project must provide the specified ABT meters, RMS connectivity, and CT-PT arrangements.",
+          "page": 19
+        },
+        {
+          "text": "Installation and timely replacement of meters are the responsibility of the selected SPG.",
+          "page": 19
+        },
+        {
+          "text": "The SPG must install RMS infrastructure and provide the required API documentation.",
+          "page": 19
+        },
+        {
+          "text": "The SPG is responsible for SIM and communication charges and must satisfy the specified connectivity and data-availability requirements.",
+          "page": 20
+        },
+        {
+          "text": "The SPG must maintain the specified third-party liability and related insurance coverage.",
+          "page": 20
+        }
+      ]
+    }
+  ]
+}

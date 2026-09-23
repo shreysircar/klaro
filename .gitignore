@@ -1,0 +1,26 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# Klaro - Confidential RFP Data
+# ==========================================
+
+data/rfp/
+data/extracted/
+data/chunks/
+
+# Private evaluation artifacts
+data/evaluation/baseline_results.json
+data/evaluation/gold_requirements.json
+data/evaluation/chunk1_check.txt
+
+# Raw model outputs containing RFP-derived content
+data/raw_qwen_output.txt
+data/executive_summary_raw.txt

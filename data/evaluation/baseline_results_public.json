@@ -1,0 +1,69 @@
+{
+  "model": "qwen3.5:4b",
+  "inference_mode": {
+    "think": false,
+    "structured_json": true
+  },
+  "prompt_version": "atomic_requirements_v1",
+
+  "evaluation_scope": {
+    "chunks": 5,
+    "chunk_word_count": 1800,
+    "note": "Initial baseline experiment on a selected subset of RFP chunks."
+  },
+
+  "results": [
+    {
+      "chunk_id": 1,
+      "inference_time_seconds": 121.35,
+      "json_valid": true,
+      "requirements_extracted": 0
+    },
+    {
+      "chunk_id": 2,
+      "inference_time_seconds": 150.93,
+      "json_valid": true,
+      "requirements_extracted": 0
+    },
+    {
+      "chunk_id": 3,
+      "inference_time_seconds": 256.72,
+      "json_valid": false,
+      "requirements_extracted": 3,
+      "failure_categories": [
+        "output truncation",
+        "structured output failure",
+        "evidence mismatch"
+      ]
+    },
+    {
+      "chunk_id": 4,
+      "inference_time_seconds": 605.51,
+      "json_valid": true,
+      "requirements_extracted": 8,
+      "failure_categories": [
+        "missed requirements",
+        "semantic distortion"
+      ]
+    },
+    {
+      "chunk_id": 5,
+      "inference_time_seconds": 342.98,
+      "json_valid": true,
+      "requirements_extracted": 8,
+      "failure_categories": [
+        "missed requirements",
+        "semantic overgeneralization"
+      ]
+    }
+  ],
+
+  "observed_failure_categories": [
+    "requirement coverage",
+    "structured output reliability",
+    "evidence grounding",
+    "semantic distortion",
+    "missed requirements",
+    "inference latency"
+  ]
+}
