@@ -2,169 +2,219 @@
 
 ## Klaro — Multilingual Agentic Proposal Analyzer
 
-Klaro is a BTech major project focused on analyzing **RFP (Request for Proposal)** documents using locally deployable **Small Language Models (SLMs)** and agentic workflows.
-
-## Current Focus
-
-The current phase focuses on:
-
-- RFP PDF processing
-- Document extraction and chunking
-- Local SLM experimentation
-- RFP requirement extraction
-- Executive Summary generation
-- Baseline evaluation
-
-### Planned Agents
-
-1. **Executive Summary Agent**
-2. **Requirements Extraction Agent**
-3. **Starter Pack Agent**
+Klaro is a major project focused on analyzing **RFP (Request for Proposal)** documents using locally deployable **Small Language Models (SLMs)** and agentic workflows.
 
 ---
 
-## Tech Stack
+## Current Status & Achievements
 
-- **Python 3.12+**
-- **Ollama**
-- **Qwen 3.5 4B** — current baseline model
-- **PyPDF**
-- **JSON-based document processing**
+As of the latest milestone, the **Baseline Executive Summary Pipeline** is fully implemented, evaluated, rendered, and packaged into a single reproducible end-to-end CLI workflow.
+
+### What Works
+
+1. **Document Processing Pipeline**:
+   - **PDF Extraction**: Extracts page-by-page text using `pypdf` (`backend/documents/pdf_extractor.py`).
+   - **Document Statistics**: Computes character, word, and estimated token metrics (`backend/documents/document_stats.py`).
+   - **Section-Aware Chunking**: Creates ~1800-word overlapping chunks (`backend/documents/chunker.py`).
+
+2. **Executive Summary Pipeline**:
+   - **Two-Pass Chunk Extraction (v5.3)**: Extracts factual (Pass A) and commercial/contractual (Pass B) information per chunk (`backend/llm/executive_summary/chunk_analyzer.py`).
+   - **Deterministic Aggregator (v1)**: Combines chunk-level facts, deduplicates near-identical items, and aggregates unique page references (`backend/llm/executive_summary/aggregator.py`).
+   - **Executive Summary Agent (v1)**: Synthesizes aggregated facts into a structured 9-category executive summary JSON using local `Qwen3.5-4B` (`backend/llm/executive_summary/agent.py`).
+
+3. **Human-Readable Presentation Layer**:
+   - **Summary Renderer**: Generates clean Markdown (`.md`) and styled, responsive HTML (`.html`) reports with page-level traceability pills without altering facts (`backend/llm/executive_summary/render_summary.py`).
+
+4. **Baseline Evaluation Framework**:
+   - **9-Dimensional Evaluator**: Programmatically evaluates structural validity, grounding (100%), traceability (100%), coverage, duplication, category leakage, information loss, hallucinations, and compression ratio (`backend/evaluation/evaluate_summary.py`).
+
+5. **End-to-End Orchestration CLI**:
+   - **Reproducible Workflow**: Runs the complete 7-stage baseline pipeline end-to-end on any RFP PDF with a single CLI command (`backend/workflow/run_rfp.py`).
 
 ---
 
-## Setup
+## Architecture & Data Flow
 
-### 1. Clone the Repository
+```text
+RFP PDF
+  ↓
+Stage 1: PDF Extraction (pypdf)
+  ↓
+Stage 2: Section-Aware Chunking (~1800 words/chunk)
+  ↓
+Stage 3: Two-Pass Qwen3.5-4B Analysis (Pass A + Pass B per chunk)
+  ↓
+Stage 4: Deterministic Aggregation & Page Deduplication
+  ↓
+Stage 5: Executive Summary Agent (Qwen3.5-4B JSON synthesis)
+  ↓
+Stage 6: 9-Dimensional Baseline Evaluation
+  ↓
+Stage 7: Markdown & HTML Presentation Renderer
+  ↓
+Self-Contained Run Artifacts (data/runs/<run_id>/)
+```
 
-```bash
+---
+
+## Quick Start Guide for Next Contributors
+
+### Prerequisites
+
+- **OS**: Windows / Linux / macOS
+- **Python**: 3.11+
+- **Ollama**: Installed and running locally
+
+---
+
+### Step 1: Set Up Environment
+
+```powershell
+# Clone the repository
 git clone <REPOSITORY_URL>
 cd klaro
-```
 
-### 2. Create a Virtual Environment
-
-#### Windows PowerShell
-
-```powershell
+# Create and activate Python virtual environment
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
+.\.venv\Scripts\Activate.ps1   # On Linux/macOS: source .venv/bin/activate
 
-### 3. Install Dependencies
-
-```powershell
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-### 4. Install Ollama
+---
 
-Install Ollama from:
+### Step 2: Set Up Local Ollama & Qwen Model
 
-https://ollama.com
-
-Then download the current baseline model:
+1. Download and install Ollama from [https://ollama.com](https://ollama.com).
+2. Ensure Ollama is running (check system tray or run `ollama list`).
+3. Pull the baseline Qwen3.5 4B model:
 
 ```powershell
 ollama pull qwen3.5:4b
 ```
 
-Check the installation:
+Verify that `qwen3.5:4b` appears in the list:
 
 ```powershell
 ollama list
 ```
 
-You should see:
+---
 
-```text
-qwen3.5:4b
+### Step 3: Run the Complete Baseline Pipeline on an RFP
+
+Place your target RFP PDF in `data/rfp/` (or any path), then execute the unified workflow CLI:
+
+```powershell
+.\.venv\Scripts\python.exe -m backend.workflow.run_rfp data/rfp/1.pdf
+```
+
+#### Custom Output Directory or Run ID
+
+```powershell
+.\.venv\Scripts\python.exe -m backend.workflow.run_rfp path/to/my_rfp.pdf --run-id my_custom_run
 ```
 
 ---
 
-## Current Architecture
+### Step 4: Inspect Run Artifacts
 
-### Workflow Overview
+The workflow automatically creates a unique self-contained run folder under `data/runs/<run_id>/`:
 
 ```text
-RFP PDF
-   ↓
-PDF Extraction
-   ↓
-Page-level Text
-   ↓
-Chunking
-   ↓
-Local Qwen 3.5 4B
-   ↓
-Structured Output
-   ↓
-Requirement Extraction
-   ↓
-Evaluation
+data/runs/<run_id>/
+├── input/
+│   └── 1.pdf                              # Source RFP copy
+├── extracted/
+│   └── 1.json                             # Page-by-page text
+├── chunks/
+│   └── 1.json                             # Section-aware text chunks
+├── extraction/
+│   └── executive_summary_chunks_v5_3.json # Two-pass chunk extraction results
+├── aggregation/
+│   └── executive_summary_aggregated_v1.json # Merged document facts
+├── summary/
+│   ├── executive_summary.json            # Machine-readable Executive Summary JSON
+│   ├── executive_summary.md              # Human-readable Markdown summary
+│   └── executive_summary.html            # Browser-viewable HTML summary report
+├── evaluation/
+│   ├── baseline_summary_evaluation.json  # 9-dimensional evaluation data
+│   └── baseline_summary_evaluation.md    # Human-readable evaluation report
+└── run_metadata.json                     # Execution metadata, SHA256 hash & timings
 ```
 
 ---
 
-## Executive Summary Extension
+### Step 5: Run Unit Tests
 
-Eventually, the workflow will extend into:
+To verify that all renderer and workflow orchestration components work cleanly:
 
-```text
-RFP
- ↓
-Document Processing
- ↓
-Chunking
- ↓
-RFP-specific SLM
- ↓
-Structured Information
- ↓
-Executive Summary Agent
- ↓
-Final Executive Summary
+```powershell
+.\.venv\Scripts\python.exe -m unittest backend/evaluation/test_workflow.py backend/evaluation/test_render_summary.py
 ```
 
 ---
 
-## Project Structure
+## Canonical Schemas
 
-```text
-klaro/
-├── backend/
-│   ├── documents/          # PDF extraction, statistics and chunking
-│   ├── llm/                # LLM/SLM experiments
-│   └── evaluation/         # Evaluation utilities
-│
-├── data/
-│   └── evaluation/         # Sanitized evaluation data
-│
-├── tests/
-├── requirements.txt
-├── .gitignore
-└── README.md
+### Executive Summary Output Schema (9 Fields)
+
+All executive summary outputs strictly adhere to this schema:
+
+```json
+{
+  "overview": {
+    "text": "High-level summary of what the RFP is for...",
+    "pages": [9, 30]
+  },
+  "issuing_organization": "National Informatics Centre Services Inc. (NICSI)",
+  "scope": [
+    { "text": "Design, Development, Implementation and Maintenance...", "pages": [30, 34] }
+  ],
+  "key_requirements": [
+    { "text": "Bidder must submit Bid Securing Declaration...", "pages": [84] }
+  ],
+  "eligibility": [
+    { "text": "Bidder must possess valid CMMI Level-3 or Level-5 certification...", "pages": [83] }
+  ],
+  "important_dates": [
+    { "text": "Bid must be valid for 120 days from submission deadline...", "pages": [31] }
+  ],
+  "commercial_requirements": [
+    { "text": "Billing on Time & Material basis...", "pages": [45] }
+  ],
+  "project_duration": [],
+  "important_conditions": [
+    { "text": "Confidentiality obligations apply...", "pages": [56] }
+  ]
+}
 ```
 
 ---
 
-## Confidential RFP Data
+## Confidentiality & Git Security Notice
 
-Actual RFP documents are **not stored in this repository**.
+Actual RFP documents contain confidential procurement details. **Never commit raw RFP files or extracted text to GitHub.**
 
-The following directories/files contain confidential RFP data and must remain local:
+The following paths are excluded via `.gitignore`:
 
 ```text
 data/rfp/
 data/extracted/
 data/chunks/
-data/evaluation/gold_requirements.json
-data/evaluation/baseline_results.json
+data/runs/
 ```
 
-Raw model outputs containing RFP-derived text must also remain local.
+Keep all raw PDF and model output artifacts local.
 
-**Do not commit confidential RFP content to GitHub.**
+---
 
-Sanitized evaluation files are provided for shared development.
+## Next Milestone Focus (For Future Contributors)
+
+Now that the baseline Executive Summary pipeline is frozen and reproducible:
+
+1. **Multi-RFP Benchmark Expansion**: Run `backend.workflow.run_rfp` across 20–50 additional RFPs to build an evaluation corpus.
+2. **Requirements Extraction Agent**: Build the second core agent (extracting tabular requirement sheets from RFP sections).
+3. **Starter Pack Agent**: Build the compliance checklist and response template generator.
+4. **Fine-Tuning Data Preparation**: Prepare SFT `(aggregated_facts, gold_summary)` pairs for future QLoRA training once human-annotated gold data is available.
