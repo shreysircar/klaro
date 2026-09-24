@@ -1,0 +1,77 @@
+/* Injected into the summary iframe (render_summary.py output). Overrides its standalone styling so
+   the summary reads as a document on the app canvas. Uses tokens.css only. */
+body {
+  background: var(--canvas);
+  color: var(--ink);
+  font: var(--weight-regular) var(--fs-document) / var(--lh-document) var(--font-serif);
+  padding: var(--space-xl) var(--space-2xl) var(--space-2xl);
+  -webkit-font-smoothing: antialiased;
+}
+.container {
+  max-width: var(--reading-measure);
+  margin: 0 auto;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+header {
+  border-bottom: var(--hairline-w) solid var(--hairline);
+  padding-bottom: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+h1 {
+  font: var(--weight-semibold) var(--fs-headline-xl) / var(--lh-headline-xl) var(--font-serif);
+  letter-spacing: var(--tracking-headline);
+  color: var(--ink);
+  margin: 0 0 var(--space-xs);
+}
+.subtitle {
+  font: var(--weight-regular) var(--fs-label) / var(--lh-caption) var(--font-mono);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+.summary-section { margin-bottom: var(--space-xl); }
+h2 {
+  font: var(--weight-semibold) var(--fs-headline-md) / var(--lh-headline-md) var(--font-serif);
+  color: var(--ink);
+  border-bottom: var(--hairline-w) solid var(--hairline);
+  padding-bottom: var(--space-sm);
+  margin: 0 0 var(--space-md);
+}
+p, li { font-size: var(--fs-document); line-height: var(--lh-document); }
+p { margin: 0 0 var(--space-md); }
+ul { margin: 0 0 var(--space-md); padding-left: var(--space-lg); }
+li { margin-bottom: var(--space-sm); }
+li::marker { color: var(--ink-muted); }
+.empty-notice { color: var(--ink-muted); }
+
+/* Citation chips: the embed script puts one button per page inside .page-tag */
+.page-tag {
+  display: inline;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 0 0 var(--space-xs);
+  white-space: normal;
+}
+.page-chip {
+  display: inline-block;
+  font: var(--weight-medium) var(--fs-mono-sm) / var(--lh-mono) var(--font-mono);
+  letter-spacing: var(--tracking-mono);
+  color: var(--accent);
+  background: var(--accent-tint);
+  border: var(--hairline-w) solid var(--accent-border);
+  border-radius: var(--radius-sm);
+  padding: 0 var(--space-xs);
+  margin: 0 var(--space-xs) 0 0;
+  vertical-align: 1px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.page-chip:hover { border-color: var(--accent); }
+.page-chip:focus-visible { outline: var(--hairline-w) solid var(--accent); outline-offset: 1px; }
+.page-chip[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+::selection { background: var(--accent-border); }

@@ -2,6 +2,9 @@ import argparse
 import json
 import time
 from pathlib import Path
+from typing import Callable
+
+from backend.config import DATA_DIR
 
 from backend.llm.executive_summary.schema import (
     ChunkAnalysisResult,
@@ -91,17 +94,24 @@ def analyze_single_chunk(chunk: dict, page_records: list[dict]) -> ChunkAnalysis
     )
 
 
-def process_chunks_file(chunk_file_path: Path, output_file_path: Path | None = None) -> DocumentAnalysisResult:
+def process_chunks_file(
+    chunk_file_path: Path,
+    output_file_path: Path | None = None,
+    extracted_file_path: Path | None = None,
+    on_chunk: Callable[[int, int], None] | None = None,
+) -> DocumentAnalysisResult:
+    """on_chunk(chunks_done, chunks_total) is called before each chunk and once at the end."""
     if not chunk_file_path.exists():
         raise FileNotFoundError(f"Chunk file not found: {chunk_file_path}")
 
     chunks_data = load_json(chunk_file_path)
 
-    extracted_file_path = Path("data/extracted") / chunk_file_path.name
-    if extracted_file_path.exists():
+    if extracted_file_path is not None:
+        # Explicit path from the pipeline: missing page records would silently degrade citations.
         page_records = load_json(extracted_file_path)
     else:
-        page_records = []
+        extracted_file_path = DATA_DIR / "extracted" / chunk_file_path.name
+        page_records = load_json(extracted_file_path) if extracted_file_path.exists() else []
 
     doc_name = chunk_file_path.stem
     print("=" * 70)
@@ -112,8 +122,12 @@ def process_chunks_file(chunk_file_path: Path, output_file_path: Path | None = N
     analyzed_chunks: list[ChunkAnalysisResult] = []
     tot_pass_a_time = 0.0
     tot_pass_b_time = 0.0
+    failed_chunks = 0
+    last_error = None
 
     for idx, chunk in enumerate(chunks_data, start=1):
+        if on_chunk:
+            on_chunk(idx - 1, len(chunks_data))
         print(f"[{idx}/{len(chunks_data)}] Analyzing Chunk {chunk['chunk_id']} (Pages {chunk['pages'][0]}-{chunk['pages'][-1]})...", flush=True)
         res = analyze_single_chunk(chunk, page_records)
         
@@ -130,6 +144,17 @@ def process_chunks_file(chunk_file_path: Path, output_file_path: Path | None = N
         print(f"   -> {status_str} | Merged Items: {item_count}")
         analyzed_chunks.append(res)
 
+        if not (res.pass_a_success and res.pass_b_success):
+            failed_chunks += 1
+            last_error = res.pass_a_error or res.pass_b_error
+            if failed_chunks * 2 > len(chunks_data):
+                raise RuntimeError(
+                    f"Model failed on {failed_chunks} of {len(chunks_data)} chunks, so the summary would be "
+                    f"unreliable. Last error: {last_error}"
+                )
+
+    if on_chunk:
+        on_chunk(len(chunks_data), len(chunks_data))
     tot_time = round(tot_pass_a_time + tot_pass_b_time, 2)
 
     doc_result = DocumentAnalysisResult(

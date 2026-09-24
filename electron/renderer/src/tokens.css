@@ -1,0 +1,94 @@
+/* Design tokens from the Stitch design systems: Klaro Editorial Workspace (light), Editorial Legal Tool (dark).
+   The only place colours, type, spacing and radii are defined. Also injected into the summary iframe. */
+:root {
+  color-scheme: light;
+
+  /* Colour: light (Klaro Editorial Workspace) */
+  --canvas: #f7f5f0;
+  --surface: #ffffff;
+  --surface-muted: #f0eee9;
+  --surface-hover: #f5f3ee;
+  --hairline: #e4e0d8;
+  --ink: #1c1b19;
+  --ink-muted: #6b6860;
+  --accent: #1f4d3a;
+  --on-accent: #ffffff;
+  --accent-tint: rgba(31, 77, 58, 0.06);
+  --accent-border: rgba(31, 77, 58, 0.3);
+  --danger: #a33a2b;
+  --danger-tint: rgba(163, 58, 43, 0.08);
+  --danger-border: rgba(163, 58, 43, 0.35);
+
+  /* Type families */
+  --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --font-sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* Type scale: size / line height */
+  --fs-headline-xl: 28px;
+  --lh-headline-xl: 36px;
+  --fs-headline-lg: 22px;
+  --lh-headline-lg: 28px;
+  --fs-headline-md: 18px;
+  --lh-headline-md: 24px;
+  --fs-document: 15px;
+  --lh-document: 26px;
+  --fs-ui: 13px;
+  --lh-ui: 20px;
+  --fs-caption: 11px;
+  --lh-caption: 16px;
+  --fs-mono-sm: 11px;
+  --fs-mono-md: 12px;
+  --lh-mono: 16px;
+  --fs-label: 10px;
+  --tracking-label: 0.06em;
+  --tracking-mono: 0.02em;
+  --tracking-headline: -0.01em;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+
+  /* Spacing: 8px grid with a 4px sub-grid */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+
+  /* Radii: nothing above 6px */
+  --radius-sm: 2px;
+  --radius: 4px;
+  --radius-md: 6px;
+  --radius-full: 9999px; /* dots, spinners and step markers only */
+
+  /* Fixed metrics */
+  --header-h: 44px;
+  --control-h: 28px;
+  --row-h: 44px;
+  --hairline-w: 1px;
+  --reading-measure: 720px;
+  --content-max: 1120px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    /* Colour: dark (Editorial Legal Tool) */
+    --canvas: #161614;
+    --surface: #1e1e1b;
+    --surface-muted: #252522;
+    --surface-hover: #2d2d29;
+    --hairline: #2e2d28;
+    --ink: #eceae4;
+    --ink-muted: #9b988e;
+    --accent: #5fa37f;
+    --on-accent: #161614;
+    --accent-tint: rgba(95, 163, 127, 0.15);
+    --accent-border: rgba(95, 163, 127, 0.35);
+    --danger: #e05d4d;
+    --danger-tint: rgba(224, 93, 77, 0.12);
+    --danger-border: rgba(224, 93, 77, 0.4);
+  }
+}

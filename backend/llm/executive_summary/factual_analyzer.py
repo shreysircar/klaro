@@ -1,7 +1,7 @@
 import json
 import re
 import time
-from ollama import chat
+from backend.config import MODEL_TAG, llm
 
 from backend.llm.executive_summary.schema import PassAInformation
 from backend.llm.executive_summary.prompts import (
@@ -9,7 +9,7 @@ from backend.llm.executive_summary.prompts import (
     build_pass_a_user_prompt,
 )
 
-MODEL = "qwen3.5:4b"
+MODEL = MODEL_TAG
 
 
 def run_pass_a(page_text: str, chunk_id: int, pages: list[int]) -> tuple[PassAInformation, float, bool, str | None]:
@@ -25,7 +25,7 @@ def run_pass_a(page_text: str, chunk_id: int, pages: list[int]) -> tuple[PassAIn
     success = False
 
     try:
-        response = chat(
+        response = llm.chat(
             model=MODEL,
             think=False,
             format="json",

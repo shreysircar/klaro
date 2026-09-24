@@ -3,7 +3,8 @@ import json
 import re
 import time
 from pathlib import Path
-from ollama import chat
+from backend.config import MODEL_TAG, llm
+from backend.llm.executive_summary.aggregator import org_key
 
 from backend.llm.executive_summary.schema import (
     AggregatedItem,
@@ -14,7 +15,7 @@ from backend.llm.executive_summary.prompts import (
     build_agent_user_prompt,
 )
 
-MODEL = "qwen3.5:4b"
+MODEL = MODEL_TAG
 
 
 def load_json(path: Path) -> dict:
@@ -69,7 +70,7 @@ def parse_agent_response(raw_content: str, source_issuing_org: str) -> Executive
     # Normalize overview if string returned instead of dict
     overview_val = data.get("overview", "")
     if isinstance(overview_val, str):
-        data["overview"] = {"text": overview_val, "pages": [9, 30, 42]}
+        data["overview"] = {"text": overview_val, "pages": []}
 
     # Ensure issuing organization is preserved
     if not data.get("issuing_organization"):
@@ -108,7 +109,7 @@ def run_executive_summary_agent(aggregated_path: Path, output_path: Path | None 
         raise FileNotFoundError(f"Aggregated input file not found: {aggregated_path}")
 
     aggregated_data = load_json(aggregated_path)
-    source_issuing_org = aggregated_data.get("issuing_organization", "National Informatics Centre Services Inc. (NICSI)")
+    source_issuing_org = aggregated_data.get("issuing_organization", "Not identified")
 
     aggregated_json_str = json.dumps(aggregated_data, indent=2, ensure_ascii=False)
     user_prompt = build_agent_user_prompt(aggregated_json_str)
@@ -121,7 +122,7 @@ def run_executive_summary_agent(aggregated_path: Path, output_path: Path | None 
 
     start_time = time.time()
 
-    response = chat(
+    response = llm.chat(
         model=MODEL,
         think=False,
         options={"temperature": 0.1},
@@ -145,14 +146,20 @@ def run_executive_summary_agent(aggregated_path: Path, output_path: Path | None 
     
     output_dict = summary_output.model_dump()
 
+    # The model often copies "Not identified" or leaves the issuer blank; prefer the aggregator's evidence.
+    if output_dict["issuing_organization"].strip().lower() in ("", "not identified"):
+        output_dict["issuing_organization"] = source_issuing_org
+    same_org = org_key(output_dict["issuing_organization"]) == org_key(source_issuing_org)
+    output_dict["issuing_organization_pages"] = aggregated_data.get("issuing_organization_pages", []) if same_org else []
+
     # Create overview text if empty
     if not output_dict["overview"]["text"]:
-        overview_facts = [f["text"] for f in aggregated_data.get("overview", []) if f.get("text")]
+        overview_facts = [f for f in aggregated_data.get("overview", []) if f.get("text")][:3]
         if overview_facts:
-            output_dict["overview"]["text"] = " ".join(overview_facts[:3])
+            output_dict["overview"]["text"] = " ".join(f["text"] for f in overview_facts)
         else:
-            output_dict["overview"]["text"] = f"Empanlement RFP issued by {source_issuing_org} for ICT services and solution development."
-        output_dict["overview"]["pages"] = [9, 30, 42]
+            output_dict["overview"]["text"] = "Not identified"
+        output_dict["overview"]["pages"] = sorted({p for f in overview_facts for p in f.get("pages", [])})
 
     # Populate categories if empty but input has facts
     for cat in categories:

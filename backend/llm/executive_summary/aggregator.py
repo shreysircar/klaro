@@ -52,21 +52,61 @@ def merge_and_deduplicate_items(raw_items: List[Dict[str, Any]]) -> List[Dict[st
     return result
 
 
+# Organization-type head nouns and legal suffixes. Generic words only: no organization names.
+_ORG_HEADS = {
+    "agency", "authority", "bank", "board", "bureau", "centre", "center", "commission", "committee",
+    "company", "corporation", "council", "department", "directorate", "division", "foundation",
+    "government", "institute", "institution", "ministry", "mission", "municipality", "office",
+    "organisation", "organization", "railways", "services", "society", "trust", "undertaking",
+    "university",
+}
+_LEGAL_SUFFIX = re.compile(r"(?:[\s,]+(?:limited|ltd|inc|incorporated|pvt|private|llp|plc|co)\.?)+$", re.IGNORECASE)
+# Runs of Capitalized words, joined by "of", "and" or "&" (e.g. "Ministry of Finance").
+_CAPITALIZED_RUN = re.compile(r"[A-Z][\w&'.-]*(?:\s+(?:(?:of|and|&)\s+)?[A-Z][\w&'.-]*)*")
+
+
+def org_key(name: str) -> str:
+    """Comparison key: "The X Bank Ltd." and "X Bank Limited" are the same organization."""
+    name = re.sub(r"^the\s+", "", name.strip().rstrip(".,;:"), flags=re.IGNORECASE)
+    return normalize_text(_LEGAL_SUFFIX.sub("", name))
+
+
+def _organizations_in(text: str) -> List[str]:
+    found = []
+    for run in _CAPITALIZED_RUN.findall(text):
+        name = re.sub(r"^The\s+", "", run).rstrip(",;:")
+        # "Assistant General Manager of X Bank" is not an organization, but "X Bank" is.
+        while name:
+            left = _LEGAL_SUFFIX.sub("", name.split(" of ")[0]).rstrip(".")
+            if left.split()[-1].lower() in _ORG_HEADS:
+                found.append(name if re.search(r"\b(?:Ltd|Inc|Co)\.$", name) else name.rstrip("."))
+                break
+            name = name.split(" of ", 1)[1] if " of " in name else ""
+    return found
+
+
+def find_issuing_organization(overview_items: List[Dict[str, Any]]) -> tuple[str, List[int]]:
+    """The organization named most often in pass A overview facts (the only field that carries the
+    issuer), with the pages that name it. ("Not identified", []) if none is found.
+    ponytail: frequency heuristic over capitalized names; an LLM field for the issuer would be sturdier."""
+    groups: Dict[str, Dict[str, Any]] = {}
+    for item in overview_items:
+        for name in dict.fromkeys(_organizations_in(item.get("text", ""))):
+            g = groups.setdefault(org_key(name), {"count": 0, "forms": {}, "pages": set()})
+            g["count"] += 1
+            g["forms"][name] = g["forms"].get(name, 0) + 1
+            if isinstance(item.get("page"), int):
+                g["pages"].add(item["page"])
+    if not groups:
+        return "Not identified", []
+    best = max(groups.values(), key=lambda g: g["count"])
+    name = max(best["forms"], key=lambda f: (best["forms"][f], len(f)))
+    return name, sorted(best["pages"])
+
+
 def extract_issuing_organization(overview_items: List[Dict[str, Any]]) -> str:
     """Derives issuing organization deterministically from overview evidence."""
-    nicsi_mentions = []
-    for item in overview_items:
-        txt = item["text"]
-        if "nicsi" in txt.lower() or "national informatics centre services" in txt.lower():
-            nicsi_mentions.append(txt)
-
-    if any("National Informatics Centre Services Inc." in m for m in nicsi_mentions):
-        return "National Informatics Centre Services Inc. (NICSI)"
-    elif any("NICSI" in m for m in nicsi_mentions):
-        return "National Informatics Centre Services Inc. (NICSI)"
-    elif nicsi_mentions:
-        return nicsi_mentions[0]
-    return "National Informatics Centre Services Inc. (NICSI)"
+    return find_issuing_organization(overview_items)[0]
 
 
 def aggregate_document(v5_3_path: Path, output_path: Path) -> dict:
@@ -112,11 +152,12 @@ def aggregate_document(v5_3_path: Path, output_path: Path) -> dict:
     aggregated_duration = merge_and_deduplicate_items(cat_accumulator["project_duration"])
     aggregated_conditions = merge_and_deduplicate_items(cat_accumulator["important_conditions"])
 
-    issuing_org = extract_issuing_organization(cat_accumulator["overview"])
+    issuing_org, issuing_org_pages = find_issuing_organization(cat_accumulator["overview"])
 
     final_schema = {
         "overview": aggregated_overview,
         "issuing_organization": issuing_org,
+        "issuing_organization_pages": issuing_org_pages,
         "scope": aggregated_scope,
         "key_requirements": aggregated_requirements,
         "eligibility": aggregated_eligibility,
@@ -131,16 +172,14 @@ def aggregate_document(v5_3_path: Path, output_path: Path) -> dict:
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(final_schema, f, indent=2, ensure_ascii=False)
 
-    total_output_facts = sum(
-        len(final_schema[k]) for k in final_schema if isinstance(final_schema[k], list)
-    )
+    fact_lists = [v for k, v in final_schema.items() if isinstance(v, list) and k != "issuing_organization_pages"]
+    total_output_facts = sum(len(v) for v in fact_lists)
     duplicates_merged = total_input_facts - total_output_facts
 
     unique_pages = set()
-    for k in final_schema:
-        if isinstance(final_schema[k], list):
-            for item in final_schema[k]:
-                unique_pages.update(item.get("pages", []))
+    for facts in fact_lists:
+        for item in facts:
+            unique_pages.update(item.get("pages", []))
 
     print("=" * 70)
     print("DOCUMENT-LEVEL AGGREGATOR V1 EXECUTION REPORT")
@@ -152,7 +191,7 @@ def aggregate_document(v5_3_path: Path, output_path: Path) -> dict:
     print(f"Total output facts:     {total_output_facts}")
     print(f"Merged duplicates:      {duplicates_merged}")
     print(f"Unique pages represented: {len(unique_pages)}")
-    print(f"Issuing organization:   {issuing_org}")
+    print(f"Issuing organization:   {issuing_org} (pages {issuing_org_pages})")
     print("\nOutput Facts by Category:")
     for k in [
         "overview", "scope", "key_requirements", "eligibility",

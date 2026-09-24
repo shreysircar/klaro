@@ -18,6 +18,8 @@ import re
 from pathlib import Path
 from typing import Dict, List, Any, Set, Tuple
 
+from backend.config import MODEL_TAG
+
 
 def load_json(path: Path) -> dict:
     with open(path, "r", encoding="utf-8") as f:
@@ -50,8 +52,9 @@ def check_structural_validity(summary: dict) -> dict:
         "important_conditions",
     ]
     
+    optional_fields = ["issuing_organization_pages"]
     missing_fields = [f for f in required_fields if f not in summary]
-    unexpected_fields = [f for f in summary if f not in required_fields]
+    unexpected_fields = [f for f in summary if f not in required_fields + optional_fields]
     
     valid_types = True
     invalid_type_details = []
@@ -547,7 +550,7 @@ def run_evaluation(
     conciseness = check_conciseness(summary_data, aggregated_data)
 
     report_data = {
-        "model": "qwen3.5:4b",
+        "model": MODEL_TAG,
         "inference_mode": "local_ollama",
         "think": False,
         "evaluation_documents": 1,

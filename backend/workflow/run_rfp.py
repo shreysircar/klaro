@@ -15,6 +15,8 @@ import time
 from datetime import datetime
 from pathlib import Path
 
+from backend.config import DATA_DIR, MODEL_TAG, preflight_error
+
 # Import existing pipeline components
 from backend.documents.pdf_extractor import extract_pdf_pages
 from backend.documents.chunker import create_chunks
@@ -23,6 +25,24 @@ from backend.llm.executive_summary.aggregator import aggregate_document
 from backend.llm.executive_summary.agent import run_executive_summary_agent
 from backend.evaluation.evaluate_summary import run_evaluation
 from backend.llm.executive_summary.render_summary import render_summary_files
+
+STAGES = ["pdf_extraction", "chunking", "chunk_analysis", "aggregation", "summary_agent", "evaluation", "rendering"]
+
+# Set by --progress-json: one JSON object per line on this stream (see the progress contract in electron/README.md).
+_progress_stream = None
+_current_stage: str | None = None
+
+
+def emit(event: str, **fields) -> None:
+    if _progress_stream is not None:
+        _progress_stream.write(json.dumps({"event": event, **fields}) + "\n")
+        _progress_stream.flush()
+
+
+def emit_stage(stage: str) -> None:
+    global _current_stage
+    _current_stage = stage
+    emit("stage", stage=stage, stage_index=STAGES.index(stage) + 1, total_stages=len(STAGES))
 
 
 def calculate_file_hash(path: Path) -> str:
@@ -38,10 +58,12 @@ def run_pipeline(pdf_path: Path, output_dir: Path | None = None, run_id: str | N
 
     if not pdf_path.exists():
         print(f"[CRITICAL ERROR] Input RFP file not found: {pdf_path}", file=sys.stderr)
+        emit("error", stage=None, error=f"Input RFP file not found: {pdf_path}")
         return 1
 
     if pdf_path.suffix.lower() != ".pdf":
         print(f"[CRITICAL ERROR] Input file is not a PDF: {pdf_path}", file=sys.stderr)
+        emit("error", stage=None, error=f"Input file is not a PDF: {pdf_path}")
         return 1
 
     # 1. Setup Run Directories
@@ -50,7 +72,7 @@ def run_pipeline(pdf_path: Path, output_dir: Path | None = None, run_id: str | N
         run_id = f"run_{pdf_path.stem}_{timestamp_str}"
 
     if output_dir is None:
-        run_dir = Path("data/runs") / run_id
+        run_dir = DATA_DIR / "runs" / run_id
     else:
         run_dir = output_dir / run_id
 
@@ -76,7 +98,7 @@ def run_pipeline(pdf_path: Path, output_dir: Path | None = None, run_id: str | N
         "source_file": str(pdf_path.resolve()),
         "copied_file": str(copied_pdf),
         "sha256_hash": file_hash,
-        "model": "qwen3.5:4b",
+        "model": MODEL_TAG,
         "inference_mode": "local_ollama",
         "think": False,
         "extraction_version": "v5.3",
@@ -94,6 +116,7 @@ def run_pipeline(pdf_path: Path, output_dir: Path | None = None, run_id: str | N
     try:
         # STAGE 1: PDF Extraction
         print("\n--- STAGE 1: PDF Text Extraction ---")
+        emit_stage("pdf_extraction")
         st1_start = time.time()
         pages = extract_pdf_pages(str(copied_pdf))
         extracted_file = dir_extracted / f"{pdf_path.stem}.json"
@@ -112,9 +135,11 @@ def run_pipeline(pdf_path: Path, output_dir: Path | None = None, run_id: str | N
             "artifact": str(extracted_file),
         }
         print(f"Extracted {len(pages)} pages ({total_words:,} words) in {st1_time}s -> {extracted_file}")
+        emit("document", pages=len(pages))
 
         # STAGE 2: Chunking
         print("\n--- STAGE 2: Document Chunking ---")
+        emit_stage("chunking")
         st2_start = time.time()
         chunks = create_chunks(pages)
         chunks_file = dir_chunks / f"{pdf_path.stem}.json"
@@ -129,19 +154,21 @@ def run_pipeline(pdf_path: Path, output_dir: Path | None = None, run_id: str | N
             "artifact": str(chunks_file),
         }
         print(f"Created {len(chunks)} chunks in {st2_time}s -> {chunks_file}")
+        if not chunks:
+            raise ValueError("No text could be extracted from this PDF. Scanned or image-only PDFs are not supported.")
 
         # STAGE 3: Two-Pass Chunk Analysis (Pass A + Pass B)
         print("\n--- STAGE 3: Qwen3.5-4B Two-Pass Chunk Analysis ---")
+        emit_stage("chunk_analysis")
         st3_start = time.time()
         chunk_analysis_file = dir_extraction / "executive_summary_chunks_v5_3.json"
-        
-        # Save a temporary copy of extracted text in data/extracted if needed by chunk_analyzer
-        temp_extracted_dir = Path("data/extracted")
-        temp_extracted_dir.mkdir(parents=True, exist_ok=True)
-        temp_extracted_file = temp_extracted_dir / chunks_file.name
-        shutil.copy2(extracted_file, temp_extracted_file)
 
-        doc_analysis = process_chunks_file(chunks_file, chunk_analysis_file)
+        doc_analysis = process_chunks_file(
+            chunks_file,
+            chunk_analysis_file,
+            extracted_file_path=extracted_file,
+            on_chunk=lambda done, total: emit("chunk", chunks_done=done, chunks_total=total),
+        )
 
         st3_time = round(time.time() - st3_start, 2)
         metadata["stages"]["chunk_analysis"] = {
@@ -153,6 +180,7 @@ def run_pipeline(pdf_path: Path, output_dir: Path | None = None, run_id: str | N
 
         # STAGE 4: Aggregation
         print("\n--- STAGE 4: Document Fact Aggregation ---")
+        emit_stage("aggregation")
         st4_start = time.time()
         aggregated_file = dir_aggregation / "executive_summary_aggregated_v1.json"
         aggregated_facts = aggregate_document(chunk_analysis_file, aggregated_file)
@@ -166,6 +194,7 @@ def run_pipeline(pdf_path: Path, output_dir: Path | None = None, run_id: str | N
 
         # STAGE 5: Executive Summary Agent
         print("\n--- STAGE 5: Executive Summary Agent ---")
+        emit_stage("summary_agent")
         st5_start = time.time()
         summary_json_file = dir_summary / "executive_summary.json"
         summary_output = run_executive_summary_agent(aggregated_file, summary_json_file)
@@ -179,6 +208,7 @@ def run_pipeline(pdf_path: Path, output_dir: Path | None = None, run_id: str | N
 
         # STAGE 6: Baseline Evaluation
         print("\n--- STAGE 6: Summary Baseline Evaluation ---")
+        emit_stage("evaluation")
         st6_start = time.time()
         eval_json_file = dir_evaluation / "baseline_summary_evaluation.json"
         eval_md_file = dir_evaluation / "baseline_summary_evaluation.md"
@@ -203,6 +233,7 @@ def run_pipeline(pdf_path: Path, output_dir: Path | None = None, run_id: str | N
 
         # STAGE 7: Human-Readable Summary Rendering
         print("\n--- STAGE 7: Summary Rendering (Markdown & HTML) ---")
+        emit_stage("rendering")
         st7_start = time.time()
         render_md, render_html = render_summary_files(summary_json_file, dir_summary)
 
@@ -232,7 +263,7 @@ def run_pipeline(pdf_path: Path, output_dir: Path | None = None, run_id: str | N
         print(f"Total Runtime:       {total_runtime} seconds")
         print(f"Pages:               {len(pages)}")
         print(f"Chunks:              {len(chunks)}")
-        print(f"Model Used:          qwen3.5:4b (Local Ollama)")
+        print(f"Model Used:          {MODEL_TAG} (Local Ollama)")
         print(f"Grounding Score:     {eval_results['grounding']['grounding_percentage']}%")
         print(f"Traceability Score:  {eval_results['traceability']['traceability_percentage']}%")
         print("\nGenerated Reports:")
@@ -242,12 +273,14 @@ def run_pipeline(pdf_path: Path, output_dir: Path | None = None, run_id: str | N
         print(f"  - Metadata JSON:    {metadata_file}")
         print("=" * 80)
 
+        emit("done", run_dir=str(run_dir))
         return 0
 
     except Exception as e:
         total_runtime = round(time.time() - start_time, 2)
         metadata["status"] = "failed"
-        metadata["error"] = str(e)
+        metadata["error"] = str(e) or type(e).__name__
+        metadata["failed_stage"] = _current_stage
         metadata["total_runtime_seconds"] = total_runtime
 
         metadata_file = run_dir / "run_metadata.json"
@@ -259,16 +292,27 @@ def run_pipeline(pdf_path: Path, output_dir: Path | None = None, run_id: str | N
         print(f"Run ID: {run_id}", file=sys.stderr)
         print(f"Metadata written to: {metadata_file}", file=sys.stderr)
         print("=" * 80, file=sys.stderr)
+        emit("error", stage=_current_stage, error=metadata["error"])
         return 1
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run complete Klaro baseline Executive Summary pipeline on an RFP PDF.")
     parser.add_argument("pdf_path", type=str, help="Path to input RFP PDF file")
-    parser.add_argument("--output-dir", type=str, default=None, help="Optional parent directory for run artifacts (default: data/runs)")
+    parser.add_argument("--output-dir", type=str, default=None, help="Optional parent directory for run artifacts (default: <KLARO_DATA_DIR>/runs)")
     parser.add_argument("--run-id", type=str, default=None, help="Optional unique run identifier")
+    parser.add_argument("--progress-json", action="store_true", help="Emit JSON progress lines on stdout; human output moves to stderr")
 
     args = parser.parse_args()
+    if args.progress_json:
+        _progress_stream, sys.stdout = sys.stdout, sys.stderr
+
+    preflight = preflight_error()
+    if preflight:
+        print(f"[CRITICAL ERROR] {preflight}", file=sys.stderr)
+        emit("error", stage=None, error=preflight)
+        sys.exit(1)
+
     exit_code = run_pipeline(
         pdf_path=Path(args.pdf_path),
         output_dir=Path(args.output_dir) if args.output_dir else None,

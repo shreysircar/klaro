@@ -16,6 +16,7 @@ data/rfp/
 data/extracted/
 data/chunks/
 data/runs/
+data/uploads/
 data/evaluation/
 
 # Private evaluation artifacts
@@ -26,3 +27,10 @@ data/evaluation/chunk1_check.txt
 # Raw model outputs containing RFP-derived content
 data/raw_qwen_output.txt
 data/executive_summary_raw.txt
+
+# Electron
+node_modules/
+electron/dist/
+
+
+

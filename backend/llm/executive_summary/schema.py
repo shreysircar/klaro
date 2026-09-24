@@ -54,6 +54,7 @@ class AggregatedItem(BaseModel):
 class ExecutiveSummaryOutput(BaseModel):
     overview: AggregatedItem = Field(..., description="Traceable overview statement.")
     issuing_organization: str = Field(..., description="Issuing organization name.")
+    issuing_organization_pages: List[int] = Field(default_factory=list, description="Pages naming the issuer.")
     scope: List[AggregatedItem] = Field(default_factory=list)
     key_requirements: List[AggregatedItem] = Field(default_factory=list)
     eligibility: List[AggregatedItem] = Field(default_factory=list)

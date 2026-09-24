@@ -80,7 +80,7 @@ def render_markdown(data: Dict[str, Any]) -> str:
             continue
 
         if key == "issuing_organization" and isinstance(val, str):
-            lines.append(f"{val}\n")
+            lines.append(f"{val}{format_page_suffix_md(data.get('issuing_organization_pages', []))}\n")
         elif key == "overview":
             if isinstance(val, str):
                 lines.append(f"{val}\n")
@@ -116,7 +116,7 @@ def render_html(data: Dict[str, Any]) -> str:
         if not val:
             content_html = '<p class="empty-notice"><em>No information available.</em></p>'
         elif key == "issuing_organization" and isinstance(val, str):
-            content_html = f'<p>{html.escape(val)}</p>'
+            content_html = f'<p>{html.escape(val)}{format_page_suffix_html(data.get("issuing_organization_pages", []))}</p>'
         elif key == "overview":
             if isinstance(val, str):
                 content_html = f'<p>{html.escape(val)}</p>'
