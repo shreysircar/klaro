@@ -32,5 +32,4 @@ data/executive_summary_raw.txt
 node_modules/
 electron/dist/
 
-
-
+models/

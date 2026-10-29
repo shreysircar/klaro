@@ -1,0 +1,34 @@
+{
+  "overview": {
+    "text": "Das Projekt zielt darauf ab, das bestehende Informationssystem zu modernisieren.",
+    "pages": [
+      2,
+      3
+    ]
+  },
+  "issuing_organization": "Department of Public Works",
+  "issuing_organization_pages": [
+    1
+  ],
+  "scope": [
+    {
+      "text": "Der Lieferant muss Wartung und technische Unterstützung leisten.",
+      "pages": [
+        5
+      ]
+    }
+  ],
+  "key_requirements": [
+    {
+      "text": "Der Vorschlag muss bis zum 15. November 2026 vorgelegt werden.",
+      "pages": [
+        8
+      ]
+    }
+  ],
+  "eligibility": [],
+  "important_dates": [],
+  "commercial_requirements": [],
+  "project_duration": [],
+  "important_conditions": []
+}

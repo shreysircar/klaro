@@ -1,0 +1,25 @@
+﻿{
+  "overview": {
+    "text": "The project aims to modernize the existing information system.",
+    "pages": [2, 3]
+  },
+  "issuing_organization": "Department of Public Works",
+  "issuing_organization_pages": [1],
+  "scope": [
+    {
+      "text": "The supplier must provide maintenance and technical support.",
+      "pages": [5]
+    }
+  ],
+  "key_requirements": [
+    {
+      "text": "The proposal must be submitted by 15 November 2026.",
+      "pages": [8]
+    }
+  ],
+  "eligibility": [],
+  "important_dates": [],
+  "commercial_requirements": [],
+  "project_duration": [],
+  "important_conditions": []
+}
