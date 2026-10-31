@@ -25,6 +25,7 @@ from backend.llm.executive_summary.aggregator import aggregate_document
 from backend.llm.executive_summary.agent import run_executive_summary_agent
 from backend.evaluation.evaluate_summary import run_evaluation
 from backend.llm.executive_summary.render_summary import render_summary_files
+from backend.llm.executive_summary.translate_summary import translate_summary_file
 
 STAGES = ["pdf_extraction", "chunking", "chunk_analysis", "aggregation", "summary_agent", "evaluation", "rendering"]
 
@@ -231,19 +232,43 @@ def run_pipeline(pdf_path: Path, output_dir: Path | None = None, run_id: str | N
             "artifact_md": str(eval_md_file),
         }
 
+         
         # STAGE 7: Human-Readable Summary Rendering
-        print("\n--- STAGE 7: Summary Rendering (Markdown & HTML) ---")
+        print("\n--- STAGE 7: Summary Rendering (English & German) ---")
         emit_stage("rendering")
         st7_start = time.time()
-        render_md, render_html = render_summary_files(summary_json_file, dir_summary)
+
+        # Render the original English summary.
+        render_md, render_html = render_summary_files(
+        summary_json_file,
+        dir_summary,
+        language="en",
+        )
+
+        # Translate the summary locally into a separate German JSON file.
+        german_json_file = translate_summary_file(
+        summary_json_file,
+        dir_summary / "executive_summary_de.json",
+        )
+
+        # Render the German summary without changing the English JSON.
+        german_md, german_html = render_summary_files(
+        german_json_file,
+        dir_summary,
+        language="de",
+        )
 
         st7_time = round(time.time() - st7_start, 2)
         metadata["stages"]["rendering"] = {
-            "status": "success",
-            "time_seconds": st7_time,
-            "markdown_path": str(render_md),
-            "html_path": str(render_html),
+        "status": "success",
+        "time_seconds": st7_time,
+        "english_markdown_path": str(render_md),
+        "english_html_path": str(render_html),
+        "german_json_path": str(german_json_file),
+        "german_markdown_path": str(german_md),
+        "german_html_path": str(german_html),
         }
+
 
         total_runtime = round(time.time() - start_time, 2)
         metadata["status"] = "completed"
@@ -265,10 +290,13 @@ def run_pipeline(pdf_path: Path, output_dir: Path | None = None, run_id: str | N
         print(f"Chunks:              {len(chunks)}")
         print(f"Model Used:          {MODEL_TAG} (Local Ollama)")
         print(f"Grounding Score:     {eval_results['grounding']['grounding_percentage']}%")
-        print(f"Traceability Score:  {eval_results['traceability']['traceability_percentage']}%")
+        print(f"Traceability Score:  {eval_results['traceability']['traceability_percentage']}%")   
         print("\nGenerated Reports:")
-        print(f"  - Summary Markdown: {render_md}")
-        print(f"  - Summary HTML:     {render_html}")
+        print(f"  - English Markdown: {render_md}")
+        print(f"  - English HTML:     {render_html}")
+        print(f"  - German JSON:      {german_json_file}")
+        print(f"  - German Markdown:  {german_md}")
+        print(f"  - German HTML:      {german_html}")
         print(f"  - Evaluation MD:    {eval_md_file}")
         print(f"  - Metadata JSON:    {metadata_file}")
         print("=" * 80)

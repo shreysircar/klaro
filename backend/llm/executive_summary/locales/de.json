@@ -1,0 +1,19 @@
+
+{
+  "report_title": "Zusammenfassung",
+  "report_subtitle": "Klaro-Angebotsanalysebericht",
+  "no_information": "Keine Informationen verfügbar.",
+  "page": "Seite",
+  "pages": "Seiten",
+  "sections": {
+    "overview": "Überblick",
+    "issuing_organization": "Herausgebende Organisation",
+    "scope": "Leistungsumfang",
+    "key_requirements": "Wesentliche Anforderungen",
+    "eligibility": "Teilnahmeberechtigung",
+    "important_dates": "Wichtige Termine",
+    "commercial_requirements": "Kommerzielle Anforderungen",
+    "project_duration": "Projektlaufzeit",
+    "important_conditions": "Wichtige Bedingungen"
+  }
+}

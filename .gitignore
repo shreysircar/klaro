@@ -37,3 +37,6 @@ electron/dist/
 
 # Golden dataset source PDFs (third-party documents)
 data/golden/pdfs/
+models/
+data/translation_cache/
+.venv/

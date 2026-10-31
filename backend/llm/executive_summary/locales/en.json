@@ -1,0 +1,19 @@
+
+{
+  "report_title": "Executive Summary",
+  "report_subtitle": "Klaro Proposal Analysis Report",
+  "no_information": "No information available.",
+  "page": "Page",
+  "pages": "Pages",
+  "sections": {
+    "overview": "Overview",
+    "issuing_organization": "Issuing Organization",
+    "scope": "Scope",
+    "key_requirements": "Key Requirements",
+    "eligibility": "Eligibility",
+    "important_dates": "Important Dates",
+    "commercial_requirements": "Commercial Requirements",
+    "project_duration": "Project Duration",
+    "important_conditions": "Important Conditions"
+  }
+}
