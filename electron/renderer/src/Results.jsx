@@ -3,6 +3,7 @@ import { apiBase, getEvaluation, getRun } from './api.js';
 import { formatDate } from './format.js';
 import { frameCss } from './frameStyle.js';
 import { ArrowLeft } from './icons.jsx';
+import SourcePanel from './SourcePanel.jsx';
 import TopBar from './TopBar.jsx';
 
 function Meter({ label, value, invert = false }) {
@@ -59,12 +60,15 @@ export default function Results({ runId, onBack }) {
   const [error, setError] = useState(null);
   const [evError, setEvError] = useState(null);
   const [tab, setTab] = useState('source');
-  const [page, setPage] = useState(1);
+  const [focus, setFocus] = useState(null); // { page, key }: where the source panel should scroll to
+  const [evidence, setEvidence] = useState(null); // evidence.json, or null for runs made before it existed
+  const [selected, setSelected] = useState(null); // the clicked bullet's evidence item
 
   useEffect(() => {
     apiBase().then(setBase);
     getRun(runId).then(setRun, (e) => setError(e.message));
     getEvaluation(runId).then(setEv, (e) => setEvError(e.message));
+    window.klaro.getEvidence(runId).then(setEvidence, () => setEvidence(null));
   }, [runId]);
 
   // Messages from the summary iframe: accept only our frame, from the API origin, with valid pages.
@@ -75,17 +79,20 @@ export default function Results({ runId, onBack }) {
       if (e.source !== frameRef.current?.contentWindow || e.origin !== origin) return;
       if (e.data?.type === 'klaro:ready') {
         e.source.postMessage({ type: 'klaro:style', css: frameCss }, origin);
-      } else if (e.data?.type === 'klaro:page') {
-        const p = e.data.page;
-        if (Number.isInteger(p) && p >= 1 && (run.pages == null || p <= run.pages)) {
-          setPage(p);
+      } else if (e.data?.type === 'klaro:cite') {
+        const { id, page: p, chip } = e.data;
+        const item = typeof id === 'string' ? evidence?.items.find((i) => i.id === id) ?? null : null;
+        const target = chip || !item?.page ? p : item.page; // a bullet opens the page its passage was found on
+        if (Number.isInteger(target) && target >= 1 && (run.pages == null || target <= run.pages)) {
+          setSelected(item);
+          setFocus((f) => ({ page: target, key: (f?.key ?? 0) + 1 }));
           setTab('source');
         }
       }
     };
     window.addEventListener('message', onMessage);
     return () => window.removeEventListener('message', onMessage);
-  }, [base, run]);
+  }, [base, run, evidence]);
 
   const id = encodeURIComponent(runId);
   const meta = [
@@ -103,6 +110,12 @@ export default function Results({ runId, onBack }) {
         <span className="mono muted">{meta.join(' · ')}</span>
       </div>
       {error && <p className="error-box">{error}</p>}
+      {evidence?.source_lang === 'de' && (
+        <p className="notice">
+          Translated from German. English text is machine translation. Page numbers refer to the original PDF.
+          {' '}{evidence.flagged_segments} {evidence.flagged_segments === 1 ? 'passage' : 'passages'} flagged for number mismatches.
+        </p>
+      )}
 
       <main className="results">
         <div className="reader">
@@ -118,13 +131,10 @@ export default function Results({ runId, onBack }) {
               <button role="tab" aria-selected={tab === 'source'} onClick={() => setTab('source')}>Source</button>
               <button role="tab" aria-selected={tab === 'quality'} onClick={() => setTab('quality')}>Quality</button>
             </div>
-            {tab === 'source' && <span className="mono muted">Opened at p. {page}</span>}
           </div>
           <div className="inspector-body">
-            {tab === 'source' && base && (
-              // Chromium's PDF viewer; plugins are enabled for this webview only (see main.js). It ignores
-              // hash-only changes, so ?p= makes each jump a real load that honours #page.
-              <webview className="pdf" src={`${base}/runs/${id}/source.pdf?p=${page}#page=${page}&navpanes=0`} plugins="true" />
+            {tab === 'source' && run && (
+              <SourcePanel runId={runId} filename={run.filename} focus={focus} item={selected} lang={evidence?.source_lang ?? null} />
             )}
             {tab === 'quality' && <Quality ev={ev} error={evError} />}
           </div>

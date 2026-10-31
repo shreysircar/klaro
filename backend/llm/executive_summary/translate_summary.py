@@ -3,48 +3,45 @@ import json
 from pathlib import Path
 from typing import Any
 
-from transformers import MarianMTModel, MarianTokenizer
+from backend.config import MODELS_DIR
 
 
-# Resolve the model directory from the Klaro project root.
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
-MODEL_DIR = PROJECT_ROOT / "models" / "opus-mt-en-de"
-
-# Keep the model loaded once per Python process.
-_tokenizer = None
-_model = None
+def model_dir(src: str = "en", tgt: str = "de") -> Path:
+    """Where the OPUS-MT model for this direction must live (Helsinki-NLP/opus-mt-<src>-<tgt>)."""
+    return MODELS_DIR / f"opus-mt-{src}-{tgt}"
 
 
-def load_translation_model():
+# Models stay loaded once per Python process, one per direction.
+_loaded: dict[tuple[str, str], tuple] = {}
+
+
+def load_translation_model(src: str = "en", tgt: str = "de"):
     """Load OPUS-MT exclusively from local model files."""
-    global _tokenizer, _model
-
-    if _model is None or _tokenizer is None:
-        if not MODEL_DIR.exists():
+    if (src, tgt) not in _loaded:
+        path = model_dir(src, tgt)
+        if not path.exists():
             raise FileNotFoundError(
-                f"Translation model not found at {MODEL_DIR}. "
+                f"Translation model not found at {path}. "
                 "Download OPUS-MT before running translation."
             )
 
-        _tokenizer = MarianTokenizer.from_pretrained(
-            str(MODEL_DIR),
-            local_files_only=True,
-        )
-        _model = MarianMTModel.from_pretrained(
-            str(MODEL_DIR),
-            local_files_only=True,
-        )
-        _model.eval()
+        # Imported here so the English-only pipeline never needs transformers or torch.
+        from transformers import MarianMTModel, MarianTokenizer
 
-    return _tokenizer, _model
+        tokenizer = MarianTokenizer.from_pretrained(str(path), local_files_only=True)
+        model = MarianMTModel.from_pretrained(str(path), local_files_only=True)
+        model.eval()
+        _loaded[(src, tgt)] = (tokenizer, model)
+
+    return _loaded[(src, tgt)]
 
 
-def translate_text(text: str, max_input_tokens: int = 450) -> str:
-    """Translate one English text string into German locally."""
+def translate_text(text: str, max_input_tokens: int = 450, src: str = "en", tgt: str = "de") -> str:
+    """Translate one text string locally (default English to German)."""
     if not text or not text.strip():
         return text
 
-    tokenizer, model = load_translation_model()
+    tokenizer, model = load_translation_model(src, tgt)
 
     # Avoid silently truncating long text: callers should chunk it first.
     inputs = tokenizer(

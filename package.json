@@ -1,0 +1,15 @@
+{
+  "name": "klaro-root",
+  "private": true,
+  "description": "Repo-root entry points: npm install, then npm run dev",
+  "scripts": {
+    "postinstall": "npm --prefix electron install",
+    "setup": "node electron/scripts/setup.mjs",
+    "predev": "node electron/scripts/setup.mjs",
+    "dev": "npm --prefix electron run dev",
+    "test": "node electron/scripts/test.mjs"
+  },
+  "engines": {
+    "node": ">=22.12"
+  }
+}

@@ -12,6 +12,8 @@ DATA_DIR = Path(os.environ.get("KLARO_DATA_DIR", "data"))
 LLM_TIMEOUT = float(os.environ.get("KLARO_LLM_TIMEOUT", "300"))
 PORT = int(os.environ.get("KLARO_PORT", "0"))
 HOST = "127.0.0.1"
+# OPUS-MT translation models, one folder per direction (models/opus-mt-de-en). Never downloaded at run time.
+MODELS_DIR = Path(os.environ.get("KLARO_MODELS_DIR", Path(__file__).resolve().parents[1] / "models"))
 
 # Every pipeline LLM call goes through this client so host and timeout apply everywhere.
 llm = ollama.Client(host=OLLAMA_URL, timeout=LLM_TIMEOUT)

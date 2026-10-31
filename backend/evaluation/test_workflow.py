@@ -31,7 +31,7 @@ class TestWorkflowOrchestrator(unittest.TestCase):
 
     def test_non_pdf_input(self):
         txt_file = self.temp_path / "sample.txt"
-        txt_file.write_text("Not a pdf")
+        txt_file.write_text("Not a pdf", encoding="utf-8")
         res = run_pipeline(txt_file, output_dir=self.temp_path)
         self.assertEqual(res, 1)
 

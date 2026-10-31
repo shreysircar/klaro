@@ -6,3 +6,12 @@ pydantic==2.13.5
 fastapi==0.141.1
 uvicorn==0.53.0
 python-multipart==0.0.32
+# German to English translation (imported only when a German run translates). CPU torch: the default PyPI wheel.
+transformers==5.22.1
+torch==2.15.0
+sentencepiece==0.2.2
+huggingface_hub==2.4.0
+safetensors==0.8.0
+tokenizers==0.23.3
+numpy==2.5.4; python_version >= "3.12"
+numpy==2.4.4; python_version < "3.12"

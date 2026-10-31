@@ -6,6 +6,48 @@ Klaro is a major project focused on analyzing **RFP (Request for Proposal)** doc
 
 ---
 
+## Quick start (desktop app)
+
+You need: **Python 3.11+** (3.12 or 3.13 recommended), **Node.js 22.12+**, and **[Ollama](https://ollama.com/download)**
+running. Then, once:
+
+```bash
+ollama pull qwen3.5:4b
+```
+
+From the repo root (same on macOS and Windows PowerShell):
+
+```bash
+npm install
+npm run dev
+```
+
+`npm install` also installs the Electron app's packages. `npm run dev` first runs the setup script (`npm run setup`,
+safe to repeat), then opens the app:
+
+| Step | What it does | First run |
+|---|---|---|
+| 1-2 | finds Python 3.11+, creates `.venv` | seconds |
+| 3 | `pip install -r requirements.txt` (only when that file changes) | several minutes, about 1 GB (PyTorch) |
+| 4 | downloads the German to English model `Helsinki-NLP/opus-mt-de-en` into `models/` | one time, about 310 MB |
+| 5 | checks that Ollama is running and has the model; prints the fix if not, never blocks | seconds |
+
+The setup script is the only thing in Klaro that uses the internet (PyPI and huggingface.co). Once it has run, the app works
+offline: nothing leaves the machine. `KLARO_SKIP_SETUP=1 npm run dev` skips it.
+
+**German RFPs:** drop the PDF in as usual. The app detects German, offers an Auto / German / English selector, translates
+on this computer, and analyses the English text. Page numbers and highlights refer to the original PDF; the English tab shows
+the translation placed over the original layout. On Windows, PyTorch needs the
+[Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe).
+
+**Tests:** `npm test` (renderer tests, then the Python tests).
+
+**When something breaks**, send me: the screenshot, `<userData>/logs/backend.log` (macOS: `~/Library/Application
+Support/klaro/logs/`, Windows: `%APPDATA%\klaro\logs\`), and for a failed run its `pipeline.log` (in `data/runs/<run id>/`).
+Windows testers: follow `docs/windows-test-checklist.md`.
+
+---
+
 ## Current Status & Achievements
 
 As of the latest milestone, the **Baseline Executive Summary Pipeline** is fully implemented, evaluated, rendered, and packaged into a single reproducible end-to-end CLI workflow.

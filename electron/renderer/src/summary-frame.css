@@ -75,3 +75,5 @@ li::marker { color: var(--ink-muted); }
 .page-chip:focus-visible { outline: var(--hairline-w) solid var(--accent); outline-offset: 1px; }
 .page-chip[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
 ::selection { background: var(--accent-border); }
+.citable { cursor: pointer; }
+.cited { background: var(--accent-tint); box-shadow: -8px 0 0 var(--accent-tint), 8px 0 0 var(--accent-tint); }

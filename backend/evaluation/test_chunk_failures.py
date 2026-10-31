@@ -23,8 +23,8 @@ class TestChunkFailures(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             d = Path(d)
             chunks = [{"chunk_id": i, "pages": [i], "word_count": 1, "text": "x"} for i in range(1, 5)]
-            (d / "c.json").write_text(json.dumps(chunks))
-            (d / "e.json").write_text(json.dumps([{"page": i, "text": "x"} for i in range(1, 5)]))
+            (d / "c.json").write_text(json.dumps(chunks), encoding="utf-8")
+            (d / "e.json").write_text(json.dumps([{"page": i, "text": "x"} for i in range(1, 5)]), encoding="utf-8")
             progress = []
             with patch("backend.llm.executive_summary.chunk_analyzer.run_pass_a", fake_pass(PassAInformation, failing)), \
                  patch("backend.llm.executive_summary.chunk_analyzer.run_pass_b", fake_pass(PassBInformation, set())):

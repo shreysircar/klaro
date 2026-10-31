@@ -5,6 +5,7 @@ import { Doc, Lock, Trash, Upload } from './icons.jsx';
 import TopBar from './TopBar.jsx';
 
 const REFRESH_MS = 3000;
+const LANG_CHIP = { de: 'German detected', en: 'English detected', unknown: 'Unknown' };
 const STATUS_LABEL = { done: 'Done', running: 'Running', queued: 'Queued', failed: 'Failed', cancelled: 'Cancelled' };
 
 // Newest finished run of each file that has been analyzed more than once. Runs arrive newest first.
@@ -51,6 +52,8 @@ export default function Home({ onOpen }) {
   const [uploadError, setUploadError] = useState(null);
   const [busy, setBusy] = useState(false);
   const [dragging, setDragging] = useState(false);
+  const [pending, setPending] = useState(null); // { name, blob, detected, lang } between choosing a file and starting
+  const [translator, setTranslator] = useState(null); // { ok, error } once German is the language in play
 
   useEffect(() => {
     let alive = true;
@@ -67,15 +70,45 @@ export default function Home({ onOpen }) {
     };
   }, []);
 
-  async function start(name, blob) {
+  // The language in play: the override if one is picked, else what was detected.
+  const language = pending && (pending.lang === 'auto' ? pending.detected?.language : pending.lang);
+
+  useEffect(() => {
+    if (language !== 'de') {
+      setTranslator(null);
+      return undefined;
+    }
+    let alive = true;
+    window.klaro.checkTranslator().then(
+      (r) => alive && setTranslator(r),
+      (e) => alive && setTranslator({ ok: false, error: e.message }),
+    );
+    return () => {
+      alive = false;
+    };
+  }, [language]);
+
+  async function pick(name, blob, source) {
     if (!name.toLowerCase().endsWith('.pdf')) {
       setUploadError(`${name} is not a PDF.`);
       return;
     }
+    setUploadError(null);
+    setPending({ name, blob, detected: null, lang: 'auto' });
+    try {
+      const detected = await window.klaro.detectLanguage(source);
+      setPending((p) => p && p.blob === blob && { ...p, detected });
+    } catch (e) {
+      setPending((p) => p && p.blob === blob && { ...p, detected: { language: 'unknown', confidence: 0 } });
+      setUploadError(`Could not detect the language: ${e.message}`);
+    }
+  }
+
+  async function start() {
     setBusy(true);
     setUploadError(null);
     try {
-      const { run_id } = await uploadPdf(name, blob);
+      const { run_id } = await uploadPdf(pending.name, pending.blob, pending.lang);
       onOpen({ run_id, status: 'queued' });
     } catch (e) {
       setUploadError(e.message);
@@ -85,15 +118,18 @@ export default function Home({ onOpen }) {
 
   async function choose() {
     const file = await window.klaro.openFile();
-    if (file) start(file.name, new Blob([file.data], { type: 'application/pdf' }));
+    if (file) pick(file.name, new Blob([file.data], { type: 'application/pdf' }), file.path);
   }
 
   function drop(e) {
     e.preventDefault();
     setDragging(false);
     const file = e.dataTransfer.files[0];
-    if (file) start(file.name, file);
+    if (file) pick(file.name, file, file);
   }
+
+  const blocked =
+    !pending?.detected || language === 'unknown' || (language === 'de' && !translator?.ok);
 
   async function remove(run) {
     const verb = run.status === 'running' || run.status === 'queued' ? 'Cancel' : 'Delete';
@@ -127,10 +163,32 @@ export default function Home({ onOpen }) {
           <span className="dropzone-icon"><Upload /></span>
           {busy ? (
             <p className="muted"><span className="spinner" /> Uploading…</p>
+          ) : pending ? (
+            <>
+              <h1 className="drop-title">{pending.name}</h1>
+              <div className="lang-row">
+                <span className="tag">{pending.detected ? LANG_CHIP[pending.detected.language] : 'Detecting language…'}</span>
+                <label className="caption" htmlFor="lang">Language</label>
+                <select id="lang" value={pending.lang} onChange={(e) => setPending({ ...pending, lang: e.target.value })}>
+                  <option value="auto">Auto</option>
+                  <option value="de">German</option>
+                  <option value="en">English</option>
+                </select>
+              </div>
+              {language === 'de' && translator && !translator.ok && (
+                <div className="error-box"><strong>German to English translation is not set up.</strong><pre>{translator.error}</pre></div>
+              )}
+              {language === 'unknown' && <p className="caption">Could not tell the language. Choose German or English.</p>}
+              {language === 'de' && translator?.ok && <p className="caption">Translated to English on this computer before analysis.</p>}
+              <div className="lang-row">
+                <button className="primary" onClick={start} disabled={blocked}>Start analysis</button>
+                <button className="secondary" onClick={() => { setPending(null); setUploadError(null); }}>Choose another</button>
+              </div>
+            </>
           ) : (
             <>
               <h1 className="drop-title">Drop an RFP here</h1>
-              <p className="caption">Text-based PDF. Scanned PDFs are not supported.</p>
+              <p className="caption">Text-based PDF, German or English. Scanned PDFs are not supported.</p>
               <button className="primary" onClick={choose}>Choose PDF</button>
             </>
           )}

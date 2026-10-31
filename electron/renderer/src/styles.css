@@ -358,3 +358,24 @@ button:disabled { opacity: 0.6; cursor: default; }
   padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-md);
 }
 .command code { flex: 1; font: var(--fs-mono-md) / var(--lh-mono) var(--font-mono); }
+
+/* Source panel (pdf.js) */
+.source-panel { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.source-bar { flex: none; display: flex; align-items: center; justify-content: space-between; gap: var(--space-sm); padding: var(--space-sm) var(--space-md); border-bottom: var(--hairline-w) solid var(--hairline); background: var(--surface); }
+.page-nav { margin-left: auto; display: inline-flex; align-items: center; gap: var(--space-sm); }
+.pdf-scroll { flex: 1; min-height: 0; overflow: auto; position: relative; padding: var(--space-sm); background: var(--surface-muted); }
+.pdf-page { position: relative; margin: 0 auto var(--space-sm); background: #fff; }
+.pdf-page canvas { display: block; width: 100%; }
+.hl { position: absolute; background: rgba(224, 178, 40, 0.4); mix-blend-mode: multiply; border-radius: var(--radius-sm); pointer-events: none; }
+.passage-note { flex: none; margin: 0; padding: var(--space-sm) var(--space-md); border-top: var(--hairline-w) solid var(--hairline); background: var(--surface); color: var(--ink-muted); font-size: var(--fs-ui); }
+.english-passage { background: var(--surface); padding: var(--space-md) var(--space-lg); }
+.english-passage p { font-size: var(--fs-document); line-height: var(--lh-document); margin: 0 0 var(--space-sm); }
+.english-passage p.caption { font-size: var(--fs-caption); }
+.notice { margin: 0; padding: var(--space-sm) var(--space-lg); background: var(--accent-tint); border-bottom: var(--hairline-w) solid var(--accent-border); font-size: var(--fs-ui); color: var(--ink); }
+.lang-row { display: flex; align-items: center; justify-content: center; gap: var(--space-sm); margin-top: var(--space-md); flex-wrap: wrap; }
+.lang-row select { height: 28px; border: var(--hairline-w) solid var(--hairline); border-radius: var(--radius); background: var(--surface); color: var(--ink); font: inherit; padding: 0 var(--space-sm); }
+.dropzone .file-picked { font-weight: var(--weight-medium); margin-top: var(--space-md); }
+
+.page-note { position: absolute; top: var(--space-sm); left: var(--space-sm); right: var(--space-sm); margin: 0; padding: var(--space-xs) var(--space-sm); background: var(--surface); border: var(--hairline-w) solid var(--hairline); border-radius: var(--radius); color: var(--ink-muted); font-size: var(--fs-ui); }
+.en-page { margin-bottom: var(--space-lg); }
+.hl-text { background: rgba(224, 178, 40, 0.4); border-radius: var(--radius-sm); }

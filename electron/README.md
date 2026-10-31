@@ -6,7 +6,7 @@ renderer talks only to `127.0.0.1`, and the API talks only to Ollama on `127.0.0
 
 ```
 electron/main.js        main process: spawns the API, waits for /health, opens the window
-electron/preload.js     getApiBase(), openFile(), openExternal(), nothing else
+electron/preload.js     getApiBase(), openFile(), openExternal(), detectLanguage(), checkTranslator(), getSource(), getEvidence()
 electron/renderer/      Vite + React UI (Setup, Home, Progress, Results)
 electron/scripts/dev.mjs  `npm run dev`: Vite dev server + Electron
 backend/api/            FastAPI server, one job at a time
@@ -73,7 +73,9 @@ Without Vite: `npm run build` then `npm start` loads the built renderer from `el
 The summary on the left is the pipeline's own `summary.html`, loaded from the API with `?embed=1`.
 The API adds a small script (`backend/api/summary_embed.js`) that makes each page chip clickable, and
 the app sends it a stylesheet built from `renderer/src/tokens.css`. The right panel shows the source
-PDF in Chromium's built-in viewer (a locked-down `<webview>`), or the evaluation scores.
+PDF drawn with pdf.js (clicking a bullet highlights its passage; German runs also get an English tab), or the
+evaluation scores. German RFPs need the OPUS-MT model once: see `docs/german-integration-log.md`. Tests:
+`npm test` (highlight matcher) and `python -m unittest backend.evaluation.test_translation`.
 
 Design tokens live only in `renderer/src/tokens.css` (taken from the Google Stitch design exports). Fonts are bundled from
 `@fontsource`, so the app works offline.

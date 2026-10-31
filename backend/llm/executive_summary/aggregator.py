@@ -109,7 +109,7 @@ def extract_issuing_organization(overview_items: List[Dict[str, Any]]) -> str:
     return find_issuing_organization(overview_items)[0]
 
 
-def aggregate_document(v5_3_path: Path, output_path: Path) -> dict:
+def aggregate_document(v5_3_path: Path, output_path: Path, pages_path: Path | None = None) -> dict:
     if not v5_3_path.exists():
         raise FileNotFoundError(f"Input file not found: {v5_3_path}")
 
@@ -153,6 +153,12 @@ def aggregate_document(v5_3_path: Path, output_path: Path) -> dict:
     aggregated_conditions = merge_and_deduplicate_items(cat_accumulator["important_conditions"])
 
     issuing_org, issuing_org_pages = find_issuing_organization(cat_accumulator["overview"])
+    if issuing_org == "Not identified" and pages_path is not None:
+        # The overview facts may not name the issuer (it can sit in a logo); fall back to the page text.
+        pages = load_json(pages_path)
+        issuing_org, issuing_org_pages = find_issuing_organization(
+            [{"text": p["text"], "page": p["page"]} for p in pages]
+        )
 
     final_schema = {
         "overview": aggregated_overview,

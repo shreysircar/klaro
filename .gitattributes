@@ -1,0 +1,21 @@
+# Normalise text to LF in the repo and in checkouts, on every OS, so scripts do not break with CRLF.
+* text=auto eol=lf
+
+# Binary files: never touch.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.ico binary
+*.icns binary
+*.woff binary
+*.woff2 binary
+*.zip binary
+*.doc binary
+*.docx binary
+*.pptx binary
+*.xlsx binary
+*.bin binary
+*.spm binary

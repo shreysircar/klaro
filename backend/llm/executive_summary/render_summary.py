@@ -53,6 +53,10 @@ def load_locale(language: str) -> dict[str, Any]:
     return locale
 
 
+# Kept for callers and tests that import it: the English section order and titles.
+SECTION_TITLES = list(load_locale("en")["sections"].items())
+
+
 def format_page_suffix_md(pages: Any, locale: dict[str, Any]) -> str:
     if isinstance(pages, int):
         pages = [pages]
@@ -123,7 +127,7 @@ def render_markdown(
             continue
 
         if key == "issuing_organization" and isinstance(val, str):
-            suffix = format_page_suffix_md(pages, locale)
+            lines.append(f"{val}{format_page_suffix_md(data.get('issuing_organization_pages', []), locale)}\n")
         elif key == "overview":
             if isinstance(val, str):
                 lines.append(f"{val}\n")
@@ -225,7 +229,7 @@ def render_html(
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Klaro — {html.escape(locale["report_title"])}</title>
+  <title>{html.escape(locale.get("html_title", "Klaro — " + locale["report_title"]))}</title>
   <style>
     :root {{
       --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -255,8 +259,7 @@ def render_html(
       border: 1px solid var(--border-color);
       border-radius: 12px;
       padding: 2.5rem 3rem;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
-                  0 2px 4px -1px rgba(0, 0, 0, 0.03);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
     }}
     header {{
       border-bottom: 2px solid var(--border-color);
@@ -329,7 +332,7 @@ def render_html(
   <div class="container">
     <header>
       <h1>{html.escape(locale["report_title"])}</h1>
-      <p class="subtitle">{html.escape(locale["report_subtitle"])}</p> 
+      <p class="subtitle">{html.escape(locale["report_subtitle"])}</p>
     </header>
     <main>
 {body_content}

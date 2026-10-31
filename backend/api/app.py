@@ -3,7 +3,7 @@
 from contextlib import asynccontextmanager
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException, Response, UploadFile
+from fastapi import FastAPI, Form, HTTPException, Response, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, HTMLResponse
 
@@ -45,14 +45,16 @@ def health() -> dict:
 
 
 @app.post("/runs", status_code=202)
-def create_run(file: UploadFile) -> dict:
+def create_run(file: UploadFile, source_lang: str = Form("auto")) -> dict:
+    if source_lang not in ("auto", "en", "de"):
+        raise HTTPException(400, "source_lang must be auto, en or de.")
     name = Path(file.filename or "").name
     if not name.lower().endswith(".pdf"):
         raise HTTPException(400, "Only PDF files are supported.")
     if file.file.read(5) != b"%PDF-":
         raise HTTPException(400, f"{name} is not a valid PDF file.")
     file.file.seek(0)
-    job = jobs.submit(name, file.file)
+    job = jobs.submit(name, file.file, source_lang)
     return {"run_id": job["run_id"], "status": job["status"]}
 
 
@@ -110,6 +112,10 @@ def get_evaluation(run_id: str) -> FileResponse:
 
 @app.delete("/runs/{run_id}", status_code=204)
 def delete_run(run_id: str) -> Response:
-    if not jobs.cancel_or_remove(run_id):
+    try:
+        removed = jobs.cancel_or_remove(run_id)
+    except OSError as e:  # Windows: a file of the run is still open somewhere
+        raise HTTPException(409, f"Could not delete the run's files ({e}). Close anything using them and try again.")
+    if not removed:
         raise HTTPException(404, "Run not found.")
     return Response(status_code=204)

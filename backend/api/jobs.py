@@ -15,7 +15,7 @@ from typing import BinaryIO
 from uuid import uuid4
 
 from backend.config import DATA_DIR
-from backend.workflow.run_rfp import STAGES
+from backend.workflow.run_rfp import STAGES, STAGES_WITH_TRANSLATION
 
 RUNS_DIR = DATA_DIR.resolve() / "runs"
 UPLOADS_DIR = DATA_DIR.resolve() / "uploads"
@@ -38,20 +38,44 @@ def _duration(start: str | None, end: str | None) -> float | None:
     return round((datetime.fromisoformat(end) - datetime.fromisoformat(start)).total_seconds(), 1)
 
 
+def _short(filename: str, limit: int = 80) -> str:
+    """Windows paths top out at 260 characters and the pipeline names files after the PDF, so cap the stem."""
+    p = Path(filename)
+    return p.stem[:limit] + p.suffix if len(p.stem) > limit else filename
+
+
+def _rmtree(path: Path, ignore_errors: bool = False) -> None:
+    """rmtree that retries: on Windows a just-killed process, the indexer or antivirus can hold a file for a moment."""
+    for attempt in range(6):
+        try:
+            shutil.rmtree(path)
+            return
+        except FileNotFoundError:
+            return
+        except OSError:
+            if attempt == 5:
+                if ignore_errors:
+                    return
+                raise
+            time.sleep(0.3)
+
+
 def run_dir(run_id: str) -> Path | None:
     """The run's folder, or None if the id would escape RUNS_DIR."""
     d = (RUNS_DIR / run_id).resolve()
     return d if d.parent == RUNS_DIR and d.name == run_id else None
 
 
-def submit(filename: str, src: BinaryIO) -> dict:
+def submit(filename: str, src: BinaryIO, source_lang: str = "auto") -> dict:
     run_id = datetime.now().strftime("run_%Y%m%d_%H%M%S_") + uuid4().hex[:6]
-    upload = UPLOADS_DIR / run_id / filename
+    upload = UPLOADS_DIR / run_id / _short(filename)
     upload.parent.mkdir(parents=True)
     with open(upload, "wb") as f:
         shutil.copyfileobj(src, f)
     job = {
-        "run_id": run_id, "filename": filename, "status": "queued",
+        "run_id": run_id, "filename": filename, "status": "queued", "source_lang": source_lang,
+        "language": None,  # what the pipeline found: "de" or "en" (set once it reports it)
+        "translate_done": 0, "translate_total": 0,  # pages translated so far, German runs only
         "stage": None, "stage_index": 0, "total_stages": len(STAGES),
         "chunks_done": 0, "chunks_total": 0, "error": None,
         "created_at": _now(), "started_at": None, "finished_at": None,
@@ -86,8 +110,9 @@ def _run(job: dict) -> None:
     log = out_dir / "pipeline.log"
     cmd = [
         # ponytail: dev-only child command; a PyInstaller build needs its own pipeline entry point here.
-        sys.executable, "-m", "backend.workflow.run_rfp", str(UPLOADS_DIR / run_id / job["filename"]),
+        sys.executable, "-m", "backend.workflow.run_rfp", str(UPLOADS_DIR / run_id / _short(job["filename"])),
         "--output-dir", str(RUNS_DIR), "--run-id", run_id, "--progress-json",
+        "--source-lang", job["source_lang"],
     ]
     with _lock:  # under the lock so a cancel can't slip in between the status check and Popen
         if job["status"] != "queued":
@@ -97,7 +122,7 @@ def _run(job: dict) -> None:
         with open(log, "w", encoding="utf-8") as log_f:
             proc = subprocess.Popen(
                 cmd, cwd=REPO_ROOT, stdout=subprocess.PIPE, stderr=log_f, stdin=subprocess.DEVNULL,
-                text=True, encoding="utf-8", env={**os.environ, "PYTHONUTF8": "1", "PYTHONUNBUFFERED": "1"},
+                text=True, encoding="utf-8", env={**os.environ, "PYTHONUTF8": "1", "PYTHONIOENCODING": "utf-8", "PYTHONUNBUFFERED": "1"},
             )
         _procs[run_id] = proc
 
@@ -126,6 +151,10 @@ def _run(job: dict) -> None:
                 elif done >= 2 and chunk_t0 is not None:
                     job["chunk_avg_s"] = round((now - chunk_t0) / done, 1)
                 job.update(chunks_done=done, chunks_total=ev["chunks_total"], chunks=ev["chunks_total"])
+            elif ev["event"] == "language":
+                job["language"] = ev["detected"]
+            elif ev["event"] == "translate":
+                job.update(translate_done=ev["done"], translate_total=ev["total"])
             elif ev["event"] == "document":
                 job["pages"] = ev["pages"]
             elif ev["event"] == "error":
@@ -139,7 +168,7 @@ def _run(job: dict) -> None:
         _procs.pop(run_id, None)
         job["finished_at"] = _now()
         if job["status"] == "cancelled":
-            shutil.rmtree(out_dir, ignore_errors=True)
+            _rmtree(out_dir, ignore_errors=True)
         elif code == 0:
             job["status"] = "done"
         else:
@@ -155,7 +184,7 @@ def _worker() -> None:
         except Exception as e:  # never let one job kill the worker thread
             with _lock:
                 job.update(status="failed", error=f"Could not run the pipeline: {e}", finished_at=_now())
-        shutil.rmtree(UPLOADS_DIR / run_id, ignore_errors=True)  # the pipeline keeps its own copy in input/
+        _rmtree(UPLOADS_DIR / run_id, ignore_errors=True)  # the pipeline keeps its own copy in input/
 
 
 def start() -> None:
@@ -179,17 +208,19 @@ def _from_disk(d: Path) -> dict | None:
     done = meta.get("status") == "completed"
     stage = meta.get("failed_stage")
     stages = meta.get("stages", {})
+    order = STAGES_WITH_TRANSLATION if meta.get("source_language") == "de" else STAGES
     return {
         "run_id": d.name, "filename": Path(meta.get("source_file", d.name)).name,
         "status": "done" if done else "failed",
-        "stage": stage, "stage_index": len(STAGES) if done else (STAGES.index(stage) + 1 if stage in STAGES else 0),
-        "total_stages": len(STAGES), "chunks_done": 0, "chunks_total": 0,
+        "stage": stage, "stage_index": len(order) if done else (order.index(stage) + 1 if stage in order else 0),
+        "total_stages": len(order), "language": meta.get("source_language"),
+        "translate_done": 0, "translate_total": 0, "chunks_done": 0, "chunks_total": 0,
         "error": meta.get("error"), "created_at": meta.get("timestamp"),
         "started_at": meta.get("timestamp"), "finished_at": None,
         "duration_s": meta.get("total_runtime_seconds"),
         "pages": stages.get("pdf_extraction", {}).get("pages"),
         "chunks": stages.get("chunking", {}).get("chunks"),
-        "stage_seconds": {k: v.get("time_seconds") for k, v in stages.items() if k in STAGES},
+        "stage_seconds": {k: v.get("time_seconds") for k, v in stages.items() if k in order},
         "chunk_avg_s": None,
     }
 
@@ -225,5 +256,5 @@ def cancel_or_remove(run_id: str) -> bool:
     d = run_dir(run_id)
     if not (d and d.is_dir()):
         return job is not None
-    shutil.rmtree(d)
+    _rmtree(d)
     return True

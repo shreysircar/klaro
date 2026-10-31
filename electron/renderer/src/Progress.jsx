@@ -15,6 +15,10 @@ const STAGES = [
   ['rendering', 'Rendering the report'],
 ];
 
+const TRANSLATION = ['translation', 'Translating to English'];
+// German runs report 8 stages; the translation step sits right after extraction.
+const stagesFor = (run) => (run?.total_stages === STAGES.length + 1 ? [STAGES[0], TRANSLATION, ...STAGES.slice(1)] : STAGES);
+
 function stageState(run, index) {
   const n = index + 1;
   if (run.status === 'done' || n < run.stage_index) return 'done';
@@ -33,7 +37,9 @@ function remaining(run) {
 
 function ActiveCard({ run, label, stageKey }) {
   const chunks = stageKey === 'chunk_analysis' && run.chunks_total > 0;
-  const pct = chunks ? Math.round((run.chunks_done / run.chunks_total) * 100) : null;
+  const translating = stageKey === 'translation' && run.translate_total > 0;
+  const pct = chunks ? Math.round((run.chunks_done / run.chunks_total) * 100)
+    : translating ? Math.round((run.translate_done / run.translate_total) * 100) : null;
   const eta = chunks ? remaining(run) : null;
   return (
     <li className="step active">
@@ -41,8 +47,9 @@ function ActiveCard({ run, label, stageKey }) {
         <div className="active-head">
           <span className="active-label"><span className="spinner" /> {label}</span>
           {chunks && <span className="mono">Chunk {Math.min(run.chunks_done + 1, run.chunks_total)} of {run.chunks_total}</span>}
+          {translating && <span className="mono">Page {Math.min(run.translate_done + 1, run.translate_total)} of {run.translate_total}</span>}
         </div>
-        {chunks && (
+        {(chunks || translating) && (
           <>
             <div className="bar" role="progressbar" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100}>
               <div className="bar-fill" style={{ width: `${pct}%` }} />
@@ -53,6 +60,7 @@ function ActiveCard({ run, label, stageKey }) {
             </div>
           </>
         )}
+        {stageKey === 'translation' && <p className="caption">Translated on this computer. Nothing is sent anywhere.</p>}
         {stageKey === 'summary_agent' && <p className="caption">One long model call. This step can take a few minutes.</p>}
       </div>
     </li>
@@ -122,7 +130,7 @@ export default function Progress({ runId, onDone, onBack }) {
 
         {run && (
           <ol className="steps">
-            {STAGES.map(([key, label], i) => {
+            {stagesFor(run).map(([key, label], i) => {
               const state = stageState(run, i);
               if (state === 'active') return <ActiveCard key={key} run={run} label={label} stageKey={key} />;
               const secs = run.stage_seconds?.[key];

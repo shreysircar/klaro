@@ -25,13 +25,16 @@ from backend.llm.executive_summary.aggregator import aggregate_document
 from backend.llm.executive_summary.agent import run_executive_summary_agent
 from backend.evaluation.evaluate_summary import run_evaluation
 from backend.llm.executive_summary.render_summary import render_summary_files
-from backend.llm.executive_summary.translate_summary import translate_summary_file
+from backend.translation.detect import detect_pages
 
 STAGES = ["pdf_extraction", "chunking", "chunk_analysis", "aggregation", "summary_agent", "evaluation", "rendering"]
+# German runs get a translation stage right after extraction.
+STAGES_WITH_TRANSLATION = STAGES[:1] + ["translation"] + STAGES[1:]
 
 # Set by --progress-json: one JSON object per line on this stream (see the progress contract in electron/README.md).
 _progress_stream = None
 _current_stage: str | None = None
+_stages = STAGES
 
 
 def emit(event: str, **fields) -> None:
@@ -43,7 +46,7 @@ def emit(event: str, **fields) -> None:
 def emit_stage(stage: str) -> None:
     global _current_stage
     _current_stage = stage
-    emit("stage", stage=stage, stage_index=STAGES.index(stage) + 1, total_stages=len(STAGES))
+    emit("stage", stage=stage, stage_index=_stages.index(stage) + 1, total_stages=len(_stages))
 
 
 def calculate_file_hash(path: Path) -> str:
@@ -54,8 +57,38 @@ def calculate_file_hash(path: Path) -> str:
     return hasher.hexdigest()
 
 
-def run_pipeline(pdf_path: Path, output_dir: Path | None = None, run_id: str | None = None) -> int:
+def _translate(run_dir: Path, pages: list[dict], metadata: dict):
+    """German pages -> English pages (stage `translation`). Returns (segments, pages_en)."""
+    from backend.translation.translator import check, translate_pages
+
+    emit_stage("translation")
+    st_start = time.time()
+    error = check("de", "en")
+    if error:
+        raise RuntimeError(error)  # never analyse German text with the English prompts
+    segments, pages_en = translate_pages(
+        pages, "de", "en", on_page=lambda done, total: emit("translate", done=done, total=total)
+    )
+    out = run_dir / "translation"
+    out.mkdir(exist_ok=True)
+    (out / "segments.json").write_text(json.dumps(segments, ensure_ascii=False, indent=2), encoding="utf-8")
+    (out / "pages_en.json").write_text(json.dumps(pages_en, ensure_ascii=False, indent=2), encoding="utf-8")
+    flagged = sum(bool(s["flags"]) for s in segments)
+    metadata["stages"]["translation"] = {
+        "status": "success", "time_seconds": round(time.time() - st_start, 2),
+        "segments": len(segments), "flagged_segments": flagged, "artifact": str(out / "segments.json"),
+    }
+    print(f"Translated {len(segments)} segments de->en; {flagged} flagged for number mismatches.")
+    return segments, pages_en
+
+
+def run_pipeline(
+    pdf_path: Path, output_dir: Path | None = None, run_id: str | None = None,
+    source_lang: str = "en", german_summary: bool = False,
+) -> int:
+    global _stages
     start_time = time.time()
+    _stages = STAGES_WITH_TRANSLATION if source_lang == "de" else STAGES
 
     if not pdf_path.exists():
         print(f"[CRITICAL ERROR] Input RFP file not found: {pdf_path}", file=sys.stderr)
@@ -138,6 +171,24 @@ def run_pipeline(pdf_path: Path, output_dir: Path | None = None, run_id: str | N
         print(f"Extracted {len(pages)} pages ({total_words:,} words) in {st1_time}s -> {extracted_file}")
         emit("document", pages=len(pages))
 
+        # Language: only runs started with --source-lang auto|de look at it; the default (en) is unchanged.
+        segments = None
+        translating = source_lang != "en"  # auto or de: the run keeps source.pdf, language and evidence files
+        if source_lang == "auto":
+            detected = detect_pages(pages)["language"]
+            if detected == "unknown" and total_words > 0:
+                raise ValueError("Could not tell whether this RFP is German or English. Choose the language manually.")
+            source_lang = "de" if detected == "de" else "en"
+        if translating:
+            emit("language", detected=source_lang)
+            shutil.copy2(pdf_path, run_dir / "source.pdf")
+            metadata["source_language"] = source_lang
+        if source_lang == "de":
+            _stages = STAGES_WITH_TRANSLATION
+            segments, pages = _translate(run_dir, pages, metadata)
+            with open(extracted_file, "w", encoding="utf-8") as f:  # stage 3 reads page text from here
+                json.dump(pages, f, ensure_ascii=False, indent=2)
+
         # STAGE 2: Chunking
         print("\n--- STAGE 2: Document Chunking ---")
         emit_stage("chunking")
@@ -184,7 +235,7 @@ def run_pipeline(pdf_path: Path, output_dir: Path | None = None, run_id: str | N
         emit_stage("aggregation")
         st4_start = time.time()
         aggregated_file = dir_aggregation / "executive_summary_aggregated_v1.json"
-        aggregated_facts = aggregate_document(chunk_analysis_file, aggregated_file)
+        aggregated_facts = aggregate_document(chunk_analysis_file, aggregated_file, extracted_file)
 
         st4_time = round(time.time() - st4_start, 2)
         metadata["stages"]["aggregation"] = {
@@ -232,43 +283,37 @@ def run_pipeline(pdf_path: Path, output_dir: Path | None = None, run_id: str | N
             "artifact_md": str(eval_md_file),
         }
 
-         
         # STAGE 7: Human-Readable Summary Rendering
-        print("\n--- STAGE 7: Summary Rendering (English & German) ---")
+        print("\n--- STAGE 7: Summary Rendering (Markdown & HTML) ---")
         emit_stage("rendering")
         st7_start = time.time()
-
-        # Render the original English summary.
-        render_md, render_html = render_summary_files(
-        summary_json_file,
-        dir_summary,
-        language="en",
-        )
-
-        # Translate the summary locally into a separate German JSON file.
-        german_json_file = translate_summary_file(
-        summary_json_file,
-        dir_summary / "executive_summary_de.json",
-        )
-
-        # Render the German summary without changing the English JSON.
-        german_md, german_html = render_summary_files(
-        german_json_file,
-        dir_summary,
-        language="de",
-        )
+        render_md, render_html = render_summary_files(summary_json_file, dir_summary)
 
         st7_time = round(time.time() - st7_start, 2)
         metadata["stages"]["rendering"] = {
-        "status": "success",
-        "time_seconds": st7_time,
-        "english_markdown_path": str(render_md),
-        "english_html_path": str(render_html),
-        "german_json_path": str(german_json_file),
-        "german_markdown_path": str(german_md),
-        "german_html_path": str(german_html),
+            "status": "success",
+            "time_seconds": st7_time,
+            "markdown_path": str(render_md),
+            "html_path": str(render_html),
         }
 
+        german = None
+        if german_summary:
+            # Opt-in: also translate the English summary into German (needs the en->de model).
+            from backend.llm.executive_summary.translate_summary import translate_summary_file
+
+            german_json_file = translate_summary_file(summary_json_file, dir_summary / "executive_summary_de.json")
+            german_md, german_html = render_summary_files(german_json_file, dir_summary, language="de")
+            german = (german_json_file, german_md, german_html)
+            metadata["stages"]["rendering"].update(
+                german_json_path=str(german_json_file), german_markdown_path=str(german_md),
+                german_html_path=str(german_html),
+            )
+
+        if translating:
+            from backend.translation.evidence import build_evidence
+
+            build_evidence(run_dir, source_lang, segments, pages)
 
         total_runtime = round(time.time() - start_time, 2)
         metadata["status"] = "completed"
@@ -290,13 +335,14 @@ def run_pipeline(pdf_path: Path, output_dir: Path | None = None, run_id: str | N
         print(f"Chunks:              {len(chunks)}")
         print(f"Model Used:          {MODEL_TAG} (Local Ollama)")
         print(f"Grounding Score:     {eval_results['grounding']['grounding_percentage']}%")
-        print(f"Traceability Score:  {eval_results['traceability']['traceability_percentage']}%")   
+        print(f"Traceability Score:  {eval_results['traceability']['traceability_percentage']}%")
         print("\nGenerated Reports:")
-        print(f"  - English Markdown: {render_md}")
-        print(f"  - English HTML:     {render_html}")
-        print(f"  - German JSON:      {german_json_file}")
-        print(f"  - German Markdown:  {german_md}")
-        print(f"  - German HTML:      {german_html}")
+        print(f"  - Summary Markdown: {render_md}")
+        print(f"  - Summary HTML:     {render_html}")
+        if german:
+            print(f"  - German JSON:      {german[0]}")
+            print(f"  - German Markdown:  {german[1]}")
+            print(f"  - German HTML:      {german[2]}")
         print(f"  - Evaluation MD:    {eval_md_file}")
         print(f"  - Metadata JSON:    {metadata_file}")
         print("=" * 80)
@@ -329,9 +375,16 @@ if __name__ == "__main__":
     parser.add_argument("pdf_path", type=str, help="Path to input RFP PDF file")
     parser.add_argument("--output-dir", type=str, default=None, help="Optional parent directory for run artifacts (default: <KLARO_DATA_DIR>/runs)")
     parser.add_argument("--run-id", type=str, default=None, help="Optional unique run identifier")
+    parser.add_argument("--source-lang", choices=["auto", "en", "de"], default="en",
+                        help="Language of the RFP. de translates to English first; auto detects it (default: en)")
+    parser.add_argument("--german-summary", action="store_true",
+                        help="Also translate the finished English summary into German (needs the en->de model)")
     parser.add_argument("--progress-json", action="store_true", help="Emit JSON progress lines on stdout; human output moves to stderr")
 
     args = parser.parse_args()
+    # Windows pipes default to the locale code page; umlauts in file names and text must not crash a print.
+    for stream in (sys.stdout, sys.stderr):
+        stream.reconfigure(encoding="utf-8", errors="replace")
     if args.progress_json:
         _progress_stream, sys.stdout = sys.stdout, sys.stderr
 
@@ -344,6 +397,8 @@ if __name__ == "__main__":
     exit_code = run_pipeline(
         pdf_path=Path(args.pdf_path),
         output_dir=Path(args.output_dir) if args.output_dir else None,
-        run_id=args.run_id
+        run_id=args.run_id,
+        source_lang=args.source_lang,
+        german_summary=args.german_summary,
     )
     sys.exit(exit_code)

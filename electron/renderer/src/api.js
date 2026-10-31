@@ -29,8 +29,9 @@ export const getRun = (runId) => request(`/runs/${id(runId)}`);
 export const getEvaluation = (runId) => request(`/runs/${id(runId)}/evaluation`);
 export const deleteRun = (runId) => request(`/runs/${id(runId)}`, { method: 'DELETE' });
 
-export function uploadPdf(name, blob) {
+export function uploadPdf(name, blob, sourceLang = 'auto') {
   const form = new FormData();
   form.append('file', blob, name);
+  form.append('source_lang', sourceLang);
   return request('/runs', { method: 'POST', body: form });
 }
