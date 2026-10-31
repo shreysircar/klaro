@@ -34,3 +34,6 @@ electron/dist/
 
 
 
+
+# Golden dataset source PDFs (third-party documents)
+data/golden/pdfs/
