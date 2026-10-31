@@ -1,0 +1,423 @@
+{
+  "doc_id": "health_wmchealth_epic",
+  "provenance": {
+    "drafted_by": "claude-code",
+    "drafted_at": "2026-10-28T09:19:51+00:00",
+    "spec_version": "v1",
+    "status": "auto_checked",
+    "verified_by": null,
+    "verified_at": null,
+    "verification_changes": null
+  },
+  "summary": {
+    "overview": {
+      "text": "Westchester Medical Center Health Network (WMCHealth) issued RFP # WF41CBF seeking qualified firms to provide Enterprise Technical Services and Epic Implementation Support Services across its Hudson Valley, New York hospitals. Technical Services span application management, service desks, desktop, infrastructure, network, security and service management; Epic services cover planning, build, activation and post-go-live optimization, with go-live targeted for End of 2027. The agreement runs (1) year and automatically renews for four (4) one (1) year periods.",
+      "pages": [
+        3,
+        10,
+        15
+      ]
+    },
+    "issuing_organization": "Westchester Medical Center Health Network; contracting parties: Westchester County Health Care Corporation d/b/a Westchester Medical Center, Bon Secours Charity Health System, Inc., HealthAlliance of the Hudson Valley; RFP # WF41CBF; contact: Georgiann Coloccia, Network Director, IT Operations",
+    "issuing_organization_pages": [
+      1,
+      5,
+      13
+    ],
+    "scope": [
+      {
+        "text": "Technical Services for Westchester Medical Center (Valhalla), MidHudson Regional Hospital, Bon Secours Charity Health System (Good Samaritan, Bon Secours Community, St. Anthony's) and HealthAlliance Hospital.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "Service towers: Application Management Services (AMS), AMS Enhancement Services, Technical Service Desk, Clinical Service Desk, Desktop & Digital Workplace, Infrastructure & Network, Security, and Service Management & Governance.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Infrastructure & Network (Tier 2 & Tier 3) support: server, storage and database support, network operations and monitoring, and disaster recovery coordination.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Security and service management: identity and access management, Privileged Access Management (PAM), Identity Governance and Administration (IGA), ServiceNow, SailPoint and LogicMonitor tooling, ITIL-aligned processes and KPI dashboards.",
+        "pages": [
+          9,
+          10
+        ]
+      },
+      {
+        "text": "Epic Implementation Services: Epic-certified leadership and analysts, workflow design, integrated testing, interface and reporting build, data conversion planning, training coordination and at-the-elbow support planning.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Epic go-live readiness for a Big Bang activation: Technical Dress Rehearsal (TDR), At-The-Elbow (ATE) surge staffing and post-implementation stabilization and optimization.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Volumes include 10,000 desktops/laptops, 5,000 mobile devices, 17,000 users and UCC mailboxes, TSD Helpdesk 11,000, 925 Windows and 176 Linux servers, 2,800 TB storage, 3,300 network devices and 19,300 Active Directory.",
+        "pages": [
+          11,
+          12
+        ]
+      },
+      {
+        "text": "Attachment H assigns the vendor transition planning, L2/L3 incident and problem management, SailPoint ISC and CyberArk PAM implementation and managed services, and Active Directory administration.",
+        "pages": [
+          31,
+          34,
+          35
+        ]
+      }
+    ],
+    "key_requirements": [
+      {
+        "text": "Selected vendor must demonstrate the ability to support a multi-entity healthcare system with consistent service levels, high availability, and regulatory and security compliance across all sites.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Epic staffing requirements include Epic-certified application analysts, Program Directors and Project Managers, and a clear certification validation process.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Staffing proposal must include a defined onsite vs. remote staffing model and a demonstrated scalability framework.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "WMCHealth requires a dedicated TDR team independent from build analysts, with full cutover simulation including interfaces and data conversion validation.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "ATE surge support requires defined staffing ratios, 24x7 coverage including nights and weekends, escalation pathways and a replacement guarantee for underperforming resources.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Governance: executive steering committee participation, weekly and monthly reporting cadence, risk and issue tracking, and budget and resource utilization reporting.",
+        "pages": [
+          10,
+          11
+        ]
+      },
+      {
+        "text": "Vendor must prepare the transition plan and detailed Transition Project Schedule and provide a single point of contact to manage the Transition.",
+        "pages": [
+          31,
+          60,
+          63
+        ]
+      },
+      {
+        "text": "Vendor provides 24x7x365 escalation coordination for priority 1 incidents, opening a bridge line and sending email updates at 30-minute intervals until resolution.",
+        "pages": [
+          55
+        ]
+      },
+      {
+        "text": "Vendor assigns a Customer Success Manager who schedules monthly coordination sessions and provides monthly SLA reporting.",
+        "pages": [
+          52,
+          53
+        ]
+      },
+      {
+        "text": "If Protected Health Information is disclosed and the vendor is a Business Associate, the vendor will execute a Corporation Business Associate Agreement.",
+        "pages": [
+          17
+        ]
+      }
+    ],
+    "eligibility": [
+      {
+        "text": "Proposers must disclose on Attachment D any finding of non-responsibility by a governmental entity within the previous four (4) years; failure to disclose may result in rejection.",
+        "pages": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "A State Finance Law affirmation (Attachment E) signed by a corporate officer or Principal must be submitted; proposals without a signed original affirmation will be rejected.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "Vendor must not be excluded from federal health care programs or debarred by federal or New York State entities, and must attach a SAM Excluded Parties List System no-results printout.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Attachment C debarment/exclusion questionnaire; if subcontractors are not screened, the awardee must screen them against the OIG and GSA exclusion lists before the effective date.",
+        "pages": [
+          24
+        ]
+      },
+      {
+        "text": "References for at least three healthcare clients for which the firm provided similar services, with contact names, addresses and telephone numbers.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Three comparable Big Bang Epic go-live references, with staffing volumes deployed and duration of TDR and ATE efforts.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Proposals must disclose financial interests and potential conflicts of interest; proposals not meeting minimum requirements, including conflicts of interest, will be rejected.",
+        "pages": [
+          7,
+          8
+        ]
+      },
+      {
+        "text": "Proposal must include a copy of the firm's most recent financial statement and list clients for the past 3 years.",
+        "pages": [
+          7
+        ]
+      }
+    ],
+    "important_dates": [
+      {
+        "text": "RFP Release: March 9, 2026.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Letter of Intent: March 12, 2026.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Questions and requests for clarification due in writing or by e-mail to the Designated Contact by March 18, 2026.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Questions and Answers distributed: March 25, 2026.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Proposal due by e-mail no later than 4:00 PM Eastern Standard Time on March 30, 2026.",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "text": "Bid validity: all offers may be required to be held open for 120 days.",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "commercial_requirements": [
+      {
+        "text": "Not specified in the document: EMD/bid security, tender fee, performance security, liquidated damages or SLA penalties.",
+        "pages": []
+      },
+      {
+        "text": "Fee proposal must be a separate, clearly marked document analysing compensation with subtotals by task and phase of work; WMCHealth may negotiate a lower fee.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Payment: properly submitted, undisputed invoices paid within ninety (90) days of receipt; invoices must reference the Contract Number.",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "Corporation is tax-exempt; any tax, tariff or duty imposed outside the United States is the vendor's sole responsibility, and interest or late fees are excluded.",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "Warranty: services and materials free from defects in workmanship; damage from breach remedied by the vendor at its sole expense.",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "Professional liability insurance on an occurrence basis of $1,300,000 per occurrence and $3,900,000 in the aggregate.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "General liability $1,000,000 per occurrence (bodily injury) naming Westchester Medical Center as additional insured; employer's liability $100,000; insurer rated A or better.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Travel expenses reimbursed only under Attachment B: nonrefundable coach fares, meals at a flat $60.00 per day, no personal vehicle use under ninety (90) miles.",
+        "pages": [
+          22
+        ]
+      }
+    ],
+    "project_duration": [
+      {
+        "text": "Term of (1) year from the Effective Date, automatically renewing for four (4) one (1) year periods unless earlier terminated.",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "Either party may terminate without cause on at least sixty (60) days prior written notice; material breach has a thirty (30) calendar day cure period.",
+        "pages": [
+          16
+        ]
+      },
+      {
+        "text": "Epic target timeline: April 2026 Project Kickoff.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Epic target timeline: June 2026 targeted EPIC Training Dates.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Epic target timeline: September 2026 Build Phase Begins.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Epic target timeline: Go-Live at End of 2027.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Four-Week Surge Ramp-Down Model after go-live: maximum staffing in Week 1, reductions in Weeks 2 and 3, transition to stabilization support in Week 4.",
+        "pages": [
+          11
+        ]
+      }
+    ],
+    "important_conditions": [
+      {
+        "text": "Evaluation: Award on best value to the most responsive and responsible proposer with the highest overall evaluation score, not solely on lowest cost.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "Evaluation: Criteria include customer service focus, metrics and training; proven track record; ability to meet or exceed scope; references; and fee proposal. No weights are stated.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "Evaluation: WMCHealth may award by tower, by entity or in whole, award to more than one proposer, and require best and final offers.",
+        "pages": [
+          9,
+          12,
+          13
+        ]
+      },
+      {
+        "text": "Submission: Proposals must be e-mailed to the Designated Contact (IT-RFP-Response@wmchealth.org); proposals received after the deadline will not be considered.",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "text": "Submission: Proposal must include a Title Page, Table of Contents, signed Transmittal Letter, a one-page Executive Summary, and stated assumptions.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "Submission: All proposals must include completed Attachments C, D, E, F and G.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "Submission: Exceptions to Attachment A must be in a separate document, each referencing a numbered paragraph and stating a proposed alternative.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "Submission: Confidential or trade secret material must be clearly marked with specific justification; a successful proposal becomes public record.",
+        "pages": [
+          13,
+          14
+        ]
+      },
+      {
+        "text": "Risk: Any exception to the Standard Terms and Conditions may disqualify a proposal, and submission represents acceptance of all terms, conditions and prices.",
+        "pages": [
+          4,
+          13
+        ]
+      },
+      {
+        "text": "Risk: If the vendor terminates and patient care disruption is likely, the vendor must keep providing Services for up to one hundred and twenty (120) days.",
+        "pages": [
+          16
+        ]
+      },
+      {
+        "text": "Risk: The actual-damages liability limit does not apply to indemnification, confidentiality breaches, willful misconduct or third-party claims, leaving that exposure uncapped.",
+        "pages": [
+          18,
+          19
+        ]
+      },
+      {
+        "text": "Risk: Conflict on Epic scope: Section 4.2 seeks Epic Implementation Services, but Attachment H places 'Transition to EPIC and support for EPIC' in the WMCHealth column.",
+        "pages": [
+          10,
+          33
+        ]
+      },
+      {
+        "text": "Risk: Conflict on HealthAlliance site: Section 1.1 lists HealthAlliance Hospital at 105 Mary's Avenue, Kingston, but Section 6.1 says the HAHV contract covers HealthAlliance - Broadway Campus.",
+        "pages": [
+          3,
+          13
+        ]
+      },
+      {
+        "text": "Risk: Attachment H requires the vendor to implement AI Tools (HUGO, AskGen) in the WMCHealth environment; these tools are not described elsewhere.",
+        "pages": [
+          31
+        ]
+      }
+    ]
+  }
+}

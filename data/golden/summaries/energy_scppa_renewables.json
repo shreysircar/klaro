@@ -1,0 +1,410 @@
+{
+  "doc_id": "energy_scppa_renewables",
+  "provenance": {
+    "drafted_by": "claude-code",
+    "drafted_at": "2026-10-28T14:17:29+00:00",
+    "spec_version": "v1",
+    "status": "auto_checked",
+    "verified_by": null,
+    "verified_at": null,
+    "verification_changes": null
+  },
+  "summary": {
+    "overview": {
+      "text": "Southern California Public Power Authority (SCPPA), on behalf of its Member utilities, solicits proposals for renewable energy projects or products, optionally with co-located energy storage, for commercial operation or delivery starting in 2025 and beyond. Structures may be SCPPA ownership or a power purchase agreement with or without an ownership option. Rolling RFP issued February 14, 2025; proposals due June 30, 2025.",
+      "pages": [
+        1
+      ]
+    },
+    "issuing_organization": "Southern California Public Power Authority (SCPPA), acting for its Member utilities; Q1/Q2 2025 Renewable Energy Resources and Energy Storage Solutions RFP; contact renewablesrfp@scppa.org; reference number not specified in the document",
+    "issuing_organization_pages": [
+      1,
+      13
+    ],
+    "scope": [
+      {
+        "text": "Renewable energy projects or products under the California RPS programs, with commercial operation or delivery starting in 2025 and beyond.",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "text": "Accepted structures: SCPPA project ownership, a PPA with an ownership option, or a PPA without an ownership option.",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "text": "Eligible resources include wind, geothermal, biomass, biomethane, hydro, solar, solar thermal, waste-to-energy, renewable fuel cells, permanent load shifting, hydrogen, flexible and hybrid projects, and unbundled RECs.",
+        "pages": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "Energy storage may be proposed only combined with a renewable energy project.",
+        "pages": [
+          1,
+          6
+        ]
+      },
+      {
+        "text": "Portfolio Content Category 2 and 3 REC-only proposals are also considered, for any term.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Delivery term: minimum is 1 month with no maximum; both short-term and long-term (greater than 10 years) delivery sought.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Delivery at the listed points of delivery (CAISO Grid with preference of SP15, among others) or other points if all transmission, ancillary and scheduling costs are included.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "Out of scope: stand-alone energy storage, to be proposed under SCPPA's separate Standalone Energy Storage RFP.",
+        "pages": [
+          1,
+          6
+        ]
+      }
+    ],
+    "key_requirements": [
+      {
+        "text": "Proposal must be signed by an officer authorized to bind the Respondent, with the non-collusion declaration in the transmittal letter.",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "Only proven renewable technologies; experimental or speculative proposals will not be entertained.",
+        "pages": [
+          2
+        ]
+      },
+      {
+        "text": "Facility must be RPS compliant and compliant with the California Energy Commission emissions performance standard (EPS) upon COD and throughout the term.",
+        "pages": [
+          3
+        ]
+      },
+      {
+        "text": "Seller must assume the risk of bringing the facility back into RPS or EPS compliance if a change in law makes it noncompliant.",
+        "pages": [
+          3
+        ]
+      },
+      {
+        "text": "Energy storage paired with a renewable project must have capacity of at least one half the total interconnection capacity offered and a duration of at least 4 hours.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "Respondent must handle site control (SCPPA must be allowed to assume or cure any default in site control documents) and bears environmental liability, hazardous materials and removal.",
+        "pages": [
+          3
+        ]
+      },
+      {
+        "text": "Respondent must obtain all construction, operational and environmental permits and licenses, and construction financing.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "SCPPA must receive all environmental attributes and all capacity rights associated with the project.",
+        "pages": [
+          3,
+          9
+        ]
+      },
+      {
+        "text": "Project must be certified RPS-eligible by the California Energy Commission no later than 6 months after COD and registered in WREGIS no later than 3 months before COD.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "If a SCPPA Member is in the EIM, acceptance into the Energy Imbalance Market is required before any test energy; Seller must give technical design data at least nine months before test energy.",
+        "pages": [
+          10
+        ]
+      }
+    ],
+    "eligibility": [
+      {
+        "text": "Minimum turnover, years of experience, number of similar projects and certifications: Not specified in the document",
+        "pages": [
+          12
+        ]
+      },
+      {
+        "text": "Must provide current financial statements of all entities involved: audited statements not more than twelve months old, annual reports, FERC Form 1; otherwise verifiable statements for the past three (3) years and Dun & Bradstreet number where available.",
+        "pages": [
+          12
+        ]
+      },
+      {
+        "text": "Must identify project participants and key personnel with their qualifications and experience on similar projects, and give a commitment statement for retaining them.",
+        "pages": [
+          11,
+          12
+        ]
+      },
+      {
+        "text": "Must list existing projects in commercial operation and references for similar completed projects, with contact person, phone number and address.",
+        "pages": [
+          12
+        ]
+      },
+      {
+        "text": "Must disclose any service rendered to SCPPA or its Members within the last five (5) years, or else give references over that period.",
+        "pages": [
+          12,
+          13
+        ]
+      },
+      {
+        "text": "Must address possible conflicts of interest with SCPPA and Members, including lawsuits; these do not automatically disqualify.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "Must indicate all pending litigation that could affect the proposal, existing contracts, operation or financial stability.",
+        "pages": [
+          12
+        ]
+      },
+      {
+        "text": "Must not offer gifts or promises of remuneration to SCPPA or Member officials or staff, and must not collude with other respondents.",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "important_dates": [
+      {
+        "text": "RFP issued February 14, 2025; RFP open period February 14, 2025-June 30, 2025 (rolling RFP).",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Clarification questions due June 20, 2025.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Responses to clarification questions: 5 Business Days after submitted.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Proposals due on or before 12:00 PM PPT on June 30, 2025.",
+        "pages": [
+          4,
+          14
+        ]
+      },
+      {
+        "text": "Review of proposals: 5 Business Days after submittal, during the RFP open period.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Interviews (if necessary): TBD.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Selection of Respondent(s): from submittal date to no later than June 30, 2025.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Proposal validity: twelve (12) months from the Proposals Due date, unless the Respondent states a shorter term.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Bid opening date: Not specified in the document",
+        "pages": [
+          4
+        ]
+      }
+    ],
+    "commercial_requirements": [
+      {
+        "text": "Fixed energy price (preferred): nominal $/MWh as of the year of COD, no escalation, covering energy, capacity, RECs and all other products.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Alternative: variable index energy price plus fixed capacity/REC price in nominal $/MWh with no escalation; preferred by some Member utilities.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Storage price must be quoted in addition to the energy price, in $/MWh and in $/kW-month for a minimum of 4-hour systems; include a Solar-Only price if solar and BESS are proposed.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Any price increase after proposal submittal could end negotiations and prompt reevaluation of the proposal.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Transmission cost to the delivery point must be in the energy price; CAISO delivery must include a $/MWh price adder fixed for the contract term.",
+        "pages": [
+          8,
+          9
+        ]
+      },
+      {
+        "text": "Ownership offer must state a purchase price at COD in $/kW plus recurring owner costs; PPA with purchase option must give a buyout price or formula and an energy price without buyout.",
+        "pages": [
+          9,
+          10
+        ]
+      },
+      {
+        "text": "Performance Assurance amounts in nominal dollars must be stated, through COD and after COD as a Letter of Credit; SCPPA may require performance security before negotiations.",
+        "pages": [
+          11,
+          16
+        ]
+      },
+      {
+        "text": "Not specified in the document: EMD or bid security, tender fee, payment terms, liquidated damages and warranty",
+        "pages": []
+      }
+    ],
+    "project_duration": [
+      {
+        "text": "Delivery term: minimum of 1 month with no maximum; PPA terms up to the life of the facility will be considered.",
+        "pages": [
+          7,
+          10
+        ]
+      },
+      {
+        "text": "Contract duration and award date: Not specified in the document",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Respondent must propose COD and a major milestone schedule through construction, test energy and COD.",
+        "pages": [
+          10
+        ]
+      }
+    ],
+    "important_conditions": [
+      {
+        "text": "Evaluation: initial screening eliminates proposals that are non-responsive, miss minimum requirements, are not economically competitive, or come from Respondents lacking creditworthiness or financial resources.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Evaluation: each Member Agency applies its own criteria, which may include price, size, location, schedule, COD, viability, guarantees and fit with its resource plan.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Evaluation: scoring weights and minimum score: Not specified in the document",
+        "pages": []
+      },
+      {
+        "text": "Evaluation: project evaluations include the full cost of delivery to customers of Member Agencies in Southern California.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Submission: one electronic copy must be emailed to renewablesrfp@scppa.org by 12:00PM (PPT) on June 30, 2025; one hard copy is optional, to Glendora, California.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Submission: proposal must include all Section V required elements (transmittal letter, respondent information, renewable category, project details, experience, references, conflicts); SCPPA may disqualify one that does not.",
+        "pages": [
+          4,
+          15
+        ]
+      },
+      {
+        "text": "Submission: Term Sheet (Appendix A) must be completed, and the ESS Specifications (Appendix B) for storage within LADWP's Balancing Authority; both are posted as separate documents.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Submission: must identify proprietary material exempt from the Public Records Act, or exemption is waived.",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "Risk: SCPPA may award irrespective of price or technical ability, reject all proposals for any reason, and proposers have no legal recourse.",
+        "pages": [
+          16
+        ]
+      },
+      {
+        "text": "Risk: schedule is subject to change, interviews are TBD, and SCPPA may start negotiations and sign agreements before the proposal deadline.",
+        "pages": [
+          4,
+          14
+        ]
+      },
+      {
+        "text": "Risk: Seller bears the risk of RPS or EPS noncompliance from a change in law for the PPA term.",
+        "pages": [
+          3
+        ]
+      },
+      {
+        "text": "Risk: all contact with SCPPA Board, staff or Members on this RFP, outside the specified method, is prohibited until contract execution and may mean immediate disqualification.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Risk: CEQA compliance is required before SCPPA can execute an agreement, and test energy before COD is curtailable at any time without compensation.",
+        "pages": [
+          10,
+          11
+        ]
+      },
+      {
+        "text": "Risk: listing protectable documents obliges the Respondent to indemnify and defend SCPPA against disclosure claims.",
+        "pages": [
+          15
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,450 @@
+{
+  "doc_id": "bfsi_psb_furnish",
+  "provenance": {
+    "drafted_by": "claude-code",
+    "drafted_at": "2026-10-28T14:13:09+00:00",
+    "spec_version": "v1",
+    "status": "auto_checked",
+    "verified_by": null,
+    "verified_at": null,
+    "verification_changes": null
+  },
+  "summary": {
+    "overview": {
+      "text": "Punjab & Sind Bank (Zonal Office Bhopal) invites e-tenders in a two-bid system (technical and commercial) for interior furnishing, electrical, data cabling and air conditioning works at its new model branch at Tilhari, Jabalpur (M.P.). Time of completion is stated as 30 Days. Tender reference PSB/BHOPAL/GA/TENDER/24/2025-26.",
+      "pages": [
+        1,
+        2,
+        7
+      ]
+    },
+    "issuing_organization": "Punjab & Sind Bank, Zonal Office Bhopal (Premises Department); e-Tender Ref. PSB/BHOPAL/GA/TENDER/24/2025-26; 2nd floor, Nayapura, Behind SBI, Main Kolar Road, Akbarpur, Bhopal- 462042; contact Sh. Saddam Hussain, Manager, Premises Department; zo.bhopal@psb.bank.in",
+    "issuing_organization_pages": [
+      1,
+      5
+    ],
+    "scope": [
+      {
+        "text": "Site: G.F., Aakarsh Prime, Opposite Oxygen Gym, Mandla Road, Tilhari, Jabalpur, Madhya Pradesh- 482020 (new model branch).",
+        "pages": [
+          35,
+          40
+        ]
+      },
+      {
+        "text": "Contractor must carry out and complete the furnishing works: wooden partition, paneling, false ceiling with miscellaneous items, electrical works, modification/addition to existing provision, and furniture and furnishing.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "The tender title and appendices also cover electrical, data cabling and air conditioning works.",
+        "pages": [
+          2,
+          12
+        ]
+      },
+      {
+        "text": "Contractor must comply with the Architect's instructions on variations, defects, removal or re-execution of work and dismissal of workers; verbal instructions involving a variation must be confirmed in writing by the Contractor within 3 days.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "Contractor must supply at own cost all materials, implements, ladders, scaffolding and temporary works needed for the work.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Materials must be of the makes listed for civil and furnishing items and for electrical items; an alternative brand needs Architect approval.",
+        "pages": [
+          52,
+          55
+        ]
+      },
+      {
+        "text": "Waterproofing of traces, bathroom, WC and Chhajja must be done by a specialised agency, with a guarantee of 10 years on stamp papers.",
+        "pages": [
+          28
+        ]
+      },
+      {
+        "text": "Schedule of Quantities is described as approximate and the Bank may omit work without compensation; the actual quantities or areas are Not specified in the document.",
+        "pages": [
+          17
+        ]
+      }
+    ],
+    "key_requirements": [
+      {
+        "text": "EMD of Rs. 56,000.00/- must be submitted with the technical offer; without it the proposal is rejected (MSE/MSME bidders exempt).",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Integrity Pact must be sealed and signed; a bidder who does not sign or refuses is disqualified.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "Bid must be submitted electronically on https://psb.eproc.in; bidder must hold a Class-III Digital Signature Certificate (signing and encryption).",
+        "pages": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "Technical offer must be in the prescribed format and must not contain any price information; for partial submission the Bank may not evaluate the offer.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Contractor must insure the works for the full amount of the contract with a Nationalized Insurance company in joint names with the Bank until virtual completion, and deposit the policy within seven (7) days.",
+        "pages": [
+          26
+        ]
+      },
+      {
+        "text": "Contractor must also maintain insurance in joint names against third-party claims and workmen compensation claims and deposit the policies with the Bank.",
+        "pages": [
+          26,
+          27
+        ]
+      },
+      {
+        "text": "Material samples must be approved by the Architect/Bank before use in the work.",
+        "pages": [
+          19,
+          21
+        ]
+      },
+      {
+        "text": "Contractor is solely responsible for wages, ESI and EPF payments; must not employ anyone under fifteen years of age.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Contractor must keep a competent supervisor on site during all working hours.",
+        "pages": [
+          28
+        ]
+      },
+      {
+        "text": "Regular working hours are 9 a.m. to 6.00 pm; night work needs prior written permission of the Bank and is not paid extra.",
+        "pages": [
+          27,
+          28
+        ]
+      }
+    ],
+    "eligibility": [
+      {
+        "text": "Bidder must have at least 5 years satisfactory experience in similar works (interior furnishing/electrical/AC) for Public Sector Banks, Private sector Banks, Central or State Government Departments and PSUs; at least one work order and completion certificate for each calendar year.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Experience in the last five years ending 31.03.2025: one work of Rs. 22.32 Lakhs, or two works of Rs. 16.74 Lakhs, or three works of Rs. 13.95 Lakhs (excluding GST).",
+        "pages": [
+          7,
+          12
+        ]
+      },
+      {
+        "text": "At least one similar work must have been executed in Madhya Pradesh/ Chhattisgarh.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Average annual turnover of at least Rs. 30.00 Lakhs in the last 3 years in similar contracts ending 31.03.2025, shown by audited CA certified Profit & Loss statements for 2022-2023, 2023-24 & 2024-25.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Self-declaration that the bidder has not been declared ineligible or blacklisted for corrupt, fraudulent or unethical practice by any Public Organization.",
+        "pages": [
+          7,
+          13
+        ]
+      },
+      {
+        "text": "Bidder must be registered with Income Tax and GSTIN; copies of registrations and latest challans must be furnished.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Bidder must have sufficient manpower and equipment, with a list as per Annexure D attached.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "If the Contractor is a partnership or a consortium, the agreement must be signed by all partners or consortium members; no other consortium terms are specified in the document.",
+        "pages": [
+          45
+        ]
+      }
+    ],
+    "important_dates": [
+      {
+        "text": "Date of issue of E-Tender: 12.01.2026.",
+        "pages": [
+          1,
+          4
+        ]
+      },
+      {
+        "text": "Bid submission start: 12.01.2026 by 12:00 PM.",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "text": "Pre-bid meeting: 19.01.2026 at 11:30 AM.",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "text": "Site inspection is allowed with prior appointment up to one day prior to the last date of submission of the tender.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Bid submission end: 26.01.2026 upto 04:00 PM.",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "text": "Technical bid opening: 27.01.2026 at 11:00 AM.",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "text": "Financial bid opening: to be informed subsequently to technically qualified bidders.",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "text": "Bid validity: 90 Days (key information sheet), but 03 months from date of submission in the bid features clause.",
+        "pages": [
+          5,
+          10
+        ]
+      }
+    ],
+    "commercial_requirements": [
+      {
+        "text": "EMD Rs. 56,000.00/- refundable, as Demand Draft favouring Punjab & Sind Bank payable at Bhopal; no interest; forfeited if bid is withdrawn during validity. MSE/MSME bidders are exempted.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Performance security is 5% of the contract Price, due within 07 days of receipt of the Letter of Intent or Work Order and valid up to sixty days after completion; form: DD, bank guarantee or fixed deposit receipt.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Liquidated damages for delay: 1% of contract price per week or part thereof, up to a maximum of 10% of the accepted contract price.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "No mobilization advance or secured advance; interim certificates are honoured within 7 working days from receipt of Architect certification.",
+        "pages": [
+          4,
+          11
+        ]
+      },
+      {
+        "text": "Final bill with consolidated measurement must be submitted within 30 days from the date of issue of the certificate of virtual completion.",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "Retention money is 10% of the actual bill payment; Defects Liability Period is 12 Months from date of Virtual Completion.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Prices are in Indian Rupees only, inclusive of labour, delivery, material at site, tools, insurance and taxes; no price revision or extra payment for rate rise, even for extended completion.",
+        "pages": [
+          10,
+          23
+        ]
+      },
+      {
+        "text": "If L-1 quotes 15 % or more below the estimated project cost, the Bank may ask for an additional security deposit equal to the difference, as FDR or bank guarantee; the estimated cost is Not specified in the document.",
+        "pages": [
+          4
+        ]
+      }
+    ],
+    "project_duration": [
+      {
+        "text": "Completion period: 30 days from date of commencement (Time of Completion 30 Days).",
+        "pages": [
+          2,
+          11
+        ]
+      },
+      {
+        "text": "Mobilization period 7 days from date of Work Order; commencement of work on site 7 days after the date of Work order.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Special conditions say the work is to be completed within 45 days from the date of issue of work order.",
+        "pages": [
+          27
+        ]
+      },
+      {
+        "text": "Contract must be signed within 15 days of the award or Letter of Intent, or within an extended period as specified.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Special conditions require the agreement within 7 days from the issue of LOI.",
+        "pages": [
+          27
+        ]
+      },
+      {
+        "text": "Defects Liability Period: 12 Months from date of Virtual Completion.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Period of final measurement 1 month.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Time extension may be granted by the owner for events such as force majeure or bad weather, on written notice by the contractor.",
+        "pages": [
+          20
+        ]
+      }
+    ],
+    "important_conditions": [
+      {
+        "text": "Evaluation: Technical bids are opened and checked for completeness and signing; bids meeting the minimum pre-qualification criteria are evaluated for other terms; commercial bids of qualified bidders are opened later on a date conveyed to them.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "Evaluation: L1 bidder is to be determined by the evaluation method detailed in the next clause, but no scoring method, weights or minimum technical score appear in the document.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "Evaluation: If unit price and total differ, the unit price prevails; if words and figures differ, the amount in words prevails; a bidder who does not accept the correction is rejected.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "Evaluation: Any incomplete or ambiguous terms, conditions or quotes disqualify the offer; clarifications cannot change price or substance.",
+        "pages": [
+          13,
+          14
+        ]
+      },
+      {
+        "text": "Submission: Technical bid and indicative commercial bid are uploaded on https://psb.eproc.in; the EMD Demand Draft must be submitted at the Zonal Office Bhopal.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "Submission: Technical bid must include Annexures A to E, EMD, performance certificates, P&L and balance sheets, Letter of Authorization, Power of Attorney, ITR, incorporation certificate, GST, PAN, PF and ESI copies and the self-declaration.",
+        "pages": [
+          12,
+          13
+        ]
+      },
+      {
+        "text": "Submission: Bids must be in English only and in Indian Rupees; every page must be serially numbered, signed and stamped; unauthenticated corrections or overwriting are liable to rejection.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Submission: Forms to be signed and returned include the Tender Form, Deed of Indemnity (on stamp paper) and the Pre-contract Integrity Pact undertaking.",
+        "pages": [
+          33,
+          35,
+          40
+        ]
+      },
+      {
+        "text": "Risk: Completion time conflicts: 30 Days in the key information, appendix and tender form versus 45 days from issue of work order in the special conditions, with liquidated damages of 1% per week.",
+        "pages": [
+          2,
+          27
+        ]
+      },
+      {
+        "text": "Risk: Retention conflicts: 10% of final bill amount, 10% of the actual bill payment, and 10% of the contract value held up to the end of the defect liability period.",
+        "pages": [
+          4,
+          11,
+          21
+        ]
+      },
+      {
+        "text": "Risk: Final bill submission conflicts: within 15 days from completion in the key information versus within 30 days from the virtual completion certificate.",
+        "pages": [
+          4,
+          22
+        ]
+      },
+      {
+        "text": "Risk: Bid validity is 90 Days in one place and 03 months in another, and EMD is by NEFT in one place but by Demand Draft in others.",
+        "pages": [
+          4,
+          5,
+          10
+        ]
+      },
+      {
+        "text": "Risk: Contract signing deadline conflicts: within 15 days of award versus within 7 days of LOI, after which the Bank may cancel and forfeit the EMD.",
+        "pages": [
+          14,
+          27
+        ]
+      },
+      {
+        "text": "Risk: The Bank may cancel part or the whole order without assigning any reason on 3 days' notice without any cancellation charges.",
+        "pages": [
+          29
+        ]
+      }
+    ]
+  }
+}

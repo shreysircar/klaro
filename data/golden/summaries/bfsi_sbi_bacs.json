@@ -1,0 +1,429 @@
+{
+  "doc_id": "bfsi_sbi_bacs",
+  "provenance": {
+    "drafted_by": "claude-code",
+    "drafted_at": "2026-10-28T14:14:17+00:00",
+    "spec_version": "v1",
+    "status": "auto_checked",
+    "verified_by": null,
+    "verified_at": null,
+    "verification_changes": null
+  },
+  "summary": {
+    "overview": {
+      "text": "State Bank of India, Administrative Office Bhubaneswar, on behalf of CGM Bhubaneswar Circle, invites two-bid tenders on the GeM portal for an empanelment and rate contract for supply, installation, commissioning and maintenance of Biometric Access Control Systems (BACS), plus comprehensive AMC of existing BACS, at its offices in Odisha. Period is 2 +1 years. Tender ID AO BBSR: AO/BHU/SEC/2025-26/04, dated 13.01.2026.",
+      "pages": [
+        1,
+        2
+      ]
+    },
+    "issuing_organization": "State Bank of India (SBI), Administrative Office, Bhubaneswar, on behalf of CGM Bhubaneswar Circle; Assistant General Manager (Operations); Tender ID AO BBSR: AO/BHU/SEC/2025-26/04 dated 13.01.2026; agmops.bhu@sbi.co.in",
+    "issuing_organization_pages": [
+      1,
+      2
+    ],
+    "scope": [
+      {
+        "text": "Comprehensive AMC (including ancillary work) of existing BACS, as is-where-is, at locations in Clause 2.0 of the GCC, on the draft AMC at Annexure 'H'.",
+        "pages": [
+          2
+        ]
+      },
+      {
+        "text": "Supply, installation and commissioning (including ancillary work) of new BACS with their maintenance, as per Bank work order at any location in Clause 2.0 of the GCC; rate contract for the items.",
+        "pages": [
+          2,
+          4
+        ]
+      },
+      {
+        "text": "Coverage is approx. 235 branches, offices and establishments under AO Bhubaneswar; BACS is presently installed at 05 (Five) currency chest branches.",
+        "pages": [
+          12
+        ]
+      },
+      {
+        "text": "Mandatory AMC visit once every month to each currency chest branch, that is 12 (twelve) visits a year, with a minimum gap of 20 days between visits.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "AMC covers replacement of faulty switches, sensors, testing push buttons, indicators and power supply module; it excludes replacing the entire BACS panel, rewiring, and damage from lightening, arson, fire or flooding.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Integration or compatibility with the Central Monitoring Station may be required; the station is under development and the bidder must give an undertaking at Annexure 'D'.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "If BACS is later installed at non-currency chest branches, they are covered under the same agreement, rates and terms; visit frequency is decided by the Bank.",
+        "pages": [
+          12
+        ]
+      },
+      {
+        "text": "Submit a Quarterly AMC report with time-wise breakdown by email in Excel format and as hard copy to the AGM (Ops), AO Bhubaneswar.",
+        "pages": [
+          10
+        ]
+      }
+    ],
+    "key_requirements": [
+      {
+        "text": "Biometric reader (Annexure 'A'): fingerprint type with 32bit processor, 500 DPI optical sensor, storage up to 1000 fingerprints, identification in less than or equal to about 1 sec, FAR (False Rejection) 0.1 % or less.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "Magnetic lock (Annexure 'A'): holding force 1200 lbs, current drain 300mA at 12VDC, power-off to open, adjustable relock delay 0.5 to 30 seconds; certifications UL & CE.",
+        "pages": [
+          38,
+          39
+        ]
+      },
+      {
+        "text": "Annexure 'A' specifications are minimum; bidders may quote equivalent or higher specifications, but no weight is given for higher configurations.",
+        "pages": [
+          39
+        ]
+      },
+      {
+        "text": "Vendor must guarantee 100% system uptime for the full equipment configuration in every quarter.",
+        "pages": [
+          57
+        ]
+      },
+      {
+        "text": "Complaints must be attended until resolved within 24 hours for Urban/Metro, 36 hours for Semi Urban and 48 hours for Rural locations; Difficult Centre limits are decided by the Circle.",
+        "pages": [
+          25
+        ]
+      },
+      {
+        "text": "Vendor must hold a technical support SLA with the OEM for 05 years, in effect for the contract period, with undertaking at Annexure 'E'.",
+        "pages": [
+          25
+        ]
+      },
+      {
+        "text": "Only original or new materials from the OEM may be used; no refurbished, second hand or spurious materials; ISI-marked products where no make is specified.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "Technician must carry enough spares such as sensors, switches, power supply module and wires to replace parts during the AMC visit itself.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Vendor must obtain a police verification report of its staff before engaging them to work in branches.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "Vendor must not employ any person who is not an Indian National.",
+        "pages": [
+          27
+        ]
+      }
+    ],
+    "eligibility": [
+      {
+        "text": "Must have minimum 07 years (Seven Years) of experience in supply, installation, testing, commissioning and maintenance of BACS, as one entity, with Government/PSU (at least One) and Public Sector Banks (at least three); work orders to be submitted.",
+        "pages": [
+          48
+        ]
+      },
+      {
+        "text": "Must have average annual turnover of Rs. 3000/- for each year in the last 3 years as one entity ending on 31st March 2025.",
+        "pages": [
+          48
+        ]
+      },
+      {
+        "text": "Must provide a solvency certificate of Rs. 3000/ - from any scheduled Bank, not older than three months from the date of tender.",
+        "pages": [
+          48
+        ]
+      },
+      {
+        "text": "Similar completed works required: three works of not less than 40% of estimated cost (Rs. 4000/- each), two works of 50% (Rs. 5000/- each) and one work of 80% (Rs. 8000/-); the document lists these as separate rows without stating they are alternatives.",
+        "pages": [
+          48,
+          49
+        ]
+      },
+      {
+        "text": "Must have installed BACS in each of FY 2022-23, 2023-24 and 2024-25, 20 Numbers per year, in Government/PSU (at least One) and Public Sector Banks (at least three), with work orders and completion certificates.",
+        "pages": [
+          49
+        ]
+      },
+      {
+        "text": "Must have AMC of minimum 25 BACS in three years each (Minimum 20 BACS AMC per year) for 2022-23, 2023-24 & 2024-25, with work orders and completion certificates.",
+        "pages": [
+          49
+        ]
+      },
+      {
+        "text": "Must declare it is not on any Caution list of RBI / IBA, not blacklisted by any Bank / PSU / Government department, and has no pending litigation with any Bank / PSU / Government (details to be given if yes).",
+        "pages": [
+          36
+        ]
+      },
+      {
+        "text": "Registered office/service centre in the State of Odisha is preferred, or the bidder must be ready to open one within 45 days after issuing of work order.",
+        "pages": [
+          48
+        ]
+      }
+    ],
+    "important_dates": [
+      {
+        "text": "Tender dated 13.01.2026.",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "text": "Pre-bid meeting held online on 28/01/2026 at 11.00 AM; no second pre-bid meeting request is accepted.",
+        "pages": [
+          2,
+          13
+        ]
+      },
+      {
+        "text": "Bid submission deadline: Not specified in the document; bids are due on or before the last date of submission shown on the GeM Portal.",
+        "pages": [
+          2
+        ]
+      },
+      {
+        "text": "Query deadline: date not specified in the document; queries received after the scheduled date and time are not responded to.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Technical bid opening is as per the dates on the GeM Portal; if that day is a holiday, bids open on the next working day.",
+        "pages": [
+          3,
+          15
+        ]
+      },
+      {
+        "text": "Bid validity: 180 days from the date of opening of price bid.",
+        "pages": [
+          16
+        ]
+      },
+      {
+        "text": "Experience in Annexure F is counted over the last Seven Years effective from 30th November 2025.",
+        "pages": [
+          45
+        ]
+      }
+    ],
+    "commercial_requirements": [
+      {
+        "text": "EMD Rs. 100/- as demand draft in favour of \"Assistant General Manager (Operations), AO, Bhubaneswar\" payable at Bhubaneswar (the NIT summary says in favour of \"SBI\"); exempted for Micro and Small Enterprises with valid MSME/UDYAM certificate.",
+        "pages": [
+          2,
+          14
+        ]
+      },
+      {
+        "text": "Additional Security Deposit/Additional Performance Guarantee applies if the bid price is below 10% of the estimated cost; amount is the difference between 90% of estimated cost and the quoted price; bank guarantee or FDR accepted.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Performance guarantee of 10% of the contract value from a Scheduled Commercial Bank other than State Bank of India, in the Bank's format (draft SLA, Annexure 'H').",
+        "pages": [
+          58
+        ]
+      },
+      {
+        "text": "No advance payment and no part payment; AMC charges are paid quarterly in arrears after deducting penalties; payment by electronic fund transfer.",
+        "pages": [
+          21,
+          58
+        ]
+      },
+      {
+        "text": "Percentage tender: bidders quote an offer in percentage below the estimated cost of ₹ 10,000-/; rates in Indian currency, firm for the contract period of 'TWO YEAR plus ONE YEAR', no escalation.",
+        "pages": [
+          2,
+          6,
+          15
+        ]
+      },
+      {
+        "text": "Rate firm and inclusive of all costs, taxes, levies but excluding GST, which is paid separately on invoice.",
+        "pages": [
+          15,
+          22
+        ]
+      },
+      {
+        "text": "Delay in work beyond the stipulated period attracts penalty of minimum 0.5% to maximum 05% per week, not exceeding 05% of estimated work/contract value.",
+        "pages": [
+          24
+        ]
+      },
+      {
+        "text": "AMC SLA penalties come off the quarterly payment: uptime below 100.00% costs 1% to 6% of that quarter's AMC amount by band and 20% below 95%; Rs. 100/- per day of late complaint resolution; Rs. 500/- per week of delayed AMC.",
+        "pages": [
+          24
+        ]
+      }
+    ],
+    "project_duration": [
+      {
+        "text": "Rate contract valid for 02 years + 01 years from award, subject to yearly review; Bank may at its sole discretion extend up to 01 Year on existing rate and terms.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "New equipment carries warranty for 02 years from installation; comprehensive AMC applies from the 3rd year onward for 03 years.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Vendor must commence new installation within two weeks of getting the work order.",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "Successful bidder must execute the Agreement within 15 days from receipt of intimation of acceptance of its bid.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Registered office in Odisha must be in existence before signing of SLA or opened within 45 days after issuing of work order.",
+        "pages": [
+          25
+        ]
+      },
+      {
+        "text": "First preventive maintenance is due within the first thirty days of commencement of the AMC.",
+        "pages": [
+          56
+        ]
+      }
+    ],
+    "important_conditions": [
+      {
+        "text": "Evaluation: Two-bid system on GeM; the price bid is opened only if the bid is unconditional and the bidder qualifies on eligibility and technical specifications.",
+        "pages": [
+          15,
+          16
+        ]
+      },
+      {
+        "text": "Evaluation: Work is allotted to the L1 bidder through the GeM algorithm; L1 must communicate written acceptance within the stipulated time on GEM or its bid is cancelled.",
+        "pages": [
+          16
+        ]
+      },
+      {
+        "text": "Evaluation: Tender is a percentage tender; a tie leads to a revised price bid from tied bidders only, who cannot quote less than earlier, and a quote above or below 10% is abnormal and needs justification.",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "Evaluation: L1 is derived from total package cost including BOQ items and AMC charges; total AMC price and GST are quoted on GeM for a period of three years.",
+        "pages": [
+          67
+        ]
+      },
+      {
+        "text": "Submission: Technical bid is uploaded on GeM Portal with every page serially numbered, signed and stamped, with board resolution or power of attorney for the signatory.",
+        "pages": [
+          2,
+          5
+        ]
+      },
+      {
+        "text": "Submission: Missing any one document listed in the Bid Evaluation Criteria leads to rejection of the technical bid; tenders on any format other than the prescribed one are summarily rejected.",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      {
+        "text": "Submission: Enclose Annexure F response sheet, Annexure 'D' and 'E' on letter head, GST filing copies for September 2025, October 2025 and November 2025, and Annexure 'H' signed on all pages.",
+        "pages": [
+          51,
+          52
+        ]
+      },
+      {
+        "text": "Submission: Queries go through the pre-bid meeting or in writing on GeM portal only; no other mode of communication is entertained.",
+        "pages": [
+          3,
+          13
+        ]
+      },
+      {
+        "text": "Risk: Contract period conflicts: 02 years + 01 years in the NIT and GCC against one year renewable yearly to a total of three years in the BEC; warranty is Two Year in the GCC against Five year with rates valid for 05 years in the BOQ notes.",
+        "pages": [
+          8,
+          48,
+          67
+        ]
+      },
+      {
+        "text": "Risk: Liability is uncapped: vendor indemnifies the Bank on first demand and the Bank may claim damages without any limitation.",
+        "pages": [
+          60,
+          61
+        ]
+      },
+      {
+        "text": "Risk: GST treatment conflicts: rates are stated excluding GST in the GCC but BOQ notes say rates are inclusive of GST.",
+        "pages": [
+          15,
+          67
+        ]
+      },
+      {
+        "text": "Risk: Amounts look inconsistent: estimated cost ₹ 10,000-/ against BOQ AMC of 32400 per year; EMD is ₹ 100.00 but written as Rupees Nine Hundred Only in the BEC.",
+        "pages": [
+          2,
+          50,
+          66
+        ]
+      },
+      {
+        "text": "Risk: Draft SLA states a penalty limit of 20% and a 25% ceiling, and 04 quarterly visits against 12 monthly visits to currency chest branches.",
+        "pages": [
+          55,
+          57
+        ]
+      },
+      {
+        "text": "Risk: Bank may terminate for convenience on 30 days' notice (one month in the GCC) with no termination compensation.",
+        "pages": [
+          30,
+          60
+        ]
+      }
+    ]
+  }
+}

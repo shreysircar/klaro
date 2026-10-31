@@ -1,0 +1,439 @@
+{
+  "doc_id": "energy_gridco_repconsult",
+  "provenance": {
+    "drafted_by": "claude-code",
+    "drafted_at": "2026-10-28T14:16:32+00:00",
+    "spec_version": "v1",
+    "status": "auto_checked",
+    "verified_by": null,
+    "verified_at": null,
+    "verification_changes": null
+  },
+  "summary": {
+    "overview": {
+      "text": "GRIDCO Limited, a Government of Odisha undertaking, invites e-tenders on a QCBS, single stage two-bid basis to appoint a consultancy firm on retainership to support it, as Nodal Agency, in implementing the Odisha Renewable Energy Policy, 2022. The contract is for 36 months, extendable by 24 months, with a project management team based in Bhubaneswar. Tender notice no. HR/03/2022-23.",
+      "pages": [
+        1,
+        2,
+        4,
+        26
+      ]
+    },
+    "issuing_organization": "GRIDCO Limited (wholly owned undertaking of Government of Odisha); Janpath, Bhoinagar, Bhubaneswar-751022, Odisha; e-Tender Notice No. HR/03/2022-23 dated 04.03.2023; contact Ms. Rosaline Biswal, DGM (HRD)",
+    "issuing_organization_pages": [
+      1,
+      2,
+      25
+    ],
+    "scope": [
+      {
+        "text": "Project identification and approval: resource potential assessment for all RE technologies, a registry and pipeline of RE projects, and papers for Single Window Committee approvals.",
+        "pages": [
+          31
+        ]
+      },
+      {
+        "text": "Bid process management: prepare standard bid documents for Pump Storage Hydro, Large Hydro and Small hydro, Floating Solar, and Solar and Wind, and assist the end-to-end bid process.",
+        "pages": [
+          31,
+          32
+        ]
+      },
+      {
+        "text": "Project facilitation: act as single window facilitator, help developers obtain statutory clearances, prepare a directory of government lands, and support GRIDCO as Secretariat for the Single Window Committee and the Policy Advocacy and Vision Group.",
+        "pages": [
+          32
+        ]
+      },
+      {
+        "text": "Technical support: monitor pre-developmental work of identified projects and give project development assistance and technical advice for RE projects in the State.",
+        "pages": [
+          33
+        ]
+      },
+      {
+        "text": "Project monitoring: build a project management framework, work breakdown structures, milestones, risk registers, and status reports at project and portfolio level.",
+        "pages": [
+          33
+        ]
+      },
+      {
+        "text": "Policy and regulatory support: study policy impact, track new Regulations, support OERC and draft Rules, follow up with MoP, MNRE and Energy Department, and prepare monthly, quarterly and yearly RPO compliance reports.",
+        "pages": [
+          33,
+          34
+        ]
+      },
+      {
+        "text": "Support to aggregate RE demand from industries: reach out to industries, assist RE procurement planning, and support bid process management for RE procurement and signing of PPA.",
+        "pages": [
+          34
+        ]
+      },
+      {
+        "text": "Single window coordination: coordinate with all state agencies for clearances and approval of RE projects, and support department and developers till award of projects.",
+        "pages": [
+          34
+        ]
+      }
+    ],
+    "key_requirements": [
+      {
+        "text": "Bid Security of Rs. 4,00,000/- by Demand Draft must accompany the techno-commercial proposal; a bid without it will be rejected as non-responsive.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "Bidder must set up a Project Management Unit at Bhubaneswar for the entire project duration, operating from the GRIDCO office.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "Team must be minimum 6 members: Project Manager (RE Exp) 8 + years, 01; RE/ Sector Expert 5+ years, 01; Project Management, Progress Monitoring and Coordination 5+ years, 01; Contracts, Finance, Regulatory and Bid Process Management 2+ years, 03.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "All team members must hold B.Tech + MBA (or equivalent) from a reputed institute; at least one resource under sl. No. 4 must be a CA/CMA.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "All team members must be full-time employees on the Consultant's payroll and stay at Bhubaneswar full time; no diversion to other assignments or replacement without prior consent of GRIDCO.",
+        "pages": [
+          35,
+          36
+        ]
+      },
+      {
+        "text": "On GRIDCO's direction the Consultant must depute up to 6 additional resources within 30 working days; total team including additional resources must not exceed 12.",
+        "pages": [
+          36
+        ]
+      },
+      {
+        "text": "Team must be available in the GRIDCO office on all working days, follow GRIDCO working hours and holidays, and leave Bhubaneswar on weekends or holidays only with prior intimation to the nodal officer.",
+        "pages": [
+          36
+        ]
+      },
+      {
+        "text": "Resources must not be replaced during the contract; a forced replacement must be of equivalent or better qualification, and a leaving resource must hand over knowledge.",
+        "pages": [
+          36,
+          37
+        ]
+      },
+      {
+        "text": "Consultant must arrange one WorkStation at Bhubaneswar at its own cost.",
+        "pages": [
+          49
+        ]
+      },
+      {
+        "text": "Sub-contracting of any part of the obligations is not permitted.",
+        "pages": [
+          51
+        ]
+      }
+    ],
+    "eligibility": [
+      {
+        "text": "Bidder must be a single company registered in India under the Companies Act 1956/2013; consortiums or individuals in any form are not allowed.",
+        "pages": [
+          27
+        ]
+      },
+      {
+        "text": "Bidder must have a valid GSTIN and PAN (self-attested copies) and furnish a duly notarized original Power of Attorney as per Format-F/02.",
+        "pages": [
+          27
+        ]
+      },
+      {
+        "text": "Bidder must not be presently banned, delisted, blacklisted or debarred by Central Government, State Government, Union Territory, PSU or Government Department; undertaking in Format-F/03.",
+        "pages": [
+          28
+        ]
+      },
+      {
+        "text": "In the last Five (5) years the bidder must not have failed to perform on any agreement, been expelled from a project, or had an agreement terminated for breach; undertaking in Format-F/04.",
+        "pages": [
+          28
+        ]
+      },
+      {
+        "text": "Bidder must have at least 50 full time employees in its consulting division/business unit on payroll; undertaking in Format-F/07.",
+        "pages": [
+          28
+        ]
+      },
+      {
+        "text": "Bidder must have experience of over 5 years of consultancy services in the Indian power sector, with at least one contract awarded prior to 01.04.2017; documents in Format-F/08.",
+        "pages": [
+          28,
+          29
+        ]
+      },
+      {
+        "text": "Average minimum annual turnover of INR 50 Crores during each of FY 2019-20, FY 2020-21 and FY 2021-22 from consulting/advisory business in India (Format-F/05), and positive net worth in each of those years (Format-F/06).",
+        "pages": [
+          29
+        ]
+      },
+      {
+        "text": "Bidder must have successfully completed at least two (2) retainership engagements of not less than 1 year, each of minimum value INR 20 lacs in last 5 years (after 01.04.2018), giving project management support to Central/State govt agencies; milestone or deliverable-based work does not qualify; Format-F/09.",
+        "pages": [
+          30
+        ]
+      }
+    ],
+    "important_dates": [
+      {
+        "text": "Tender document available for download from 04.03.2023 (e-Tender Notice dated 04.03.2023).",
+        "pages": [
+          1,
+          25
+        ]
+      },
+      {
+        "text": "Last date for written clarifications: at least 2 days (excluding the pre-bid meeting date) before the pre-bid meeting; no clarification is entertained after the pre-bid conference.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "Pre-Bid Meeting: 13.03.2023, 11:00 AM, through VC.",
+        "pages": [
+          25
+        ]
+      },
+      {
+        "text": "Bid submission deadline: 20.03.2023, 1:00 PM (13:00 Hrs in the tender notice).",
+        "pages": [
+          1,
+          25
+        ]
+      },
+      {
+        "text": "Opening of techno-commercial bid: 20.03.2023, 4:00 PM (16.00 Hrs in the tender notice), at GRIDCO Conference Hall, Bhubaneswar.",
+        "pages": [
+          1,
+          25
+        ]
+      },
+      {
+        "text": "Bidder presentation: 22.03.2023, 11:00 AM, at GRIDCO Conference Hall and through VC (hybrid mode).",
+        "pages": [
+          25
+        ]
+      },
+      {
+        "text": "Opening of price bid: date will be intimated later on.",
+        "pages": [
+          25
+        ]
+      },
+      {
+        "text": "Bid validity: Six months from the last date of submission of the bid.",
+        "pages": [
+          26
+        ]
+      }
+    ],
+    "commercial_requirements": [
+      {
+        "text": "Cost of bid document: Rs.10,000.00 plus GST @18%, by Demand Draft in favour of GRIDCO Ltd payable at Bhubaneswar (the BDS also allows cash at GRIDCO counter); DD or money receipt must go with the techno-commercial bid.",
+        "pages": [
+          9,
+          25
+        ]
+      },
+      {
+        "text": "Bid Security (EMD) Rs.4,00,000/- by Demand Draft from a Scheduled Bank; may be forfeited if the successful bidder fails to acknowledge the Letter of Award, sign the contract or furnish the CPBG.",
+        "pages": [
+          13,
+          26
+        ]
+      },
+      {
+        "text": "Contract Performance Bank Guarantee: 10% of the annual Contract Price within 20 days of LoA (BDS); GCC says 10% of contract price, valid 90 days beyond the contract completion period.",
+        "pages": [
+          26,
+          50
+        ]
+      },
+      {
+        "text": "Prices must be in Indian Rupees only, firm and final for the contract period with no variation except GST; GST is paid extra at prevailing rate.",
+        "pages": [
+          12
+        ]
+      },
+      {
+        "text": "Annual escalation of 7% over the quoted price of the successful bidder is allowed.",
+        "pages": [
+          37
+        ]
+      },
+      {
+        "text": "Professional fees paid monthly on submission of the Monthly Progress Report; payment not later than fifteen (15) days after invoice with supporting documents, and may be withheld if progress is not satisfactory.",
+        "pages": [
+          37,
+          50
+        ]
+      },
+      {
+        "text": "Absence of a resource: no payment for absent days plus a penalty of INR 2,000 per working day per resource; total penalty capped at 10% of overall project cost.",
+        "pages": [
+          37
+        ]
+      },
+      {
+        "text": "Liquidated damages: 0.5% of the value of Services per week or part thereof of delay in deliverable, up to a maximum of 5% of contract price. Warranty: Not specified in the document.",
+        "pages": [
+          52
+        ]
+      }
+    ],
+    "project_duration": [
+      {
+        "text": "Contract tenure 36 (Thirty-Six) months from the date of acceptance of LoA, extendable by an additional 24 (Twenty-Four) months; initial contract signed for 12 (Twelve) months and renewed annually after performance evaluation.",
+        "pages": [
+          31
+        ]
+      },
+      {
+        "text": "BDS states Period of Contract as Thirty-Six (36) month from the date of signing of the contract, further extendable by Twenty-Four (24) months.",
+        "pages": [
+          26
+        ]
+      },
+      {
+        "text": "GCC defines Contract Period as 52 weeks (including 30 days for signing of contract agreement) from the date of issue of Letter of Award, and extensions if any.",
+        "pages": [
+          43
+        ]
+      },
+      {
+        "text": "Within 07 days of LOA the Consultant must sign and return the LOA copy; within 30 days of LOA it must sign the Contract Agreement on non-judicial stamp paper.",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "Contract Performance Bank Guarantee must be furnished within 20 days of issue of Letter of Award.",
+        "pages": [
+          23
+        ]
+      },
+      {
+        "text": "Services begin immediately from the date of acceptance of the Letter of Award.",
+        "pages": [
+          48
+        ]
+      }
+    ],
+    "important_conditions": [
+      {
+        "text": "Evaluation: QCBS method; techno-commercial proposal weighted 70% and price proposal 30%; price proposals opened only for techno-commercially qualified bidders.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "Evaluation: technical criterion 1, Indian retainership project management experience in last 5 years (after 01.04.2018), max 30 marks: 3 marks per eligible assignment, plus 1 mark if fully related to Renewable energy.",
+        "pages": [
+          38,
+          39
+        ]
+      },
+      {
+        "text": "Evaluation: technical criterion 2, Odisha-specific experience with Department of Energy, OERC or other Odisha power entities, max 25 marks, scored in ratio to the bidder with most eligible assignments; multi-state studies do not count.",
+        "pages": [
+          39,
+          40
+        ]
+      },
+      {
+        "text": "Evaluation: presentation on approach, methodology, understanding of Odisha RE sector and work plan carries max 15 marks.",
+        "pages": [
+          40
+        ]
+      },
+      {
+        "text": "Evaluation: minimum techno-commercial score of 50 Points is needed for the price proposal to be considered; financial score Sf = 30 x (LP/QP), total S = St + Sf, and the highest S wins.",
+        "pages": [
+          40,
+          41
+        ]
+      },
+      {
+        "text": "Submission: both hard copy and soft copy (tender wizard portal); technical and price proposals in separate sealed envelopes marked TECHNO-COMMERCIAL PROPOSAL and PRICE PROPOSAL, placed in one outer envelope.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Submission: techno-commercial proposal must carry the submission forms, document-cost DD, bid security, Power of Attorney and eligibility evidence; price proposal in Form P-1 and P-2; forms must be filled without alteration to format.",
+        "pages": [
+          11,
+          12
+        ]
+      },
+      {
+        "text": "Submission: 2 bid forms in .XLS format must be mandatorily uploaded on the tender wizard portal; late bids are rejected and returned unopened.",
+        "pages": [
+          11,
+          15
+        ]
+      },
+      {
+        "text": "Risk: conflict on submission mode; ITB requires hard copy and soft copy, while the Appendix says bids are in electronic mode only and requests for physical submission will not be entertained.",
+        "pages": [
+          14,
+          59
+        ]
+      },
+      {
+        "text": "Risk: conflicting contract period; 36 months from acceptance of LoA (Section V), 36 months from signing of contract (BDS), and 52 weeks from issue of LoA in the GCC.",
+        "pages": [
+          31,
+          26,
+          43
+        ]
+      },
+      {
+        "text": "Risk: conflicting price terms; prices are firm and final with no variation except GST, yet an annual escalation of 7% is allowed.",
+        "pages": [
+          12,
+          37
+        ]
+      },
+      {
+        "text": "Risk: if a dispute is not settled within twenty-eight (28) days of consultation, the Chairman of GRIDCO becomes sole arbitrator.",
+        "pages": [
+          48
+        ]
+      },
+      {
+        "text": "Risk: inconsistent eligibility wording; at least 50 full time employees in Section IV against more than 50 in the undertaking, and turnover is stated as minimum average in ITB but per year in Section IV.",
+        "pages": [
+          6,
+          28,
+          29
+        ]
+      },
+      {
+        "text": "Risk: document gaps; ITB says the bidding document consists of 10 sections but lists eight, Section-IX and X forms are not in this PDF, and GCC refers to a time schedule in Clause-iv of Note of Scope of Services that Section V does not contain.",
+        "pages": [
+          7,
+          49
+        ]
+      }
+    ]
+  }
+}

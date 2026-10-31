@@ -1,0 +1,430 @@
+{
+  "doc_id": "intl_alameda_econdev",
+  "provenance": {
+    "drafted_by": "claude-code",
+    "drafted_at": "2026-10-28T14:24:31+00:00",
+    "spec_version": "v1",
+    "status": "auto_checked",
+    "verified_by": null,
+    "verified_at": null,
+    "verification_changes": null
+  },
+  "summary": {
+    "overview": {
+      "text": "Alameda County Community Development Agency (Economic & Civic Development Department) seeks economic development consulting for two scopes: ECD, for unincorporated communities, and the Surplus Property Authority (SPA), for property disposition. It intends a 3-year contract with an option to renew for 2 years; the estimated budget is $300,000 (2-$150,000 agreements).",
+      "pages": [
+        1,
+        4
+      ]
+    },
+    "issuing_organization": "County of Alameda; Community Development Agency, Economic & Civic Development Department; contact Marie Suvansin, (510) 670-6103, marie.suvansin@acgov.org; RFP number: Not specified in the document",
+    "issuing_organization_pages": [
+      1
+    ],
+    "scope": [
+      {
+        "text": "ECD: economic development services for the unincorporated communities of Castro Valley, San Lorenzo, Ashland, Cherryland, Sunol, and the rural winegrowing region of unincorporated East County.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "ECD services include retail market demand and key development project analyses, innovative post-redevelopment financing approaches, support for food-related businesses, and implementation of a new economic development strategic plan.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "ECD: assist with reuse of former Redevelopment Agency properties, including the historic Lorenzo Theater and 20095 Mission Boulevard; may include review of proformas for affordable housing and other developments.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "SPA: assist with property disposition, including market analysis, Surplus Land Act compliance, preparing and reviewing requests for proposals, and supporting exclusive negotiation agreements and other disposition documents.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Proposers may respond to ECD only, SPA only, or both; the RFP may result in one or multiple proposers with separate agreements for ECD and SPA.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Selected proposer must create a scope and budget for specific projects as requested and attend regularly scheduled meetings set by CDA staff, where projects are determined.",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "text": "Deliverables that may arise: presentations, meetings with commissions and stakeholders, and feasibility analyses of various projects.",
+        "pages": [
+          5
+        ]
+      }
+    ],
+    "key_requirements": [
+      {
+        "text": "Pass/fail: response must be complete and address all RFP requirements and addenda; failing the Proposer Minimum Qualifications may also count as an incomplete response and lead to disqualification.",
+        "pages": [
+          8,
+          9
+        ]
+      },
+      {
+        "text": "Pass/fail: proposer, its principal and named subcontractors must not appear on the federal debarred, suspended or excluded parties list at www.sam.gov/SAM.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Proposer must meet the County's Small and Emerging Locally Owned Business (SLEB) requirements to be considered for award; non-certified proposers must subcontract at least 20% of the total estimated amount to a SLEB.",
+        "pages": [
+          14,
+          35
+        ]
+      },
+      {
+        "text": "Proposal must include Exhibit A Response Packet in its most current version as revised by addenda; using an outdated version may lead to disqualification.",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "Proposer must certify it is licensed by the State of California for the work required and regularly engaged in the general class and type of work.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Proposer must certify it is not on the California DGS list of persons engaged in investment activities in Iran (Iran Contracting Act of 2010).",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Contractor must provide dedicated support staff as primary contact and a dedicated, competent account manager familiar with County requirements.",
+        "pages": [
+          16,
+          17
+        ]
+      },
+      {
+        "text": "Contractor must carry insurance: commercial general liability $1,000,000 per occurrence, automobile liability $1,000,000 per occurrence, workers' compensation statutory, employers liability no less than $1,000,000 per accident.",
+        "pages": [
+          37
+        ]
+      },
+      {
+        "text": "Proposals must not be marked confidential or proprietary; the County may refuse to consider any proposal or part so marked.",
+        "pages": [
+          18
+        ]
+      }
+    ],
+    "eligibility": [
+      {
+        "text": "Proposer must be regularly and continuously engaged in providing economic development consulting services for at least 5 years, clearly stated or demonstrated in the response.",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "text": "Proposer must hold all permits, licenses and professional credentials needed for the services; proof is required only if the County requests it.",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "text": "Proposer must be a prime contractor to the County, not a subcontractor.",
+        "pages": [
+          31
+        ]
+      },
+      {
+        "text": "Debarment and Suspension Certification: proposer, its principal and subcontractors must not be suspended, debarred or excluded by any federal agency, or indicted or convicted for fraud or official misconduct, within the past three years.",
+        "pages": [
+          33
+        ]
+      },
+      {
+        "text": "Non-certified SLEB proposers must subcontract with a certified SLEB for at least 20% of the total estimated amount to be eligible for award.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "SLEB certification must be valid at the time of proposal submittal for SLEB primes and SLEB subcontractors.",
+        "pages": [
+          34
+        ]
+      },
+      {
+        "text": "Proposer must provide 3 references from public agencies or nonprofits with similar scope, and must currently serve at least two of them or have done so within the last five years.",
+        "pages": [
+          28
+        ]
+      },
+      {
+        "text": "Relevant economic development consulting work described in the proposal must fall within the prior 5 years.",
+        "pages": [
+          26
+        ]
+      }
+    ],
+    "important_dates": [
+      {
+        "text": "Request issued: April 13, 2026.",
+        "pages": [
+          2
+        ]
+      },
+      {
+        "text": "Proposers Conference (online): April 20, 2026 at 1 PM; attendance highly recommended but not mandatory.",
+        "pages": [
+          2,
+          6
+        ]
+      },
+      {
+        "text": "Written questions due via the Question & Answer tab of the Procurement Portal: April 24, 2026 by 5:00 p.m.",
+        "pages": [
+          2
+        ]
+      },
+      {
+        "text": "List of attendees: April 27, 2026.",
+        "pages": [
+          2
+        ]
+      },
+      {
+        "text": "Questions and answers issued: May 4, 2026.",
+        "pages": [
+          2
+        ]
+      },
+      {
+        "text": "Addendum issued, only if necessary to amend the RFP: May 4, 2026.",
+        "pages": [
+          2
+        ]
+      },
+      {
+        "text": "Response due by email: May 15, 2026 by 5:00 p.m.",
+        "pages": [
+          2,
+          18
+        ]
+      },
+      {
+        "text": "Evaluation period: May 15, 2026 - June 1, 2026.",
+        "pages": [
+          2
+        ]
+      },
+      {
+        "text": "Proposer interviews: week of May 25, 2026.",
+        "pages": [
+          2
+        ]
+      },
+      {
+        "text": "Notice of Intent to Award issued: June 2, 2026.",
+        "pages": [
+          2
+        ]
+      },
+      {
+        "text": "Protest deadline: 5:00 p.m. on the 7th calendar day after the Notice of Intent to Award/Non-Award is issued; later protests are not considered.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Board consideration award date: July 14, 2026.",
+        "pages": [
+          2
+        ]
+      },
+      {
+        "text": "Contract start date: July 1, 2026.",
+        "pages": [
+          2
+        ]
+      },
+      {
+        "text": "Bid validity period: Not specified in the document",
+        "pages": []
+      }
+    ],
+    "commercial_requirements": [
+      {
+        "text": "Estimated budget for both the ECD and SPA agreements is $300,000 (2-$150,000 agreements).",
+        "pages": [
+          4,
+          25
+        ]
+      },
+      {
+        "text": "Bid security, performance security and proposal fee: Not specified in the document",
+        "pages": []
+      },
+      {
+        "text": "Liquidated damages, penalties and warranty: Not specified in the document",
+        "pages": []
+      },
+      {
+        "text": "Cost Narrative (1 page) must explain how the proposer bills and at minimum list key personnel names and hourly rates, for the scope responded to.",
+        "pages": [
+          25
+        ]
+      },
+      {
+        "text": "County pays monthly or as agreed after invoice approval, not to exceed the total contract amount; no payment for services in advance.",
+        "pages": [
+          16
+        ]
+      },
+      {
+        "text": "County will use reasonable efforts to pay within 30 days after receipt and review of invoice and satisfactory performance.",
+        "pages": [
+          16
+        ]
+      },
+      {
+        "text": "County may withhold future payments if a review committee deems performance unsatisfactory.",
+        "pages": [
+          16
+        ]
+      },
+      {
+        "text": "Insurance certificates are not required at submission but must be provided before award, naming the County of Alameda as additional insured.",
+        "pages": [
+          36
+        ]
+      }
+    ],
+    "project_duration": [
+      {
+        "text": "Contract term will be 3 years.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "By mutual agreement the contract may be extended for an additional 2-years.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "During the initial 120-day period of any contract the County may review the proposal, contract and services and meet with the contractor.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Delivery milestones: Not specified in the document",
+        "pages": []
+      }
+    ],
+    "important_conditions": [
+      {
+        "text": "Evaluation: proposals first pass a pass/fail check on completeness and debarment, then a County Selection Committee scores each criterion on a zero to five-point scale, weighted to a total.",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      {
+        "text": "Evaluation: Description and Understanding of Proposed Services 125 Points; Relevant Experience 125 Points; Methodology 125 Points; Proposer Interview and Reference Checks 125 Points (interviews follow a shortlist).",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Evaluation: local preference 5% and small and local or emerging and local preference 5% are added; final maximum score is 550 points including 50 preference points.",
+        "pages": [
+          7,
+          9
+        ]
+      },
+      {
+        "text": "Evaluation: award goes to the highest-ranked responsible proposer; combined weight of criteria outranks cost, so award may not go to the lowest price.",
+        "pages": [
+          8,
+          14
+        ]
+      },
+      {
+        "text": "Submission: email all proposal documents to marie.suvansin@acgov.org by 5:00 p.m. on May 15, 2026 as PDF attachments, with the County's Response Packet pages included.",
+        "pages": [
+          18,
+          20
+        ]
+      },
+      {
+        "text": "Submission: Response Packet pages not applicable must be marked N/A; signatures required on Proposer Acceptance, Debarment Certification and SLEB Information Sheet; do not modify County forms.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "Submission: page limits are Team Summary 2 pages (resumes 1 page each), Cost Narrative 1 page, Description of Relevant Experience and Proposed Services 5 pages.",
+        "pages": [
+          24,
+          25,
+          26
+        ]
+      },
+      {
+        "text": "Submission: any exceptions or clarifications to the RFP must go on the Exceptions and Clarifications form; the County need not accept them and they may be a basis for disqualification.",
+        "pages": [
+          30
+        ]
+      },
+      {
+        "text": "Risk: Contract Start Date July 1, 2026 falls before the Board Consideration Award Date July 14, 2026, and Board approval and full execution are required before services begin; all dates are tentative.",
+        "pages": [
+          2,
+          15
+        ]
+      },
+      {
+        "text": "Risk: County may terminate without cause on prior written notice, or for cause without written notice, and may seek any and all damages from the Contractor on termination with cause.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "Risk: non-certified SLEB proposers need a SLEB subcontractor for at least 20%; substitutions need prior written OCCR approval; inability to meet it requires an exception that may lead to disqualification.",
+        "pages": [
+          34,
+          35
+        ]
+      },
+      {
+        "text": "Risk: proposals may be disqualified for outdated Exhibit A, modified County forms, unmarked N/A pages or incomplete packages; no documents accepted after the response due date.",
+        "pages": [
+          18,
+          20
+        ]
+      },
+      {
+        "text": "Risk: proposals are subject to public disclosure even if marked confidential, and the County is not liable for any disclosure.",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "Risk: proposer must hold the County harmless from liability of any nature or kind for infringement of patent, copyright or other proprietary rights.",
+        "pages": [
+          32
+        ]
+      }
+    ]
+  }
+}

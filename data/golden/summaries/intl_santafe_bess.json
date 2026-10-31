@@ -1,0 +1,427 @@
+{
+  "doc_id": "intl_santafe_bess",
+  "provenance": {
+    "drafted_by": "claude-code",
+    "drafted_at": "2026-10-28T09:18:37+00:00",
+    "spec_version": "v1",
+    "status": "auto_checked",
+    "verified_by": null,
+    "verified_at": null,
+    "verification_changes": null
+  },
+  "summary": {
+    "overview": {
+      "text": "Santa Fe County's Growth Management Department seeks multiple on-call firms with fire safety and engineering expertise to provide technical review of Battery Energy Storage Systems (BESS), including lithium-ion and other battery storage technologies, under RFP No. 2026-0385-GM/JP. Consultants review development applications and BESS submittals for compliance with County ordinances, IFC, IWUIC, NFPA 855 and the SLDC. The contract is scheduled to begin September, 2026 with an initial term of four years.",
+      "pages": [
+        1,
+        5,
+        21
+      ]
+    },
+    "issuing_organization": "Santa Fe County; Growth Management Department and Purchasing Division; RFP No. 2026-0385-GM/JP; contact John Anthony Peperas, Procurement Specialist Senior, 102 Grant Avenue, First Floor, Santa Fe, NM 87501, (505) 986-6218, jpeperas@santafecountynm.gov",
+    "issuing_organization_pages": [
+      1,
+      7,
+      10
+    ],
+    "scope": [
+      {
+        "text": "Review BESS proposals for compliance with Santa Fe County Ordinances 2023-06 and 2023-09, the International Fire Code, IWUIC, NFPA 855 and the Sustainable Land Development Code.",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "text": "Review Conditional Use Permit (CUP) applications for completeness, including applicable studies, research to substantiate staff's recommendation, and the proposed BESS location, features and preliminary site plan.",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "text": "Attend at least two public hearings to provide expert testimony on proposed project design, technology and safety features.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "Review BESS submittals and required re-submittals under IFC, NFPA 855 and other codes for compliance, accuracy and overall safety.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "Submittal review covers fire and explosion testing data, the Hazard Mitigation Plan, NFPA 68 and 69 calculations or modeling, and other NFPA 855 test data.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "Submittal review also covers Emergency Operations and Response Plans, the Pre-Incident Plan, smoke and gas plume analysis, and the commissioning plan and testing reports.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "Assess fire protection measures for lithium-ion and other storage systems, and thermal runaway causes and their mitigation.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "Review final construction drawings for each proposed development and report all compliance variances or issues to Growth Management and County Fire Compliance Officers.",
+        "pages": [
+          5
+        ]
+      }
+    ],
+    "key_requirements": [
+      {
+        "text": "Offerors must be knowledgeable in BESS fire protection requirements and in BESS installation, commissioning and decommissioning.",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "text": "Personnel must be qualified and licensed by federal, state and local law, and must not be County employees or have a contractual relationship with the County.",
+        "pages": [
+          33,
+          34
+        ]
+      },
+      {
+        "text": "Contractor must maintain general liability and automobile insurance of not less than $1,000,000 combined single limits per occurrence, with Santa Fe County as a named additional insured.",
+        "pages": [
+          6,
+          37
+        ]
+      },
+      {
+        "text": "Contractor must maintain Professional Liability Insurance during the agreement; the sample agreement sets limits of not less than $1,000,000 per claim.",
+        "pages": [
+          6,
+          37
+        ]
+      },
+      {
+        "text": "Contractor must comply with the Workers' Compensation Act, and insurance must be written by companies authorized in New Mexico.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "Contractor must comply with Santa Fe County Ordinance No. 2014-1 (Establishing a Living Wage).",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "Use of subcontractors must be clearly explained and major subcontractors named in the proposal; the prime contractor is wholly responsible for performance.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "Contractor must not assign the agreement or subcontract any services without advance written County approval.",
+        "pages": [
+          33
+        ]
+      },
+      {
+        "text": "Offerors and contractors must obtain written County approval before releasing any information about the work; failure may lead to disqualification or contract termination.",
+        "pages": [
+          16
+        ]
+      },
+      {
+        "text": "Contractor must keep related books and records for six years from final payment, under GAAP, and allow County audit.",
+        "pages": [
+          35
+        ]
+      }
+    ],
+    "eligibility": [
+      {
+        "text": "By submitting a proposal, each offeror certifies that it is a qualified firm and that its proposal complies with the RFP requirements.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Contractor must be legally registered and properly licensed by the State of New Mexico to provide the services, for the full term.",
+        "pages": [
+          37
+        ]
+      },
+      {
+        "text": "Proposals of offerors that are not responsible or not responsive under Sections 13-1-83 and 13-1-85 NMSA, 1978 will be rejected.",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "Offeror must provide a minimum of three projects completed within the last three (3) years with similar services, with client name, contact, telephone and email.",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "Campaign Contribution Disclosure Form must be filed even if no contributions were made; failure to submit a fully completed form voids the contract or cancels the award.",
+        "pages": [
+          26
+        ]
+      },
+      {
+        "text": "Contact with any County employee other than the Procurement Specialist may be grounds for disqualification.",
+        "pages": [
+          7,
+          10
+        ]
+      },
+      {
+        "text": "Contractor must state it has no interest that conflicts with performance of the services.",
+        "pages": [
+          34
+        ]
+      },
+      {
+        "text": "Not specified in the document: minimum turnover, minimum years of experience, or mandatory certifications.",
+        "pages": []
+      }
+    ],
+    "important_dates": [
+      {
+        "text": "RFP issued and published July 19 & 20, 2026.",
+        "pages": [
+          4,
+          9
+        ]
+      },
+      {
+        "text": "Pre-Proposal Conference at 10:00 AM (MDT), Tuesday, July 28, 2026, online via Microsoft Teams; non-mandatory but strongly recommended.",
+        "pages": [
+          4,
+          9
+        ]
+      },
+      {
+        "text": "Acknowledgement of Receipt Form (Appendix A) due by close of business Wednesday, July 29, 2026, to be on the distribution list.",
+        "pages": [
+          9,
+          10
+        ]
+      },
+      {
+        "text": "Deadline to submit additional written questions: July 30, 2026, by close of business.",
+        "pages": [
+          9,
+          10
+        ]
+      },
+      {
+        "text": "Written responses to questions distributed August 6, 2026.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Clarification requests on distributed answers or addenda must be received no later than one (1) day after they are issued.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Proposals must be received via Dropbox by 2:00 PM, Friday, August 21, 2026; late proposals will be rejected.",
+        "pages": [
+          4,
+          9,
+          11
+        ]
+      },
+      {
+        "text": "Proposal evaluation review: August 21 to September 4, 2026.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Selection of finalists, oral presentations (if applicable) and contract negotiations: September, 2026.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Contract award: October, 2026.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Proposals are valid for ninety (90) days; prices are firm for 90 days after the due date or 90 days after a best and final offer.",
+        "pages": [
+          4,
+          14
+        ]
+      }
+    ],
+    "commercial_requirements": [
+      {
+        "text": "Not specified in the document: bid security (EMD), tender fee or performance security.",
+        "pages": []
+      },
+      {
+        "text": "Compensation is left blank in the sample agreement; offerors submit their current hourly rate sheet as a separate file.",
+        "pages": [
+          19,
+          32
+        ]
+      },
+      {
+        "text": "Contractor must submit a written request for payment; County pays within 30 days of its written certification accepting the services.",
+        "pages": [
+          32
+        ]
+      },
+      {
+        "text": "County pays a late payment fee of 1.5% per month if accepted services are not paid within 30 days of certification.",
+        "pages": [
+          32
+        ]
+      },
+      {
+        "text": "On a contractor breach, the County may withhold payments for set-off until it determines its damages.",
+        "pages": [
+          32
+        ]
+      },
+      {
+        "text": "County makes contract payments only to the prime contractor.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "All costs of preparing, transmitting and presenting a proposal are borne solely by the offeror.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "Not specified in the document: liquidated damages, penalty amounts or warranty terms.",
+        "pages": []
+      }
+    ],
+    "project_duration": [
+      {
+        "text": "Contract is scheduled to begin September, 2026, with an initial term of four years.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Sample agreement: effective on the date of last signature and terminates one year from that date; the term may be extended by written amendment.",
+        "pages": [
+          32
+        ]
+      },
+      {
+        "text": "Not specified in the document: review turnaround times or delivery milestones per application.",
+        "pages": []
+      }
+    ],
+    "important_conditions": [
+      {
+        "text": "Evaluation: 1000 points total: Technical Competence 200, Understanding of Scope 300, Capacity and Capability 200, Past Record 150, Proximity to Site 50, New Mexico Produced Work 50, Volume of Work Previously Done 50.",
+        "pages": [
+          23
+        ]
+      },
+      {
+        "text": "Evaluation: Preference points: N.M. Resident or native American Resident Business Certificate 80 points or Resident Veteran Business Certificate 100 points (not cumulative), plus Santa Fe County Business Certificate 50 points.",
+        "pages": [
+          17,
+          23
+        ]
+      },
+      {
+        "text": "Evaluation: Volume of Work deducts points for County fees on awarded projects less than 75% complete, from 10 points ($25,000 to $35,000) to 50 points ($150,001 and over).",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "Evaluation: County intends multiple awards to the most advantageous offerors; the most advantageous proposal may not have the most points, and finalists may give a best and final offer.",
+        "pages": [
+          11,
+          12
+        ]
+      },
+      {
+        "text": "Submission: Only one response per offeror, uploaded via Dropbox as two (2) separate files: the technical response and the current hourly rate sheet.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Submission: Proposal limited to twenty five (25) pages excluding licenses and certifications, on 8 1/2 x 11 paper, font no smaller than 12 pt, 1 inch margins.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Submission: Required order: Letter of Transmittal, Response to County Terms and Conditions, Table of Contents (optional), Response to Evaluation Factors, insurance certificate, Campaign Contribution Disclosure Statement; deviations may be rejected.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Submission: Letter of transmittal must be signed by the person authorized to bind the organization, name negotiators and contacts, accept the Conditions Governing the Procurement and acknowledge all amendments.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "Risk: Term conflict: Section V sets an initial term of four years, but the sample agreement terminates one year from the date of last signature.",
+        "pages": [
+          21,
+          32
+        ]
+      },
+      {
+        "text": "Risk: Insurance conflict: the RFP insurance section gives no Professional Liability limit, while the sample agreement requires not less than $1,000,000 per claim.",
+        "pages": [
+          6,
+          37
+        ]
+      },
+      {
+        "text": "Risk: Appendix conflict: the transmittal letter must accept the Agreement attached as Appendix D, but the sample agreement is Appendix E; Appendix D is the Project Listing Form.",
+        "pages": [
+          20,
+          30,
+          31
+        ]
+      },
+      {
+        "text": "Risk: Format conflict: submission is electronic via Dropbox, yet proposals shall be bound with tabs and all documents double-sided under Resolution 2013-7.",
+        "pages": [
+          18,
+          19
+        ]
+      },
+      {
+        "text": "Risk: Broad liability: Contractor indemnifies the County for all liabilities from its performance or non-performance, not limited by its insurance policy terms.",
+        "pages": [
+          36
+        ]
+      },
+      {
+        "text": "Risk: No compensation is stated and price is not an evaluation factor; the County may terminate for convenience on not less than 15 days notice.",
+        "pages": [
+          23,
+          32,
+          33
+        ]
+      }
+    ]
+  }
+}

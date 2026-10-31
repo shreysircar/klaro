@@ -1,0 +1,405 @@
+{
+  "doc_id": "energy_mahatransco_pmc",
+  "provenance": {
+    "drafted_by": "claude-code",
+    "drafted_at": "2026-10-28T14:16:24+00:00",
+    "spec_version": "v1",
+    "status": "auto_checked",
+    "verified_by": null,
+    "verified_at": null,
+    "verification_changes": null
+  },
+  "summary": {
+    "overview": {
+      "text": "Maharashtra State Electricity Transmission Co. Ltd. (MSETCL) invites proposals to select a Project Management Consultant for implementation of a Corporate Level Data Warehouse for MSETCL. Selection is a two-stage Quality and Cost Based process with separate technical and financial envelopes. The Terms of Reference (Schedule-1) with scope and contract duration are not included in the document.",
+      "pages": [
+        1,
+        3,
+        4
+      ]
+    },
+    "issuing_organization": "Maharashtra State Electricity Transmission Co. Ltd. (MSETCL), Government of Maharashtra; Office of the Chief Engineer (Contracts & Monitoring), Plot No. C-19, E-Block, Prakashganga, BKC, Bandra (E), Mumbai-51; RFP notice number left blank; Tel 022-2659 8589; cecm@mahatransco.in",
+    "issuing_organization_pages": [
+      3,
+      4,
+      5
+    ],
+    "scope": [
+      {
+        "text": "Select a Project Management Consultant who will prepare the deliverables for implementation of the Corporate Level Data Warehouse Project for MSETCL.",
+        "pages": [
+          3
+        ]
+      },
+      {
+        "text": "Detailed objectives, services and deliverables are in the Terms of Reference (Schedule-1), which is not included in the document.",
+        "pages": [
+          3,
+          5
+        ]
+      },
+      {
+        "text": "Data Analytic Consultant/Expert (key personnel) is responsible for overall progress and completion of the project and leads the entire project team.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "Domain Analytic Consultant/Expert (key personnel) is responsible for project implementation and monitoring and for power sector domain suggestions including relevant analytical tools.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "Other competent Professional Personnel must be added as required to complete the consultancy within the time schedule; a CV for each must be submitted in the Annexure-II format.",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "After the report is accepted, the Authority may require Key Personnel and Professional Personnel to visit the Project or its offices for further consultations or desk work.",
+        "pages": [
+          44,
+          45
+        ]
+      }
+    ],
+    "key_requirements": [
+      {
+        "text": "Proposal is considered responsive only if it is on the Annexure I form, received by the due date, has the Bid Security and Power of Attorney, is signed, sealed, hard-bound, complete, and has no conditions.",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "Any bid not accompanied by the Bid Security will be rejected as non-responsive.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Technical Proposal must not include any information relating to the price quoted.",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "Financial Proposal must include all costs and taxes, with no condition or assumption attached; otherwise it is non-responsive and liable to be rejected.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Total cost (Item G of Annexure-X) must be stated in Indian Rupees in figures and words; if they differ, the words prevail, and if the arithmetic total differs, the lower of the two prevails.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Rates quoted must be firm until the Authority accepts the deliverables and all Consultant obligations under the Agreement are discharged.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "One CV per Key Personnel position, no alternatives; CVs must be recently signed and dated in blue ink and countersigned by the Applicant; photocopied or unsigned CVs will be rejected.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "No Key Personnel may have attained the age of 75 (seventy five) years at the time of submitting the proposal.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Each Key Personnel CV must be a minimum of 4 pages and a maximum of 8 pages and must not be older than three months from the date of submission.",
+        "pages": [
+          26,
+          34
+        ]
+      },
+      {
+        "text": "Annexure IX methodology: understanding of TOR not more than two pages and methodology and work plan not more than three pages; marks are deducted for lengthy or out-of-context responses.",
+        "pages": [
+          42
+        ]
+      }
+    ],
+    "eligibility": [
+      {
+        "text": "Applicant must have completed at least three major projects in Data Warehousing, preferably in the power sector or an equivalent field, in the past five years, with documentary evidence and work completion certificate.",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      {
+        "text": "Applicant must have a development/support centre in India to support the project at any given point of time during execution.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Key personnel: Data Analytic expert (B.Tech/M.Tech in IT, Electronics or Computer Science, with large data acquisition and analytics project experience in past three years) and Domain Analytic expert (B.Tech/M.Tech in Electrical Engineering, at least 10 years in transmission projects, O&M or automation).",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      {
+        "text": "Minimum turnover must be twice the offered bid price, proved by a statutory auditor or Chartered Accountant certificate; earlier years are enhanced by factors 1.00 (2016-17), 1.05 (2015-16) and 1.10 (2014-15).",
+        "pages": [
+          8,
+          9
+        ]
+      },
+      {
+        "text": "Applicant must submit audited financial reports for the last three years, and the latest valid Income Tax and GST certificates and registration certificate.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "An entity barred by the Central Government, a State Government, a statutory authority or a public sector undertaking, with the bar subsisting on the proposal date, is not eligible.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "In the last three years the Applicant or its Associate must not have failed to perform on any agreement (penalty by arbitral or judicial authority), been expelled from a project, or had an agreement terminated for breach.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "Applicant may bid alone or as lead member of a consortium; JV projects count by JV share and projects done as an associate get 25% weightage.",
+        "pages": [
+          5,
+          8
+        ]
+      }
+    ],
+    "important_dates": [
+      {
+        "text": "Downloading of revised application documents: from 26.10.2017.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Last date for receiving queries/clarifications: 20 days prior to the Proposal Due Date.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Pre-Proposal Conference: date to be informed later on the MSETCL website.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Authority response to queries: 11 days prior to the Proposal Due Date in the schedule; the clarification clause says not later than 7 (seven) days prior to the Proposal Due Date.",
+        "pages": [
+          4,
+          15
+        ]
+      },
+      {
+        "text": "Proposal Due Date: 09.11.2017, up to 11.30 Hrs; late proposals are summarily rejected.",
+        "pages": [
+          4,
+          21
+        ]
+      },
+      {
+        "text": "Opening of Proposals: on the Proposal Due Date at 11.30 hours, Technical Proposals first; Financial Proposals opened later on a date, time and venue to be notified.",
+        "pages": [
+          22,
+          23
+        ]
+      },
+      {
+        "text": "Letter of Award: within 20 days of the Proposal Due Date.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Signing of contract agreement: within 20 days of the Letter of Award.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Proposal validity: not less than 90 days from the Proposal Due Date.",
+        "pages": [
+          4
+        ]
+      }
+    ],
+    "commercial_requirements": [
+      {
+        "text": "RFP fee Rs. 5000/+ GST as applicable, non-refundable; if downloaded, the fee must still be deposited (cash, DD or Pay order) with the physical submission, and an application without proof of fee will not be considered.",
+        "pages": [
+          3
+        ]
+      },
+      {
+        "text": "EMD of Rs. 1 lakh as token bid security, as Bank Guarantee (Annexure-VI) of a nationalized or scheduled bank valid for 3 years from the due date of submission.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Bid Security is interest free and is forfeited for a non-responsive proposal, prohibited practices, withdrawal during validity, failure to reconfirm at negotiation, failure to sign the Agreement or start the assignment, or conflict of interest.",
+        "pages": [
+          21,
+          22
+        ]
+      },
+      {
+        "text": "Selected consultancy must submit a bank guarantee (Annexure-VI) and other documents for the agreement; amount and validity are not stated, and delay in submission retains payment.",
+        "pages": [
+          25
+        ]
+      },
+      {
+        "text": "Price basis: Indian Rupees, all costs and taxes deemed included, payments subject to deduction of taxes at source.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "No escalation on any account is payable on the Annexure-X amounts.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Miscellaneous Expenses in Item A VIII shall not exceed 15% (fifteen per cent) of the total amount in Item D.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Not specified in the document: payment terms and milestones, liquidated damages and penalties, performance security amount, warranty",
+        "pages": []
+      }
+    ],
+    "project_duration": [
+      {
+        "text": "Not specified in the document: contract duration, extension terms and delivery milestones are in the Terms of Reference, which is not included.",
+        "pages": []
+      },
+      {
+        "text": "Selected Applicant must sign and return the duplicate copy of the Letter of Award within 7 (seven) days of receiving it.",
+        "pages": [
+          25
+        ]
+      },
+      {
+        "text": "Consultant must commence services at the Project site within 7 (seven) days of the date of the Agreement or another mutually agreed date.",
+        "pages": [
+          25
+        ]
+      }
+    ],
+    "important_conditions": [
+      {
+        "text": "Evaluation: Two-stage Quality and Cost Based Selection; technical evaluation first, financial evaluation only of shortlisted applicants, ranking on combined score, and the highest-ranked applicant is invited for negotiation.",
+        "pages": [
+          4,
+          27
+        ]
+      },
+      {
+        "text": "Evaluation: Technical marks: experience 20 points, work plan and methodology 20 points, key staff 30 points (Data Analytic 15, Domain analytic 15), presentation and discussion 30 points.",
+        "pages": [
+          26,
+          27
+        ]
+      },
+      {
+        "text": "Evaluation: Minimum qualifying technical score is 75 points; weights are Technical Proposal 0.70 and Financial Proposal 0.30; S = St x T% + Sf x P%.",
+        "pages": [
+          27
+        ]
+      },
+      {
+        "text": "Evaluation: Not more than five applicants are shortlisted for financial evaluation; on equal total score the higher technical score wins.",
+        "pages": [
+          27
+        ]
+      },
+      {
+        "text": "Submission: Hard-bound form only with serially numbered pages and an index, each page initialed; one original plus one soft copy and one hard copy marked COPY.",
+        "pages": [
+          16,
+          19
+        ]
+      },
+      {
+        "text": "Submission: Sealed outer envelope containing two sealed envelopes, Technical Proposal (Annexure I, Annexures II to X, supporting documents, Bid Security) and Financial Proposal.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "Submission: Physical delivery on or before the Proposal Due Date time; proposals by fax, telex, telegram or e-mail are not entertained.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "Submission: Annexure V undertaking on non-debarment, blacklisting and litigation, and Annexure VII Power of Attorney on non-judicial stamp paper of Rs. 100 (one hundred), notarized.",
+        "pages": [
+          37,
+          40
+        ]
+      },
+      {
+        "text": "Risk: Conflict on query response timing: 11 days prior to the Proposal Due Date in the schedule versus not later than 7 (seven) days prior in the clarification clause.",
+        "pages": [
+          4,
+          15
+        ]
+      },
+      {
+        "text": "Risk: Bid Security validity conflict: 3 years from the due date in the clause versus 1 year in the Annexure-VI format, which also refers to a forest-land clearance consultancy.",
+        "pages": [
+          21,
+          38
+        ]
+      },
+      {
+        "text": "Risk: All schedule dates are in 2017 (Proposal Due Date 09.11.2017); whether this RFP is still open is not stated.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Risk: Terms of Reference (Schedule-1) with the objectives, scope of services and deliverables are not attached; duration and payment terms are also not given.",
+        "pages": [
+          3,
+          5
+        ]
+      },
+      {
+        "text": "Risk: Indemnity of up to 3 (three) times the value of the Agreement for any direct loss or damage caused by deficiency in services.",
+        "pages": [
+          25
+        ]
+      },
+      {
+        "text": "Risk: Key Personnel substitution only for incapacity or health, with 20% deduction from their remuneration on first and 50% on second substitution; false averment by Key Personnel can lead to 5 (five) years debarment.",
+        "pages": [
+          17,
+          24
+        ]
+      }
+    ]
+  }
+}

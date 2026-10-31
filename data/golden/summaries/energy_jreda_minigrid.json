@@ -1,0 +1,462 @@
+{
+  "doc_id": "energy_jreda_minigrid",
+  "provenance": {
+    "drafted_by": "claude-code",
+    "drafted_at": "2026-10-28T14:15:27+00:00",
+    "spec_version": "v1",
+    "status": "auto_checked",
+    "verified_by": null,
+    "verified_at": null,
+    "verification_changes": null
+  },
+  "summary": {
+    "overview": {
+      "text": "Jharkhand Renewable Energy Development Agency (JREDA), Government of Jharkhand, invites bids under NIB 12/JREDA/SPV/LOHARDAGA/OFFGRID/23-24 for design, engineering, supply, installation, testing and commissioning of solar PV mini/micro grids and solar stand-alone systems with distribution network, control room and household connections, plus 5 years Operation and Comprehensive Maintenance (CMC), on turnkey basis in 08 villages of Lohardaga District. Estimated cost is Rs 16770629.00 for 71 kWp.",
+      "pages": [
+        1,
+        4
+      ]
+    },
+    "issuing_organization": "Jharkhand Renewable Energy Development Agency (JREDA), Government of Jharkhand, Energy Department; Tender Ref. No. 12/JREDA/SPV/LOHARDAGA/OFFGRID/23-24 dated 22.05.2023; Director, 3rd Floor, SLDC Building, Kusai, Doranda, Ranchi-834002; procurement officer 0651-2491163/61",
+    "issuing_organization_pages": [
+      1,
+      4
+    ],
+    "scope": [
+      {
+        "text": "Six solar mini/micro grids in Block Peshrar, each with distribution network, control room and household connections: Doodhpatan-1 4.5 kWp, Doodhpatan-2 Bhagat Tola 3.6 kWp, Ganeshpur 16.5 kWp, Chari 10.5 kWp, Manhepaat 16.5 kWp, Hurmur 13.5 kWp.",
+        "pages": [
+          5,
+          74
+        ]
+      },
+      {
+        "text": "Two solar stand-alone systems: Malangveer Tola (Block Peshrar) 3 kWp and Samri Tola (Block Senha) 2 kWp.",
+        "pages": [
+          74
+        ]
+      },
+      {
+        "text": "Design, supply, installation, commissioning and 5 years operation and maintenance of SPV power packs (solar stand-alone systems) with associated civil works in two villages/tola of Lohardaga District on turnkey basis.",
+        "pages": [
+          24
+        ]
+      },
+      {
+        "text": "Power distribution network: in every selected household minimum three (3) light points with 3 LED lamps of 9W/10W/11watt, one socket point (60W) and one socket point (100 W), 193 W up to 200 W in total; 8 meters poles; one 18 W LED street light per five households.",
+        "pages": [
+          47,
+          48
+        ]
+      },
+      {
+        "text": "Design and construction of control room and rooms for battery bank, PCU, control panels and inverter at each plant; chain-link fencing with barbed wire around the entire plant premises, minimum height 1.5 mtr.",
+        "pages": [
+          24,
+          48,
+          49
+        ]
+      },
+      {
+        "text": "5 years operation and CMC of the plants including servicing and replacement of parts; contractor must depute at least two (2) skilled manpower for 24*7 plant monitoring, stationed in that village.",
+        "pages": [
+          22,
+          25
+        ]
+      },
+      {
+        "text": "Pre-feasibility Report/site survey report for the mini/micro grid sites; one operation-cum-maintenance manual in English and Hindi per set; door delivery to site across Jharkhand as directed by JREDA.",
+        "pages": [
+          24
+        ]
+      },
+      {
+        "text": "Materials stay in contractor's custody at site and JREDA is not responsible for loss or damage; contractor must take transit-cum-storage-erection insurance and insurance against theft/damage during the CMC period.",
+        "pages": [
+          22,
+          24
+        ]
+      }
+    ],
+    "key_requirements": [
+      {
+        "text": "Valid test reports approved by MNRE/BIS must be submitted for solar module, PCU, battery and solar home light system; all are mandatory for technical eligibility. Bidder must also undertake it can supply the offered quantity within the schedule.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Modules must conform to IEC 61215/IS14286 and IEC 61730 Part 1 and 2; output must be warranted not less than 90% at the end of ten (10) years and 80% at the end of twenty five (25) years; efficiency above 15% desirable.",
+        "pages": [
+          30
+        ]
+      },
+      {
+        "text": "Each SPV module must carry an RFID tag placed inside the module laminate holding manufacturer, cell manufacturer, manufacture dates, country of origin, I-V curve, serial number and IEC certificate details.",
+        "pages": [
+          31
+        ]
+      },
+      {
+        "text": "A three-phase hybrid PCU must be used with each power plant, but another clause allows a single-phase inverter below 10kW; anti-islanding must conform to IEEE 1547/UL 1741/IEC 62116 or equivalent BIS standard.",
+        "pages": [
+          37,
+          39
+        ]
+      },
+      {
+        "text": "Remote monitoring: site data must be available on a web server for monitoring and control over GPRS (4G/5G enabled); bidder must provide the SIM card and bear its monthly charge.",
+        "pages": [
+          34,
+          39
+        ]
+      },
+      {
+        "text": "Battery bank must be tubular VRLA/GEL 2 volt cells conforming to the MNRE programme; automotive batteries will not be accepted; depth of discharge must not be more than 80%.",
+        "pages": [
+          41
+        ]
+      },
+      {
+        "text": "Bidder must install a Time-of-Day (ToD) meter at each site recording 15-minute block-wise generation and supply, storing 15-minute data for 40-45 days and day-wise data for 6 months.",
+        "pages": [
+          41
+        ]
+      },
+      {
+        "text": "Mounting structure must withstand minimum wind speed of 150 km/ hour (hot dip galvanized MS permitted, aluminium also allowed); earth resistance must not be more than 5 ohms; lightning protection as per IEC 62305.",
+        "pages": [
+          43,
+          44
+        ]
+      },
+      {
+        "text": "Stand-alone system (solar power pack): minimum 200 Wp module, 12.8 Volts 80 Ahr lithium ferro phosphate battery only with cycle life more than 2000 cycles, MPPT charge controller, 5 W-LED luminaires of 7.0 Watts each, one DC pedestal fan of 20Watts; indigenous modules preferred.",
+        "pages": [
+          49,
+          50
+        ]
+      },
+      {
+        "text": "Items must pass pre-dispatch inspection by JREDA at the manufacturing site (sample per BIS norms or minimum @ 2% of quantity offered); site must have NABL-conforming testing facilities; no dispatch without Dispatch Clearance; failure leads to work order cancellation and forfeiture of security deposit.",
+        "pages": [
+          25
+        ]
+      }
+    ],
+    "eligibility": [
+      {
+        "text": "Bidder must be a registered company, proprietorship, LLP, partnership, firm or corporation in India; authorised dealers and subcontractors are not eligible; joint ventures are not allowed.",
+        "pages": [
+          8,
+          9
+        ]
+      },
+      {
+        "text": "Contractor Registration in JREDA is mandatory; bidder must also have valid GST and PAN.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Bidder must be a registered manufacturer in India (MSME of Jharkhand included) of at least one major component: SPV cells/modules, battery or PCU, and must furnish a certificate showing this.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "General bidder: average annual turnover of the last 3 years (FY 2019-20, 2020-21, 2021-22), certified by chartered accountant, must be at least 30% of the estimated cost of Bidding Quantity; certificate with UDIN as per Annexure-5.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Positive net worth as on 31.03.2022 on audited accounts, certificate by CA with UDIN as per Annexure-6; audited accounts for the last 3 years with ITR must also be submitted to show the bidder is functional.",
+        "pages": [
+          9,
+          10
+        ]
+      },
+      {
+        "text": "General bidder experience in last 7 years for SNA/Govt/PSU: either three similar completed works each not less than 40%, or two works each not less than 50%, or one work not less than 80% of estimated project cost/quoted quantity cost.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Jharkhand MSE preference: unit and head office in Jharkhand with MSE registration; turnover criterion of 10% of Bidding Quantity; one similar completed work of not less than 10% of estimated project cost in last seven years.",
+        "pages": [
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "text": "Bidder must not be under a declaration of ineligibility for corrupt and fraudulent practices, nor debarred or blacklisted by Central or State Government or any public undertaking, and must declare this.",
+        "pages": [
+          13,
+          56
+        ]
+      }
+    ],
+    "important_dates": [
+      {
+        "text": "Tender Reference No. 12/JREDA/SPV/LOHARDAGA/OFFGRID/23-24 dated 22.05.2023.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Publication of NIT on website: 26.05.2023.",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "Bidding documents download period: from 30.05.2023 10.00 AM to 21.06.2023 05.00 PM.",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "text": "Pre-bid meeting: 02.06.2023 at 3.00 P.M. in the Conference Hall of JREDA; the weekday is given as Friday on one page and Wednesday on another.",
+        "pages": [
+          4,
+          5,
+          15
+        ]
+      },
+      {
+        "text": "Written queries must reach JREDA not later than two days before the pre-bid meeting.",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "Online bid submission: starts 06.06.2023 at 11.00 AM; last date 21.06.2023 up to 05:00 PM.",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "Original bid fee and EMD (offline) to be submitted on 21.06.2023 and 22.06.2023 up to 5.00 P.M.",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "Technical bid opening: 23.06.2023 at 3.00 P.M.",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "Financial bid opening: no date stated; JREDA will inform bidders with responsive technical bids by email of date, time and place.",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "Bid validity: 180 (One Hundred Eighty) days after the bid submission deadline.",
+        "pages": [
+          16
+        ]
+      }
+    ],
+    "commercial_requirements": [
+      {
+        "text": "Non-refundable bid fee of Rs. 11,800/- including GST, as DD in favour of \"Director JREDA\" payable at Ranchi; Rs. Nil for MSE of Jharkhand.",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "text": "EMD village-wise (INR): Doodhpatan-1 21800.00; Doodhpatan-2 Bhagat Tola 17450.00; Ganeshpur 80000.00; Chari 51000.00; Manhepaat 80000.00; Hurmur 65500.00; Malangveer Tola 9000.00; Samri Tola 6000.00. Nil for MSEs of Jharkhand (manufacturing sector).",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "text": "EMD may be BG, DD, TDR or FDR of a scheduled commercial bank; BG must be valid for 12 months or more after the last date of receipt of bids. EMD may be forfeited if the bidder withdraws after technical bid opening, or the successful bidder fails to sign the Agreement or furnish the Security Deposit.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Security deposit: 10% of allotted work order value (1% for MSE bidders) as DD/BG/FDR/TDR valid for one year, due within 15 days of work order, else work order is cancelled; released after expiry of 60 days from actual completion of work.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Performance guarantee: 5% of allotted work order value (0.5% for MSE bidders) as DD/BG/FDR/TDR valid for five years, before release of payment against installation; to be maintained till completion of the warrantee period.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Payment: 56% of Work order Value on supply and delivery of goods; 24% on installation, testing and commissioning; 4% of Work order Value per year over the 5 year CMC period (total 20%), against a 4% DD/BG/FDR/TDR for each year.",
+        "pages": [
+          27,
+          28
+        ]
+      },
+      {
+        "text": "Liquidated damages for delay in completion: 0.5% of contract price for each week of delay, total penalty not to exceed 10% (ten percent).",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "Price basis: item rate, quoted in INR, fixed for the contract with no adjustment except statutory variation of taxes and duties; excluding GST and inclusive of all taxes, duties, levies and 5 years CMC.",
+        "pages": [
+          16,
+          25
+        ]
+      }
+    ],
+    "project_duration": [
+      {
+        "text": "Period of contract: 5 Years from date of commissioning in the e-Procurement Notice; Section-1 gives contract period as 5 YEARS AND 6 MONTHS.",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "Time of completion: 06 (Six) Months.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Timeline table: 4 months from issuance of demand note; LoA X Days, Agreement X+15 Days, call for Pre Dispatch X+30 Days, Dispatch Instruction X+40 Days, delivery on site X+60 Days, testing and commissioning X+90 Days; X is not defined.",
+        "pages": [
+          27
+        ]
+      },
+      {
+        "text": "After work order and demand request: pre-dispatch inspection within 45 days, Dispatch instruction within next 15 days, supply and installation completed within 60 days of dispatch instruction.",
+        "pages": [
+          26
+        ]
+      },
+      {
+        "text": "CMC period is 5 years starting from date of actual commissioning; monthly CMC report with generation data within 7 working days of the subsequent month (the Annexure-14 format is titled Quarterly).",
+        "pages": [
+          22,
+          67
+        ]
+      },
+      {
+        "text": "PV modules must be warranted for 25 years; battery desirable minimum life of 5 years.",
+        "pages": [
+          22
+        ]
+      }
+    ],
+    "important_conditions": [
+      {
+        "text": "Evaluation: Bidders are ranked L1, L2, L3 on financial bids; L1 is allotted work on its quoted quantity, remaining work may be offered to L2 at L1 rate; if a bidder is L-1 in multiple villages, Director JREDA decides the maximum villages allocated.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Evaluation: Technical bids are checked first for eligibility, signature, securities and responsiveness; for general bidders financial bids open only if all Minimum Eligibility Conditions are met; award to lowest evaluated bid price; no price preference to any bidder.",
+        "pages": [
+          19,
+          20
+        ]
+      },
+      {
+        "text": "Evaluation: Quantity allocation to MSMEs registered in Jharkhand is made per Jharkhand Procurement Policy 2014; they must be functional with a running production unit in the State.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Evaluation: Arithmetic errors corrected by JREDA: rate in words governs over figures, unit rate governs over line total; a bidder not accepting the corrected amount is rejected and EMD forfeited.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Submission: Bids must be submitted online at www.jharkhandtenders.gov.in with Digital Signature Certificate; bids without digital signature are not accepted and no physical proposal is accepted.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "Submission: Originals of tender fee DD and EMD must reach JREDA on 21.06.2023 and 22.06.2023 up to 5.00 P.M. and match the online scans, else bidder is disqualified or tender rejected; a missing or incomplete bid fee at opening means the bid is rejected.",
+        "pages": [
+          5,
+          6,
+          18
+        ]
+      },
+      {
+        "text": "Submission: Upload PDFs of tender fee DD, EMD, GST certificate and returns, PAN, registration, similar-work proof, audited accounts, ITR, turnover and net worth certificates, test certificates, undertaking to invest minimum cash up to 10%, 180 days validity undertaking, power of attorney and Annexures 1 to 11, 21 and 22.",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      {
+        "text": "Submission: Financial bid is a separate cover with digitally signed BoQ in .xls/.pdf, prices in INR in figures and words, quoted village-wise (Annexure-9 has 8 village rows); electrification of each village is a single project.",
+        "pages": [
+          13,
+          16,
+          61
+        ]
+      },
+      {
+        "text": "Risk: Delay beyond 10 weeks lets JREDA terminate and get the work completed at bidder's risk and cost, and recover loss of subsidy in addition to the delay penalty for 10 weeks.",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "Risk: CMC outage penalties: no attempt to rectify a defect within three days draws 0.5% per week up to 10%; continuous outage over 30 days recovers 50% of PBG, and over 60 days the complete PBG is encashed.",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "Risk: Quantities are not assured: JREDA does not take responsibility to procure 100% of the bid quantity, supply orders follow demand and funds, and payment is released on availability of funds with only efforts to pay within three months.",
+        "pages": [
+          25,
+          28
+        ]
+      },
+      {
+        "text": "Risk: Completion period conflicts: 06 (Six) Months in the notice, 4 months from demand note with commissioning at X+90 Days in the timeline table, and 45, 15 and 60 days in the dispatch clause; X is not defined.",
+        "pages": [
+          4,
+          26,
+          27
+        ]
+      },
+      {
+        "text": "Risk: Experience look-back conflicts: last 7 years in the technical requirement, but last 5 years in the bid contents clause and the technical bid checklist.",
+        "pages": [
+          10,
+          16,
+          54
+        ]
+      },
+      {
+        "text": "Risk: Price terms conflict: CMC is 20% of contract price (4% per year) in the payment schedule but 10% of total system cost in Annexure-22; price is excluding GST in the price clause but Annexure-22 says inclusive of all taxes and duties.",
+        "pages": [
+          25,
+          27,
+          75
+        ]
+      }
+    ]
+  }
+}

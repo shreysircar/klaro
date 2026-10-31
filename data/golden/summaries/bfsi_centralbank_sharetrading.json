@@ -1,0 +1,441 @@
+{
+  "doc_id": "bfsi_centralbank_sharetrading",
+  "provenance": {
+    "drafted_by": "claude-code",
+    "drafted_at": "2026-10-28T14:15:18+00:00",
+    "spec_version": "v1",
+    "status": "auto_checked",
+    "verified_by": null,
+    "verified_at": null,
+    "verification_changes": null
+  },
+  "summary": {
+    "overview": {
+      "text": "Central Bank of India seeks share broking houses to offer an online share trading platform and Demat support services to its customers under its 3-in-1 scheme (savings account, Demat account, trading account). Contract is 3 years from go-live, extendable. There should be no cost to the Bank; bidders quote a revenue share.",
+      "pages": [
+        1,
+        18,
+        41
+      ]
+    },
+    "issuing_organization": "Central Bank of India; Resources Department, 4th Floor, Chander Mukhi, Nariman Point, Mumbai-400001; RFP Ref No. GEM/2025/B/6828132 dated 27/10/2025; bids to Deputy General Manager, Resources Department, 1st Floor, Bajaj Bhavan, Nariman Point, Mumbai 400021; Tel 022-66387502/7780",
+    "issuing_organization_pages": [
+      1,
+      6
+    ],
+    "scope": [
+      {
+        "text": "Open the customer's Demat account with the Bank and trading account with the broker in one seamless digital journey on the Bank's CenteeZ app and other digital channels; preferable turnaround is 10-15 minutes.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "Provide a web and mobile online trading platform with real-time market data, market, limit and stop-loss orders, call and trade, reports, and trading in NSE and BSE secondary market, IPO, Govt securities, mutual funds, futures and options, sovereign gold bonds, currency, REITs and fixed income.",
+        "pages": [
+          8,
+          9,
+          36
+        ]
+      },
+      {
+        "text": "Integrate the platform with the Bank's core banking, DPSecure back office and CDSL/NSDL systems, with fund transfer and lien marking and unmarking on Demat holdings; back-office integration is at the bidder's cost.",
+        "pages": [
+          36,
+          37
+        ]
+      },
+      {
+        "text": "Provide Demat support services: grievance redressal, control register, register of investor customers, MIS reports, and a dedicated website with complaint tracking including SEBI SCORES.",
+        "pages": [
+          9,
+          37
+        ]
+      },
+      {
+        "text": "Promote the 3-in-1 scheme across the country and train Bank staff at Central Office, Zonal Offices, Regional Offices and branches; give on-site handholding to corporate customers who opt in.",
+        "pages": [
+          37
+        ]
+      },
+      {
+        "text": "Award is not exclusive: the Bank already has a tie-up with Motilal Oswal Financial Services Ltd (MOFSL) and plans one or more additional partners.",
+        "pages": [
+          8,
+          36
+        ]
+      },
+      {
+        "text": "Platform should also support loan against shares, BTST, algorithmic trading and a pre-built basket of stocks and ETFs; Margin Trading Facility (MTF) may be provided, with risks borne by the bidder.",
+        "pages": [
+          39,
+          40
+        ]
+      },
+      {
+        "text": "Provide reverse transition and seamless migration to the Bank or a new bidder on exit, including training and documentation; its cost must be part of the commercial offer.",
+        "pages": [
+          13,
+          38
+        ]
+      }
+    ],
+    "key_requirements": [
+      {
+        "text": "Bidder must comply with all points mentioned in the Scope of work, although many are worded 'should'; non-compliance of any point will lead to rejection of the bid.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Technical and functional requirements in Annexure IX must be 100% complied with; any non-compliance may lead to disqualification.",
+        "pages": [
+          45
+        ]
+      },
+      {
+        "text": "Bidder must have a trading platform approved by CDSL and NSDL, be versed with CDSL's CDAS and the NSDL Demat system, and settle transactions in e-mode.",
+        "pages": [
+          15,
+          37
+        ]
+      },
+      {
+        "text": "Bidder must implement STP to insert transactions into the Bank's DPSecure back office, CDSL's CDAS or the NSDL Demat application, and integrate with the Bank's TCS Bancs-24 core banking system.",
+        "pages": [
+          37,
+          43
+        ]
+      },
+      {
+        "text": "Platform must be hosted at the bidder's premises in High Availability mode with minimum uptime of 99.95 %, support DC/DR architecture, and be supported 24*7*365.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "Platform must support authentication through tokens or soft token, OTP, digital certificates, IP address and mobile application, and record user ID, IP address and Mac address of each transaction for audit.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "Regulatory changes by SEBI, RBI or the depositories must be implemented immediately within prescribed times at free of cost to the Bank.",
+        "pages": [
+          37
+        ]
+      },
+      {
+        "text": "Bidder must promptly rectify all discrepancies observed in security audits at no additional cost to the Bank.",
+        "pages": [
+          39
+        ]
+      },
+      {
+        "text": "If the Bank's core banking system is upgraded or replaced, the bidder must keep the integration working without any additional cost.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "Trading services must be provided only to customers who compulsorily avail Demat services of Central Bank of India.",
+        "pages": [
+          36
+        ]
+      }
+    ],
+    "eligibility": [
+      {
+        "text": "Bidder must be a legal entity in India, preferably a Public/Private limited company majority owned by Indian residents; Government organisations, PSE/PSU and start-ups meeting all other criteria are also eligible.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Bidder must be in broking business with valid SEBI registration and valid NSE and BSE membership, and have minimum 5 years of experience in broking business operations.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Bidder must have positive net worth and positive net profit in the last three financial years (FY 2022-23, FY 23-24 & FY 24-25), shown by audited statements and a Chartered Accountant net worth certificate; provisional statements certified by a Chartered Accountant are accepted for FY 24-25 if audited results are unavailable.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Bidder must have Pan India experience with retail clients and be tied up with at least one scheduled commercial bank for trading services; this does not apply to Government/PSE/PSU bidders.",
+        "pages": [
+          14,
+          15
+        ]
+      },
+      {
+        "text": "Bidder must not be an associate or subsidiary of a banking company or vice versa, and must be non-bank promoted: not promoted by competitor banks or their controlling groups, and no competitor bank holding equity of 10% and above or having a Board representative.",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "There must be no suspension order against the bidder by SEBI, NSDL, CDSL, NSE or BSE in the past three years, and no restraint order pending at any judicial forum in India or abroad on broking business.",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "Bidder must have a trading platform approved by NSDL and CDSL with all transactions settled in e-mode, supported by an undertaking.",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "A bidder from a country sharing a land border with India is eligible only if registered with the Competent Authority.",
+        "pages": [
+          27
+        ]
+      }
+    ],
+    "important_dates": [
+      {
+        "text": "Date of issue of RFP: 27.10.2025.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "Pre-bid queries must be received online on or before 06/11/2025 up to 05:00 PM, in the Annexure IV format.",
+        "pages": [
+          6,
+          10
+        ]
+      },
+      {
+        "text": "Pre-bid meeting: the Bank intends to hold it, preferably online, on a date to be indicated in the RFP; no date appears in the control sheet.",
+        "pages": [
+          6,
+          10
+        ]
+      },
+      {
+        "text": "Last date and time for receipt of bids: 20.11.2025 at 03.00 PM; hard copies must also reach the Bank by 3.00 PM on 20/11/2025.",
+        "pages": [
+          6,
+          23
+        ]
+      },
+      {
+        "text": "Opening of eligibility bids: 20.11.2025 at 03.30 PM.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "If a submission or opening date is a holiday in Maharashtra under the NI Act, bids are received till the specified time on the next working day.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Presentation by eligible bidders at Central Office, Mumbai: dates to be specified and intimated later by email.",
+        "pages": [
+          23
+        ]
+      },
+      {
+        "text": "Commercial bid opening date: to be communicated separately to technically qualified bidders.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Not specified in the document: bid validity period.",
+        "pages": []
+      }
+    ],
+    "commercial_requirements": [
+      {
+        "text": "EMD: there will be no Earnest money required for the RFP.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "Price basis: bidders quote only the percentage (X%) of revenue shared with the Bank, in Indian Rupees; there should not be any cost to the Bank; taxes are excluded from the X% used to select H1.",
+        "pages": [
+          41
+        ]
+      },
+      {
+        "text": "Net revenue is total revenue after deducting exchange transaction charges including IPF and TGF, State stamp charges, Service Tax and Securities Transaction Tax, Education Cess, turnover incentive passed to customers and statutory charges.",
+        "pages": [
+          41
+        ]
+      },
+      {
+        "text": "The Bank may offer an incentive on a per account basis for converted leads; the amount is not stated.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Not specified in the document: tender fee.",
+        "pages": []
+      },
+      {
+        "text": "Not specified in the document: performance security or bank guarantee.",
+        "pages": []
+      },
+      {
+        "text": "Liquidated damages: no rate or schedule is stated; the Bank may cancel the contract if deductions for liquidated damages exceed 10% of the total contract price.",
+        "pages": [
+          12
+        ]
+      },
+      {
+        "text": "Not specified in the document: payment terms for revenue sharing, and warranty.",
+        "pages": []
+      }
+    ],
+    "project_duration": [
+      {
+        "text": "Contract period is 3 years from the date of successful go live or acceptance by the Bank; the Bank may renew for a further 3 years and keep renewing on mutually acceptable terms.",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "Annexure VIII: the project must be completed in all respects within 4 Weeks after acceptance of the purchase order.",
+        "pages": [
+          42
+        ]
+      },
+      {
+        "text": "Annexure VIII stages: project plan within 1 weeks, implementation within 2 weeks, User Acceptance and Audit Closure within 3 weeks, UAT and go-live within 5 weeks of purchase order acceptance.",
+        "pages": [
+          42
+        ]
+      },
+      {
+        "text": "The selected bidder must execute the SLA within 45 days from acceptance of the Purchase Order/Letter of Intent.",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "The Bank may cancel if the bidder fails to accept the contract within 30 days of receipt of the purchase order.",
+        "pages": [
+          12
+        ]
+      },
+      {
+        "text": "Reverse transition runs for a period of 6 months after the 90-day notice period, and is activated on cancellation or 6 months before expiry of the contract.",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "important_conditions": [
+      {
+        "text": "Evaluation: Three stages - eligibility cum technical bid, technical evaluation, commercial bid evaluation; a cut-off score of 70% in technical evaluation is needed to qualify for commercial bid opening.",
+        "pages": [
+          14,
+          15
+        ]
+      },
+      {
+        "text": "Evaluation: Technical marks total 150: experience 50 (10 per public sector bank implementation up to 30, 4 per private bank up to 20), five parameters at 5 each (branches, Banca Demat accounts, tie-up period, manpower, online turnover), product functionality 25 (Annexure IX: 1 mark available, 0 not), presentation or demo 50.",
+        "pages": [
+          15,
+          16,
+          44
+        ]
+      },
+      {
+        "text": "Evaluation: Final selection is on highest commercial; the bidder sharing the highest percentage of net revenue is H-1 and is selected; a tie goes to the highest technical score.",
+        "pages": [
+          17,
+          41
+        ]
+      },
+      {
+        "text": "Submission: Bids go only through the GeM portal (fax or mail are rejected) as Technical Bid Part I and Commercial Bid Part II, submitted separately; price information in the technical bid may lead to rejection.",
+        "pages": [
+          11,
+          18
+        ]
+      },
+      {
+        "text": "Submission: Hard copies of the Integrity Pact and Non Disclosure Agreement, in an envelope superscripted as the RFP, must reach the Deputy General Manager, Resources Department, Bajaj Bhavan by 3.00 PM on 20/11/2025.",
+        "pages": [
+          6,
+          23
+        ]
+      },
+      {
+        "text": "Submission: Offers without a signed Integrity Pact along with the technical bid are summarily rejected; all pages of the Integrity Pact must be signed and stamped, and each page of the bid signed and stamped by the authorised person.",
+        "pages": [
+          11,
+          25,
+          26
+        ]
+      },
+      {
+        "text": "Submission: Required forms include Annexure I application, Annexure II bidder information, Annexure X undertaking on non-judicial stamp paper and Annexure XI non-blacklisting undertaking, which also says no legal action is pending for any cause.",
+        "pages": [
+          22,
+          46,
+          47
+        ]
+      },
+      {
+        "text": "Submission: Risk management measures are to be submitted along with the technical bid.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "Risk: Technical marks conflict: total is 150 but Annexure V says the percentage is taken out of 135; presentation is 50 marks in the table but 35 marks in the text.",
+        "pages": [
+          16,
+          17,
+          34
+        ]
+      },
+      {
+        "text": "Risk: Manpower scoring bands conflict: over 500 staff scores 5 but over 200 staff scores 5 in Annexure V.",
+        "pages": [
+          16,
+          33
+        ]
+      },
+      {
+        "text": "Risk: Timeline conflict and very short: project to complete within 4 weeks, yet the last stage, UAT and go-live, is within 5 weeks of purchase order acceptance (Annexure VIII).",
+        "pages": [
+          42
+        ]
+      },
+      {
+        "text": "Risk: RFP reference conflict: GEM/2025/B/6828132 on the cover, but the NDA cites RFP Ref No. CO:RD:2025-26:88; the bid delivery address also differs between 1st Floor Bajaj Bhavan and 4th Floor Chandermukhi.",
+        "pages": [
+          6,
+          11,
+          53
+        ]
+      },
+      {
+        "text": "Risk: Indemnity is subject to a limit agreed between the parties under the RFP, but no limit is stated; indemnity also covers claims by customers and regulatory authorities.",
+        "pages": [
+          20,
+          21
+        ]
+      },
+      {
+        "text": "Risk: The Bank may terminate at any time on Thirty (30) days written notice without assigning any reason, with no termination compensation payable to the bidder.",
+        "pages": [
+          18,
+          19
+        ]
+      }
+    ]
+  }
+}

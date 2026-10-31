@@ -1,0 +1,467 @@
+{
+  "doc_id": "bfsi_lic_dpdptools",
+  "provenance": {
+    "drafted_by": "claude-code",
+    "drafted_at": "2026-10-28T14:14:50+00:00",
+    "spec_version": "v1",
+    "status": "auto_checked",
+    "verified_by": null,
+    "verified_at": null,
+    "verification_changes": null
+  },
+  "summary": {
+    "overview": {
+      "text": "Life Insurance Corporation of India (LIC), Central Office, Mumbai, invites online two-bid tenders for procurement and implementation of tools for the DPDP Act, 2023 and DPDP Rules, 2025, covering 12 modules such as consent management, data discovery and breach management, for a period of five (5) years. Ref: LIC-CO/ERM/CSD/RFP/2026-27/DPDPA_Tools Dated: 13/07/2026.",
+      "pages": [
+        1,
+        9,
+        11
+      ]
+    },
+    "issuing_organization": "Life Insurance Corporation of India (LIC); Central Office, ERM/CSD (Cyber Security) Department, Mumbai; Ref: LIC-CO/ERM/CSD/RFP/2026-27/DPDPA_Tools Dated: 13/07/2026; contact: dpdpbid@licindia.com",
+    "issuing_organization_pages": [
+      1,
+      10
+    ],
+    "scope": [
+      {
+        "text": "Supply, implement and support a DPDP compliance solution of 12 modules: Data Privacy Notice Management, Consent Management Platform, Cookie Consent Management, Data Discovery & Mapping, Data Principal Rights Management (including Grievance Redressal), DPIA, ROPA, Personal Data Breach Management, Third Party Vendor Risk Management, Compliance Reporting & Dashboards, Workflow Management and a DPDP Program Management portal. List is not exhaustive.",
+        "pages": [
+          11,
+          27
+        ]
+      },
+      {
+        "text": "Six phases with deliverables for each module: Planning & Designing workshop, Implementation, User acceptance testing, Movement to production, Training and knowledge transfer, and Post implementation support. The activity list is indicative, not exhaustive.",
+        "pages": [
+          27
+        ]
+      },
+      {
+        "text": "Supply and install software and hardware (if any) for DC and DR in HA mode, deployed in pre-production, production and DR environments, with all licences registered in LIC's name.",
+        "pages": [
+          28,
+          35
+        ]
+      },
+      {
+        "text": "Integrate with LIC applications and systems including SIEM, PAM, Active Directory/LDAP, SMS and email gateways and a centralized identity repository; the solution should work with SOAR for incident handling.",
+        "pages": [
+          28,
+          35,
+          38
+        ]
+      },
+      {
+        "text": "Bidder must engage OEMs for plan, design and implementation; the OEM holds overall implementation responsibility, certifies the architecture and audits deployment at the end of implementation and once every year during the contract period.",
+        "pages": [
+          28,
+          29,
+          33
+        ]
+      },
+      {
+        "text": "After go-live, manage and monitor the solution end to end for the five-year term, with level-1, level-2 and level-3 support, root cause analysis, VAPT remediation, DR drill support and a 24/7/365 support contact centre.",
+        "pages": [
+          35,
+          37
+        ]
+      },
+      {
+        "text": "Training at LIC premises in Mumbai: hands-on training before and after implementation, certification-level training for three participants at no additional cost, and training twice every year for each module till end of contract.",
+        "pages": [
+          31,
+          36
+        ]
+      },
+      {
+        "text": "Deploy a total of 24 dedicated onsite resources for the contract duration, including an onsite Project Manager, on LIC premises in Mumbai.",
+        "pages": [
+          43,
+          44,
+          45
+        ]
+      }
+    ],
+    "key_requirements": [
+      {
+        "text": "The complete solution must be deployed on-premises only at LIC; no component may be deployed outside the LIC network at any time.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "The solution must not go live until all VAPT observations are resolved and LIC's delegated committee approves; bidder is solely responsible for closing the findings.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "Bidder must comply with every parameter of Annexure XV technical specifications (separate Excel); non-compliance to any parameter means the bid is not evaluated. The specifications are minimum, equivalent or higher may be quoted.",
+        "pages": [
+          13,
+          33
+        ]
+      },
+      {
+        "text": "The bidder needs to provide hardware, support and licences for 5 years post Go-live for all modules; all licences must be in the name of Life Insurance Corporation of India.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "The solution must accommodate a yearly project growth rate of up to 10%, with licence prices and a breakdown of charges for additional licences quoted upfront.",
+        "pages": [
+          34
+        ]
+      },
+      {
+        "text": "Software and accessories must be IPv6 compatible and prepared for TLS 1.3 or higher; encryption of data in transit and at rest is desirable.",
+        "pages": [
+          35,
+          38
+        ]
+      },
+      {
+        "text": "A detailed execution plan with designs must be submitted to LIC within 5 weeks of placing the order; execution starts only after LIC approves it.",
+        "pages": [
+          34
+        ]
+      },
+      {
+        "text": "All onsite personnel must be full-time employees on the vendor's payroll; outsourced or subcontracted personnel are not permitted. Police background verification is required.",
+        "pages": [
+          45
+        ]
+      },
+      {
+        "text": "Desirable: RTO of 4 hours and RPO of 15 minutes; DC and DR in active-passive mode for all infrastructure.",
+        "pages": [
+          38,
+          41
+        ]
+      },
+      {
+        "text": "Desirable: log storage of at least 12 months, and 2 years in the SIEM, with logs retrievable within 5 hours of any breach.",
+        "pages": [
+          34
+        ]
+      }
+    ],
+    "eligibility": [
+      {
+        "text": "Bidder must be a system integrator and a registered legal entity in India in operation for a minimum of 5 years preceding the RFP date, with valid GST registration and PAN card.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Bidder must have average annual turnover of not less than INR 100 Crores over the last three audited financial years (FY2023-2024, FY2024-2025, FY2025-2026), operating profit (EBITDA) in those years and positive net worth as on RFP date; CA certificate without riders.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Bidder or OEM must have implemented, or be implementing, privacy automation solutions with at least consent management, data principal rights management and data discovery for at least two (2) organizations in the insurance and/or banking sectors.",
+        "pages": [
+          11,
+          12
+        ]
+      },
+      {
+        "text": "Bidder must have revenue of at least 50 Crore from DPDP related projects and Services / Cyber Security Projects in each of the last 3 financial years (FY 2023-24, FY 2024-25, FY 2025-26). Bidder and OEM must have a support center in Mumbai with 24x7 onsite, telephonic and remote support.",
+        "pages": [
+          12
+        ]
+      },
+      {
+        "text": "Bidder must have a minimum of 30 permanent Data Privacy / IT Security professionals on payroll with certifications such as CIPT, CIPP/E, CIPM, DSCI, CISSP, OSCP, CEH, CISA or CISM, and must hold any 3 of ISO27001, ISO9001, ISO22301, ISO 20000.",
+        "pages": [
+          12
+        ]
+      },
+      {
+        "text": "OEM must have average annual turnover of not less than INR 500 Crores over the last three audited financial years, with positive EBITDA, PAT and Net Worth in each; its product must be commercially available for a minimum of two years and implemented or under implementation at at least three enterprise customers.",
+        "pages": [
+          12
+        ]
+      },
+      {
+        "text": "OEM must have a dedicated implementation team (Project Manager, Solution Architect, Privacy Consultant, Technical Specialists) with minimum five years' experience. Bidder or OEM must have an in-house privacy legal team or a signed MoU with law firms or privacy consultancies, with at least two CVs of legal experts (LLB/LLM).",
+        "pages": [
+          12,
+          13
+        ]
+      },
+      {
+        "text": "Bidder must not be blacklisted by Government of India, RBI, SEBI or IRDAI (void if a court stay order is obtained), and must give a duplicate-participation undertaking, a signed Integrity Pact, Manufacturer Authorization Form and Land Border declaration. Consortium bids are rejected.",
+        "pages": [
+          12,
+          13,
+          16
+        ]
+      }
+    ],
+    "important_dates": [
+      {
+        "text": "RFP issuance date: 13/07/2026.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Pre-bid queries and participant details due 20-07-2026, latest by 03.00 PM, by email to dpdpbid@licindia.com.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Pre-bid meeting on 22-07-2026, 11:00 am to 1:30 pm, at LIC Central Office, Cyber Security Department, Mumbai; maximum 2 representatives per bidder.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Last date and time for bid submission: 10-08-2026, latest by 03:00 PM.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Eligibility bid opening: 10-08-2026, 03:15 PM.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Commercial bid opening date, time and venue: to be intimated to eligible qualified bidders later.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Hard copies of the bid in sealed envelopes are due within three working days of eligibility bid opening.",
+        "pages": [
+          16
+        ]
+      },
+      {
+        "text": "Bid validity: 1 year from the last date of bid submission.",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "The schedule is tentative and subject to change; changes are notified through the LIC website.",
+        "pages": [
+          10
+        ]
+      }
+    ],
+    "commercial_requirements": [
+      {
+        "text": "Bid processing fee: non-refundable Rs.11,800/- inclusive of GST (10000+18%GST), paid online. Micro and Small Enterprises are exempt with an MSME/NSIC certificate. A bid without the fee or valid exemption documents is rejected.",
+        "pages": [
+          10,
+          14
+        ]
+      },
+      {
+        "text": "EMD: INR 83,00,000 (Rupees Eighty-Three Lakhs Only) as an unconditional and irrevocable Bank Guarantee payable at Mumbai, valid for one year from the last date of submission; non-submission disqualifies. MSEs with MSME/NSIC certificate are exempt. Unsuccessful bidders get a refund within 45 days of the result.",
+        "pages": [
+          10,
+          15
+        ]
+      },
+      {
+        "text": "Performance Bank Guarantee: unconditional and irrevocable, 5% of total Contract Value, due within 15 days of the selection letter and valid for 63 months. Delay costs Rs.5,000/- per day up to Rs.1,00,000/-; after 35 days LIC may cancel and award to the L2 bidder at L1 prices.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Prices in Indian Rupees, all-inclusive excluding GST, fixed for the entire contract period with no escalation or variation. Bidder must factor a maximum of 25% scope changes into the quoted cost and all costs of obtaining retrospective consent from Data Principals.",
+        "pages": [
+          17,
+          26,
+          34,
+          42
+        ]
+      },
+      {
+        "text": "No advance payment; paid in INR by NEFT after deductions. Milestones per solution: 40 % on delivery of all software/appliances and contract signing; 40 % on installation, integration, initial OEM audit and acceptance testing, plus 100% of Direct Premium Support Cost with OEMs; 15 % after go-live and OEM validation; 5 % on training and documentation. Onsite services are paid quarterly in arrear subject to SLA.",
+        "pages": [
+          46,
+          48
+        ]
+      },
+      {
+        "text": "SLA breach penalties are capped cumulatively at 10% of the contract value (TCO); delivery and installation penalties at 10% of the PO value; onsite and offsite support penalties at 100% of quarterly charges.",
+        "pages": [
+          50,
+          52
+        ]
+      },
+      {
+        "text": "Delay penalties: 0.25 % of the total PO value of the hardware per week of delay or part thereof, same rate on delayed software/appliances value; HLD and LLD beyond 6 weeks of PO, 0.02% of the total PO value per week; onsite person leaving before 1 year, 2 % of annual on-site charges plus 1% per repeat.",
+        "pages": [
+          50,
+          51
+        ]
+      },
+      {
+        "text": "Comprehensive on-site warranty of five (5) years from installation and acceptance, including updates and patches at no extra cost; spares and support must be available for a minimum of six years from installation.",
+        "pages": [
+          33,
+          47
+        ]
+      }
+    ],
+    "project_duration": [
+      {
+        "text": "Total engagement of five (5) years, equivalent to sixty (60) months, from issuance of the Letter of Award (LoA), subject to extension at LIC's discretion.",
+        "pages": [
+          49
+        ]
+      },
+      {
+        "text": "The bidder shall complete the entire activity within 20 weeks of signing of contract.",
+        "pages": [
+          40
+        ]
+      },
+      {
+        "text": "Milestones from T (date of Letter of Award): Phase 1 Planning & Designing Workshop T+2 Weeks; Phase 2 Delivery of Hardware T + 8 Weeks; Phase 3 Implementation T+ 16 Weeks; Phase 4 User acceptance testing T+ 17 Weeks; Phase 5 Movement to production T+ 19 Weeks; Phase 6 Training and knowledge transfer T+20 Weeks.",
+        "pages": [
+          40,
+          49
+        ]
+      },
+      {
+        "text": "Post Go-Live support runs 5 years from Go-live date.",
+        "pages": [
+          40
+        ]
+      },
+      {
+        "text": "Contract steps: submit receipt of Purchase Order within 7 days, PBG within 15 days and contract/SLA form within 30 days of being intimated; project commences within 7 days from Contract / SLA execution.",
+        "pages": [
+          49
+        ]
+      },
+      {
+        "text": "LIC may extend maintenance and support for up to additional two years (i.e. 6th and 7th year) at a mutually agreed rate; the contract may be renewed after 5 years at LIC's discretion.",
+        "pages": [
+          47,
+          50
+        ]
+      },
+      {
+        "text": "On termination or expiry, knowledge transfer must not exceed 90 days and transition to a successor must not exceed six months.",
+        "pages": [
+          23,
+          42
+        ]
+      }
+    ],
+    "important_conditions": [
+      {
+        "text": "Evaluation: Two-bid system. Bidders must meet all eligibility criteria, non-compliance means rejection, and only eligibility-qualified bidders' commercial bids are opened. No technical scoring or weights are specified in the document.",
+        "pages": [
+          11,
+          13
+        ]
+      },
+      {
+        "text": "Evaluation: Qualified bidders go to an online reverse auction run by LIC's authorised e-procurement provider; the lowest total cost of ownership (TCO) is L1 and is the successful bidder. If only one bidder qualifies there is no auction and LIC may negotiate the price.",
+        "pages": [
+          5,
+          19,
+          20
+        ]
+      },
+      {
+        "text": "Evaluation: Future-year maintenance prices are discounted to net present value at a 10% rate. If more than five bidders qualify, the highest-priced (H1) bidder is eliminated from the auction if more than 40% above the average of quoted prices.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Evaluation: Qualified bidders must give a technical presentation. Clarifications sought by LIC not submitted within 5 working days make the bid liable to rejection. Arithmetic errors: unit price prevails over total, words over figures.",
+        "pages": [
+          17,
+          18,
+          19
+        ]
+      },
+      {
+        "text": "Submission: Bids are submitted online at www.tenderwizard.com/LIC using a Digital Signature Certificate, and hard copies in sealed envelopes must follow within three working days of eligibility bid opening. Consortium bids are rejected.",
+        "pages": [
+          16,
+          69
+        ]
+      },
+      {
+        "text": "Submission: Separate sealed envelopes for eligibility bid and commercial bid, each with a read-only pen drive, inside a third outer envelope addressed to the Executive Director (ERM); bid fee, EMD and signed Integrity Pact go in a separate sealed envelope. Hard copies must be spirally bound, serially numbered, signed and stamped on every page.",
+        "pages": [
+          16
+        ]
+      },
+      {
+        "text": "Submission: Commercial bid in the Annexure-VIII Excel sheet, password protected by LIC and to be opened only in MS Excel; a password mismatch can lead to rejection and EMD forfeiture. Prices appear only in the commercial bid, in INR; prices in the eligibility bid may lead to rejection.",
+        "pages": [
+          16,
+          17
+        ]
+      },
+      {
+        "text": "Submission: Required forms include Annexure-I covering letter, II company profile, III to V declarations, VI EMD bank guarantee, X MAF, XII land border declaration, XIV Integrity Pact and XV technical specifications, plus BoQ/BoM. Each violation of submission instructions costs Rs.5,000/- (cap Rs.10,000/-) from EMD.",
+        "pages": [
+          13,
+          17
+        ]
+      },
+      {
+        "text": "Risk: Liability is both capped and unlimited. Aggregate liability is limited to the total Contract price plus DPDP Act penalties, yet vendor liability for misconduct, gross negligence, IPR infringement or confidentiality breach is unlimited, and the vendor must indemnify LIC for all Data Protection Board of India penalties.",
+        "pages": [
+          24,
+          25
+        ]
+      },
+      {
+        "text": "Risk: Timeline reference is inconsistent. The entire activity must finish within 20 weeks of signing of contract, but milestones run from T, defined as the Letter of Award date, and one table also lists issuance of the Purchase Order as T. Hardware delivery is due T + 8 Weeks.",
+        "pages": [
+          40,
+          49
+        ]
+      },
+      {
+        "text": "Risk: Support hours conflict. On-site support is stated as 24x7 in one clause and as 9 X 5 in another.",
+        "pages": [
+          30,
+          32
+        ]
+      },
+      {
+        "text": "Risk: Termination notice conflicts: 90 days for failure on performance assessment in one clause, two months' notice for non-performance in another; LIC may also blacklist the vendor and levy a lump sum penalty within the limits of PBG.",
+        "pages": [
+          23,
+          47
+        ]
+      },
+      {
+        "text": "Risk: The EMD Bank Guarantee format (Annexure-VI) guarantees Rs.20,00,000/- in one clause but Rs.83,00,000/- elsewhere, and sets validity at one year from BG submission, whereas the tender says one year from the last date of bid submission.",
+        "pages": [
+          15,
+          61
+        ]
+      },
+      {
+        "text": "Risk: A delay beyond four (4) consecutive weeks in any phase lets LIC cancel the purchase order, levy penalties, recover from bank guarantees and terminate the contract.",
+        "pages": [
+          49
+        ]
+      }
+    ]
+  }
+}

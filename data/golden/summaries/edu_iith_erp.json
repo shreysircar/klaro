@@ -1,0 +1,449 @@
+{
+  "doc_id": "edu_iith_erp",
+  "provenance": {
+    "drafted_by": "claude-code",
+    "drafted_at": "2026-10-28T14:16:13+00:00",
+    "spec_version": "v1",
+    "status": "auto_checked",
+    "verified_by": null,
+    "verified_at": null,
+    "verification_changes": null
+  },
+  "summary": {
+    "overview": {
+      "text": "Indian Institute of Technology Hyderabad invites online two-bid tenders for implementing a web-based ERP system that automates academic and administrative functions across the whole Institute (finance, stores and purchases, HR and payroll, estate and project management). Bidders must be companies registered in India. Support is one year of warranty plus three years of AMES. Tender Ref. No: IITH/PUR/ERP/T015.",
+      "pages": [
+        2,
+        13,
+        36
+      ]
+    },
+    "issuing_organization": "Indian Institute of Technology Hyderabad, Kandi, Sangareddy - 502 285, Telangana; Tender Ref. No: IITH/PUR/ERP/T015, dated 25/01/2021; office.erp@comp.iith.ac.in, 040-23016071",
+    "issuing_organization_pages": [
+      1,
+      2
+    ],
+    "scope": [
+      {
+        "text": "End-to-end web-based ERP for academic and administrative functions of IITH, usable by all department and section users.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "Modules named include Finance & Accounts, Stores & Purchases & Asset Management, Human Resources Management & Payroll, Estate Management, Project Management and Asset Maintenance.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "Module-wise development and roll-out of the core and other modules specified in the FRS document.",
+        "pages": [
+          34
+        ]
+      },
+      {
+        "text": "Detailed functional and technical requirements and scope of work are in Volume II and its Appendix A, a separate document not in this PDF.",
+        "pages": [
+          12
+        ]
+      },
+      {
+        "text": "Bidder should (desirable wording) port data from existing systems or integrate them with the new ERP.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "Data migration from legacy systems and integration of legacy systems with the ERP is a priced line item.",
+        "pages": [
+          61
+        ]
+      },
+      {
+        "text": "Post-implementation support: warranty for one (1) year and AMES for three (3) Years.",
+        "pages": [
+          36
+        ]
+      },
+      {
+        "text": "Code used in the ERP modules should be shared with IITH and perpetual licences for source code and workflow engine issued, if applicable (desirable wording).",
+        "pages": [
+          34
+        ]
+      }
+    ],
+    "key_requirements": [
+      {
+        "text": "Bid Securing Declaration (Annexure XII) must be signed, or valid NSIC/MSME exemption certificate attached; otherwise the bid is rejected.",
+        "pages": [
+          17,
+          18
+        ]
+      },
+      {
+        "text": "Integrity Pact (Annexure XIII) must be signed; non-signing disqualifies the bidder.",
+        "pages": [
+          39
+        ]
+      },
+      {
+        "text": "Bids must be unconditional: no deviations, exceptions or extraneous conditions; Certificate of Conformity (Annexure VII) must be given.",
+        "pages": [
+          20,
+          39,
+          55
+        ]
+      },
+      {
+        "text": "Envelope 1 'B' must show compliance to every clause of the functional and technical specifications.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Bidder must give a technical presentation covering Parts A to E and a demo of five modules (Part F).",
+        "pages": [
+          21,
+          24
+        ]
+      },
+      {
+        "text": "Proposed ERP should facilitate smooth creation of new departments, centers and courses and integration of all units (desirable wording).",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "Solution availability (uptime) must be >=99.5%, calculated on a 24*7*365 basis each quarter.",
+        "pages": [
+          41
+        ]
+      },
+      {
+        "text": "All bugs of high and medium category must be closed before deployment.",
+        "pages": [
+          40
+        ]
+      },
+      {
+        "text": "Subcontracting should take place only with prior approval of IIT Hyderabad (desirable wording).",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "Proposal and all correspondence must be in English; non-English literature needs a certified translation.",
+        "pages": [
+          33
+        ]
+      }
+    ],
+    "eligibility": [
+      {
+        "text": "Bidder must be a company registered in India under Companies Act 1956 or Companies Act 2013, or a firm registered with Registrar of Firms.",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "Consortium allowed with a maximum of two members; the Prime Bidder is the contact point and responsible for total completion.",
+        "pages": [
+          14,
+          15
+        ]
+      },
+      {
+        "text": "Bidder must be registered with the Tax Department (GST number).",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "Prime Bidder must have 5 or more years as an ERP solution providing agency.",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "Prime Bidder annual turnover must be a minimum of INR 3 Cr in each of the last three financial years from IT services.",
+        "pages": [
+          16
+        ]
+      },
+      {
+        "text": "Bidder, alone or with a consortium member, must have implemented an ERP in at least 2 Higher Education Institutes in India in the last five years.",
+        "pages": [
+          16
+        ]
+      },
+      {
+        "text": "Bidder must not have been debarred or blacklisted by any Central or State Govt. body or PSU in India in the last five years.",
+        "pages": [
+          16
+        ]
+      },
+      {
+        "text": "Bidder must have on payroll a Higher Education Domain Specialist and Functional Leads for Accounts, Procurement and HR.",
+        "pages": [
+          16
+        ]
+      }
+    ],
+    "important_dates": [
+      {
+        "text": "Online publication/download of tender: 25 Jan 2021, 1600 hrs.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Last date for sending pre-bid queries: 08 Feb 2021, 1700 hrs.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "On-line pre-bid meeting: 15 Feb 2021, 1530 hrs.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Upload of pre-bid clarifications/corrigendum, if any: 22 Feb 2021, 1700 hrs.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Bid submission start: 23 Feb 2021, 0900 hrs.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Bid submission close: 15 Mar 2021, 1700 hrs.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Opening of Technical Bids, Envelope 1 'A': 16 Mar 2021, 1100 hrs.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Price Bid opening date: to be announced later.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Bid validity: six (6) Calendar months from the date of submission.",
+        "pages": [
+          30
+        ]
+      }
+    ],
+    "commercial_requirements": [
+      {
+        "text": "EMD: NA; estimated cost of tender: NA. A Bid Securing Declaration is required instead.",
+        "pages": [
+          2,
+          17
+        ]
+      },
+      {
+        "text": "Portal enrolment fee Rs. 2000/- +Applicable GST; form fee and processing fee are non-refundable, amounts not stated.",
+        "pages": [
+          8,
+          9
+        ]
+      },
+      {
+        "text": "Performance Bank Guarantee of three percent (3%) of Total Contract price (excluding taxes and duties) from a Nationalized Bank, furnished within fifteen (15) days of signing the Contract.",
+        "pages": [
+          33
+        ]
+      },
+      {
+        "text": "Prices in Indian Rupees only, per-unit prices and taxes shown separately, inclusive of all licenses, upgrades, support and tools for full functionality.",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "Payments by RTGS or NEFT within 30 days of submission of all documents, per schedule.",
+        "pages": [
+          34
+        ]
+      },
+      {
+        "text": "Core/other modules: 15%/15% on Architecture and Design approval within 4 Months; 10%/10% on CRP demos within 12 and 15 Months; 35%/25% on integration test and beta Go-Live within 15 and 18 Months; 30%/40% on stable Go-Live with UAT at 24 Months.",
+        "pages": [
+          45
+        ]
+      },
+      {
+        "text": "Final 10%/10% after the warranty period at 36 Months; data migration and legacy integration paid after successful migration; AMES paid in twelve equal quarterly instalments.",
+        "pages": [
+          46
+        ]
+      },
+      {
+        "text": "Liquidated damages: 1% per month on total contract value, capped at 10%, for missing the delivery schedule.",
+        "pages": [
+          37,
+          41
+        ]
+      }
+    ],
+    "project_duration": [
+      {
+        "text": "Contract period runs from the date of agreement and is valid for the timelines in this RFP; extension terms are not specified in the document.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "Core modules to be completed in 15 Months from signing of agreement; other modules in 18 Months.",
+        "pages": [
+          46
+        ]
+      },
+      {
+        "text": "Architecture and Design for core and other modules: within 4 Months.",
+        "pages": [
+          45
+        ]
+      },
+      {
+        "text": "Conference Room Pilot demos: within 12 and 15 Months for core and other modules.",
+        "pages": [
+          45
+        ]
+      },
+      {
+        "text": "Stable version Go-Live with user acceptance test at institute level: 24 Months.",
+        "pages": [
+          41,
+          45
+        ]
+      },
+      {
+        "text": "Warranty period is 12 months, starting after 24 Months.",
+        "pages": [
+          46
+        ]
+      },
+      {
+        "text": "AMES support for three years after the warranty period; Final Acceptance Certificate after the four years.",
+        "pages": [
+          36,
+          46
+        ]
+      }
+    ],
+    "important_conditions": [
+      {
+        "text": "Evaluation: QCBS with 70% weightage to technical and 30% to financial score; highest composite score is H1; a tie goes to the higher technical score.",
+        "pages": [
+          20,
+          28
+        ]
+      },
+      {
+        "text": "Evaluation: Technical score is out of 200, split into Parts A to F with max marks 10, 25, 40, 50, 25 and 50.",
+        "pages": [
+          25,
+          26,
+          27
+        ]
+      },
+      {
+        "text": "Evaluation: Bidder must score minimum 60% in each of Parts A to F and overall minimum 140, or the price bid is not opened.",
+        "pages": [
+          27
+        ]
+      },
+      {
+        "text": "Evaluation: Financial score uses the Grand Total inclusive of taxes; lowest offer gets 100 and others get 30 x lowest offer / quoted offer.",
+        "pages": [
+          27,
+          28
+        ]
+      },
+      {
+        "text": "Submission: Online only through https://mhrd.euniwizarde.com with a valid Class III Digital Signature Certificate; manual bids are rejected.",
+        "pages": [
+          2,
+          8,
+          19
+        ]
+      },
+      {
+        "text": "Submission: Technical bid in Envelope 1 'A' (eligibility documents) and Envelope 1 'B' (compliance and technical documents), and Price Bid in Envelope 2 per Annexure XI.",
+        "pages": [
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "text": "Submission: Financial bid only in the format provided; a modified BOQ file leads to rejection. Original BG, if used, must reach IIT Hyderabad before technical bid opening.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Submission: Annexure forms must be duly filled and submitted, including declarations on blacklisting (VI), acceptance of terms (VIII) and local content (XIV).",
+        "pages": [
+          17,
+          54,
+          56
+        ]
+      },
+      {
+        "text": "Risk: Delay penalty is 1% of Total Contract Value per month or part thereof, capped at 10%, and IITH may also recover cost of investment for delay.",
+        "pages": [
+          41,
+          42
+        ]
+      },
+      {
+        "text": "Risk: Indemnity covers all losses, punitive damages and attorney's fees for breach; no liability cap appears in this volume.",
+        "pages": [
+          39
+        ]
+      },
+      {
+        "text": "Risk: Conflict on financial score: one clause gives the lowest offer a score of 100, while the formula that follows gives 30 x lowest offer / quoted offer.",
+        "pages": [
+          27,
+          28
+        ]
+      },
+      {
+        "text": "Risk: Functional scope sits in Volume II/Appendix A, absent here, and Annexure VI subject line mentions Hosting that is not described elsewhere.",
+        "pages": [
+          12,
+          54
+        ]
+      },
+      {
+        "text": "Risk: Any variation in the stated FRS fitment found later is treated as fraudulent practice and may forfeit the PBG.",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "Risk: Payments are back-loaded: 40% of other-module price is paid only at 24 Months and a final 10% after warranty at 36 Months.",
+        "pages": [
+          45,
+          46
+        ]
+      }
+    ]
+  }
+}

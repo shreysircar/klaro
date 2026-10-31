@@ -1,0 +1,421 @@
+{
+  "doc_id": "muni_ghmc_assetsurvey",
+  "provenance": {
+    "drafted_by": "claude-code",
+    "drafted_at": "2026-10-28T14:25:31+00:00",
+    "spec_version": "v1",
+    "status": "auto_checked",
+    "verified_by": null,
+    "verified_at": null,
+    "verification_changes": null
+  },
+  "summary": {
+    "overview": {
+      "text": "Greater Hyderabad Municipal Corporation (GHMC) invites e-procurement bids to appoint a consultant for surveying, digitization and geo-referencing of its immovable assets (parks, markets, shops, buildings, lands and similar) for LB Nagar Zone and Kukatpally Zone, under Notice No. RFP-01/TP/HO/GHMC/2025-26. Selection is by QCBS and the contract period is 6 Months.",
+      "pages": [
+        1,
+        5
+      ]
+    },
+    "issuing_organization": "Greater Hyderabad Municipal Corporation (GHMC); O/o Chief City Planner, Town Planning Section, Head Office, Tank Bund, Hyderabad; Notice No. RFP-01/TP/HO/GHMC/2025-26 dt: 09.04.2025; ccp.ghmc@gmail.com, 8897723423",
+    "issuing_organization_pages": [
+      1,
+      5
+    ],
+    "scope": [
+      {
+        "text": "Detailed physical survey of GHMC immovable properties using DGPS to collect boundary measurements, extent, physical features, building foot prints and surrounding features.",
+        "pages": [
+          21,
+          22
+        ]
+      },
+      {
+        "text": "Collect real world co-ordinates of every property corner using DGPS, and record height above MSL for each property.",
+        "pages": [
+          22,
+          23
+        ]
+      },
+      {
+        "text": "Prepare detailed plans of each property at a scale of 1 : 200 to 1:1000 and capture photographs of frontage, sides and inside.",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "Collect property attribute details (circle, layout, extent, Sy. No., encroachment, boundaries, GPS coordinates and others) and generate a Unique ID Number for each property.",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "Design and develop a geo-enabled mobile application integrated with base map/Google Map for survey and attribute collection, and integrate attribute data with spatial data.",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "Prepare a profile of every immovable property and the Inventory of immovable properties in the prescribed format.",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "Develop and implement a software application to monitor the immovable properties of GHMC.",
+        "pages": [
+          22,
+          26
+        ]
+      },
+      {
+        "text": "Deliverables include raw and corrected DGPS readings in RINEX and native format, maps in CAD and KML format with shape files, and the report in Hard Copy (8 Sets) plus soft copy.",
+        "pages": [
+          25
+        ]
+      }
+    ],
+    "key_requirements": [
+      {
+        "text": "Each Pre-Qualification criterion in Section 4.1 is mandatory; a bid that fails any one is non-responsive and not evaluated further.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "DGPS rover readings at each property corner must have a minimum observation period of 15 minutes; RTK-DGPS is preferred.",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "Base stations must use Multi/Dual frequency DGPS receivers with a minimum observation time of 12 hours from the nearest SOI control point.",
+        "pages": [
+          23
+        ]
+      },
+      {
+        "text": "Base-to-rover distance must be less than 10 km for single frequency DGPS rovers and less than 50 kms for dual frequency rovers.",
+        "pages": [
+          23
+        ]
+      },
+      {
+        "text": "DGPS instruments must be set to Geographic Coordinate System WGS84 Datum.",
+        "pages": [
+          23
+        ]
+      },
+      {
+        "text": "Raw and differentially corrected DGPS readings with error charts must be submitted to the Authority every week or as soon as the work is completed, whichever is earlier.",
+        "pages": [
+          23
+        ]
+      },
+      {
+        "text": "Survey is proposed in all 6 zones simultaneously with at least 2 Teams per Zone; each Team has a Team Leader (Specialist in Geomatics), a DGPS Operator and/or ATS Operator, and surveyors.",
+        "pages": [
+          24
+        ]
+      },
+      {
+        "text": "Key personnel minimum qualifications are prescribed; the Project Manager needs B.E/B.Tech or equivalent and at least 5 years of experience, and CVs of key personnel must be enclosed.",
+        "pages": [
+          24,
+          25
+        ]
+      },
+      {
+        "text": "Coordinates must be delivered in 8 decimal places in degrees for Latitude and Longitude including Height above MSL in meters.",
+        "pages": [
+          25
+        ]
+      },
+      {
+        "text": "Source Code of the customized GIS Solution must be transferred to GHMC; software licences must be genuine, perpetual and in the name of GHMC.",
+        "pages": [
+          28,
+          29
+        ]
+      }
+    ],
+    "eligibility": [
+      {
+        "text": "Bidder must be a registered company, partnership firm, LLP or proprietorship firm in operation for at least 5 years.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "Consortium is allowed with not more than two companies, a stamped consortium agreement and a Lead Partner; every member must be jointly and severally liable. MoU must be submitted with the Pre-Qualification Bid.",
+        "pages": [
+          6,
+          7,
+          14
+        ]
+      },
+      {
+        "text": "Experience in last 10 years in India: at least 2 completed Total Station and DGPS property survey projects for Government/PSU/ULB, plus at least 2 projects each for spatial layer creation and MIS-GIS integration with Web and Mobile Applications.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Cumulative turnover of at least INR 1 Crore during last five financial years as on 31 March 2024 from Property Survey and GIS Software implementation.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Bidder or Lead Partner must have positive net worth in the last financial year ending on March 2024.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Bidder must have at least 20 regular experts for Land Survey and GIS, and a local office at Hyderabad.",
+        "pages": [
+          7,
+          8
+        ]
+      },
+      {
+        "text": "Bidder must not be blacklisted by any Central or State Government Department or PSU as on bid submission date, and must have a valid GST Registration in India.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Bidder must have back-end support arrangement with GIS software licence provider and IT hardware OEMs, and authorization from OEM/licence provider to quote, with Perpetual License.",
+        "pages": [
+          7,
+          8
+        ]
+      }
+    ],
+    "important_dates": [
+      {
+        "text": "Tender floating date: 10.04.2025 @ 11.00 AM.",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "text": "Bid submission start date: 10.04.2025 @ 11.00 AM onwards.",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "text": "Last date and time for online bid submission along with softcopy of EMD: 29.04.2025 @ 4.00  PM.",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "text": "Bid validity: 90 (Ninety) days from the last date of submission, extendable upon request by authority.",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "text": "Bid validity: 90 days from the date of opening of tender (conflicts with the item above).",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Pre-bid meeting date: Not specified in the document",
+        "pages": []
+      },
+      {
+        "text": "Query submission deadline: Not specified in the document",
+        "pages": []
+      },
+      {
+        "text": "Technical bid opening date: Not specified in the document",
+        "pages": []
+      }
+    ],
+    "commercial_requirements": [
+      {
+        "text": "Bid Processing fee Rs. 5,000/- (non-refundable) and EMD Rs.1,00,000/-, each as DD in favour of Commissioner, GHMC; but fee and EMD are also stated to be paid online via the portal.",
+        "pages": [
+          5,
+          15
+        ]
+      },
+      {
+        "text": "EMD is payable online, valid for 90 days from the due date, non-interest bearing; offers without EMD will be rejected; forfeited on withdrawal during validity or failure to sign contract or furnish security.",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "Performance Bank Guarantee of 10% of total financial bid value, unconditional and irrevocable, from a Nationalized or Scheduled Bank.",
+        "pages": [
+          5,
+          21
+        ]
+      },
+      {
+        "text": "Within 30 days of GHMC communication, successful bidder must sign the contract and submit Security Deposit equal to 5% of the Order value as DD or bank guarantee.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "Payment is 15% of Project Cost at each of M1 to M5 and 25% of Project Cost at M6.",
+        "pages": [
+          26
+        ]
+      },
+      {
+        "text": "Delay penalty: 0.5 (zero point five) % of cost of respective work for every week of delay, up to a maximum of 5(five) % of the contract value; then termination and invoking of PBG possible.",
+        "pages": [
+          27
+        ]
+      },
+      {
+        "text": "Field survey SLA: average RMS error must not exceed 5.00%, penalty 0.1% of base map creation cost; Rs. 100-00 per incorrect value found in random sampling; software patch or bug delay Rs.200/- per day.",
+        "pages": [
+          31
+        ]
+      },
+      {
+        "text": "Price is a unit rate Per every 1000 Sq. mts or part thereof (on Site Area) in Indian Rupees, inclusive of all charges, quoted exempting GST.",
+        "pages": [
+          36
+        ]
+      }
+    ],
+    "project_duration": [
+      {
+        "text": "Contract period: 6 Months.",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "text": "Survey, plans, attribute data and geo-referencing completion: M1 25% by T0+ 4 Weeks; M2 50% by T0+ 8 Weeks; M3 75% by T0+ 12 Weeks; M4 100% by T0+ 16 Weeks.",
+        "pages": [
+          26
+        ]
+      },
+      {
+        "text": "M5 Draft Report and Inventory of Immovable properties by T0+ 20 Weeks.",
+        "pages": [
+          26
+        ]
+      },
+      {
+        "text": "M6 Final Report (Hard 8 Sets and Soft copies), plans in CAD and KML format and implementation of monitoring software by T0+ 24 Weeks.",
+        "pages": [
+          26
+        ]
+      },
+      {
+        "text": "GHMC may change phasing and extend timelines; its decision is final and binding.",
+        "pages": [
+          26
+        ]
+      }
+    ],
+    "important_conditions": [
+      {
+        "text": "Evaluation: QCBS with 70:30 weightage (70% Technical, 30% Financial); single stage two envelope bidding.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Evaluation: Technical score of 100 comprises E1 Project References 60 marks and E2 Technical & Professional Capability & Solution Proposed 40 marks.",
+        "pages": [
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "text": "Evaluation: Minimum Technical Score of 70 out of 100 is required for the financial bid to be opened.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Evaluation: bidder must make a technical presentation (20 marks) and a demonstration (10 marks), bringing its own Laptop.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Evaluation: financial score Sf = 100 x Fm/F; Net Score Ns = (St*0.7) + (Sf * 0.3); highest Ns wins the contract.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Submission: bids must be submitted online only on the e-procurement portal; email, print out, telex or fax bids are rejected; financial bid submitted with the technical bid is rejected.",
+        "pages": [
+          12,
+          17
+        ]
+      },
+      {
+        "text": "Submission: Set One fee and EMD receipts; Set Two Pre-Qualification bid with No Deviation Certificate (9.7) and Total Responsibility certificate (9.8); Set Three Technical bid with FRS and TRS response.",
+        "pages": [
+          18,
+          19
+        ]
+      },
+      {
+        "text": "Submission: technical bid must include compliance statement, assumptions and deviations sheet, solution architecture, Power of Attorney per 9.13, and sequentially numbered pages with a contents list.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Risk: scope conflict; title and annexures cover LB Nagar Zone and Kukatpally Zone only, but the scope says survey in all 6 zones with at least 2 Teams each.",
+        "pages": [
+          1,
+          24
+        ]
+      },
+      {
+        "text": "Risk: number of immovable properties to be surveyed is blank in the RFP (has over  Immovable Properties) and the price is quoted per 1000 Sq. mts, so effort cannot be sized.",
+        "pages": [
+          6,
+          36
+        ]
+      },
+      {
+        "text": "Risk: conflicting security; Security Deposit of 5% of Order value (Section 5.31) and Performance Bank Guarantee of 10% of financial bid value (Section 5.32) are both stated.",
+        "pages": [
+          20,
+          21
+        ]
+      },
+      {
+        "text": "Risk: conflicting award basis; QCBS highest Net Score (Section 4.5) versus award to the lowest Financial quote (Section 5.29).",
+        "pages": [
+          11,
+          20
+        ]
+      },
+      {
+        "text": "Risk: conflicting bid validity (90 days from last date of submission versus 90 days from opening), and Section 5.17 gives the submission date as on or before 00.03.2025.",
+        "pages": [
+          5,
+          17
+        ]
+      },
+      {
+        "text": "Risk: conflicting consortium liability; every member is jointly and severally liable, but partners are severally responsible only for their own scope.",
+        "pages": [
+          7,
+          13
+        ]
+      }
+    ]
+  }
+}

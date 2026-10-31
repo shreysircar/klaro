@@ -1,0 +1,433 @@
+{
+  "doc_id": "it_igitsarang_erp",
+  "provenance": {
+    "drafted_by": "claude-code",
+    "drafted_at": "2026-10-28T14:24:37+00:00",
+    "spec_version": "v1",
+    "status": "auto_checked",
+    "verified_by": null,
+    "verified_at": null,
+    "verification_changes": null
+  },
+  "summary": {
+    "overview": {
+      "text": "Indira Gandhi Institute of Technology (IGIT), Sarang, Dhenkanal, Odisha invites proposals for a cloud based, SaaS mode ERP system covering academic, finance, HR, hostel and related modules, plus website re-design. The selected bidder must develop and implement it, then maintain it under a three year contract. The notice is dated 15.04.2021.",
+      "pages": [
+        4,
+        7,
+        16
+      ]
+    },
+    "issuing_organization": "Indira Gandhi Institute of Technology (IGIT), Sarang; Sarang, Dhenkanal-759146, Odisha; notice dated 15.04.2021, notice number left blank; bids addressed to The Director",
+    "issuing_organization_pages": [
+      4,
+      6
+    ],
+    "scope": [
+      {
+        "text": "Install and commission a cloud based SAAS mode ERP; the bidder must develop, test, install and turn over the software to IGIT Sarang, with prices all-inclusive.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Admission management, academic management (courses, syllabus), attendance and time table management, and examination management modules (pre and post exams, results, mark sheets).",
+        "pages": [
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "text": "Fees management module: configurable fee structures, collection, dues alerts, late fines, scholarships, waivers and refunds.",
+        "pages": [
+          9,
+          10
+        ]
+      },
+      {
+        "text": "Administration and establishment (HR) module, and payroll system covering leave, salary, arrears, pension contribution and appraisals.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Finance and accounts, budgeting, and purchase and inventory management modules (vouchers, general ledger, procure to pay, stock).",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Hostel management, student feedback management, and faculty/employee and student self-service portals.",
+        "pages": [
+          11,
+          12
+        ]
+      },
+      {
+        "text": "Website re-design: link all ERP data to the institute website and upgrade it from time to time.",
+        "pages": [
+          12
+        ]
+      },
+      {
+        "text": "Maintain the cloud based ERP under a contract for three years, priced as annual subscription charges.",
+        "pages": [
+          16
+        ]
+      }
+    ],
+    "key_requirements": [
+      {
+        "text": "Bidder must be a product bidder and a one-stop solution for development, implementation and maintenance of the product.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "Application must be ready to use, and the bidder must demonstrate module functionality with valid data.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "Application must be completely web-based, needing no client software other than a web browser.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "Must work with a public domain RDBMS; application should be free of proprietary software and use only open standard components.",
+        "pages": [
+          12,
+          13
+        ]
+      },
+      {
+        "text": "Must develop and implement the ERP successfully within 500 working days from receiving the work order.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Backup and restore must be provided, including complete offline and online backup and incremental backup.",
+        "pages": [
+          12
+        ]
+      },
+      {
+        "text": "Security: super administrator and module administrators, user creation with menu-level privileges, user-name logging of all transactions, and IP address based protection (transactions only from specific IP addresses).",
+        "pages": [
+          12,
+          13
+        ]
+      },
+      {
+        "text": "Accounting software must conform to Central Auditor General rules and standards and the IT Act where applicable, and be acceptable to audit.",
+        "pages": [
+          13,
+          14
+        ]
+      },
+      {
+        "text": "Bidder must migrate legacy data using repeatable scripts, run old and new software in parallel for a period, and keep legacy data portable without extra cost.",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "Bidder must keep at least one software engineer at IGIT for 3 years (B.Tech/B.E. in CSE/IT with 2 to 5 years of ERP maintenance experience) after implementation.",
+        "pages": [
+          20
+        ]
+      }
+    ],
+    "eligibility": [
+      {
+        "text": "Bidder must be of national standing and repute, with experience implementing similar systems in Indian state or central universities of higher education for around 5000 user capacity.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "Bidder must provide copies of PAN no, GST certificate, Certification of Incorporation and last 3 years income tax return statement.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "Bidder must be a company registered with the Registrar of Companies and registered with GST, with supporting documents.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "Technical bid checklist requires a list of at least 5 qualified service engineers with more than 5 years of experience, with qualification and experience certificates.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "Technical bid checklist requires a list of clients where the company currently maintains systems (at least one location in Odisha), with work orders or evidence from Govt. departments or PSUs.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Bidder must provide reference accounts where similar work in scope and design was completed, with contact details.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "ISO certification for software development, security certificates such as cert-in and CMMi, and ISO 9001 and ISO 27001 are preferred, not mandatory.",
+        "pages": [
+          13,
+          20
+        ]
+      },
+      {
+        "text": "Not specified in the document: minimum turnover, JV/consortium rules, blacklisting declaration.",
+        "pages": []
+      }
+    ],
+    "important_dates": [
+      {
+        "text": "Notice inviting RFP dated 15.04.2021.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "RFP document available on the IGIT Sarang website from 19.04.2021.",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "text": "Written clarification requests must be made within one week of issue of the RFP.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Last date and time for submission of the completed RFP: 12.05.2021 up to 10 AM.",
+        "pages": [
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "text": "Opening of RFP (Technical Bid Part-I): 18.05.2021 at 10 AM.",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "Technical presentation on approach and methodology: To be notified later.",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "text": "Opening of Financial Bid (Part-II): To be notified later.",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "text": "RFP response must stay valid for 90 (ninety) days after the RFP response opening date.",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "commercial_requirements": [
+      {
+        "text": "Cost of tender documents: Rs 1,000/- (Rupees one thousand only).",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "EMD of Rs 60,000/- (INR) as a Demand Draft in favour of Principal, IGIT Sarang, payable at IGIT Sarang, must accompany the proposal; proposals without it will be rejected.",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "No bank guarantee is accepted in lieu of EMD, and no interest is paid on EMD.",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "Security Deposit of 10 (ten) per cent of total contract cost as an unconditional, irrevocable bank guarantee from a scheduled commercial bank in India, for the contract period with 90 days claim period, submitted after contract award.",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "Implementation payment in five phases: 15% each for Phases 1 to 4 (Academics, Examination, Administration, Accounts and other modules) and 40% after one year of stable system and handover.",
+        "pages": [
+          16
+        ]
+      },
+      {
+        "text": "Annual subscription for a three year contract is paid quarterly, based on actual number of users, after all modules are implemented.",
+        "pages": [
+          16
+        ]
+      },
+      {
+        "text": "Prices must be all-inclusive and fixed during the contract period; quoted prices stay in effect for at least One year from the last date of bid submission.",
+        "pages": [
+          7,
+          17
+        ]
+      },
+      {
+        "text": "Liquidated damages / penalties: Not specified in the document.",
+        "pages": []
+      }
+    ],
+    "project_duration": [
+      {
+        "text": "Maintenance contract for three years for the cloud based ERP system.",
+        "pages": [
+          16
+        ]
+      },
+      {
+        "text": "ERP must be developed and implemented within 500 working days from receiving the work order.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Acceptance testing and end-user training to be completed within 15 days of acceptance of work order, without extra cost.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Defects found by IGIT during system testing must be removed within maximum two days.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Bidder should establish a technical control centre at IGIT, Sarang for a period of three years or more from the date of completion.",
+        "pages": [
+          16
+        ]
+      },
+      {
+        "text": "One year of free up-gradation/maintenance service after deployment of the ERP package.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "At least one software engineer must be stationed at IGIT for 3 years after implementation.",
+        "pages": [
+          20
+        ]
+      }
+    ],
+    "important_conditions": [
+      {
+        "text": "Evaluation: Technical bids are scrutinized per standard pre-eligibility norms; selected bidders are called for a 10-15 minute presentation.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Evaluation: Applicants must present a pilot demo version of a module, covering understanding and compliance, design templates, proof of concept, experience and ease of management.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Evaluation: Institute decides on pre-eligibility criteria and demo performance, then opens financial bids of selected bidders; no scoring weights, QCBS/L1 rule or minimum score is stated.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Submission: Printed, signed and bound copy in a sealed super-scribed cover, by registered/speed post only, to The Director, IGIT Sarang, by 12.05.2021, 10 AM.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "Submission: Envelope 1 holds the Technical Proposal (specifications, compliance, implementation plan, warranty and support plan, registration documents, signed terms); the Financial Bid is a sealed cover inside the RFP cover.",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "text": "Submission: Financial bid must follow the Annexure-1 proforma (Tables A, B, C); write 0 (zero) where no cost applies to an item.",
+        "pages": [
+          14,
+          22
+        ]
+      },
+      {
+        "text": "Submission: Conditional or incomplete bids, and late applications, will be rejected; late ones are returned unopened.",
+        "pages": [
+          6,
+          16
+        ]
+      },
+      {
+        "text": "Submission: Technical bid must include the checklist: organization details, registration documents, ISO certificates, tender fee and EMD, engineer list and client list in the given proformas.",
+        "pages": [
+          20,
+          21
+        ]
+      },
+      {
+        "text": "Risk: Conflict on durations - response validity is 90 days after opening (page 14), but prices must stay in effect for at least One year from last date of submission (page 17).",
+        "pages": [
+          14,
+          17
+        ]
+      },
+      {
+        "text": "Risk: Training and acceptance testing within 15 days of acceptance of work order, and defect fixes within two days, are tight and the 15 day start point is unclear.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Risk: Director of the institute is sole arbitrator and his decision is final; disputes going to court are decided at Kamakhyanagar/Dhenkanal.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Risk: Award or cancellation is at IGIT Sarang's sole discretion, and it may reject any or all offers without reason; invitation of tenders is not a commitment.",
+        "pages": [
+          16
+        ]
+      },
+      {
+        "text": "Risk: 40% of implementation payment is held until one year after stable operation, and subscription is paid on actual number of users, which may vary from year to year.",
+        "pages": [
+          16,
+          23
+        ]
+      },
+      {
+        "text": "Risk: Evaluation weights are absent, presentation and financial bid opening dates are To be notified later, and the schedule may change.",
+        "pages": [
+          5,
+          14
+        ]
+      }
+    ]
+  }
+}

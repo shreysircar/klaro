@@ -1,0 +1,464 @@
+{
+  "doc_id": "health_aiimsraipur_doppler",
+  "provenance": {
+    "drafted_by": "claude-code",
+    "drafted_at": "2026-10-28T14:18:51+00:00",
+    "spec_version": "v1",
+    "status": "auto_checked",
+    "verified_by": null,
+    "verified_at": null,
+    "verification_changes": null
+  },
+  "summary": {
+    "overview": {
+      "text": "All India Institute of Medical Sciences, Raipur, for the Govt. of India Ministry of Health & Family Welfare, invites e-tenders for supply and installation of 01 Set of Compact Portable Color Doppler Ultrasound Machine with TEE Probe for its Trauma & Emergency Department. Warranty is 02 years, followed by a CMC of 08 years. Tender No. AIIMS/R/CS/TNE/ECHO/GTE/2026.",
+      "pages": [
+        2,
+        3,
+        36
+      ]
+    },
+    "issuing_organization": "All India Institute of Medical Sciences, Raipur (Chhattisgarh); Tender No. AIIMS/R/CS/TNE/ECHO/GTE/2026 (also shown as GTE No. AIIMS/R/CS/PM/197/2024/GTE); G.E. Road, Tatibandh, Raipur- 492099; Tele: 0771- 2971307; store@aiimsraipur.edu.in",
+    "issuing_organization_pages": [
+      1,
+      2,
+      3
+    ],
+    "scope": [
+      {
+        "text": "Supply and installation of 01 Set Compact Portable Color Doppler Ultrasound Machine with TEE Probe for the Trauma & Emergency Department, AIIMS Raipur.",
+        "pages": [
+          3,
+          36
+        ]
+      },
+      {
+        "text": "Delivery at consignee site; the consignee list names AIIMS, RAIPUR, CHHATTISGARH, but the order may be placed for any hospital/institute across India.",
+        "pages": [
+          37,
+          60
+        ]
+      },
+      {
+        "text": "Standard accessories: linear, curved array, phased array and TEE transducers, minimum three active transducer ports, portable trolley/cart, cables and gel holders.",
+        "pages": [
+          39
+        ]
+      },
+      {
+        "text": "Incidental services: installation, commissioning, supervision, demonstration, trial run and training of doctors, staff and operators, plus operation and maintenance manuals.",
+        "pages": [
+          27,
+          36
+        ]
+      },
+      {
+        "text": "On-site training at the institute immediately after installation, for a minimum period of 1 month.",
+        "pages": [
+          42
+        ]
+      },
+      {
+        "text": "Comprehensive warranty of 02 years followed by CMC of 08 years including preventive maintenance, labour and spares; all software updates free during warranty and CMC.",
+        "pages": [
+          36,
+          41,
+          42
+        ]
+      },
+      {
+        "text": "Site Modification Work (if any) to be quoted separately with a price break-up, and must comply with AERB requirement, if any.",
+        "pages": [
+          36,
+          42
+        ]
+      },
+      {
+        "text": "Purchaser may increase or decrease the quantity by up to twenty five (25) per cent at award, and may further increase it by up to the balance 25% during the contract at the same unit price.",
+        "pages": [
+          20
+        ]
+      }
+    ],
+    "key_requirements": [
+      {
+        "text": "Must submit the Manufacturer's Authorisation Form (Section XIV) if quoting goods made by another manufacturer; a tender without it is declared non-responsive.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Must submit a clause-by-clause technical compliance statement with product catalogues and data sheets, and list any deviation from the specification in a chart.",
+        "pages": [
+          14,
+          16
+        ]
+      },
+      {
+        "text": "Imaging modes must be available: 2D (B-mode), M-mode, Colour Doppler, Power Doppler, Pulsed Wave Doppler, Continuous Wave Doppler, Tissue Doppler Imaging, Duplex and Triplex.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "Must support phased array, convex, linear and TEE probes (TEE mandatory), with operating frequency range of at least 1-19 MHz.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "Must supply as standard: linear 3-12 MHz (±1 MHz), curved 1-5 MHz (±1 MHz), phased 1-5 MHz (±1 MHz) and TEE probe 3-8 MHz (±1 MHz), preferably multiplane; minimum three active transducer ports.",
+        "pages": [
+          39
+        ]
+      },
+      {
+        "text": "Must have dedicated cardiac, vascular and acute care calculation packages, needle visualization software, and dynamic range of at least 165-180 dB with display depth up to 30 cm or more.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "Desirable: system preferably ≤ 8 kg including battery; start-up ≤ 60 seconds from OFF, to be demonstrated by the vendor; monitor of at least 15 inches with touchscreen (≥10 inches).",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "Must run on AC power and inbuilt battery with minimum backup of ≥60 minutes; the Power section instead states 220-240 VAC, 50 Hz and inbuilt battery with 260 minutes backup.",
+        "pages": [
+          39,
+          40
+        ]
+      },
+      {
+        "text": "Must support full DICOM functionality (Storage, Print, Worklist) and compatibility with PACS, RIS and HIS; internal storage of at least 128 GB with USB export is desirable.",
+        "pages": [
+          39
+        ]
+      },
+      {
+        "text": "Must comply with BIS (India)/IEC/CE/US FDA standards; system and probes must be drop-safe (≥1 meter drop test certified); probes with IPX7 or higher rating, certificate to be provided.",
+        "pages": [
+          39,
+          40
+        ]
+      }
+    ],
+    "eligibility": [
+      {
+        "text": "Tenderer must be a manufacturer; a manufacturer who does not quote directly may authorise an agent on the Manufacturer's Authorisation Form.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Manufacturer must have supplied and installed, in the last Five years from tender opening, at least 25% of the quoted quantity (rounded off to next whole number) of similar equipment that is functioning satisfactorily.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Tenderer quoting as authorised representative must have executed at least one contract in the last five years of medical equipment of the same manufacturer anywhere in India.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "MSME and/or start-up firms are exempted from criteria 2(a) and 2(b) above, but not from the quality requirements.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Bidder from a country sharing a land border with India must be registered with the Competent Authority per Annexure-C of order F.No.6/18/2019-PPD dated 23-July-2020 and submit a self-declaration.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Must confirm it is not deregistered, banned or blacklisted by any Govt. Authority; tender of such a bidder is non-responsive. Notarised non-conviction certificate for preceding three years required.",
+        "pages": [
+          10,
+          17,
+          47
+        ]
+      },
+      {
+        "text": "Self-attested annual report, audited balance sheet and profit & loss account for preceding three years required; no minimum turnover figure is given in the document.",
+        "pages": [
+          11,
+          16
+        ]
+      },
+      {
+        "text": "Must submit details of registered office/registered service centre with contacts across India in East, West, North & South regions.",
+        "pages": [
+          11
+        ]
+      }
+    ],
+    "important_dates": [
+      {
+        "text": "Published and bid document download/sale start: 30.06.2026, 06:00 PM.",
+        "pages": [
+          2
+        ]
+      },
+      {
+        "text": "Queries must be sent 02(two) days before the pre-bid meeting; no queries are entertained after the pre-bid meeting.",
+        "pages": [
+          3,
+          9
+        ]
+      },
+      {
+        "text": "Pre-bid meeting: 07.07.2026, 03:30 PM.",
+        "pages": [
+          2
+        ]
+      },
+      {
+        "text": "Bid submission start: 13.07.2026, 10:00 AM.",
+        "pages": [
+          2
+        ]
+      },
+      {
+        "text": "Bid submission end: 28.07.2026, 03:30 PM; original EMD must also be submitted within the scheduled time.",
+        "pages": [
+          2,
+          3,
+          16
+        ]
+      },
+      {
+        "text": "Bid opening: 29.07.2026, 03:30 PM (techno-commercial bid first).",
+        "pages": [
+          2,
+          16
+        ]
+      },
+      {
+        "text": "Price bid opening: on a date to be notified after evaluation of the techno-commercial tender.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Bid validity: 180 days after the date of tender opening; a shorter validity is rejected.",
+        "pages": [
+          15
+        ]
+      }
+    ],
+    "commercial_requirements": [
+      {
+        "text": "EMD: Rs.1,71,735/- for the 01 Set item, as Account Payee Demand Draft, FDR or Bank Guarantee in favour of \"AIIMS RAIPUR\", submitted in physical form.",
+        "pages": [
+          3,
+          14,
+          15
+        ]
+      },
+      {
+        "text": "EMD must be valid for 225 days from techno-commercial tender opening; MSE/NSIC-registered tenderers may claim exemption by submitting a valid registration copy.",
+        "pages": [
+          14,
+          15
+        ]
+      },
+      {
+        "text": "Performance security: 5% (five percent) of total contract value, as DD, FDR or Bank Guarantee from a scheduled bank, valid up to sixty (60) days after the warranty period.",
+        "pages": [
+          24
+        ]
+      },
+      {
+        "text": "Payment: 70% on delivery against Consignee Receipt Certificate; balance Thirty percent (30%) on Final Acceptance Certificate after installation, commissioning, testing and trial run. Imported goods: 70% of net CIP price by LC on shipment, balance 30% on acceptance.",
+        "pages": [
+          30,
+          31
+        ]
+      },
+      {
+        "text": "Prices are firm and fixed during the contract with uniform unit prices across India; GST or other taxes are taken as inclusive unless specifically stated as extra; a NIL charges quote is unresponsive.",
+        "pages": [
+          12,
+          13
+        ]
+      },
+      {
+        "text": "Liquidated damages: 0.5% per week of delay or part thereof, maximum 10% of contract price, after which termination may be considered; LD attracts GST deducted from the bidder.",
+        "pages": [
+          32
+        ]
+      },
+      {
+        "text": "Warranty: 02 years comprehensive on-site, with 98% uptime guaranteed and warranty extended by double the downtime; no conditional warranty accepted.",
+        "pages": [
+          28,
+          36,
+          41
+        ]
+      },
+      {
+        "text": "CMC: 08 years after warranty, with BG of 5% of CMC contract value valid 2 months after CMC expiry; CMC payment is annual in GCC but six monthly in the General Technical Specifications.",
+        "pages": [
+          31,
+          36,
+          41
+        ]
+      }
+    ],
+    "project_duration": [
+      {
+        "text": "Indigenous goods or imported goods supplied from India: delivery 90 days from date of Purchase Order to consignee site; installation and commissioning within 30 days of receipt at site or of site handover, whichever is later.",
+        "pages": [
+          36
+        ]
+      },
+      {
+        "text": "Imported goods directly from foreign: delivery 90 days from date of opening of L/C; installation and commissioning within 45 days of receipt or site handover, whichever is later; LC opening documents due within 21 days of placement of order.",
+        "pages": [
+          36
+        ]
+      },
+      {
+        "text": "Return signed contract within twenty one days from the date of the contract; proforma invoice from foreign principal within 21 days from the date of PO.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Sample, if asked, to be sent within 07 days from issuance of Notification of Award/Contract.",
+        "pages": [
+          45
+        ]
+      },
+      {
+        "text": "Warranty period is 24 months from the date of installation, commissioning and acceptance (Section VI); CMC of 08 years follows warranty.",
+        "pages": [
+          36
+        ]
+      },
+      {
+        "text": "Supplier must ensure supply of spare parts for 10 years.",
+        "pages": [
+          27,
+          29
+        ]
+      },
+      {
+        "text": "Contract extension terms: Not specified in the document.",
+        "pages": []
+      }
+    ],
+    "important_conditions": [
+      {
+        "text": "Submission: Bids online only through the CPPP portal https://etenders.gov.in/eprocure/app with a valid class III Digital Signature Certificate; no deviation is acceptable.",
+        "pages": [
+          3
+        ]
+      },
+      {
+        "text": "Submission: Technical (techno-commercial) bid and Price Bid in the downloaded BOQ template; tampering with the price bid template leads to rejection and EMD forfeiture.",
+        "pages": [
+          3,
+          10,
+          11
+        ]
+      },
+      {
+        "text": "Submission: Original EMD must be deposited in physical form in the Tender Box at the Store Office, C-Block, 6th Floor, within the scheduled time, otherwise the online tender is not opened.",
+        "pages": [
+          3,
+          16
+        ]
+      },
+      {
+        "text": "Submission: Integrity Pact must be filled, sealed, signed and witnessed and submitted with the techno-commercial bid; incomplete or missing pact means rejection, with no resubmission.",
+        "pages": [
+          4,
+          17
+        ]
+      },
+      {
+        "text": "Submission: Technical bid must include Tender Form (Section X), Manufacturer's Authorisation Form, Power of Attorney, Performance Statement with PO copies, PAN and GST, and price bid must carry recent PO copies for the same model.",
+        "pages": [
+          10,
+          16
+        ]
+      },
+      {
+        "text": "Evaluation: Two-bid system; price bids of only techno-commercially acceptable offers are opened; award goes to lowest evaluated responsive tenderer, with L1 decided on total items cost plus CMC cost.",
+        "pages": [
+          17,
+          18,
+          20
+        ]
+      },
+      {
+        "text": "Evaluation: CMC cost is added for ranking at Net Present Value with a 10% discounting factor each year; Site Modification Work cost is also added for ranking.",
+        "pages": [
+          41,
+          42
+        ]
+      },
+      {
+        "text": "Evaluation: MSEs within L1+15% may match L1 to supply 25% of total value; Class-1 local supplier preference needs minimum 50% local content; free demonstration may be asked before price bid opening.",
+        "pages": [
+          19,
+          44,
+          45
+        ]
+      },
+      {
+        "text": "Risk: Warranty start is stated as first patient treated as per AERB norms (24 months) in GCC, but as date of installation, commissioning and acceptance in Section VI; TEE probe warranty is minimum 1 year in Section VII.",
+        "pages": [
+          28,
+          36,
+          40
+        ]
+      },
+      {
+        "text": "Risk: Service levels conflict: response within 8 hours (GCC, general specifications) versus Response time ≤24 hours (Section VII); uptime 98% versus Uptime ≥95% annually.",
+        "pages": [
+          28,
+          40,
+          41
+        ]
+      },
+      {
+        "text": "Risk: Performance security is due within twenty one days of dispatch of award notification (GIT) but within thirty (30) days of notification of award (GCC); failure forfeits EMD.",
+        "pages": [
+          20,
+          24
+        ]
+      },
+      {
+        "text": "Risk: Integrity Pact stamp paper is stated as Rs.100/- on one page and Rs.10/- on another; incomplete execution means rejection without further evaluation.",
+        "pages": [
+          61,
+          62
+        ]
+      },
+      {
+        "text": "Risk: CMC payment is annual (GCC clause 21) but six monthly (general specifications and Contract Form B); uptime penalty extends CMC by double the downtime.",
+        "pages": [
+          31,
+          41,
+          56
+        ]
+      },
+      {
+        "text": "Risk: Eight years of CMC with spares for 10 years, most favoured client status and BG forfeiture for CMC lapses create a long, fixed-price obligation; Site Modification details are referred to but not given.",
+        "pages": [
+          29,
+          41,
+          42
+        ]
+      }
+    ]
+  }
+}

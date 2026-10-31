@@ -1,0 +1,95 @@
+# civil_asi_itagi
+
+<!-- status: auto_checked | spec v1 | Edit text and the [p. N] / [pp. N, M] citation at the end of each line. Keep headings. A line with no citation = no page. -->
+
+## Overview
+
+The Superintending Archaeologist, Archaeological Survey of India (ASI), Hampi Circle, Hosapete, Karnataka, on behalf of the President of India, invites online two-cover tenders for Development Works to Mahadeva Temple (Construction of Visitor Amenities and Sculpture Shed) at Itagi for the year 2025-26. Estimated cost is Rs. 78,14,000.00 and the work completion period is 180 days. Reference No: Sout/Hamp/Kopa/Maha/23179449. [pp. 1, 3]
+
+## Issuing organization
+
+Archaeological Survey of India (ASI), Ministry of Culture, Government of India; Hampi Circle, Hosapete, through the Superintending Archaeologist (Tender Inviting Authority), for the President of India; Tender ID Sout/Hamp/Kopa/Maha/23179449; Ref D-42/15/2026-Hampi Circle; sahc.asi@gov.in [pp. 1, 7]
+
+## Scope
+
+- Construct a boundary/compound wall with grill and gates around the site, a sculpture shed for exhibiting/storing sculptures, and other associated works at Mahadeva Temple, Itagi. [p. 44]
+- Associated ground works include clearing and grubbing road, earthwork excavation, laterite stone kerb, heavy duty cobble stones 75mm thick, and signage posts for direction and place identification. [p. 44]
+- Schedule of quantities covers masonry, concrete, steel and stone work, e.g. earth work excavation 285.15 Cum, random rubble masonry in foundation 136.41 Cum, coursed rubble masonry 83.94 Cum. [p. 62]
+- Fix MS grill on top of the boundary wall, 8605.0 Kg, to a height of 1.30 mtrs, and MS gates at 5 locations, 2230 Kg. [pp. 62, 63]
+- Sculpture shed: structural steel work 2465 Kg and 1260 Kg, and corrugated G.I. sheet roofing 73.95 Sqm and 37.80 Sqm. [pp. 63, 64, 65]
+- Granite stone flooring 301.6 Sqm and 10 granite stone benches. [pp. 63, 65]
+- Demolish stone rubble masonry 17.49 Cum, dispose debris 59.4 Cum, and shift artifacts/stone members from inside to the sculpture shed (100 Cum). [pp. 63, 65]
+- Actual quantities may vary higher or lower than tendered quantities; the sub circle in-charge or site in-charge decides the actual quantity. [p. 56]
+
+## Key requirements
+
+- Bid must include the Bid Securing Declaration (Form 8); a bid without it is rejected as nonresponsive. [p. 24]
+- Bid must quote the entire works in the schedule; conditional, alternative or multiple bids are rejected as nonresponsive. [p. 25]
+- Bidder must sign and submit the Integrity Pact (Form 9) with the tender; bidders who do not are disqualified. [pp. 87, 91]
+- Downloaded tender documents must not be altered while uploading, except filling required information; otherwise the bid is rejected. [p. 22]
+- Work must be completed as per approved design and specifications, free from defects, and within the stipulated timeline. [p. 44]
+- Materials must be of high quality and conform to relevant Indian Standards, and entirely new and unused; the successful bidder must produce a sample of materials to match the monument. [pp. 44, 45, 55]
+- Contractor must take utmost care that no damage is caused to the monument; the site is a non-smoking and non-plastic area and the agency must strictly comply. [p. 55]
+- Sub-contracting, transfer, assignment or pledging of rights and liabilities under the contract is not allowed. [pp. 54, 55]
+- Contractor must hold a valid licence under the Contract Labour (R&A) Act, 1970 before starting work, and only labourers aged between eighteen to sixty years may be engaged. [pp. 54, 58]
+- Price schedule (Excel) must be filled with non-zero rates and no blank cells; prices must be in Indian Rupees only, with GST shown separately. [pp. 16, 17]
+
+## Eligibility
+
+- Must be a contractor or company registered with ASI / CPWD / PWD / MES / Local Bodies and have experience in conservation or civil works in heritage monuments/buildings; Ltd / Pvt Ltd companies must also be registered under the Companies Act,1956. JV Consortium is not permitted. [pp. 3, 4]
+- Must not be insolvent, bankrupt or wound up, nor blacklisted/banned/debarred by ASI or Government of India agencies, nor convicted within three years preceding the last date of bid submission for the specified offences. [pp. 4, 5]
+- Must not be associated with a retired Gazetted officer within the one year cooling-off period, or with near relations of ASI executives involved in this tender, and must have no conflict of interest. [p. 5]
+- Must provide a Statutory Auditor certificate (Annexure 4) for FY 2022-23, FY 2023-24 & FY 2024-25 showing average annual turnover of at least 30% of the estimated amount, plus Income Tax Returns for the same three years. [p. 67]
+- Experience in the last seven years: must show either three similar completed works each not less than 40 % of the estimated cost, or two each not less than 50 %, or one not less than 80% of the estimated cost. [p. 68]
+- Similar work means any kind of conservation works / civil works in heritage monuments/buildings under Central / State Department; proof is the work order plus a completion certificate stating value and duration. [p. 68]
+- Must provide valid GST registration with returns/challans of last four quarters of FY 2024-25, PAN card, and EPF and ESIC registration with ECRs of last four quarters of FY 2024-25; labour department registration is listed as desirable ('should be registered'). [p. 67]
+- Bidder must declare it has not been blacklisted or debarred by any Government of India Ministry/Department in the last three (3) Years and has actually seen the work site. [p. 75]
+
+## Important dates
+
+- Tender published: 21.01.2026; document download and bid submission start 21.01.2026 @ 18:00 Hrs. [p. 7]
+- Deadline for written queries ahead of the pre-bid conference: 25.01.2026, 18:00 Hrs. [p. 8]
+- Pre-bid conference: 26.01.2026 @ 11:00 Hrs at the Hampi Circle office, Hosapete; attendance is not mandatory. [pp. 5, 7, 8]
+- Follow-up queries raised after the pre-bid conference are accepted till 26.01.2026, 18:00 Hrs. [p. 8]
+- Clarification end date: 30.01.2026 @ 18:00 Hrs. [p. 7]
+- Bid submission closing and document download end: 10.02.2026 at 15.00 Hrs; physical submission of originals (EMD) is also due 10.02.2026. [pp. 7, 9]
+- Notice also says enquiries to the Hampi Circle office are accepted till 11.02.2026 at 12.00 Hrs. [p. 3]
+- Technical bid opening: 11.02.2026 at 15.30 Hrs; opens on the next working day if that date is a holiday. [pp. 3, 7]
+- Financial bid opening: after evaluation of technical bid; date and venue to be declared on the portal. [pp. 8, 25, 26]
+- Bid validity: 90 days from the date of tender opening (TIS), but not less than 90 days from the bid submission deadline (ITB). [pp. 7, 20]
+
+## Commercial requirements
+
+- Estimated cost Rs. 78,14,000.00; tender document is free of cost; bids and payments in Indian Rupees only. [pp. 3, 8, 16]
+- EMD Rs. 1,96,000.00 by demand draft payable at Hosapete in favour of the Superintending Archaeologist, ASI Hampi Circle; original must reach by 10.02.2026 at 15.00 Hrs; DD valid only if drawn during the NIT notice period; offers without EMD are rejected. [p. 20]
+- MSEs registered with NSIC etc. are exempt from EMD but must submit the Bid Securing Declaration (Form 8); TIS says all bidders submit it in lieu of bid security. ITB says breach suspends the bidder from ASI tenders for 2 years; Form 8 text says one year. [pp. 9, 21, 85]
+- Performance security of 5% of the Contract / awarded value, as DD / FDR / banker's cheque or bank guarantee from a commercial bank in India, must be furnished within fourteen days of the Letter of Award and stay valid till completion of obligations. [pp. 39, 40]
+- Security/retention deposit of 10% of each running and final bill (or 10% of overall contract value) is held; not refunded before twelve months after the completion certificate or till the final bill is passed, whichever is later. [pp. 41, 58]
+- No advance or mobilization payment; no interest on delayed payment; payments above INR 5,000 by EFT only; TDS, GST and Labour Cess are deducted from bills. [pp. 47, 56]
+- Delay compensation at a maximum of 1% (one percent) per month of delay, computed per day, capped at 10 % (ten percent) of the accepted Tendered Value. [p. 46]
+- Defect liability: contractor must make good defects appearing within twelve months after the completion certificate (six months for works costing Rs. Ten lacs and below, except road work), at own expense. [p. 57]
+
+## Project duration
+
+- Work completion period is 180 days. [pp. 3, 7]
+- The 180 days are reckoned from 7 days after issue of the acceptance letter or site handing over, whichever is earlier; work must commence within Seven (7) days of the work order. [p. 54]
+- Scope clause 6.1.3 separately states a project timeline of 2 months, with milestones of compound/boundary wall with grill and gates and sculpture shed with fabrication roof, complete within two months or 30.03.2026. [p. 44]
+- Performance security is due within fourteen days of the Letter of Award; ASI sends the contract within seven working days of receiving it and the contractor returns the signed copy within seven days. [pp. 27, 28]
+- For deviations adding cost over the tendered value, time is extended in proportion to the additional cost plus 25% of that time, if requested by the contractor. [p. 57]
+
+## Important conditions
+
+- Evaluation: Two-cover system. Technical bids are opened and evaluated first; financial bids are opened only for bids found techno-commercially suitable. [pp. 25, 26]
+- Evaluation: Contract goes to the lowest-priced techno-commercially suitable bidder; ranking is on price only, on total outgo including taxes, for all items together. [pp. 26, 27]
+- Evaluation: Price negotiation is not usual but ASI may negotiate with the lowest acceptable bidder; abnormally low bids need a price analysis and may be rejected. [p. 26]
+- Evaluation: GST rate quoted by the bidder is used for ranking; any increase due to HSN misclassification must be absorbed by the bidder. [p. 26]
+- Submission: Submit online only on the CPP portal (eprocure.gov.in) as separate Technical and Financial Bids; no price details in the technical bid; PDFs must not be password protected; financial bid is the BOQ Excel price schedule. [pp. 5, 19, 20]
+- Submission: Technical bid must include Forms 1 to 11 (bid form, bidder information, eligibility, compliance forms, performance statement, bid security, Integrity Pact, acceptance letter, checklist) and a scanned signed copy of the full tender document. [pp. 12, 68]
+- Submission: Original EMD demand draft must be delivered physically to the Hosapete office by 10.02.2026; ASI may call originals of uploaded documents at any stage, and originals prevail over scanned copies. [pp. 9, 22, 24]
+- Submission: Bid needs a compatible Digital Signature Certificate; portal server clock is the reference time and internet failure or heavy traffic is not accepted as a reason for missing the deadline. [pp. 6, 23]
+- Risk: Bid security is contradictory: the notice and ITB require an original EMD demand draft (bid rejected without it), while the TIS says all bidders submit a Bid Securing Declaration in lieu of bid security. [pp. 3, 9, 20]
+- Risk: Completion period conflict: 180 days in the notice and TIS, but GCC clause 6.1.3 states a project timeline of 2 months or 30.03.2026, a far shorter period. [pp. 3, 44]
+- Risk: Conflicting dates: TIS gives clarification end 30.01.2026 @ 18:00 Hrs while post-pre-bid queries are due 26.01.2026 at 18:00 Hrs; bid validity runs from tender opening in the TIS but from the submission deadline in the ITB. [pp. 7, 8, 20]
+- Risk: Performance security base is inconsistent (5% of the Bid amount in TIS, 5% of the Contract / awarded value in GCC) and a further 10% is held on every running and final bill, tying up cash. [pp. 9, 39, 41]
+- Risk: Payment depends on government fund allotment: the agency must wait, no interest is paid for delay, no advance is paid, work can be scaled down and no claim for price fluctuations is entertained. [p. 56]
+- Risk: Work is on a centrally protected National Monument: bidder is deemed to have inspected the site and no claims are entertained, damage to the monument is prohibited, and sub-contracting the work is not allowed. [p. 55]

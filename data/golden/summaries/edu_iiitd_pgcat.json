@@ -1,0 +1,451 @@
+{
+  "doc_id": "edu_iiitd_pgcat",
+  "provenance": {
+    "drafted_by": "claude-code",
+    "drafted_at": "2026-10-28T14:15:46+00:00",
+    "spec_version": "v1",
+    "status": "auto_checked",
+    "verified_by": null,
+    "verified_at": null,
+    "verification_changes": null
+  },
+  "summary": {
+    "overview": {
+      "text": "IIIT-Delhi, a State University of Govt. of NCT of Delhi, invites sealed bids from IT firms to run the Pan-India computer-based MCQ Post Graduate Computer Science & Engineering Admission Test (PGCAT-IIITD). The test is scheduled for Sunday, May 3rd 2026 in 8 cities for approx 2000 candidates in one shift. Selection is by QCBS. Contract duration is not specified in the document.",
+      "pages": [
+        2,
+        4,
+        7
+      ]
+    },
+    "issuing_organization": "Indraprastha Institute of Information Technology Delhi (IIIT-Delhi), a State University of Govt. of NCT of Delhi; Registrar, Okhla Phase-III, New Delhi-110020; Tender ID IIIT-D/Acad./Test/001/2026-27; Nodal officer Sanjana Soni, admin-mtech@iiitd.ac.in",
+    "issuing_organization_pages": [
+      1,
+      2,
+      4
+    ],
+    "scope": [
+      {
+        "text": "Provide infrastructure (human resources and machines) for the PGCAT-IIITD computer-based MCQ test for M.Tech. CSE, CSE-Research and PhD CSE on Sunday, May 3rd 2026; one shift, approx 2000 candidates in total; test duration 02 hours.",
+        "pages": [
+          7,
+          8
+        ]
+      },
+      {
+        "text": "Run the exam in 8 cities: Lucknow, Delhi, Ahmedabad, Bangalore, Bhopal, Pune, Hyderabad, Kolkata. One centre per city; an extra centre only if registered candidates exceed 200, with justification and prior approval.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Centre operations: hall ticket and Govt. photo ID checks, signature and attendance sheets, digital photo and bio-metric fingerprint capture, invigilation, stationery, and terminal allotment with user ID and password.",
+        "pages": [
+          7,
+          8
+        ]
+      },
+      {
+        "text": "Develop, host and manage the exam web pages; arrange connectivity and security software; conduct the test and authenticate and evaluate candidate responses.",
+        "pages": [
+          7,
+          8
+        ]
+      },
+      {
+        "text": "Set up a centralized control room at IIIT Delhi on exam day with live centre-wise dashboards: students logged in, actively taking the exam, and completed.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Support admit card generation and notify applicants by Email and SMS, for M.Tech. and PhD separately, within two days of receiving applicant data from IIIT-Delhi.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Result module: link results to the main database, let candidates see marks with their credentials, share raw data on exam day and the final result a day later.",
+        "pages": [
+          8,
+          10
+        ]
+      },
+      {
+        "text": "Hand over all data after the exam and result declaration, and retain it for six months from the date of result declaration.",
+        "pages": [
+          8
+        ]
+      }
+    ],
+    "key_requirements": [
+      {
+        "text": "Exam platform must be fully functional at least one month before the exam and be independently tested and approved by IIITD experts.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "A dry run of the platform at IIIT Delhi is mandatory at least one day before the exam.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Each centre must have at least 2 experienced technical persons from the agency managing the LAN and 1 experienced centre head; the centre head and at least one technical person per LAN must be the bidder's own staff on main exam and mock run days.",
+        "pages": [
+          7,
+          8
+        ]
+      },
+      {
+        "text": "Question paper arrives one/two day(s) before the exam and must be secured with two-key authentication; one key stays with IIIT-Delhi and is disclosed on exam day only.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "Candidate systems must have a 4 core processor with minimum 2.0 Ghz or above, RAM 4 GB or above, and Windows operating system.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Minimum staff per centre of capacity 100 + 20 buffer, scaled proportionately: Test Centre Administrator 1; IT Manager 1 per 100 candidates; IT Support Staff 2, Support Staff 2, Security Guard 2 and Peons 2 per 100 candidates; Invigilators 2 per 25 systems or per lab.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Centres are preferably within approximately 10 kilometers of the city's main railway station or airport, and must have washrooms for male and female candidates and safe drinking water.",
+        "pages": [
+          8,
+          9
+        ]
+      },
+      {
+        "text": "Uninterrupted power supply (UPS), generator availability and sufficient air-conditioning in testing labs must be ensured at every centre.",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "Appoint a dedicated single point of contact with at least three support staff for both mock day and main day; a self-certified document confirming this must be enclosed.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "System must be tested for performance, security, usability, high availability, business continuity and disaster recovery, with results available for each major release; applicant database must not be disclosed to any third party.",
+        "pages": [
+          15
+        ]
+      }
+    ],
+    "eligibility": [
+      {
+        "text": "Joint ventures or consortiums are NOT allowed; bidder must bid on its own strength and meet all criteria, with a self-declaration on letterhead.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Bidder must be registered in India and operating in India for a minimum of 5 years; must give registration number with valid GST and PAN, as a self-certified document.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Average annual turnover must be Rs. 10 Lakhs in the last three financial years, certified by a Chartered Accountant from audited balance sheet extracts and Profit & Loss account.",
+        "pages": [
+          10,
+          11
+        ]
+      },
+      {
+        "text": "ISO 9001-2012 or better certificate; copy must be submitted.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Must have successfully executed similar project(s) on all India basis in last 3 financial years, meaning conduct and processing of CBT online examination; proof of work, contract or satisfactory client report as per Annexure 5.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Must hold GST registration and Income Tax/PAN number, with copies of registration certificates.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Must not have been blacklisted by any Govt. agency; self-declaration on stamp paper in the format of Annexure 2.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Must have a full-fledged service and support centre at Delhi/NCR, with office details and the responsible officer, and a self-declaration on letterhead.",
+        "pages": [
+          11
+        ]
+      }
+    ],
+    "important_dates": [
+      {
+        "text": "Tender date: 16– 02 - 2026.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Pre-bid meeting and query deadline are not given; clarifications go to the nodal officer.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Last date for bid submission: 9th March 2026 up to 12:00 Noon.",
+        "pages": [
+          2,
+          4
+        ]
+      },
+      {
+        "text": "Technical bids opened on 10th March 2026 at 3.00 P.M.",
+        "pages": [
+          2,
+          4
+        ]
+      },
+      {
+        "text": "Financial bid opening: to be communicated later.",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "Financial bid validity: not less than 60 days from the date of opening of bid.",
+        "pages": [
+          12
+        ]
+      },
+      {
+        "text": "Annexure 3 states quoted rates remain valid for 60 days from 23rd February 2026.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Last date of online application (by IIIT-Delhi): Monday, April 13, 2026.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Admit card release (bidder): Monday, April 20, 2026.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "PGCAT-IIITD exam and sharing of raw result data (bidder): Sunday, May 3, 2026.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Sharing of final result (bidder): Monday, May 4, 2026.",
+        "pages": [
+          10
+        ]
+      }
+    ],
+    "commercial_requirements": [
+      {
+        "text": "EMD of Rs.50,000/- by demand draft in favour of \"IIIT-Delhi Collections\" payable at New Delhi; no interest paid; exempt for MSMEs/NSIC registered suppliers.",
+        "pages": [
+          2,
+          4
+        ]
+      },
+      {
+        "text": "Tender document can be downloaded; a copy from the Institute needs a non-refundable fee of Rs.1,000/-+18% GST extra i.e. (Rs. 1,180/-); exempt for MSMEs/NSIC registered suppliers.",
+        "pages": [
+          2,
+          4
+        ]
+      },
+      {
+        "text": "Performance bank guarantee of 5% of PO value within 15 days of the PO date, failing which the bidder is notified as blacklisted; valid 60 days beyond contract cessation; no interest; forfeited on termination for non-performance.",
+        "pages": [
+          4,
+          14
+        ]
+      },
+      {
+        "text": "Prices in INR only, all-inclusive of taxes, charges and installation at IIIT-Delhi; any discount must be shown only on the proforma discount line.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Payment terms and milestones are not detailed; only payment at the quoted rates per the bid document terms is stated.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "SLA breach fine: Rs. 5000/- per day for the first seven days and Rs. 8,000/- per day from the 8th day onwards.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Delay compensation at 1% per week, subject to a maximum of 10 % of the contract amount.",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "Warranty period is not stated; the PBG validity is described as co-terminus with the warranty period.",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "project_duration": [
+      {
+        "text": "Contract duration is not stated; the document refers only to the stipulated period of the contract.",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "Completion period is reckoned within one week of issue of the work order.",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "Platform must be available and independently tested at least one month before the exam; dry run at least one day before.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Admit cards and notifications within two days of receiving applicant data from IIIT-Delhi.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Data retention for six months from the date of result declaration.",
+        "pages": [
+          8
+        ]
+      }
+    ],
+    "important_conditions": [
+      {
+        "text": "Evaluation: QCBS; the bidder with the highest composite score is selected, with weightage of 70% technical and 30% financial.",
+        "pages": [
+          4,
+          12
+        ]
+      },
+      {
+        "text": "Evaluation: technical points table totals 60 Points: exam plan 10, platform demonstration 10, in-person presentation at IIIT-Delhi campus 10, experience 30 (5 Years = 10; 5-8 years = 20; 8 years & more = 30).",
+        "pages": [
+          12,
+          14
+        ]
+      },
+      {
+        "text": "Evaluation: financial bids are opened only for bidders who qualify in technical evaluation; IIITD may negotiate with the selected bidder.",
+        "pages": [
+          3,
+          13
+        ]
+      },
+      {
+        "text": "Submission: two-bid system; technical and financial bids sealed separately and enclosed in a sealed envelope addressed to Registrar IIIT-Delhi.",
+        "pages": [
+          3
+        ]
+      },
+      {
+        "text": "Submission: technical bid must contain the EMD and complete technical details; technical bids without EMD will be summarily rejected.",
+        "pages": [
+          3
+        ]
+      },
+      {
+        "text": "Submission: physical deposit in the Tender Box in Store & Purchase department, Room no. A 108, First Floor, Old Academic Block; late bids not accepted and the Institute is not responsible for postal/courier delay.",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "Submission: financial bid on Annexure 3 proforma in INR only; Annexure 1 vendor information must accompany the financial bid.",
+        "pages": [
+          17,
+          19
+        ]
+      },
+      {
+        "text": "Submission: Annexure 2 blacklisting undertaking and Annexure 5 proof of similar projects must be provided.",
+        "pages": [
+          11,
+          18
+        ]
+      },
+      {
+        "text": "Risk: weights conflict; Technical Proposal (70%) and Financial Proposal (30%), versus Technical Evaluation - Total 60 Points with no financial scoring points given.",
+        "pages": [
+          12,
+          14
+        ]
+      },
+      {
+        "text": "Risk: bid validity conflict; 60 days from opening of bid, versus rates valid 60 days from 23rd February 2026, which is before the 9th March 2026 submission deadline.",
+        "pages": [
+          2,
+          12,
+          19
+        ]
+      },
+      {
+        "text": "Risk: PBG timing conflict; 15 days from the date of award of the work, versus 15 days from the date of PO, with blacklisting on failure.",
+        "pages": [
+          4,
+          14
+        ]
+      },
+      {
+        "text": "Risk: if system failure causes the exam to fail, the whole exam is conducted again with the cost of the second examination borne by the bidder.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Risk: Annexure 5, the proof format cited for the similar-project eligibility criterion, has only its heading on its page; no format is provided.",
+        "pages": [
+          11,
+          22
+        ]
+      },
+      {
+        "text": "Risk: blacklisting undertaking conflict; eligibility asks for stamp paper, but Annexure 2 says company letterhead.",
+        "pages": [
+          11,
+          18
+        ]
+      }
+    ]
+  }
+}
