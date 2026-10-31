@@ -1,0 +1,14 @@
+# Extra packages for LoRA fine-tuning (scripts/finetune/). NOT needed to run the app.
+# Everything the app needs, including transformers and torch with the same pins:
+-r requirements.txt
+peft==0.21.2
+accelerate==1.15.0
+
+# GPU notes (Windows and Linux):
+#  1. On a CUDA machine install the CUDA build of torch FIRST, before this file, with the index URL that matches your
+#     driver from https://pytorch.org/get-started/locally/ (for example:
+#     pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cu128 ). pip then keeps that build.
+#     The default PyPI wheel on Windows is CPU-only.
+#  2. Optional, for 4-bit QLoRA on CUDA (about 3x less memory): pip install bitsandbytes
+#  3. Optional, much faster Qwen3.5 linear-attention layers on CUDA: pip install flash-linear-attention causal-conv1d
+#     (needs a compiler on some platforms; without them transformers uses a slow pure-PyTorch fallback).

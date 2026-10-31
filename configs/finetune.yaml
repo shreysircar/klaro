@@ -1,0 +1,28 @@
+# LoRA fine-tuning of the summary stage. Used by scripts/finetune/train_lora.py; every key can be overridden on the CLI.
+model_id: Qwen/Qwen3.5-4B         # the Hugging Face weights behind Ollama's qwen3.5:4b
+revision: null                    # pin a commit sha here for a reproducible download; the sha actually used goes to run_info.json
+data_dir: data/golden/sft         # train.jsonl, val.jsonl, MANIFEST.json (build_sft_dataset.py)
+output_dir: models/adapters/klaro-qwen-ft   # final adapter: adapter_model.safetensors + adapter_config.json + run_info.json
+
+max_seq_len: 32768                # examples longer than this are dropped and listed, never truncated
+epochs: 4
+learning_rate: 1.0e-4             # 1e-4 to 2e-4 is the usual range for LoRA; ~20 examples overfit quickly, start low
+lr_scheduler: cosine
+warmup_ratio: 0.1
+weight_decay: 0.0
+per_device_batch_size: 1
+grad_accum: 4
+early_stopping_patience: 1        # stop when val loss has not improved for this many epochs; the best epoch is kept
+seed: 2026
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  # Language model only (the vision tower and the MTP head are excluded). Qwen3.5 mixes 24 linear-attention
+  # (Gated DeltaNet: in_proj_qkv, in_proj_z, out_proj) and 8 full-attention layers (q/k/v/o_proj); all have an MLP.
+  target_regex: '^(?!.*(visual|vision|mtp)).*\.(q_proj|k_proj|v_proj|o_proj|in_proj_qkv|in_proj_z|out_proj|gate_proj|up_proj|down_proj)$'
+
+quantization: auto                # auto: 4-bit QLoRA if CUDA and bitsandbytes work, else bf16 LoRA. Or: 4bit | none
+attn_implementation: sdpa
+gradient_checkpointing: true

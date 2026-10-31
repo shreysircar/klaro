@@ -40,3 +40,4 @@ data/golden/pdfs/
 models/
 data/translation_cache/
 .venv/
+.venv-finetune/

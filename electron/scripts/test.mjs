@@ -10,5 +10,6 @@ const node = run(process.execPath, ['--test', 'electron/renderer/src/highlight.t
 const modules = fs.readdirSync(path.join(repoRoot, 'backend', 'evaluation'))
   .filter((f) => /^test_.*\.py$/.test(f))
   .map((f) => `backend.evaluation.${f.slice(0, -3)}`);
+modules.push('scripts.finetune.test_finetune');
 const py = run(venvPython, ['-m', 'unittest', ...modules]);
 process.exit(node.status || py.status || 0);
