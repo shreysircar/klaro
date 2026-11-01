@@ -80,3 +80,98 @@ and measure it on the 10 held-out documents. Guide for him: `scripts/finetune/RE
 - About 22 training examples is very little. Expect overfitting; early stopping and the held-out eval are the guard rails, and a gain
   on 10 documents is weak evidence.
 - Golden summaries are `auto_checked` (LLM-drafted, machine-checked), not human-verified.
+
+## 8 GB GPU: why the 4B kit needs 16 GB or more (Nov 1)
+
+Nikunj's GPU has 8 GB. **Every memory number below is an estimate (plus or minus 30%) from `scripts/finetune/hardware.py`.
+Nothing was run on CUDA; the only runs were on a Mac with the 0.8B model.** 4-bit means QLoRA (needs CUDA and bitsandbytes);
+the estimate assumes a 4.2k-token answer, gradient checkpointing and the chunked loss below.
+
+### What changed in the trainer
+The loss runs `lm_head` in chunks of 256 answer tokens under checkpointing (`train_lora.answer_only_loss`) instead of
+materialising logits for the whole answer (248k vocabulary: about 8 GiB for a 4.2k-token answer). Same loss and gradients
+(0.8B model: 11.286130 both ways; unit test added). This took the 4B estimate at 32k tokens from 22.8 to 14.7 GiB.
+
+### Token length per document (text mode, nothing cut; prompt plus golden answer, 32 documents, estimated as chars / 3.8)
+| | tokens |
+|---|---|
+| median | 34,597 |
+| min | 13,201 |
+| max | 77,294 |
+| golden answer alone: median / min / max | 3,699 / 3,206 / 4,962 |
+
+Documents that fit in total length: 8k: 0, 12k: 0, 14k: 1, 16k: 3, 20k: 4, 24k: 6, 32k: 14 (of 32). Facts mode is no shorter:
+the 5 facts files built so far are 17.7k to 24.5k tokens in total (facts prompt 14.0k to 20.7k plus the answer).
+
+### Estimated peak memory in GiB by sequence length (input + answer)
+| sequence | 4B 4-bit | 4B bf16 | 2B 4-bit | 2B bf16 |
+|---|---|---|---|---|
+| 6k | 7.8 | 13.8 | 5.5 | 8.1 |
+| 8k | 8.3 | 14.3 | 5.8 | 8.5 |
+| 12k | 9.4 | 15.4 | 6.5 | 9.1 |
+| 16k | 10.5 | 16.5 | 7.2 | 9.8 |
+| 24k | 12.6 | 18.6 | 8.6 | 11.2 |
+| 32k | 14.7 | 20.7 | 10.0 | 12.6 |
+
+The 2B shape (hidden 2048, 24 layers, MLP 6144) is from a third-party copy of its config.json; the parameter count is approximate.
+
+### Why 8 GB does not fit
+- 4B: weights, optimizer and CUDA overhead already take about 5 GiB, and the answer (about 4.2k tokens) is part of the
+  sequence. By the estimate even 6k tokens (about 2k of input) needs 7.8 GiB, and a desktop GPU has about 7.5 GiB usable.
+  `--check-only` reports 0 tokens that fit.
+- Documents are far longer than what fits: median 34.6k tokens, only 1 of 32 under 14k. The 2B model at 8 GB would allow
+  about 14k tokens (estimate), which leaves 0 train, 0 val and 1 eval example when nothing is truncated (built and counted, then deleted).
+
+### What fits at 16 GB (estimate)
+4B with 4-bit QLoRA: about 31.8k tokens, 14.7 GiB at 32k. This is the data in `data/golden/sft/` (cap 32,768). 4B in bf16 does not
+fit 16 GB beyond about 9k tokens (needs 20.7 GiB at 32k). 12 GB with 4-bit: about 18k tokens, so about 3 or 4 of 32 documents.
+
+### Options considered
+- **Qwen3.5-2B** (same family, Ollama tag `qwen3.5:2b` per secondary sources, not checked on ollama.com): not done. Fits about
+  14k to 16k tokens at 8 GB, which leaves almost no documents untruncated, and an adapter for the 2B cannot be used on the app's 4B
+  (the app would have to switch to a tuned 2B). Nothing was downloaded.
+- **Per-section training** (one section's facts in, that section out, 2-3k tokens): not done. Fits 8 GB, but the app writes the whole summary
+  in one call, so Nikunj's summary agent and prompts would change, and the facts are built for only 5 of 32 documents.
+- **Truncating the RFP text to fit**: not done. The model would see part of the document and learn to write a full summary from it,
+  which teaches it to invent. Ruled out by Yasharth.
+- **Paid GPU with 16 GB or more**: not done here (decision pending). It is the only option that trains on the existing data unchanged.
+
+### Text mode and truncation
+`build_sft_dataset sft --mode text` drops a document whose total length exceeds `--max-seq-len` and lists it in `MANIFEST.json`
+(`skipped`). Separately it cuts trailing pages of the RFP text above `--text-budget` (default 24000 estimated tokens), so the
+current `data/golden/sft/` files contain cut documents (`text_cut` in each row). For drop-only behaviour pass a very large
+`--text-budget` (for example `--text-budget 1000000`). `--out-dir` writes the files somewhere other than `data/golden/sft/`.
+
+## Per-section unit for 8 GB (Nov 1)
+
+**What it trains.** One example = the extracted text of the pages that one section's golden bullets cite (page markers kept,
+pages in order) plus the section name and its rules from the spec (limit, mandatory vs desirable, cite pages) -> that section's
+bullets as JSON in the schema's own shape (`{"scope": [{"text", "pages"}]}`; overview and issuing organization have their own shape).
+Nine sections = the nine schema fields (evaluation, submission and risks are the prefixed items of `important_conditions`).
+`max_seq_len` 4096 for system + pages + answer. A section that does not fit is split into groups of page-adjacent bullets; a bullet
+whose pages alone do not fit is dropped and listed; nothing is ever truncated. Built from `data/golden/extracted` and
+`data/golden/summaries` only (`build_sft_dataset sft --unit section`, code in `section_unit.py`).
+
+**Result with the real tokenizer** (train 19 docs, val 3, eval 10): 322 train, 39 val, 165 eval examples. Tokens per train+val
+example: p50 3041, p95 3980, max 4091. Dropped: 3 bullets (pages alone over 4096 tokens: `bfsi_lic_dpdptools` commercial bullet 4,
+`civil_crpf_works` conditions bullets 7 and 9). Per section (train/val/eval): overview 19/3/10, issuing organization 19/3/10, scope
+35/3/18, key requirements 41/6/22, eligibility 24/3/14, important dates 27/3/15, commercial 47/5/17, project duration 25/3/13,
+important conditions 85/10/46. Estimated peak memory at 4096 tokens, 4-bit: 7.3 GiB (4B) and 5.2 GiB (2B), plus or minus 30%, so
+the 4B is borderline on 8 GB (the budget is 92% of the card); nothing was run on CUDA. `configs/finetune_8gb_2b.yaml` is the fallback.
+The 2B uses the same tokenizer files (identical `tokenizer.json`); with thinking off both chat templates render the same prompt.
+Its `config.json` (hidden 2048, 24 layers, MLP 6144, vocab 248320, tied embeddings) matches the shape in `hardware.py`.
+
+**Why it is not the app's summary stage.** The app writes the whole summary in one call from aggregated facts (stage 5), a 10k to
+30k token prompt. This unit never sees facts and never writes a whole summary: it sees only the pages a section cites. So it
+trains writing, citing and copying numbers exactly, not finding the right pages and not combining facts across a document. Its
+eval is an oracle-page eval (the model is handed the golden pages) and says nothing about the app's end-to-end quality.
+
+**Future work only: what the pipeline would have to change to use it.** A section-by-section summary stage: after aggregation, for
+each of the nine sections pick the pages its facts cite, call the tuned model once per section (split when the pages do not fit
+4096 tokens), merge the nine answers into `ExecutiveSummaryOutput`, and cope with groups (dedupe, apply the section limits after
+merging). That changes `agent.py` and the prompts in Nikunj's pipeline and costs about 9 to 30 model calls instead of one. Not done.
+
+**Other decisions.** The trainer's `quantization: 4bit` in the 8 GB configs fails loudly without CUDA and bitsandbytes instead of
+falling back to bf16; `--check-only` still sizes the run on any machine and prints FITS / DOES NOT FIT and the miss in GiB.
+The 2B's tokenizer and config files (about 27 KB; the tokenizer file was already cached) were downloaded by accident when I ran
+`--check-only` on the 2B config; no weights were downloaded.

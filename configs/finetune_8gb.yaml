@@ -1,0 +1,27 @@
+# 8 GB path: per-section examples (pages a section cites -> that section's bullets), 4B model, 4-bit QLoRA.
+# Not the app's summary stage; see docs/finetune-log.md. Use with:  python -m scripts.finetune.train_lora --config configs/finetune_8gb.yaml
+model_id: Qwen/Qwen3.5-4B
+revision: null
+data_dir: data/golden/sft-section   # built by: python -m scripts.finetune.build_sft_dataset sft --unit section
+output_dir: models/adapters/klaro-sections-4b
+
+max_seq_len: 4096                   # system + input pages + answer; longer examples were already split or dropped, never truncated
+epochs: 3
+learning_rate: 1.0e-4
+lr_scheduler: cosine
+warmup_ratio: 0.1
+weight_decay: 0.0
+per_device_batch_size: 1
+grad_accum: 8                       # effective batch 8
+early_stopping_patience: 1          # stop when val loss has not improved for this many epochs; the best epoch is kept
+seed: 2026
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_regex: '^(?!.*(visual|vision|mtp)).*\.(q_proj|k_proj|v_proj|o_proj|in_proj_qkv|in_proj_z|out_proj|gate_proj|up_proj|down_proj)$'
+
+quantization: 4bit                  # needs CUDA and bitsandbytes; fails loudly otherwise instead of falling back to bf16
+attn_implementation: sdpa
+gradient_checkpointing: true

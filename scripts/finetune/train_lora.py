@@ -109,16 +109,29 @@ def write_loss_csv(path: Path, log_history: list[dict]) -> None:
             w.writerow([ep, round(sum(t) / len(t), 4) if t else "", r.get("val", "")])
 
 
-def answer_only_loss(model, inputs):
-    """Cross-entropy on answer tokens only, with logits computed only at those positions (the vocabulary is
-    ~250k, so full logits for a 30k-token example would be tens of GB)."""
+LOSS_CHUNK = 256  # answer tokens per lm_head call: 256 x 248k x fp32 is ~0.25 GiB, the whole answer would be ~4 GiB
+
+
+def _chunk_nll(lm_head, h, target):
     import torch.nn.functional as F
+
+    return F.cross_entropy(lm_head(h).float(), target, reduction="sum")
+
+
+def answer_only_loss(model, inputs, chunk: int = LOSS_CHUNK):
+    """Cross-entropy on answer tokens only. The vocabulary is ~250k, so logits for a ~4k-token answer are several GB:
+    the transformer runs once, then lm_head + loss run chunk by chunk under checkpointing (each chunk's logits are
+    freed and recomputed in the backward pass), which is what lets an 8 GB GPU train."""
+    from torch.utils.checkpoint import checkpoint
 
     labels = inputs.pop("labels")[0]
     keep = (labels[1:] != IGNORE).nonzero().squeeze(1)  # positions whose next token is an answer token
-    out = model(**inputs, logits_to_keep=keep)
-    logits = out.logits[0].float()
-    return F.cross_entropy(logits, labels[1:][keep])
+    base = model.get_base_model() if hasattr(model, "get_base_model") else model
+    hidden = base.model(**inputs).last_hidden_state[0][keep]
+    target = labels[1:][keep]
+    total = sum(checkpoint(_chunk_nll, base.lm_head, hidden[i:i + chunk], target[i:i + chunk], use_reentrant=False)
+                for i in range(0, len(keep), chunk))
+    return total / len(keep)
 
 
 def main() -> int:
@@ -153,18 +166,31 @@ def main() -> int:
 
     hw = hardware.detect()
     qlora = hw.qlora_ok and cfg["quantization"] in ("auto", "4bit")
-    if cfg["quantization"] == "4bit" and not qlora:
+    if cfg["quantization"] == "4bit" and not qlora and not args.check_only:
         sys.exit("quantization: 4bit needs CUDA and a working bitsandbytes (pip install bitsandbytes).")
+    if cfg["quantization"] == "4bit" and not qlora:
+        print("note: this machine cannot run 4-bit (needs CUDA and bitsandbytes); the estimate below is for 4-bit QLoRA, "
+              "compared with this machine's memory.")
+        qlora = True  # check-only only: size the run the config asks for
     longest = max(len(e["input_ids"]) for e in train + val)
     answer = max(sum(l != IGNORE for l in e["labels"]) for e in train + val)
     shape = hardware.shape_of(cfg["model_id"])
     est = hardware.estimate_gib(shape, longest, answer, qlora, cfg["lora"]["r"]) if shape else None
     print(f"hardware: {hw.name}, {hw.memory_gib:.0f} GiB usable, {'4-bit QLoRA' if qlora else 'bf16 LoRA'}")
     if est:
+        budget = 0.92 * hw.memory_gib
         print(f"estimated peak memory for the longest example ({longest} tokens): ~{est['total']} GiB  {est}")
-        if est["total"] > 0.92 * hw.memory_gib:
-            sys.exit(f"This will not fit: ~{est['total']} GiB needed, {hw.memory_gib:.0f} GiB available. Lower max_seq_len "
-                     "(longer examples are then dropped), use a GPU with more memory, or install bitsandbytes for 4-bit.")
+        if est["total"] <= budget:
+            print(f"FITS at max_seq_len {cfg['max_seq_len']} on this GPU: estimated {est['total']} of {budget:.1f} GiB usable "
+                  f"(margin {budget - est['total']:.1f} GiB; the estimate is plus or minus 30%).")
+        else:
+            fits = hardware.max_seq_that_fits(shape, answer, qlora, hw.memory_gib, cfg["lora"]["r"])
+            print(f"DOES NOT FIT at max_seq_len {cfg['max_seq_len']} on this GPU: misses by {est['total'] - budget:.1f} GiB "
+                  f"(estimated {est['total']} GiB, {budget:.1f} GiB usable).")
+            sys.exit(f"This will not fit: ~{est['total']} GiB needed, {hw.memory_gib:.1f} GiB available. On this GPU about "
+                     f"{fits} tokens per example (input + answer, answers are up to {answer}) fit with "
+                     f"{'4-bit' if qlora else 'bf16'}; the data is built for longer ones. Use a GPU with more memory"
+                     f"{'' if qlora else ', or install bitsandbytes for 4-bit'}.")
     else:
         print("memory estimate: unknown model shape, skipped")
     if args.check_only:
@@ -172,7 +198,7 @@ def main() -> int:
         return 0
 
     import torch
-    from transformers import EarlyStoppingCallback, Trainer, TrainingArguments, set_seed
+    from transformers import EarlyStoppingCallback, Trainer, TrainerCallback, TrainingArguments, set_seed
     from transformers.trainer_utils import get_last_checkpoint
 
     set_seed(cfg["seed"])
@@ -189,6 +215,23 @@ def main() -> int:
         e = batch[0]
         ids = torch.tensor([e["input_ids"]])
         return {"input_ids": ids, "attention_mask": torch.ones_like(ids), "labels": torch.tensor([e["labels"]])}
+
+    class EpochTime(TrainerCallback):
+        """Prints a time-per-epoch estimate after the first optimizer steps (later steps differ in length)."""
+        def __init__(self, after: int = 2):
+            self.after, self.t0, self.start = after, 0.0, 0
+
+        def on_train_begin(self, args, state, control, **kw):
+            self.t0, self.start = time.time(), state.global_step
+
+        def on_step_end(self, args, state, control, **kw):
+            done = state.global_step - self.start
+            if done == self.after:
+                per = (time.time() - self.t0) / done
+                per_epoch = per * state.max_steps / args.num_train_epochs
+                print(f"time estimate (from the first {done} steps, {per:.0f} s per optimizer step): about {per_epoch / 60:.0f} min "
+                      f"per epoch, about {per_epoch * args.num_train_epochs / 60:.0f} min if all {args.num_train_epochs:g} epochs run. "
+                      "This is an estimate: step times vary with example length, and early stopping may end sooner.", flush=True)
 
     class AnswerOnlyTrainer(Trainer):
         def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
@@ -208,7 +251,7 @@ def main() -> int:
         save_total_limit=2, logging_steps=1, report_to="none", remove_unused_columns=False, label_names=["labels"],
         dataloader_pin_memory=False, use_cpu=hw.device == "cpu",
     )
-    callbacks = [EarlyStoppingCallback(cfg["early_stopping_patience"])] if args.max_steps < 0 else []
+    callbacks = [EpochTime()] + ([EarlyStoppingCallback(cfg["early_stopping_patience"])] if args.max_steps < 0 else [])
     trainer = AnswerOnlyTrainer(model=model, args=targs, train_dataset=Rows(train), eval_dataset=Rows(val),
                                 data_collator=collate, callbacks=callbacks)
     last = get_last_checkpoint(str(work)) if args.resume and work.is_dir() else None

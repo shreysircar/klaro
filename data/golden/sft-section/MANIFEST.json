@@ -1,0 +1,148 @@
+{
+  "built_at": "2026-11-01T09:23:58+00:00",
+  "mode": "section",
+  "unit": "section",
+  "seed": 2026,
+  "max_seq_len": 4096,
+  "token_counts": "exact (Qwen tokenizer, chat template, think off)",
+  "files": {
+    "train.jsonl": {
+      "sha256": "8f687fffc3f2a1d6bd9b56d704618444bcdbade43d22a6007436c7437615d587",
+      "examples": 322
+    },
+    "val.jsonl": {
+      "sha256": "418a344ab00e3c3922d86325330854587531281b4bd4f0bdbf51109df9050ad8",
+      "examples": 39
+    },
+    "eval_inputs.jsonl": {
+      "sha256": "45fddf05e5861b1fcce41ee4bf2e14fa3ce429524dfef9000fde58bf61601975",
+      "examples": 165
+    }
+  },
+  "doc_ids": {
+    "train": [
+      "bfsi_iob_healthins",
+      "bfsi_lic_dpdptools",
+      "bfsi_nabard_jboss",
+      "bfsi_psb_furnish",
+      "bfsi_sbi_bacs",
+      "civil_asi_itagi",
+      "civil_bsi_dais",
+      "civil_iitpkd_road",
+      "civil_nhidcl_rfp",
+      "edu_iiitd_pgcat",
+      "edu_mea_itec",
+      "edu_svsu_erp",
+      "energy_gridco_repconsult",
+      "energy_mahatransco_pmc",
+      "energy_scppa_renewables",
+      "energy_seci_pmu",
+      "health_aiimsraipur_doppler",
+      "health_aiimsrishikesh_cysto",
+      "intl_alameda_econdev"
+    ],
+    "val": [
+      "edu_iith_erp",
+      "it_igitsarang_erp",
+      "muni_ghmc_assetsurvey"
+    ],
+    "eval": [
+      "bfsi_centralbank_sharetrading",
+      "civil_crpf_works",
+      "edu_iimtrichy_branding",
+      "energy_jreda_minigrid",
+      "health_wmchealth_epic",
+      "intl_kdc_culture",
+      "intl_santafe_bess",
+      "it_sikkim_smsda",
+      "it_trai_uccapp",
+      "muni_ndmc_mswconsult"
+    ]
+  },
+  "examples_per_section": {
+    "overview": {
+      "train": 19,
+      "val": 3,
+      "eval": 10
+    },
+    "issuing_organization": {
+      "train": 19,
+      "val": 3,
+      "eval": 10
+    },
+    "scope": {
+      "train": 35,
+      "val": 3,
+      "eval": 18
+    },
+    "key_requirements": {
+      "train": 41,
+      "val": 6,
+      "eval": 22
+    },
+    "eligibility": {
+      "train": 24,
+      "val": 3,
+      "eval": 14
+    },
+    "important_dates": {
+      "train": 27,
+      "val": 3,
+      "eval": 15
+    },
+    "commercial_requirements": {
+      "train": 47,
+      "val": 5,
+      "eval": 17
+    },
+    "project_duration": {
+      "train": 25,
+      "val": 3,
+      "eval": 13
+    },
+    "important_conditions": {
+      "train": 85,
+      "val": 10,
+      "eval": 46
+    }
+  },
+  "dropped": [
+    {
+      "doc_id": "bfsi_lic_dpdptools",
+      "section": "commercial_requirements",
+      "bullet": 4,
+      "pages": [
+        17,
+        26,
+        34,
+        42
+      ],
+      "tokens": 4826
+    },
+    {
+      "doc_id": "civil_crpf_works",
+      "section": "important_conditions",
+      "bullet": 9,
+      "pages": [
+        4,
+        6,
+        27
+      ],
+      "tokens": 4500
+    },
+    {
+      "doc_id": "civil_crpf_works",
+      "section": "important_conditions",
+      "bullet": 7,
+      "pages": [
+        6,
+        7,
+        9
+      ],
+      "tokens": 4490
+    }
+  ],
+  "sections_without_cited_pages": [],
+  "skipped": [],
+  "eval_leak_check": "passed"
+}

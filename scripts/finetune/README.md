@@ -10,9 +10,12 @@ The output is an adapter in **safetensors** format (never pickle): `adapter_mode
 
 ## What you need
 
-- A machine with an NVIDIA GPU is the expected case. Memory for the longest example is printed by `--check-only`
-  before anything is loaded; rough numbers (4B model, 32k tokens): about 18 GB with 4-bit QLoRA, about 30 GB in bf16.
-  Apple Silicon (MPS) and CPU work in principle but are very slow.
+- **An NVIDIA GPU with 16 GB or more** for the 4B model. Estimates (plus or minus 30%, nothing was run on CUDA): about 15 GiB
+  with 4-bit QLoRA at 32k tokens, about 21 GiB in bf16. **8 GB is not enough**: the golden answers alone are about 4k tokens and
+  the documents are 13k to 77k tokens, so nothing useful fits (`--check-only` says how many tokens fit on your GPU).
+  12 GB with 4-bit fits about 18k tokens (about 3 or 4 of 32 documents untruncated). Details: `docs/finetune-log.md`.
+  Apple Silicon (MPS) and CPU work in principle but are very slow. On CUDA, `pip install flash-linear-attention causal-conv1d`
+  (optional) replaces slow, memory-hungry fallbacks.
 - Python 3.11 to 3.13, Ollama with `qwen3.5:4b` pulled, internet for the first Hugging Face download (about 9 GB of
   base weights). This kit is the only place besides `npm run setup` that uses the network.
 
@@ -38,6 +41,8 @@ All commands run from the repo root with the venv active.
    ```bash
    python -m scripts.finetune.build_sft_dataset facts      # resumable; log: data/golden/facts/build.log
    python -m scripts.finetune.build_sft_dataset sft        # writes the jsonl files and MANIFEST.json
+   # text mode (no facts needed): add --mode text. Documents longer than --max-seq-len are dropped and listed, not truncated;
+   # but pages beyond --text-budget (default 24000) are cut, so pass --text-budget 1000000 for drop-only.
    ```
 2. **Check** (no training, no model weights loaded; prints token lengths, hardware and the memory estimate):
    ```bash
@@ -62,6 +67,41 @@ All commands run from the repo root with the venv active.
 6. **Send to Yasharth:** zip `models/adapters/klaro-qwen-ft/` (a few tens of MB) plus `data/golden/eval_runs/klaro-qwen-ft/`.
    Do not send `models/adapters/klaro-qwen-ft.work/` (resume checkpoints, pickled optimizer state). If you merged the
    adapter and made a GGUF, that is about 3 GB; send the adapter instead unless asked.
+
+## 8 GB path: per-section training
+
+The whole-summary examples above need 16 GB or more. For an 8 GB GPU the training unit is one section: the pages that section's
+bullets cite -> that section's bullets (JSON in the schema's own shape, page cites included), at most 4096 tokens per example.
+Built only from `data/golden/extracted` and `data/golden/summaries`; no Ollama and no facts needed.
+
+```bash
+python -m scripts.finetune.build_sft_dataset sft --unit section                       # data/golden/sft-section/
+python -m scripts.finetune.train_lora --config configs/finetune_8gb.yaml --check-only  # FITS / DOES NOT FIT, by how much
+python -m scripts.finetune.train_lora --config configs/finetune_8gb.yaml               # 4B, 4-bit QLoRA (needs CUDA + bitsandbytes)
+python -m scripts.finetune.train_lora --config configs/finetune_8gb_2b.yaml            # fallback: Qwen3.5-2B, same data
+```
+
+- A section whose pages do not fit is split into groups of page-adjacent bullets (one example per group, only that group's
+  bullets in the answer). A bullet whose pages alone do not fit is dropped and listed in `MANIFEST.json` (`dropped`); text is never cut.
+  "Not specified" bullets with no page are left out (no pages to build an input from). Token counts use the real Qwen tokenizer
+  (`models/hf/Qwen3.5-4B`, never downloaded by the builder); without it they are estimates and `train_lora` drops what is too long.
+- Same 3 val documents as the whole-summary data; the 10 eval documents never reach train or val (asserted when building, and again
+  in `train_lora` and `eval_adapter`).
+- `train_lora` prints a time-per-epoch estimate after the first 2 optimizer steps; `--resume` works as before.
+- Everything about memory is an estimate (plus or minus 30%); nothing was run on CUDA. The 2B shape comes from its published config.
+- Serve and evaluate on a Mac (after Nikunj sends the adapter):
+
+```bash
+python -m scripts.finetune.export_to_ollama --adapter models/adapters/klaro-sections-4b --name klaro-sections-4b
+python -m scripts.finetune.eval_adapter --unit section --tuned klaro-sections-4b --adapter models/adapters/klaro-sections-4b
+#   for the 2B adapter add:  --base qwen3.5:2b   (ollama pull qwen3.5:2b first)
+```
+
+The section eval is an **oracle-page eval: each model is given the pages the golden section cites. It measures writing and
+citing, not finding the right pages.** Per section, base against tuned: valid JSON/schema, cited pages inside the input pages,
+numbers verbatim on the cited page, bullet count within the spec limits, similarity to the golden bullets. Output:
+`data/golden/eval_runs/<tag>-section/{summary.md,results.csv}`.
+This model is not wired into the app (the app writes the whole summary in one call): see "Future work" in `docs/finetune-log.md`.
 
 ## Important: context length
 

@@ -5,6 +5,9 @@
         aggregated facts to data/golden/facts/<doc_id>.json. About 15-20 minutes per document with Ollama.
         Resumable: finished docs are skipped. Log: data/golden/facts/build.log. Stop it with Ctrl+C or
         `kill <pid>`; the document in progress restarts from its first chunk next time.
+    python -m scripts.finetune.build_sft_dataset sft --unit section [--max-seq-len 4096] [--out-dir DIR]
+        The 8 GB path: one example per section (or group of its bullets): the pages the section cites -> the section's
+        bullets. Built only from data/golden/extracted and summaries. Writes data/golden/sft-section/.
     python -m scripts.finetune.build_sft_dataset sft [--mode facts|text] [--max-seq-len N] [--text-budget N]
         Writes data/golden/sft/{train,val,eval_inputs}.jsonl and MANIFEST.json from what exists. Rerun it
         whenever more summaries or facts are done. Eval documents never reach train or val.
@@ -18,9 +21,11 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
+from scripts.finetune import section_unit
 from scripts.finetune.common import (FACTS_DIR, OLLAMA_BASE_TAG, ROOT, SFT_DIR, USABLE_STATUS, estimate_tokens,
                                      facts_messages, golden_record, manifest_rows, read_json, sha256_file, splits,
                                      target_text, write_json)
+from scripts.golden_lib import load_pages
 
 VAL_DOCS = 3
 SEED = 2026
@@ -167,7 +172,96 @@ def choose_val(train_ready: list[str], sectors: dict[str, str]) -> list[str]:
     return chosen
 
 
+def assert_no_leak(train_ids, val_ids, eval_ids) -> None:
+    leak = set(eval_ids) & (set(train_ids) | set(val_ids))
+    assert not leak, f"eval documents found in train/val: {sorted(leak)}"
+
+
+def _pcts(values: list[int]) -> str:
+    v = sorted(values)
+    q = lambda p: v[min(len(v) - 1, int(p * len(v)))] if v else 0
+    return f"p50 {q(0.5)}, p95 {q(0.95)}, max {v[-1] if v else 0}"
+
+
+def cmd_sft_section(args, count=None) -> int:
+    """count(messages) -> exact tokens; default is the real Qwen tokenizer from models/hf (never downloaded here), else an estimate."""
+    from scripts.finetune.common import load_tokenizer
+    from scripts.finetune.tokenize_data import token_len
+
+    tok = None if count else load_tokenizer(args.tokenizer)
+    if count is None:
+        if tok:
+            count = lambda msgs: token_len(tok, msgs)
+        else:
+            print("WARNING: no tokenizer files found (models/hf/Qwen3.5-4B); token counts are estimates (chars / 3.8). "
+                  "train_lora.py counts exactly and drops anything over max_seq_len.")
+            count = lambda msgs: estimate_tokens(section_unit.SYSTEM_PROMPT + "".join(m["content"] for m in msgs[1:]))
+    docs, rows = usable_docs(), manifest_rows()
+    sectors = {d: rows[d]["sector"] for d in rows}
+    seed = ROOT / "sft" / "val_ids.json"  # same 3 val documents as the 32k data
+    if not (SFT_DIR / "val_ids.json").is_file() and seed.is_file():
+        write_json(SFT_DIR / "val_ids.json", read_json(seed))
+
+    dropped, no_pages = [], []
+
+    def doc_examples(doc_id: str) -> list[dict]:
+        summary = golden_record(doc_id)["summary"]
+        page_text = load_pages(doc_id)
+        out = []
+        for key in section_unit.SECTIONS:
+            exs, drops, empty = section_unit.build_examples(key, summary, page_text, count, args.max_seq_len)
+            dropped.extend({"doc_id": doc_id, **d} for d in drops)
+            if empty:
+                no_pages.append({"doc_id": doc_id, "section": key})
+            out += [{"doc_id": doc_id, "sector": sectors[doc_id], "unit": "section", "section": key, **e} for e in exs]
+        return out
+
+    by_doc = {d: doc_examples(d) for d in docs["train"] + docs["eval"]}
+    val_ids = choose_val([d for d in docs["train"] if by_doc[d]], sectors)
+    train = [e for d in docs["train"] if d not in val_ids for e in by_doc[d]]
+    val = [e for d in val_ids for e in by_doc[d]]
+    eval_ex = [e for d in docs["eval"] for e in by_doc[d]]
+    assert_no_leak({e["doc_id"] for e in train}, {e["doc_id"] for e in val}, set(splits()["eval"]) | set(docs["eval"]))
+
+    def write_jsonl(name: str, rows_: list[dict]) -> Path:
+        path = SFT_DIR / name
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows_), encoding="utf-8")
+        return path
+
+    keep = ("doc_id", "sector", "unit", "section", "group", "groups", "pages", "tokens")
+    eval_inputs = [{**{k: e[k] for k in keep}, "messages": e["messages"][:2],
+                    "golden": section_unit.answer_obj(e["section"], e["bullets"])} for e in eval_ex]
+    files = {"train.jsonl": write_jsonl("train.jsonl", [{k: e[k] for k in (*keep, "messages")} for e in train]),
+             "val.jsonl": write_jsonl("val.jsonl", [{k: e[k] for k in (*keep, "messages")} for e in val]),
+             "eval_inputs.jsonl": write_jsonl("eval_inputs.jsonl", eval_inputs)}
+    per_section = {k: {"train": sum(e["section"] == k for e in train), "val": sum(e["section"] == k for e in val),
+                       "eval": sum(e["section"] == k for e in eval_ex)} for k in section_unit.SECTIONS}
+    manifest = {
+        "built_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "mode": "section", "unit": "section", "seed": SEED,
+        "max_seq_len": args.max_seq_len, "token_counts": "exact (Qwen tokenizer, chat template, think off)" if tok else "estimated",
+        "files": {n: {"sha256": sha256_file(p), "examples": sum(1 for _ in open(p, encoding="utf-8"))} for n, p in files.items()},
+        "doc_ids": {"train": sorted({e["doc_id"] for e in train}), "val": sorted(val_ids), "eval": sorted({e["doc_id"] for e in eval_ex})},
+        "examples_per_section": per_section, "dropped": dropped, "sections_without_cited_pages": no_pages,
+        "skipped": [], "eval_leak_check": "passed",
+    }
+    write_json(SFT_DIR / "MANIFEST.json", manifest)
+
+    print(f"unit=section  max_seq_len={args.max_seq_len}  tokens: {manifest['token_counts']}")
+    print(f"examples: train={len(train)} val={len(val)} eval={len(eval_ex)}  (val docs: {', '.join(sorted(val_ids))})")
+    print(f"{'section':26}{'train':>7}{'val':>6}{'eval':>6}")
+    for k, v in per_section.items():
+        print(f"{k:26}{v['train']:>7}{v['val']:>6}{v['eval']:>6}")
+    print(f"tokens per training example (train+val): {_pcts([e['tokens'] for e in train + val])}")
+    print(f"sections with no cited page (no example): {len(no_pages)}; dropped (pages alone do not fit): {len(dropped)}")
+    for d in dropped:
+        print(f"  dropped {d['doc_id']} {d['section']} bullet {d['bullet']} pages {d['pages']}: {d['tokens']} tokens")
+    return 0
+
+
 def cmd_sft(args) -> int:
+    if args.unit == "section":
+        return cmd_sft_section(args)
     docs, rows, skipped = usable_docs(), manifest_rows(), []
     sectors = {d: rows[d]["sector"] for d in rows}
 
@@ -206,8 +300,7 @@ def cmd_sft(args) -> int:
     train = [e for e in train_all if e["doc_id"] not in val_ids]
 
     eval_ids = {e["doc_id"] for e in eval_ex} | set(splits()["eval"])
-    leak = eval_ids & ({e["doc_id"] for e in train} | {e["doc_id"] for e in val})
-    assert not leak, f"eval documents found in train/val: {sorted(leak)}"
+    assert_no_leak({e["doc_id"] for e in train}, {e["doc_id"] for e in val}, eval_ids)
 
     def write_jsonl(name: str, rows_: list[dict]) -> Path:
         path = SFT_DIR / name
@@ -255,11 +348,23 @@ def main() -> int:
     f.add_argument("--limit", type=int)
     s = sub.add_parser("sft")
     s.add_argument("--mode", choices=["facts", "text"], default="facts")
-    s.add_argument("--max-seq-len", type=int, default=32768)
+    s.add_argument("--max-seq-len", type=int, default=None, help="default 32768 (whole), 4096 (section)")
     s.add_argument("--max-failed-passes", type=int, default=0,
                    help="facts built with more failed model passes than this are skipped (a failed pass leaves a chunk's facts out)")
     s.add_argument("--text-budget", type=int, default=24000, help="text mode: estimated tokens of RFP text per example")
+    s.add_argument("--unit", choices=["whole", "section"], default="whole",
+                   help="whole: the app's summary stage (facts or text in, whole summary out). section: pages a section cites -> its bullets")
+    s.add_argument("--tokenizer", default=None, help="folder with the Qwen tokenizer files (default models/hf/Qwen3.5-4B)")
+    s.add_argument("--out-dir", help="write the jsonl files and MANIFEST.json here instead of data/golden/sft "
+                                      "(section unit: data/golden/sft-section)")
     args = ap.parse_args()
+    if getattr(args, "max_seq_len", 1) is None:
+        args.max_seq_len = 4096 if args.unit == "section" else 32768
+    global SFT_DIR
+    if getattr(args, "out_dir", None):
+        SFT_DIR = Path(args.out_dir)
+    elif getattr(args, "unit", None) == "section":
+        SFT_DIR = ROOT / "sft-section"
     return cmd_facts(args) if args.cmd == "facts" else cmd_sft(args)
 
 

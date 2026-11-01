@@ -8,6 +8,8 @@ GIB = 1024 ** 3
 # Shapes of models we know, for --check-only without network. Others are read from their config.json.
 KNOWN = {
     "Qwen/Qwen3.5-4B": dict(params=4.66e9, embed=248320 * 2560, hidden=2560, layers=32, inter=9216, vocab=248320),
+    # From a third-party copy of the 2B config.json (hidden 2048, 24 layers, MLP 6144); the parameter count is approximate.
+    "Qwen/Qwen3.5-2B": dict(params=2.27e9, embed=248320 * 2048, hidden=2048, layers=24, inter=6144, vocab=248320),
 }
 
 
@@ -59,18 +61,28 @@ def shape_of(model_id: str) -> dict | None:
         return None
 
 
-def estimate_gib(shape: dict, seq: int, answer_tokens: int, qlora: bool, rank: int = 16) -> dict:
+def estimate_gib(shape: dict, seq: int, answer_tokens: int, qlora: bool, rank: int = 16, loss_chunk: int = 256) -> dict:
     """Rough peak memory in GiB (about +-30%). Components are returned so the report can show them.
-    Assumes gradient checkpointing and logits computed only at answer positions (train_lora.py does both)."""
+    Assumes gradient checkpointing and the loss computed in chunks of answer tokens (train_lora.py does both)."""
     h, layers, inter, vocab = shape["hidden"], shape["layers"], shape["inter"], shape["vocab"]
     weights = ((shape["params"] - shape["embed"]) * 0.55 + shape["embed"] * 2) if qlora else shape["params"] * 2
     lora_params = layers * (3 * (h + inter) + 4 * 2 * h) * rank
     optimizer = lora_params * 16                       # fp32 weights, grads, two Adam moments
     checkpoints = layers * seq * h * 2                 # one bf16 hidden state saved per layer
     one_layer = seq * (inter * 3 + h * 8) * 2          # the layer being recomputed in the backward pass
-    logits = answer_tokens * vocab * 4 * 2             # fp32 logits and their gradient, answer positions only
+    logits = min(answer_tokens, loss_chunk) * vocab * 4 * 2  # fp32 logits and their gradient, one chunk at a time
     parts = {"weights": weights, "lora_and_optimizer": optimizer, "layer_checkpoints": checkpoints,
              "one_layer_peak": one_layer, "logits": logits, "runtime_overhead": 1.5 * GIB}
     out = {k: round(v / GIB, 1) for k, v in parts.items()}
     out["total"] = round(sum(parts.values()) / GIB * 1.1, 1)  # 10% slack for fragmentation
     return out
+
+
+def max_seq_that_fits(shape: dict, answer_tokens: int, qlora: bool, memory_gib: float, rank: int = 16) -> int:
+    """Longest total sequence (input + answer) whose estimate stays under 92% of the GPU, in steps of 512."""
+    best = 0
+    for seq in range(answer_tokens + 512, 65537, 512):
+        if estimate_gib(shape, seq, answer_tokens, qlora, rank)["total"] > 0.92 * memory_gib:
+            break
+        best = seq
+    return best

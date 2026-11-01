@@ -30,6 +30,11 @@ def build_example(tok, messages: list[dict], max_len: int) -> dict | None:
     return {"input_ids": ids, "labels": labels, "prompt_tokens": sum(l == IGNORE for l in labels)}
 
 
+def token_len(tok, messages: list[dict]) -> int:
+    """Exact length of prompt + answer + <|im_end|> as the trainer will see it (what build_example compares to max_len)."""
+    return len(tok(prompt_text(tok, messages) + messages[-1]["content"] + IM_END, add_special_tokens=False)["input_ids"])
+
+
 def load_jsonl(path: Path) -> list[dict]:
     return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
 
