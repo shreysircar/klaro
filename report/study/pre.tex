@@ -1,0 +1,15 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,booktabs,tabularx,enumitem,xcolor,titlesec,fancyhdr}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\linespread{1.08}
+\definecolor{ac}{HTML}{1F4E79}
+\titleformat{\section}{\Large\bfseries\color{ac}}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{0.6em}{}
+\setlist{itemsep=1pt,topsep=2pt}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\pagestyle{fancy}\fancyhf{}\fancyfoot[C]{\thepage}\fancyhead[L]{\small Klaro study notes}\renewcommand{\headrulewidth}{0.3pt}
+\newcommand{\key}[1]{\par\vspace{2pt}\noindent\fcolorbox{ac}{ac!8}{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{\textbf{Remember:} #1}}\par}
+\newcommand{\qa}[2]{\par\vspace{3pt}\noindent\textbf{\color{ac}Q. #1}\par\noindent #2\par}

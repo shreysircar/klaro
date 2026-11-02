@@ -1,0 +1,1622 @@
+{
+  "document_name": "chunks",
+  "total_chunks": 20,
+  "total_pass_a_inference_time_seconds": 1510.8,
+  "total_pass_b_inference_time_seconds": 2797.38,
+  "total_inference_time_seconds": 4308.18,
+  "chunks": [
+    {
+      "chunk_id": 1,
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 74.31,
+      "pass_b_inference_time_seconds": 70.94,
+      "total_inference_time_seconds": 145.25,
+      "information": {
+        "overview": [
+          {
+            "text": "The Notice Inviting Tender (NIT) No. 04/EE/CED-IV/CCU/Kol/2024-25 is issued by the Executive Engineer, CED-IV, CCU, MoEF&CC, Kolkata.",
+            "page": 2
+          },
+          {
+            "text": "The work involves Construction of open dais, Green room & washrooms at Phool bagan in front of CESC Garden and Repairing/replacement of 2km barbed wire on the boundary wall of AJCBIBG from Howrah main gate to bakultala gate during the year 2024-25.",
+            "page": 2
+          },
+          {
+            "text": "The estimated cost put to bid is Rs. 49,61,435.00/- for Civil & Electrical works.",
+            "page": 3
+          },
+          {
+            "text": "An Earnest Money Deposit (EMD) of Rs. 99,229.00/- is required.",
+            "page": 3
+          },
+          {
+            "text": "The period of completion is 06 (Six) Months.",
+            "page": 3
+          },
+          {
+            "text": "Bids are invited from CPWD enlisted contractors in Buildings & Roads category and firms/contractors of repute in a single bid system via online percentage rate bids.",
+            "page": 4
+          },
+          {
+            "text": "The last date and time for submission of the bid is 3 PM on 14/01/2025.",
+            "page": 4
+          }
+        ],
+        "scope": [
+          {
+            "text": "Major Component includes Civil work, specifically construction of open dais, green room, washrooms, and replacement of 2km barbed wire on the boundary wall.",
+            "page": 2
+          },
+          {
+            "text": "Minor Component includes Electrical work.",
+            "page": 5
+          }
+        ],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "Bid submission deadline and document acceptance period",
+            "page": 4
+          },
+          {
+            "text": "Last date & time of submission of bid: Upto-3 PM on 14/01/2025",
+            "page": 4
+          },
+          {
+            "text": "Time & date of opening of bid: At 3.30 PM on 14/01/2025",
+            "page": 4
+          },
+          {
+            "text": "Project completion period",
+            "page": 4
+          },
+          {
+            "text": "Period of Completion: 06(Six) Months",
+            "page": 4
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "Billing and pricing model",
+            "page": 4
+          },
+          {
+            "text": "Invites online Percentage rate bids",
+            "page": 4
+          },
+          {
+            "text": "Taxes and billing responsibility",
+            "page": 4
+          },
+          {
+            "text": "GST and Labour-Cess etc. as applicable shall be borne by the contractor himself. The quoted rates should be inclusive of all the tax components.",
+            "page": 4
+          },
+          {
+            "text": "Bid security format",
+            "page": 5
+          },
+          {
+            "text": "Deposition of original EMD: Banker's Cheque, Deposit at Call Receipt, Fixed Deposit Receipts, Bank Guarantee of any Scheduled Bank, or Demand Draft or Pay order.",
+            "page": 5
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 2,
+      "pages": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 71.1,
+      "pass_b_inference_time_seconds": 70.65,
+      "total_inference_time_seconds": 141.75,
+      "information": {
+        "overview": [
+          {
+            "text": "The NIT is for 'Construction of open dais, Green room & washrooms at Phool bagan in front of CESC Garden and Repairing, replacement of 2km barbed wire on the boundary wall of AJCBIBG from Howrah main gate to bakultala gate during the year 2024-25'.",
+            "page": 10
+          },
+          {
+            "text": "The work is estimated to cost Rs. 49,61,435.00/-.",
+            "page": 10
+          },
+          {
+            "text": "The financial bid shall be opened at 03:30 PM on 14/01/2025.",
+            "page": 10
+          },
+          {
+            "text": "Issuing organization is Executive Engineer, CED-IV, CCU (For and on behalf of the President of India).",
+            "page": 6
+          }
+        ],
+        "scope": [
+          {
+            "text": "The Major Component of work is Civil Work and Minor Component of work is Electrical Work.",
+            "page": 7
+          },
+          {
+            "text": "The main contractor shall execute the minor component(s) also or associate himself with an eligible agency for execution of electrical work.",
+            "page": 6
+          },
+          {
+            "text": "Time allowed for carrying out the work will be 08 (Eight) months from the date of start as defined in schedule 'F' or from the first date of handing over of the site, whichever is later.",
+            "page": 10
+          },
+          {
+            "text": "Architectural drawings shall be made available in phased manner, as per requirement and approved programme.",
+            "page": 10
+          }
+        ],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "Last date of submission of bid: 14/01/2025",
+            "page": 9
+          },
+          {
+            "text": "Financial bid to be opened at 03:30 PM on 14/01/2025",
+            "page": 9
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "Performance Guarantee of 5%(Five percent) of the composite contract amount",
+            "page": 7
+          },
+          {
+            "text": "Form of EMD: Insurance Surety Bond, Treasury Challan, Demand Draft, Pay Order, Banker's Cheque, Deposit at Call Receipt/FDR, or Bank Guarantee (minimum 50% in online mode; balance via Bank Guarantee with validity of 90 days for single bid or 180 days for two+ bids)",
+            "page": 9
+          },
+          {
+            "text": "Percentage rate bids must be quoted in decimal coinage; amounts rounded off by ignoring fifty paisa and considering more than fifty paisa as rupee one",
+            "page": 7
+          },
+          {
+            "text": "GST on materials as applicable shall be paid by the contractor himself, who shall quote rates considering all such taxes",
+            "page": 7
+          }
+        ],
+        "project_duration": [
+          {
+            "text": "Time allowed for carrying out the work will be 08 (Eight) months from the date of start as defined in schedule 'F' or from the first date of handing over of the site, whichever is later",
+            "page": 10
+          }
+        ],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 3,
+      "pages": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 60.8,
+      "pass_b_inference_time_seconds": 55.8,
+      "total_inference_time_seconds": 116.6,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP invites percentage rate bids from approved CPWD registered contractors for the construction of open dais, green room, and washrooms at Phool Bagan in front of CESC Garden.",
+            "page": 10
+          },
+          {
+            "text": "The RFP also covers the repairing and replacement of 2km of barbed wire on the boundary wall of AJCBIBG from Howrah main gate to Bakultala gate.",
+            "page": 10
+          },
+          {
+            "text": "The work is estimated to cost Rs. 49,61,435.00/- as a rough guide.",
+            "page": 10
+          },
+          {
+            "text": "The financial bid is scheduled to be opened at 03:30 PM on January 14, 2025.",
+            "page": 10
+          },
+          {
+            "text": "Issuing organization is the President of India on behalf of CPWD (Central Public Works Department).",
+            "page": 10
+          }
+        ],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "The financial bid shall be opened at 03:30 PM on 14/01/2025.",
+            "page": 10
+          },
+          {
+            "text": "The bid for the work shall remain open for acceptance for a period of 30 (Thirty) days from the date of opening of tenders.",
+            "page": 12
+          },
+          {
+            "text": "If any tenderer withdraws his tender or makes any modification... within 7 days after last date of submission of bids...",
+            "page": 13
+          },
+          {
+            "text": "If any tenderer withdraws his tender or makes any modification... after expiry of 7 days after last date of submission of bids...",
+            "page": 13
+          }
+        ],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 4,
+      "pages": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 86.45,
+      "pass_b_inference_time_seconds": 89.33,
+      "total_inference_time_seconds": 175.78,
+      "information": {
+        "overview": [
+          {
+            "text": "The tender is for the construction of open dais, green room, and washrooms at Phool bagan in front of CESC Garden, and repair/replacement of 2km barbed wire on the boundary wall of AJCBIBG from Howrah main gate to Bakultala gate during the year 2024-25.",
+            "page": 14
+          },
+          {
+            "text": "The tendering process requires online bid submission by 3 PM on 14/01/2025.",
+            "page": 14
+          },
+          {
+            "text": "Tender opening is scheduled for 3:30 PM on 14/01/2025 in the office of the Executive Engineer, CED-IV, CCU, MoEF&CC, AJCB Indian Botanic Garden.",
+            "page": 14
+          },
+          {
+            "text": "The issuing organization is the Ministry of Environment, Forest & Climate Change (MoEF&CC) represented by the Executive Engineer, CED-IV, Civil Construction Unit.",
+            "page": 13
+          },
+          {
+            "text": "This notice inviting bid forms part of the contract document.",
+            "page": 13
+          }
+        ],
+        "scope": [
+          {
+            "text": "Construction of open dais, green room & washrooms at Phool bagan in front of CESC Garden.",
+            "page": 14
+          },
+          {
+            "text": "Repairing and replacement of 2km barbed wire on the boundary wall of AJCBIBG from Howrah main gate to bakultala gate.",
+            "page": 14
+          }
+        ],
+        "requirements": [
+          {
+            "text": "Bidders must submit detail of associated agencies for specialized component(s) to Engineer-in-Charge within prescribed time.",
+            "page": 13
+          },
+          {
+            "text": "Changes to associate agencies during operation require prior approval of the Engineer-in-Charge, and new agencies must satisfy eligibility criteria.",
+            "page": 13
+          },
+          {
+            "text": "Main contractor has to enter into an MoU with associated agency(s); copy must be submitted to the Engineer-in-charge.",
+            "page": 13
+          },
+          {
+            "text": "Acceptance of bid must include the Notice Inviting Bid, documents including specifications and drawings, rates quoted online, correspondence, Standard C.P.W.D. Form 7 or other applicable form, and General Conditions of Contract 2023.",
+            "page": 13
+          },
+          {
+            "text": "Bidder must deposit earnest money in the form of Insurance Surety Bonds, Account Payee Demand Draft, Fixed Deposit Receipt, Banker's Cheque or Bank Guarantee.",
+            "page": 14
+          }
+        ],
+        "eligibility": [
+          {
+            "text": "Bidders must declare that eligible similar work(s) has/have not been executed through another contractor on a back-to-back basis to avoid future debarment in CCU, MoEF&CC.",
+            "page": 15
+          },
+          {
+            "text": "Associated agencies must conform to eligibility criteria as defined in the bid document and be approved by the Engineer-in-Charge.",
+            "page": 13
+          }
+        ],
+        "important_dates": [
+          {
+            "text": "Bids must be submitted by 3 PM on 14/01/2025.",
+            "page": 14
+          },
+          {
+            "text": "Tender to be opened at 3:30 PM on 14/01/2025.",
+            "page": 14
+          },
+          {
+            "text": "Bid must remain open for acceptance for thirty (30) days from the due date of its opening.",
+            "page": 14
+          },
+          {
+            "text": "In case of forfeiture within 7 days after last date of submission, bidder cannot participate in rebidding.",
+            "page": 13
+          },
+          {
+            "text": "In case of forfeiture after expiry of 7 days, bidder cannot participate in the re-tendering process.",
+            "page": 15
+          },
+          {
+            "text": "Performance Guarantee must be furnished within 7 days from the date of issue of letter of acceptance.",
+            "page": 17
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "Earnest money is Rs.99,229.00/-.",
+            "page": 16
+          },
+          {
+            "text": "Performance Guarantee is 5.00% of the tendered amount.",
+            "page": 16
+          },
+          {
+            "text": "Security Deposit is 2.50% of the tendered amount.",
+            "page": 16
+          },
+          {
+            "text": "Performance Guarantee must be in form of Insurance Surety Bonds, Account Payee Demand Draft, Fixed Deposit Receipt, Banker's Cheque or Bank Guarantee issued by a Commercial Bank.",
+            "page": 14
+          },
+          {
+            "text": "Estimate cost of work is Rs.49,61,435.00/-",
+            "page": 16
+          },
+          {
+            "text": "Overheads and profits are calculated at 15% on cost of materials and labour.",
+            "page": 17
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 5,
+      "pages": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 34.66,
+      "pass_b_inference_time_seconds": 33.35,
+      "total_inference_time_seconds": 68.01,
+      "information": {
+        "overview": [],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "Time allowed for submission of Performance Guarantee, Programme Chart (Time and Progress) and applicable labour licenses, registration with EPFO, ESIC and BOCW Welfare Board or proof of applying thereof from the date of issue of letter of acceptance: 7 Days",
+            "page": 17
+          },
+          {
+            "text": "Maximum allowable extension with late fee @0.1% per day of Performance Guarantee amount beyond the period as provided in i) above: 3 Days",
+            "page": 17
+          }
+        ],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 6,
+      "pages": [
+        23,
+        24,
+        25,
+        26
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 63.57,
+      "pass_b_inference_time_seconds": 63.14,
+      "total_inference_time_seconds": 126.71,
+      "information": {
+        "overview": [
+          {
+            "text": "The document is an annexure containing forms and guarantees for contract execution by a contractor (CCU) on behalf of the Government.",
+            "page": 23
+          },
+          {
+            "text": "It includes a Bank Guarantee Form for Earnest Money Deposit/Performance Guarantee/Security Deposit to be offered by a bank.",
+            "page": 23
+          },
+          {
+            "text": "The validity period of the guarantee depends on the bid system: 90 days for financial bids and 180 days for two/three bid systems.",
+            "page": 24
+          }
+        ],
+        "scope": [
+          {
+            "text": "The Bank Guarantee covers compliance of contractor obligations, payment demands up to the specified amount, and enforcement by the Government without proceeding against the contractor first.",
+            "page": 23
+          },
+          {
+            "text": "The guarantor (bank) cannot revoke the guarantee except with the consent of the Government in writing.",
+            "page": 24
+          },
+          {
+            "text": "Annexure II covers a ten-year warranty by the contractor for waterproofing works, excluding defects caused by earthquakes or misuse.",
+            "page": 25
+          },
+          {
+            "text": "Annexure III covers a five-year warranty by the contractor for sanitary installations and water supply works, excluding defects caused by misuse or structural issues.",
+            "page": 26
+          }
+        ],
+        "requirements": [
+          {
+            "text": "The bank must sign the guarantee with its authorized signature, name, address, and seal in the presence of witnesses.",
+            "page": 24
+          },
+          {
+            "text": "A claim must be lodged in writing within the expiry or extended date of the guarantee to avoid discharge of liability.",
+            "page": 24
+          },
+          {
+            "text": "The contractor (guarantor) must make good all defects during the warranty period and render works waterproof upon demand from the Engineer-in-Charge.",
+            "page": 25
+          },
+          {
+            "text": "If the guarantor fails to rectify defects, the Government may do so at the guarantor's cost and risk.",
+            "page": 26
+          }
+        ],
+        "eligibility": [
+          {
+            "text": "The contractor must execute a supplementary guarantee agreement for defect removal after completion of waterproofing or sanitary works.",
+            "page": 25
+          },
+          {
+            "text": "For waterproofing works, the contractor is liable for leakage only if not caused by earthquakes, structural defects, or roof misuse.",
+            "page": 25
+          },
+          {
+            "text": "For sanitary and water supply works, the contractor is liable for defects excluding those caused by misuse.",
+            "page": 26
+          }
+        ],
+        "important_dates": [
+          {
+            "text": "*Date to be worked out on the basis of validity period of 90 days where only financial bids are invited and 180 days for two/three bid system from the date of submission of tender.",
+            "page": 24
+          },
+          {
+            "text": "Ten Years from the date of completion of the work under the contract [Waterproofing]",
+            "page": 25
+          },
+          {
+            "text": "Five years from the date of completion of the work under the contract [Sanitary & Water Supply]",
+            "page": 26
+          }
+        ],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": [
+          {
+            "text": "The Government has further agreed to accept an irrevocable Bank Guarantee for... as Earnest Money Deposit from the said Contractor for compliance of his obligations...",
+            "page": 23
+          },
+          {
+            "text": "We, ... (indicate the name of the bank) ..., hereby undertake to pay to the Government an amount not exceeding Rs. ... on demand by the Government within 10 days of the demand.",
+            "page": 23
+          },
+          {
+            "text": "However, our liability under this guarantee shall be restricted to an amount not exceeding Rs. ...",
+            "page": 23
+          },
+          {
+            "text": "...our liability under this Bank Guarantee being absolute and unequivocal.",
+            "page": 23
+          },
+          {
+            "text": "We, ..., further agree that the Government shall have the fullest liberty without our consent ... to vary any of the terms and conditions of the said agreement or to extend time of performance by the said Contractor...",
+            "page": 24
+          },
+          {
+            "text": "The payment so made by us under this Bank Guarantee shall be a valid discharge of our liability for payment there under and the Contractor shall have no claim against us for making such payment.",
+            "page": 24
+          },
+          {
+            "text": "...enforce this Guarantee against the Bank as a principal debtor at the first instance without proceeding against the Contractor...",
+            "page": 24
+          },
+          {
+            "text": "This guarantee will not be discharged due to the change in the constitution of the Bank or the Contractor.",
+            "page": 24
+          },
+          {
+            "text": "...undertake not to revoke this guarantee except with the consent of the Government in writing.",
+            "page": 24
+          },
+          {
+            "text": "...unless a claim in writing is lodged with us within the date of expiry or extended date of expiry of this guarantee, all our liabilities under this guarantee shall stand discharged.",
+            "page": 24
+          },
+          {
+            "text": "The guarantor will not be responsible for leakage caused by earthquake or structural defects or misuse...",
+            "page": 25
+          },
+          {
+            "text": "Provided that the guarantor will not be responsible ... for any default on the part of the GUARANTOR in performance and observance of this supplementary agreement.",
+            "page": 26
+          },
+          {
+            "text": "...The decision of the Engineer-in-Charge with regard to nature and cause of defect shall be final.",
+            "page": 25
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": 7,
+      "pages": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 29.25,
+      "pass_b_inference_time_seconds": 29.45,
+      "total_inference_time_seconds": 58.7,
+      "information": {
+        "overview": [
+          {
+            "text": "The agreement is supplementary to Contract No. ……….. dated ………………, between the Guarantor (Contractor) and the President of India (Government).",
+            "page": 26
+          },
+          {
+            "text": "The contract concerns sanitary installations and water supply works.",
+            "page": 26
+          }
+        ],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "Five years from the date of completion of the work under the contract for minimum life guarantee.",
+            "page": 26
+          },
+          {
+            "text": "Correction slips apply up to the last date of submission of bid (including any extension in last date of bid submission).",
+            "page": 30
+          }
+        ],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 8,
+      "pages": [
+        31,
+        32,
+        33
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 59.15,
+      "pass_b_inference_time_seconds": 65.03,
+      "total_inference_time_seconds": 124.18,
+      "information": {
+        "overview": [
+          {
+            "text": "The tenderer must provide and maintain approaches from the main road or improve existing approaches at their own cost without additional payment.",
+            "page": 31
+          },
+          {
+            "text": "The contractor must obtain all necessary licenses for temporary obstructions and enclosures while paying associated fees to local authorities.",
+            "page": 31
+          },
+          {
+            "text": "No payment shall be made for any damage caused by natural calamities such as rain, snowfall, or flood during work execution.",
+            "page": 31
+          }
+        ],
+        "scope": [
+          {
+            "text": "Work must be carried out in compliance with relevant bylaws, regulations, and directives of the Engineer-in-charge.",
+            "page": 31
+          },
+          {
+            "text": "Rates for all items are considered inclusive of labour, material, tools, plant, heights, depths, leads, carriages, and pumping/baling out water if necessary.",
+            "page": 32
+          },
+          {
+            "text": "Contractor rates apply to construction executed in two or more shifts including night work where site conditions demand it.",
+            "page": 32
+          },
+          {
+            "text": "RCC, electrical, and finishing work are normally not allowed at night unless site circumstances so demand.",
+            "page": 32
+          }
+        ],
+        "requirements": [
+          {
+            "text": "The contractor must submit a list of safety measures for manpower deployment to the Engineer-in-Charge for approval within two weeks of award.",
+            "page": 33
+          },
+          {
+            "text": "Personal protective equipment including helmets, safety shoes, harnesses, and gloves must be provided by the contractor at their own cost.",
+            "page": 33
+          },
+          {
+            "text": "Contractors must erect barricades of required height with Precoated galvanized iron profile sheet/MS sheets to enclose construction areas.",
+            "page": 33
+          },
+          {
+            "text": "Trenching and digging for laying sewer lines or cables must only commence when all men, machinery, and materials are arranged.",
+            "page": 33
+          }
+        ],
+        "eligibility": [
+          {
+            "text": "The contractor must indemnify the Department against claims arising from violations of laws, patent rights, royalties, or damages to adjacent buildings caused by them or their employees.",
+            "page": 32
+          },
+          {
+            "text": "No claim whatsoever shall be entertained for extra costs incurred during night shifts or pandemic/epidemic conditions including COVID-19 arrangements.",
+            "page": 32
+          },
+          {
+            "text": "Existing drains, pipes, cables, over-head wires, sewer lines, and water lines must be protected by the contractor at their own expense.",
+            "page": 33
+          }
+        ],
+        "important_dates": [
+          {
+            "text": "Contractor shall within two weeks of award of work, submit to the Engineer-in-Charge for his approval, list of measures for maintaining safety of manpower deployed for construction.",
+            "page": 33
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "The rates for all items of work shall, unless clearly specified otherwise, include cost of all labour, material, tools and plants and other inputs including all heights/depths, leads and carriages involved in the execution of the item.",
+            "page": 32
+          },
+          {
+            "text": "The rates for all items shall be considered as inclusive of pumping/baling out water... conditions shall be considered to include water from any source such as inflow of flood, rain water, surface drainage, sewerage or due to any other reason including surface and sub-soil water etc.",
+            "page": 32
+          },
+          {
+            "text": "Unless otherwise specified in the schedule of quantities, the rates tendered by the contractor shall be inclusive of all costs & taxes and shall apply to all leads, lifts, depth and height and nothing extra shall be payable on this account.",
+            "page": 32
+          },
+          {
+            "text": "The contractor shall see the approaches to the site... in case any approach from main road is required at site or existing approach is to be improved and maintained for cartage of materials by the contractor, the same shall be provided, improved and maintained by the contractor at his own cost. No payment shall be made on this account.",
+            "page": 31
+          },
+          {
+            "text": "The contractor shall keep himself fully informed of all acts/laws of the Central/State/Local Governments, orders of central/state/local government, decrees of statutory bodies, tribunals having any jurisdiction or authority, which in any manner may affect those engaged or employed... All rules & regulations and bye-laws laid down by Collector / Municipal Corporation of area (where site is located) and any other statutory bodies shall be adhered to...",
+            "page": 32
+          },
+          {
+            "text": "For completing the work in time, the Contractor might be required to work in two or more shifts (including night shifts). Normally contractors shall not be allowed to execute the RCC, electrical and finishing work at night. Work at night shall, however, be allowed if the site conditions/circumstances so demand. No claim whatsoever shall be entertained on this account...",
+            "page": 32
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 9,
+      "pages": [
+        33,
+        34,
+        35
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 84.09,
+      "pass_b_inference_time_seconds": 75.44,
+      "total_inference_time_seconds": 159.53,
+      "information": {
+        "overview": [
+          {
+            "text": "The work should be planned in a systematic manner to minimize chase cuttings in walls, ceilings, and floors.",
+            "page": 33
+          },
+          {
+            "text": "Chases will not be allowed to be cut using hammer or chisel; use of machin es is required wherever absolutely essential.",
+            "page": 33
+          },
+          {
+            "text": "Contractor must coordinate disciplines such as sanitary, water supply, electric, and fire-fighting services.",
+            "page": 33
+          },
+          {
+            "text": "The contractor is responsible for watching and guarding buildings against pilferage and breakage until physical handover.",
+            "page": 33
+          }
+        ],
+        "scope": [
+          {
+            "text": "Contractor must ensure proper coordination of various disciplines viz. sanitary & water supply, electrical, fire-fighting and any other services.",
+            "page": 33
+          },
+          {
+            "text": "Existing drains, pipes, cables, over-head wires, sewer lines, water lines and similar services encountered shall be protected against damage at contractor's expense.",
+            "page": 33
+          },
+          {
+            "text": "In case existing services are to be removed and diverted, the same shall be payable to the contractor upon approval by Engineer-in-Charge.",
+            "page": 33
+          },
+          {
+            "text": "Contractor must work out the cost of removal and diversion and obtain approval from Engineer-in-Charge.",
+            "page": 33
+          },
+          {
+            "text": "Contractor shall not store materials or occupy site in a manner likely to hinder operation of services.",
+            "page": 33
+          }
+        ],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "Contractor shall within two weeks of award of work, submit to the Engineer-in- Charge for his approval , list of measures for maintaining safety of manpower deployed for construction",
+            "page": 34
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "Nothing extra shall be payable on this account",
+            "page": 34
+          },
+          {
+            "text": "No claim, whatsoever , of any kind shall be entertained from the Contractor on this account",
+            "page": 34
+          },
+          {
+            "text": "No extra payment shall be made on this account",
+            "page": 34
+          },
+          {
+            "text": "Nothing extra shall be payable for the above",
+            "page": 35
+          },
+          {
+            "text": "Nothing extra whatsoever shall be payable to the contractor for the test",
+            "page": 35
+          },
+          {
+            "text": "No claim of payment or claim of any other kind, whatsoever, shall be entertained from the Contractor",
+            "page": 35
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": [
+          {
+            "text": "If any material, even though approved by Engineer-In-Charg e is found defective or not conforming to specifications shall be replaced / removed by the contractor at his own risk & cost",
+            "page": 34
+          },
+          {
+            "text": "Any sub-standard material/work beyond set out tolerance limit shall be summarily rejected by the Engineer-in-charge & contractor shall be bound to replace / remove such sub-standard / defective work immediately",
+            "page": 34
+          },
+          {
+            "text": "In case he or his authoriz ed representative is not present or does not associ ate him, the result of such tests and consequences thereon shall be binding on the Contractor",
+            "page": 35
+          },
+          {
+            "text": "If the Contractor does not provide adequate support ing staff or labour ... Engineer in charge may carry out field tests ... at risk and cost of Contr actor. The charges so incurred shall be entirely bo rne by contractor and shall be deducted from Running or fi nal bill",
+            "page": 35
+          },
+          {
+            "text": "Further, recovery of Rs. 10 00/- for each default shall be levied to contractor..",
+            "page": 35
+          },
+          {
+            "text": "In case the Contractor is found stacking the building material / malba ... the Contractor s hall be liable to pay the stacking charges / penalty as may be levied by the local body or any other authority and also to face penal action",
+            "page": 35
+          },
+          {
+            "text": "The Engineer –in-Charge shall be at liberty to recover, such sums due but not paid to the concerned authorities ... from any sums due to the Contractor including amount of the Security Deposit and performance guarantee",
+            "page": 35
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": 10,
+      "pages": [
+        35,
+        36,
+        37
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 85.23,
+      "pass_b_inference_time_seconds": 64.13,
+      "total_inference_time_seconds": 149.36,
+      "information": {
+        "overview": [],
+        "scope": [
+          {
+            "text": "Testing charges are borne by the contractor unless specified otherwise.",
+            "page": 35
+          },
+          {
+            "text": "Hidden items such as water supply lines, drainage pipes, electrical conduits, and sewers must be properly tested before covering as per design conditions.",
+            "page": 35
+          },
+          {
+            "text": "The contractor must give a performance test of the entire installation(s) as per standing specifications before final acceptance.",
+            "page": 35
+          },
+          {
+            "text": "Scope includes providing copies of challans, cash memos, receipts, vouchers, and manufacturer certificates for materials procured upon Department request.",
+            "page": 35
+          },
+          {
+            "text": "Site cleanliness requires removing muck, rubbish, and building material to approved dumping grounds per local byelaws.",
+            "page": 35
+          },
+          {
+            "text": "Excavated earth or building rubbish shall not be stacked on areas where other buildings, roads, services, or compound walls are to be constructed.",
+            "page": 36
+          },
+          {
+            "text": "The contractor is responsible for providing potable water and minimum sanitation/safety facilities for workers.",
+            "page": 36
+          },
+          {
+            "text": "Special scope covers the use of OPC conforming to IS: 8112 or PPC conforming to IS: 1489 (Part 1) from preferred makes.",
+            "page": 36
+          },
+          {
+            "text": "Cement must be supplied in 50 kg bags with manufacturer's name, ISI marking, and grade/type specifications.",
+            "page": 36
+          },
+          {
+            "text": "The contractor must construct a cement godown with minimum capacity of 200 bags at the site of work.",
+            "page": 36
+          },
+          {
+            "text": "Special conditions for steel reinforcement require ISI marked TMT bars of various grades from preferred makes or authorized dealers.",
+            "page": 37
+          },
+          {
+            "text": "Steel reinforcement bars must be supplied to the site in bulk supply of 25 tonnes or more as decided by the Engineer-in-charge.",
+            "page": 37
+          }
+        ],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [],
+        "commercial_requirements": [
+          {
+            "text": "The Contractor shall be liable to pay Rs. 10 00/- for each default (e.g., failure to provide staff, labour, or maintain test records) which shall be recovered from the Running or final bill.",
+            "page": 35
+          },
+          {
+            "text": "All fees/charges regarding site cleanliness, water logging prevention, and effluent discharge shall be borne by the Contractor; nothing extra shall be payable on this account.",
+            "page": 36
+          },
+          {
+            "text": "The Cement Godown must be constructed at the contractor's own cost with a capacity of minimum 200 bags (Page 36) or 2000 bags (Page 37), and no extra payment shall be made for it.",
+            "page": 36
+          },
+          {
+            "text": "In case cement consumption is less than theoretical consumption including permissible variation, recovery shall be made at the rate prescribed; in case of excess consumption, no cost adjustment need to be made.",
+            "page": 37
+          },
+          {
+            "text": "If the Contractor fails to remove damaged cement within three days of written notice, the Engineer-in-Charge shall get it removed at the cost of the Contractor.",
+            "page": 37
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": [
+          {
+            "text": "Samples and tests arranged by the Contractor shall be tested by the Engineer-in-Charge. If results indicate non-compliance with BIS codes, the material is rejected.",
+            "page": 37
+          },
+          {
+            "text": "The Cement Godown keys are double-locked: one key remains with the Engineer-in-Charge/authorized representative, and the other key remains with the Contractor.",
+            "page": 37
+          },
+          {
+            "text": "Cement cannot be removed from site after completion of work without written permission from the Engineer-in-Charge.",
+            "page": 37
+          },
+          {
+            "text": "The Contractor is responsible for watch and ward and safety of the Cement Godown.",
+            "page": 37
+          },
+          {
+            "text": "Steel reinforcement bars must be ISI marked TMT bars of various grades, procured from preferred manufacturers or authorized dealers/distributors/channel partners.",
+            "page": 38
+          },
+          {
+            "text": "If test results indicate that reinforcement steel arranged by the Contractor does not conform to specifications, it stands rejected and must be removed at the Contractor's cost within a week of written order.",
+            "page": 38
+          },
+          {
+            "text": "Steel bars shall be brought to the site in bulk supply of 25 tonnes or more, as decided by the Engineer-in-Charge.",
+            "page": 38
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": 11,
+      "pages": [
+        37,
+        38,
+        39,
+        40
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 26.57,
+      "pass_b_inference_time_seconds": 26.8,
+      "total_inference_time_seconds": 53.37,
+      "information": {
+        "overview": [],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 12,
+      "pages": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 103.99,
+      "pass_b_inference_time_seconds": 123.3,
+      "total_inference_time_seconds": 227.29,
+      "information": {
+        "overview": [],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 13,
+      "pages": [
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 129.31,
+      "pass_b_inference_time_seconds": 23.9,
+      "total_inference_time_seconds": 153.21,
+      "information": {
+        "overview": [],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 14,
+      "pages": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 133.41,
+      "pass_b_inference_time_seconds": 1130.04,
+      "total_inference_time_seconds": 1263.45,
+      "information": {
+        "overview": [],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 15,
+      "pages": [
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 201.12,
+      "pass_b_inference_time_seconds": 18.85,
+      "total_inference_time_seconds": 219.97,
+      "information": {
+        "overview": [],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 16,
+      "pages": [
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 53.48,
+      "pass_b_inference_time_seconds": 68.54,
+      "total_inference_time_seconds": 122.02,
+      "information": {
+        "overview": [],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 17,
+      "pages": [
+        69,
+        70,
+        71,
+        72
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 111.98,
+      "pass_b_inference_time_seconds": 594.45,
+      "total_inference_time_seconds": 706.43,
+      "information": {
+        "overview": [
+          {
+            "text": "The tender is for Electrical (E) & Mechanical (M) works including installation, wiring, conduits, switches, fixtures, and related systems.",
+            "page": 69
+          },
+          {
+            "text": "All work is to be executed in strict accordance with specifications, approved designs, drawings, and instructions of the Engineer-in-Charge.",
+            "page": 72
+          }
+        ],
+        "scope": [
+          {
+            "text": "The scope includes electrical installation of conduits, wiring, modular switches, MCBs, MCCBs, DBs, fans, fixtures, UPS, EPABX, Krone Boxes, and Audio-Video Conferencing systems.",
+            "page": 69
+          },
+          {
+            "text": "Work covers laying conduit, fish wiring, earthing, interconnection, and provision of junction boxes for pulling wires.",
+            "page": 69
+          },
+          {
+            "text": "Scope includes providing land accommodation for labour, temporary workshops, approach roads, and storage of materials at the site.",
+            "page": 72
+          }
+        ],
+        "requirements": [
+          {
+            "text": "Bidders must submit a proof of authorized outlets for wires, modular switches, MCBs, DBs, fans, and fixtures as per Engineer-in-Charge demand.",
+            "page": 70
+          },
+          {
+            "text": "Contractors must submit samples of all materials in advance for approval by the Engineer-in-Charge before use at site.",
+            "page": 72
+          },
+          {
+            "text": "Bidders must furnish an affidavit and Form 'C' MoU signed by both main contractor and eligible associated contractor independently for respective E&M components.",
+            "page": 71
+          },
+          {
+            "text": "All hardware items like screws, thimbles, GI wires, nuts, bolts, washers must be zinc/cadmium plated iron.",
+            "page": 70
+          },
+          {
+            "text": "Contractors must submit documentary details of procurement from original equipment manufacturers or authorized dealers including test certificates.",
+            "page": 72
+          }
+        ],
+        "eligibility": [
+          {
+            "text": "The tenderer must either satisfy eligibility conditions for E&M components themselves or associate with agencies fulfilling these requirements.",
+            "page": 71
+          },
+          {
+            "text": "Proposals to associate an agency must be submitted in Form 'B' of the tender document from each associate independently.",
+            "page": 71
+          },
+          {
+            "text": "Eligibility decision requires submission of registration documents, Electrical License, and GST Documents duly attested by applicants to Executive Engineer CED-IV CCU.",
+            "page": 71
+          },
+          {
+            "text": "Associated contractors must certify they are not debarred as on the day of application for tender participation.",
+            "page": 71
+          },
+          {
+            "text": "No change of Associated Contractor is allowed without prior approval of the Engineer-in-charge.",
+            "page": 72
+          }
+        ],
+        "important_dates": [
+          {
+            "text": "The firm should submit the warranty against manufacturer defect for a period of 5 years from the date of completion of work for LED fittings, UPS, EPABX system, Krone Box & Audio-Video Conferencing system and products from the manufacturer.",
+            "page": 71
+          },
+          {
+            "text": "Before completion of defect liability period as per condition laid down in GCC 2023, the main contractor has to submit security deposit...",
+            "page": 72
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "The rates tendered should be inclusive all taxes and duties. No tax shall be separately paid by the department.",
+            "page": 69
+          },
+          {
+            "text": "Statutory deductions at source shall be made while releasing payment through running/final bills as applicable.",
+            "page": 69
+          },
+          {
+            "text": "The contractor has to make his own arrangements for stores and watch and ward and no extra claim for this will be entertained.",
+            "page": 70
+          },
+          {
+            "text": "The contractor shall make his own arrangements for electrical power supply for the construction activities. No extra payments for the same will be made.",
+            "page": 70
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": [
+          {
+            "text": "The entire installation shall be at the risk and responsibility of the contractor until these are tested and handed over to the department. The watch & ward is the responsibility of the contractor till handing over.",
+            "page": 69
+          },
+          {
+            "text": "No change of Associated Contractor will be allowed without prior approval of the Engineer-in-charge of the work.",
+            "page": 72
+          },
+          {
+            "text": "In case the main contractor is himself eligible... for executing any specific minor component and intends doing the job himself, he may not be required to associate with another agency...",
+            "page": 71
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": 18,
+      "pages": [
+        72,
+        73,
+        74,
+        75
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 33.05,
+      "pass_b_inference_time_seconds": 46.33,
+      "total_inference_time_seconds": 79.38,
+      "information": {
+        "overview": [
+          {
+            "text": "If equipment supplied for work during the currency of the earlier Associate Contractor and paid partly by the Department becomes redundant due to a change in agency, the Main Contractor shall be liable for replacement at no cost to the Department.",
+            "page": 72
+          },
+          {
+            "text": "No change of Associated Contractor will be allowed without prior approval of the Engineer-in-charge of the work.",
+            "page": 72
+          }
+        ],
+        "scope": [
+          {
+            "text": "For all works, including Electrical installations, materials shall be procured only from original equipment manufacturers/authorized dealers of OEM.",
+            "page": 72
+          },
+          {
+            "text": "Contractor must arrange land for accommodation of labour, setting up of office, storage of materials, and construction of approach roads at site expense.",
+            "page": 72
+          },
+          {
+            "text": "Work shall not interfere or adversely affect other works being executed by other agencies, and any damage caused to existing or other agency works must be made good by the contractor.",
+            "page": 73
+          },
+          {
+            "text": "All routine tests on equipment must be conducted before dispatch from manufacturers' premises.",
+            "page": 74
+          }
+        ],
+        "requirements": [
+          {
+            "text": "Main Contractor/Associate must submit all equipment, accessories, shop floor drawings, catalogues, and make/model lists for approval prior to placing orders.",
+            "page": 75
+          },
+          {
+            "text": "All samples of materials must be submitted in advance, approved by Engineer-in-Charge, and tested at an authorized lab before actual work execution.",
+            "page": 73
+          },
+          {
+            "text": "Equipment must include Manufacturer's test certificate, technical catalogues, Installation/Operation & Maintenance manuals, and LM-79 test reports for LED luminaries from NABL accredited labs.",
+            "page": 74
+          },
+          {
+            "text": "Contractor must submit a Quality Assurance Manual including the Quality Assurance Plan & Checklist for E&M Service.",
+            "page": 74
+          },
+          {
+            "text": "Agency must provide storage cum erection insurance and third-party insurance covering transit, storage, erection, and commissioning from storage to handing over.",
+            "page": 75
+          }
+        ],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "The Security Deposit for LED fittings, UPS, EPABX system, Krone Box & Audio-Video Conferencing system will be released after completion of warranty period of 5 years to the main contractor.",
+            "page": 72
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "The contractor shall submit security deposit of 5% of 80% of the price for LED fittings, UPS, EPABX system, Krone Box & Audio-Video Conferencing system in acceptable form i.e. FDR/ Bank guarantee to Engineer in charge.",
+            "page": 72
+          },
+          {
+            "text": "Prior to dispatch, all equipment shall be adequately protected & insured for the whole period of transit, storage and erection against corrosion and incidental damages etc. from the effect of vermin, sunlight, rain, heat, humid climate and accidents etc.",
+            "page": 74
+          },
+          {
+            "text": "The agency shall include storage cum erection insurance including third party insurance right from the storage to commissioning and handing over of various equipment. In insurance, the beneficiary shall be Engineer-In-charge at the cost of the agency.",
+            "page": 74
+          },
+          {
+            "text": "All inspection before dispatch (routine tests) shall be done; no equipment shall be dispatched out from manufacturing premises before such tests are conducted and test results recorded. Test certificates shall be given along with supply of equipment.",
+            "page": 73
+          },
+          {
+            "text": "In case the contract or its authorized representative is not present or does not associate himself in the collection, preparation, packing and forwarding of samples for prescribed tests and analysis, the results of such tests and consequences thereon shall be binding on the contractor.",
+            "page": 73
+          },
+          {
+            "text": "Nothing extra shall be paid to the contractor on account of working in two or more shifts, arranging land for labour accommodation, or for making samples conform to approved quality.",
+            "page": 72
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 19,
+      "pages": [
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 9.35,
+      "pass_b_inference_time_seconds": 78.65,
+      "total_inference_time_seconds": 88.0,
+      "information": {
+        "overview": [],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 20,
+      "pages": [
+        83,
+        84,
+        85,
+        86,
+        87,
+        88
+      ],
+      "word_count": 1525,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 59.93,
+      "pass_b_inference_time_seconds": 69.26,
+      "total_inference_time_seconds": 129.19,
+      "information": {
+        "overview": [
+          {
+            "text": "The project involves the construction of an open dais, Green room, and washrooms at Phool bagan in front of CESC Garden.",
+            "page": 88
+          },
+          {
+            "text": "The project also includes repairing and replacing 2km of barbed wire on the boundary wall of AJCBIBG from Howrah main gate to bakultala gate during the year 2024-25.",
+            "page": 88
+          },
+          {
+            "text": "The tender documents indicate a contract period of one year (2024-25).",
+            "page": 88
+          }
+        ],
+        "scope": [
+          {
+            "text": "Supplying and wiring light points, fan points, exhaust fan points, and call bell points using 1.5 sq.mm FRLS PVC insulated copper conductor single core cable.",
+            "page": 85
+          },
+          {
+            "text": "Supplying and wiring group controlled (looped) light points, fan points, exhaust fan points, and call bell points without independent switches.",
+            "page": 85
+          },
+          {
+            "text": "Supplying and fixing horizontal type three pole and neutral sheet steel MCB distribution boards for 415 volts on surface or recess.",
+            "page": 86
+          },
+          {
+            "text": "Supplying and laying 1.1 KV grade PVC insulated, PVC sheathed, or XLPE power cables in existing RCC/HUME/METAL pipes.",
+            "page": 87
+          },
+          {
+            "text": "Supplying and laying DWC HDPE pipes (63mm dia) direct in ground including excavation and refilling.",
+            "page": 87
+          }
+        ],
+        "requirements": [
+          {
+            "text": "All items must confirm to e-waste management and handling rules issued by the Ministry of Environment and Forest, Government of India.",
+            "page": 83
+          },
+          {
+            "text": "All items must comply with ROHS restrictions on use of hazardous substances or WEEE compliant as per EU norms or American norms.",
+            "page": 83
+          },
+          {
+            "text": "Material shall not be older by more than six months from the date of supply at site.",
+            "page": 83
+          },
+          {
+            "text": "Proof of dispatch from factory/dealer shall always be submitted to Engineer-in-charge for verification.",
+            "page": 83
+          },
+          {
+            "text": "Column Nos. 4 and 5 in the Schedule of Quantity are mandatory; if left blank, the tender becomes invalid.",
+            "page": 88
+          },
+          {
+            "text": "The percentage quoted shall appear in two decimal places.",
+            "page": 88
+          }
+        ],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "The work shall be executed during the year 2024-25.",
+            "page": 83
+          },
+          {
+            "text": "The columns for percentage above or below estimated cost are mandatory to be filled by bidders; if left blank, the tender becomes invalid.",
+            "page": 87
+          },
+          {
+            "text": "The amount in figures in Column No.6 shall appear automatically corresponding to the percentage quoted in Column Nos. 4 & 5.",
+            "page": 87
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "Column Nos. 4 (Percentage above/below estimated cost) and Column No. 5 are mandatory to be filled by bidders/tenderers. If these columns are left blank, the tender becomes invalid.",
+            "page": 87
+          },
+          {
+            "text": "The amount in figures in Column No.6 shall appear automatically corresponding to the percentage quoted in Column Nos. 4 & 5.",
+            "page": 87
+          },
+          {
+            "text": "The tenderer is required to quote the percentage only above or below or at par with the estimated cost to cover all the rates of item covered under the respective packages.",
+            "page": 87
+          },
+          {
+            "text": "The percentage shall be written in 2 (two) place of decimal.",
+            "page": 87
+          },
+          {
+            "text": "If the 'At Par' selection in Column No.4 is made, by default the percentage will be considered as 'Zero'. In other words, if 'At Par' is selected in Column No.4, then no need to fill Column No.5.",
+            "page": 87
+          },
+          {
+            "text": "Add GST of 6.33% on DSR items (GST rate adjustment from 12% to 18%) amounting to Rs. 8,870.48.",
+            "page": 87
+          },
+          {
+            "text": "Add L.Cess @ 1% on DSR items amounting to Rs. 1,490.04.",
+            "page": 87
+          },
+          {
+            "text": "Apply M.F 0.973 on DSR Items.",
+            "page": 87
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": [
+          {
+            "text": "Either the model shall be got approved or Sample shall be submitted for approval by Engineer-in-Charge before confirming order to supplier.",
+            "page": 83
+          },
+          {
+            "text": "Contractor shall normally not use more than two (except for Equipment: Lifts, DG Set, Transformer, HVAC Equipments, UPS, where only One make is allowed) out of the above preferred makes.",
+            "page": 83
+          },
+          {
+            "text": "For any item not covered in the above list, the contractor shall get the samples and make approved from the Engineer-in-charge before the supply is made.",
+            "page": 83
+          },
+          {
+            "text": "All items shall conform to e-waste management and handling rules 2011 issued by Ministry of Environment and Forest, Government of India or ROHS restrictions on use of Hazardous substances/WEEE compliant as per EU norms or American norms. Certificate shall be submitted wherever applicable.",
+            "page": 83
+          },
+          {
+            "text": "The material shall not be older by more than Six months from date of supply at site.",
+            "page": 83
+          },
+          {
+            "text": "Proof of dispatch from factory/dealer shall always be submitted to Engineer-in-Charge for verification.",
+            "page": 83
+          }
+        ]
+      }
+    }
+  ]
+}

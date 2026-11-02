@@ -6,6 +6,7 @@ Prints one JSON line {"ok": bool, "error": str|null}.
 
 import hashlib
 import json
+import os
 import sys
 from typing import Callable
 
@@ -17,10 +18,16 @@ BATCH_SIZE = 8
 MAX_INPUT_TOKENS = 500  # Marian's limit is 512; segments are capped far below this, so hitting it is a bug
 
 
+def installed(src: str, tgt: str) -> bool:
+    """Model files are on disk (cheap: imports nothing, so the API server can call it)."""
+    path = model_dir(src, tgt)
+    return path.is_dir() and (any(path.glob("*.bin")) or any(path.glob("*.safetensors")))
+
+
 def check(src: str = "de", tgt: str = "en") -> str | None:
     """None if the model for this direction is installed, else a message with the fix command."""
     path = model_dir(src, tgt)
-    if path.is_dir() and (any(path.glob("*.bin")) or any(path.glob("*.safetensors"))):
+    if installed(src, tgt):
         try:
             import sentencepiece, torch, transformers  # noqa: F401,E401
         except ImportError as e:
@@ -49,6 +56,38 @@ def _translate_batch(texts: list[str], src: str, tgt: str) -> list[str]:
 
 def _cache_path(src: str, tgt: str):
     return DATA_DIR / "translation_cache" / f"{src}-{tgt}.json"
+
+
+def translate_texts(
+    texts: list[str], src: str, tgt: str, on_progress: Callable[[int, int], None] | None = None
+) -> dict[str, str]:
+    """Translate unique texts through the same segment cache as translate_pages. -> {text: translation}.
+    on_progress(done, total) counts unique texts, cache hits included, and is called after every batch."""
+    cache_file = _cache_path(src, tgt)
+    cache: dict[str, str] = {}
+    if cache_file.is_file():
+        try:
+            cache = json.loads(cache_file.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            print(f"[WARN] {cache_file} is unreadable; starting a new translation cache.", file=sys.stderr)
+    key = lambda s: hashlib.sha256(f"{src}>{tgt}\n{s}".encode("utf-8")).hexdigest()
+    unique = sorted(set(texts), key=len)  # similar lengths pad less
+    todo = [t for t in unique if key(t) not in cache]
+    done = len(unique) - len(todo)
+    if on_progress:
+        on_progress(done, len(unique))
+    for i in range(0, len(todo), BATCH_SIZE):
+        batch = todo[i:i + BATCH_SIZE]
+        for text, out in zip(batch, _translate_batch(batch, src, tgt)):
+            cache[key(text)] = out
+        cache_file.parent.mkdir(parents=True, exist_ok=True)
+        tmp = cache_file.with_name(cache_file.name + ".part")
+        tmp.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
+        os.replace(tmp, cache_file)  # a kill between batches must not corrupt the cache
+        done += len(batch)
+        if on_progress:
+            on_progress(done, len(unique))
+    return {t: cache[key(t)] for t in unique}
 
 
 def translate_pages(

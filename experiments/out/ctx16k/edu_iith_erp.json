@@ -1,0 +1,185 @@
+{
+  "overview": {
+    "text": "The Indian Institute of Technology Hyderabad (IITH) invites bids for a web-based Enterprise Resource Planning (ERP) solution to automate its Academic and Administrative functions. The tender utilizes a Quality Cum Cost Based Selection (QCBS) scheme with 70% technical weightage and 30% commercial weightage.",
+    "pages": [
+      12,
+      13,
+      19,
+      20
+    ]
+  },
+  "issuing_organization": "Indian Institute of Technology Hyderabad",
+  "issuing_organization_pages": [
+    12,
+    15,
+    25,
+    35,
+    38,
+    53,
+    64,
+    67
+  ],
+  "scope": [
+    {
+      "text": "The solution must automate Academic and Administrative functions including Finance & Accounts, Stores & Purchases, Asset Management, HRM & Payroll, Estate Management, Project Management, and Asset Maintenance.",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "text": "Implementation involves porting or integrating data from existing systems, developing Core Modules (15 months) and Other Modules (18 months), and providing Application Maintenance & Enhancement Services (AMES) for three years post-warranty.",
+      "pages": [
+        13,
+        20,
+        34,
+        36,
+        45,
+        46,
+        61
+      ]
+    },
+    {
+      "text": "Technical evaluation requires a presentation covering Bidder Profile, Project Plan, Functional Mapping, Non-Functional Capabilities, Case Studies, and Proof of Concept (POC) demonstrations.",
+      "pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "text": "The Implementing Agency (IA) is responsible for all service deficiencies, third-party components, and subcontractor modules, with prior approval required for any subcontracting activity.",
+      "pages": [
+        34,
+        35,
+        36
+      ]
+    }
+  ],
+  "key_requirements": [
+    {
+      "text": "Bidders must submit specific PDF responses for Parts A through E of the Technical Evaluation and provide reference checks for data migration tools.",
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "text": "To qualify for Part F POC demonstrations, bidders must achieve a minimum score of 60% in Parts A to E.",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "text": "A Performance Bank Guarantee (PBG) of 3% of the contract price must be furnished within 15 days, and a Service Level Agreement (SLA) must be executed.",
+      "pages": [
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "text": "Bidders must declare no previous transgression regarding corrupt practices within the last three years and provide proof of signature identification.",
+      "pages": [
+        35,
+        67
+      ]
+    }
+  ],
+  "eligibility": [
+    {
+      "text": "The Prime Bidder must have experience as an ERP solution providing agency for five or more years and possess valid GST registration.",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "text": "Part A evaluation requires a minimum of 6 marks out of 10, with technical eligibility thresholds set at a minimum score of 140 for Parts A to E combined.",
+      "pages": [
+        21,
+        25
+      ]
+    },
+    {
+      "text": "Bidders must declare no previous transgression regarding corrupt practices or exclusions from tender processes in the last three years.",
+      "pages": [
+        67
+      ]
+    }
+  ],
+  "important_dates": [
+    {
+      "text": "Bid Submission Close Date is 15 Mar 2021 at 1700 hrs; Opening of Technical Bids is scheduled for 16 Mar 2021 at 1100 hrs.",
+      "pages": [
+        14,
+        19
+      ]
+    },
+    {
+      "text": "The tender and price remain valid for six calendar months from the date of submission.",
+      "pages": [
+        30
+      ]
+    },
+    {
+      "text": "Security Deposit must be deposited via Bank Guarantee within 15 days of signing the Contract.",
+      "pages": [
+        33
+      ]
+    }
+  ],
+  "commercial_requirements": [
+    {
+      "text": "Services are billed on a Time & Material (T&M) basis, with prices quoted in Indian Rupees inclusive of all taxes and support costs.",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "text": "Payment milestones include releases upon Architecture completion, CRP demos, cross-functional integration, beta release, Go-Live, UAT approval, and warranty periods.",
+      "pages": [
+        45,
+        46
+      ]
+    },
+    {
+      "text": "Liquidated Damages will be levied at 1% per month (max 10%) for non-fulfilment of delivery schedules.",
+      "pages": [
+        37
+      ]
+    }
+  ],
+  "project_duration": [],
+  "important_conditions": [
+    {
+      "text": "Confidentiality and non-disclosure obligations apply; the IA must not use disclosed data for third-party services.",
+      "pages": [
+        38,
+        66
+      ]
+    },
+    {
+      "text": "The Integrity Pact prohibits corrupt practices, requires disclosure of agent payments, and mandates a declaration of no transgressions in the last three years.",
+      "pages": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69
+      ]
+    },
+    {
+      "text": "Disputes between the IA and IITH shall be resolved by arbitration in Hyderabad/Sangareddy under the Arbitration and Conciliation Act, 1996.",
+      "pages": [
+        37
+      ]
+    }
+  ]
+}

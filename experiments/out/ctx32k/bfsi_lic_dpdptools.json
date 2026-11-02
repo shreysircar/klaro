@@ -1,0 +1,200 @@
+{
+  "overview": {
+    "text": "Life Insurance Corporation of India (LIC) is procuring and implementing tools related to the Data Protection and Privacy Act, 2023 and DPDP Rules, 2025. The RFP seeks a vendor capable of delivering privacy automation solutions, including consent management and data discovery, over a five-year contract period.",
+    "pages": [
+      1,
+      9,
+      16,
+      49
+    ]
+  },
+  "issuing_organization": "Life Insurance Corporation of India (LIC), Central Office, Cyber Security Department",
+  "issuing_organization_pages": [],
+  "scope": [
+    {
+      "text": "The scope includes the procurement and implementation of tools related to DPDP Act, 2023 and DPDP Rules, 2025.",
+      "pages": [
+        9,
+        16
+      ]
+    },
+    {
+      "text": "Services cover planning, delivery, implementation, five years of post-go-live support, hardware/software maintenance, and on-site personnel presence at the Central Office in Mumbai.",
+      "pages": [
+        40,
+        45,
+        53
+      ]
+    },
+    {
+      "text": "The solution must include modules for Data Privacy Notice Management, Consent Management Platform, Cookie Consent Management, Data Discovery & Mapping, Data Principal Rights Management, DPIA, ROPA, Personal Data Breach Management, Third Party Vendor Risk Management, Compliance Reporting, and DPDP Program Management.",
+      "pages": [
+        27
+      ]
+    },
+    {
+      "text": "Bidder is responsible for end-to-end implementation, configuration, customization, testing, deployment, commissioning, and integration with existing SIEM and NTP solutions.",
+      "pages": [
+        33,
+        34
+      ]
+    },
+    {
+      "text": "The solution must support DPDP Act & Rules compliance, enable privacy/security/governance across applications, internal processing, data sharing, AI, and regulatory readiness, and store logs for at least 12 months (2 years for Preservation policy).",
+      "pages": [
+        27,
+        34
+      ]
+    },
+    {
+      "text": "Bidder must provide training on product architecture, functionality, operations, alert monitoring, policy configuration, and rule creation.",
+      "pages": [
+        31
+      ]
+    }
+  ],
+  "key_requirements": [
+    {
+      "text": "Eligibility bid documents must be submitted in a separate envelope along with a pen drive, sealed and superscribed as 'ELIGIBILITY bid for Procurement and Implementation of Tools...'.",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "text": "Commercial bid must be submitted in a separate envelope along with a commercial pen drive, sealed and superscribed as 'COMMERCIAL BID for Procurement...'.",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "text": "Bid processing fee (Rs.11,800/-), EMD (Rs.83,00,000/-), and a Pre-contract Integrity Pact must be submitted separately in a sealed envelope.",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "text": "Bidder must include a maximum of 25% scope changes within the services cost to be quoted in the commercial bid.",
+      "pages": [
+        26
+      ]
+    },
+    {
+      "text": "Bidders must obtain Class III Digital Signature Certificates (DSC) from an approved Certifying Authority or Sub-certifying Authority authorized by CCA India.",
+      "pages": [
+        69
+      ]
+    }
+  ],
+  "eligibility": [
+    {
+      "text": "Bidders declared ineligible by the Government of India/State/UT Government/PSUs for corrupt and fraudulent practices or blacklisted are disqualified.",
+      "pages": [
+        17
+      ]
+    },
+    {
+      "text": "All onsite resources shall be full-time employees on the payroll of the selected vendor; engagement of outsourced, subcontracted, or third-party personnel is not permitted.",
+      "pages": [
+        45
+      ]
+    },
+    {
+      "text": "Bidder must provide a designated backup resource with comparable skills and qualifications for each onsite resource to ensure continuity.",
+      "pages": [
+        45
+      ]
+    }
+  ],
+  "important_dates": [
+    {
+      "text": "Pre-bid meeting date and time: 22-07-2026, 11:00 am to 1:30 pm.",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "text": "Last date & time for submission of bids: 10-08-2026, latest by 03:00 PM.",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "text": "Bid opening date & time (Eligibility): 10-08-2026, 03:15 PM.",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "text": "Bids shall remain valid for 1 year from the last date of bid submission under this RFP.",
+      "pages": [
+        18
+      ]
+    }
+  ],
+  "commercial_requirements": [
+    {
+      "text": "The lowest commercial bid made by the successful vendor during online reverse auction and/or price negotiation determines the Contract Value.",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "text": "Earnest Money deposit (EMD) INR 83,00,000 in form of a Bank Guarantee as per Annexure-VI.",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "text": "Prices must exclude GST, with LIC paying extra for CST, Octroi, Entry Tax, Local Body Tax, VAT, etc., on actual basis.",
+      "pages": [
+        17
+      ]
+    },
+    {
+      "text": "Payment will not be released until the completion of in-scope activities and is to be made Phase wise based on completed activities.",
+      "pages": [
+        46
+      ]
+    }
+  ],
+  "project_duration": [
+    {
+      "text": "Contract period of 5 years.",
+      "pages": [
+        17
+      ]
+    },
+    {
+      "text": "The Bidder shall complete the entire activity within 20 weeks of signing of contract.",
+      "pages": [
+        40
+      ]
+    }
+  ],
+  "important_conditions": [
+    {
+      "text": "Bidder cannot submit bids in consortium; such consortium bids will be summarily rejected.",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "text": "LIC may terminate the agreement if it determines at any time that vendors or their representatives were engaged in corrupt, fraudulent, collusive or coercive practices during the selection process or execution of the agreement.",
+      "pages": [
+        26
+      ]
+    },
+    {
+      "text": "In case the problem is not being rectified by the onsite L1 & L2 Personnel even after 1 hour, the issue should be escalated and resolved within 4 hr. from time of incident.",
+      "pages": [
+        32
+      ]
+    },
+    {
+      "text": "The Vendor shall have to comply with LIC's IT & IS Security policy; Confidentiality, integrity and availability, non-repudiation, authenticity, privacy of data/information must be ensured as per DPDP Act and DLP.",
+      "pages": [
+        41
+      ]
+    }
+  ]
+}

@@ -8,7 +8,7 @@
     "dev": "node scripts/dev.mjs",
     "build": "vite build",
     "start": "electron .",
-    "test": "node --test renderer/src/highlight.test.mjs renderer/src/layout.test.mjs"
+    "test": "node --test renderer/src/highlight.test.mjs renderer/src/layout.test.mjs renderer/src/calendar.test.mjs"
   },
   "engines": {
     "node": ">=22.12"

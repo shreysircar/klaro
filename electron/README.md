@@ -90,7 +90,8 @@ Electron only ever talks to these. Keep them stable.
 | POST | `/runs` | multipart PDF upload, returns `{run_id, status: queued}` |
 | GET | `/runs` | list of runs, newest first: `run_id, filename, status, created_at, duration_s, pages, chunks` |
 | GET | `/runs/{id}` | `{status, stage, stage_index, total_stages, chunks_done, chunks_total, error, started_at, finished_at, pages, chunks, stage_seconds, chunk_avg_s}` |
-| GET | `/runs/{id}/summary` | the executive summary JSON |
+| GET | `/runs/{id}/summary` | the executive summary JSON (`?lang=de`: German version) |
+| GET/POST/DELETE | `/runs/{id}/translation` | status / start / cancel the on-demand German version of the summary |
 | GET | `/runs/{id}/summary.html` | the rendered HTML; `?embed=1` adds the app's chip script (the file on disk is unchanged) |
 | GET | `/runs/{id}/source.pdf` | the run's input PDF, inline |
 | GET | `/runs/{id}/evaluation` | the evaluation JSON |

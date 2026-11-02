@@ -1,0 +1,41 @@
+Klaro final report: sample runs and screenshots (written by Claude Code, 1 Nov 2026)
+All runs are real runs of the app's own path (POST /runs, source_lang=auto, model qwen3.5:4b, Apple M4).
+Run folders are under <repo>/data/runs/ (untracked). PDFs were read from ~/Downloads and not copied into the repo.
+
+German PDFs found in ~/Downloads (pages):
+  3608_17_vergabeunterlinkllb_geschwarzt-002.pdf          31
+  3608_17_vergabeunterlinkllb_geschwarzt-002_english.pdf  31   (not run)
+  Ausschreibung_fbb_Webportal_2021.pdf                    24   (fewest pages)
+  Ausschreibung_fbb_Webportal_2021_english.pdf            24   (not run)
+
+G1  run_20261031_185737_44f543  Ausschreibung_fbb_Webportal_2021.pdf, default context (reused, finished earlier)
+    total 544.29 s | pdf_extraction 0.28 | translation 43.42 (581 segments, 23 flagged) | chunking 0.0 |
+    chunk_analysis 446.18 (5 chunks) | aggregation 0.01 | summary_agent 54.2 | evaluation 0.15 | rendering 0.01
+    grounding 100.0 | traceability 100.0 | coverage 98.31 | summary 1755 words | 9.26% shorter than facts | 104 points
+G2  run_20261031_192908_77ccdf  3608_17_vergabeunterlinkllb_geschwarzt-002.pdf, default context (reused)
+    total 629.78 s | pdf_extraction 0.26 | translation 0.78 (589 segments, 4 flagged) | chunking 0.0 |
+    chunk_analysis 564.01 (6 chunks) | aggregation 0.02 | summary_agent 64.5 | evaluation 0.16 | rendering 0.01
+    grounding 100.0 | traceability 100.0 | coverage 96.77 | summary 2877 words | 9.92% shorter | 137 points
+G3a run_20261101_205245_f6df5c  Ausschreibung_fbb_Webportal_2021.pdf, KLARO_NUM_CTX=32768, default KLARO_LLM_TIMEOUT=300
+    FAILED after 787 s: stage summary_agent, error "timed out". chunk_analysis 484.1 s, translation 1.5 s.
+G3  run_20261101_210652_6bc05e  same PDF, KLARO_NUM_CTX=32768, KLARO_LLM_TIMEOUT=900 (retry)
+    total 920.68 s | pdf_extraction 0.28 | translation 1.44 (581 segments, 23 flagged; probably a cache hit, not checked) | chunking 0.0 |
+    chunk_analysis 686.78 | aggregation 0.01 | summary_agent 232.12 | evaluation 0.02 | rendering 0.0
+    summary prompt 6175 tokens, context 11264 (pipeline.log)
+    grounding 97.5 (1 unsupported point) | traceability 100.0 | coverage 64.81 (70 of 108 facts) | summary 722 words |
+    62.42% shorter than facts | 40 points | 0 duplicates | issuer line: Federal Ministry of Education and Research
+    Timing note: chunk_analysis for the same PDF took 446 s (G1) and 687 s (G3); the context setting does not affect that step.
+
+How the screenshots were taken: the real Electron app (npm run dev through electron/scripts/dev.mjs) was started with
+--remote-debugging-port and a temporary --user-data-dir outside the repo; a small Node script (WebSocket in Node 22, Chrome DevTools
+Protocol: Page.captureScreenshot, mouse clicks) drove it. Nothing was installed and no repo file was changed. The script is not kept.
+Only change made to a page before capture: on home.png the "Data <path>" label in the footer was hidden (CSS visibility) because it
+shows the user's folder path. The image files themselves are untouched PNGs from the browser.
+  figures/home.png                 home, 10 runs, Ollama connected, model qwen3.5:4b (the failed G3a row is visible)
+  figures/progress.png             G3a at "Chunk 2 of 5", German run (translation step shown)
+  figures/results_german_source.png G2 English view, "Translated from German" banner, clicked point (p. 13) with passage highlighted
+  figures/results_german.png       G2 German view ("Deutsch") with its German banner
+  figures/results_quality.png      G1 Quality tab, red-shaded flagged bullet on the left
+  figures/calendar_dialog.png      G1 "Add to calendar" preview with a "needs review" list
+  figures/results_source.png       NOT retaken: the mid-viva screenshot of an English run (no English run with evidence.json exists)
+Not taken: a screenshot of the saved .ics (the save goes through the native macOS save dialog, which the debug port cannot drive).

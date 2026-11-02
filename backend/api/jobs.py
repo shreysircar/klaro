@@ -15,6 +15,7 @@ from typing import BinaryIO
 from uuid import uuid4
 
 from backend.config import DATA_DIR
+from backend.translation import translate_summary, translator
 from backend.workflow.run_rfp import STAGES, STAGES_WITH_TRANSLATION
 
 RUNS_DIR = DATA_DIR.resolve() / "runs"
@@ -23,6 +24,8 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 ACTIVE = ("queued", "running")
 
 _jobs: dict[str, dict] = {}
+_tjobs: dict[str, dict] = {}  # English -> German summary jobs, by run id; they share the queue and worker with analyses
+_TPREFIX = "translate:"
 _procs: dict[str, subprocess.Popen] = {}
 _lock = threading.Lock()
 _queue: queue.Queue[str] = queue.Queue()
@@ -177,7 +180,16 @@ def _run(job: dict) -> None:
 
 def _worker() -> None:
     while True:
-        run_id = _queue.get()
+        item = _queue.get()
+        if item.startswith(_TPREFIX):
+            job = _tjobs[item[len(_TPREFIX):]]
+            try:
+                _run_translation(job)
+            except Exception as e:
+                with _lock:
+                    job.update(status="failed", error=f"Could not run the translation: {e}", finished_at=_now())
+            continue
+        run_id = item
         job = _jobs[run_id]
         try:
             _run(job)
@@ -185,6 +197,8 @@ def _worker() -> None:
             with _lock:
                 job.update(status="failed", error=f"Could not run the pipeline: {e}", finished_at=_now())
         _rmtree(UPLOADS_DIR / run_id, ignore_errors=True)  # the pipeline keeps its own copy in input/
+        if job["status"] == "done":
+            _auto_translate(run_id)
 
 
 def start() -> None:
@@ -246,6 +260,7 @@ def list_runs() -> list[dict]:
 def cancel_or_remove(run_id: str) -> bool:
     """Cancel a queued/running job, else delete a finished run. False if the run doesn't exist."""
     with _lock:
+        _cancel_translation_locked(run_id)  # a run being deleted must not keep a child writing into its folder
         job = _jobs.get(run_id)
         if job and job["status"] in ACTIVE:
             job.update(status="cancelled", finished_at=_now())
@@ -258,3 +273,130 @@ def cancel_or_remove(run_id: str) -> bool:
         return job is not None
     _rmtree(d)
     return True
+
+
+# ---- English -> German summary (one job at a time, in the same queue as the analyses) ----
+
+class Busy(Exception):
+    """Another job holds the single local model; the message says what to do."""
+
+
+def _cancel_translation_locked(run_id: str) -> bool:
+    job = _tjobs.get(run_id)
+    if not job or job["status"] not in ACTIVE:
+        return False
+    job.update(status="cancelled", finished_at=_now())
+    proc = _procs.get(_TPREFIX + run_id)
+    if proc:
+        _kill(proc)
+    return True
+
+
+def cancel_translation(run_id: str) -> bool:
+    with _lock:
+        return _cancel_translation_locked(run_id)
+
+
+def start_translation(run_id: str) -> dict:
+    """Queue the German version of a finished run's summary. Raises FileNotFoundError, Busy or RuntimeError."""
+    d = run_dir(run_id)
+    if not (d and (d / "summary" / translate_summary.SUMMARY).is_file()):
+        raise FileNotFoundError("This run has no finished summary to translate.")
+    if not translator.installed("en", "de"):
+        raise RuntimeError(translator.check("en", "de") or "The English to German model is not installed.")
+    with _lock:
+        job = _tjobs.get(run_id)
+        if job and job["status"] in ACTIVE:
+            return dict(job)
+        if any(j["status"] in ACTIVE for j in _jobs.values()) or any(j["status"] in ACTIVE for j in _tjobs.values()):
+            raise Busy("An analysis or translation is still running. The German version can be made when it finishes.")
+        job = {"run_id": run_id, "status": "queued", "done": 0, "total": 0, "error": None, "started_at": None, "finished_at": None}
+        _tjobs[run_id] = job
+    _queue.put(_TPREFIX + run_id)
+    return dict(job)
+
+
+def _run_translation(job: dict) -> None:
+    run_id = job["run_id"]
+    d = RUNS_DIR / run_id
+    log = d / "translate_de.log"
+    cmd = [sys.executable, "-m", "backend.translation.translate_summary", str(d), "--target", "de", "--progress-json"]
+    with _lock:
+        if job["status"] != "queued":
+            return
+        job.update(status="running", started_at=_now())
+        with open(log, "w", encoding="utf-8") as log_f:
+            proc = subprocess.Popen(
+                cmd, cwd=REPO_ROOT, stdout=subprocess.PIPE, stderr=log_f, stdin=subprocess.DEVNULL,
+                text=True, encoding="utf-8", env={**os.environ, "PYTHONUTF8": "1", "PYTHONIOENCODING": "utf-8", "PYTHONUNBUFFERED": "1"},
+            )
+        _procs[_TPREFIX + run_id] = proc
+    error = None
+    for line in proc.stdout:
+        try:
+            ev = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        with _lock:
+            if ev["event"] == "translate":
+                job.update(done=ev["done"], total=ev["total"])
+            elif ev["event"] == "error":
+                error = ev["error"]
+    code = proc.wait()
+    with _lock:
+        _procs.pop(_TPREFIX + run_id, None)
+        job["finished_at"] = _now()
+        if job["status"] == "cancelled":
+            _rmtree(d / "summary" / ".staging_de", ignore_errors=True)
+        elif code == 0:
+            job["status"] = "done"
+        else:
+            job.update(status="failed", error=error or f"The translation exited with code {code}.\n{_log_tail(log)}")
+
+
+def translation_status(run_id: str) -> dict | None:
+    """None if the run does not exist."""
+    d = run_dir(run_id)
+    if not (d and d.is_dir()):
+        return None
+    summary = d / "summary"
+    available = (summary / "executive_summary_de.json").is_file()
+    with _lock:
+        job = dict(_tjobs.get(run_id) or {})
+        busy = any(j["status"] in ACTIVE for j in _jobs.values()) or any(j["status"] in ACTIVE for j in _tjobs.values())
+    status = job.get("status") or ("done" if available else "none")
+    if available and status in ("none", "cancelled", "failed"):
+        status = "done"
+    meta = {}
+    if available:
+        try:
+            meta = json.loads((summary / "executive_summary_de.meta.json").read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            meta = {}
+    segments = None
+    estimate = None
+    source = summary / translate_summary.SUMMARY
+    if not available and source.is_file():
+        try:
+            segments = translate_summary.count_segments(json.loads(source.read_text(encoding="utf-8-sig")))
+            estimate = round(segments * translate_summary.DEFAULT_SECONDS_PER_SEGMENT)
+        except (OSError, json.JSONDecodeError):
+            pass
+    installed = translator.installed("en", "de")
+    return {
+        "status": status, "available": available, "done": job.get("done", 0), "total": job.get("total", 0),
+        "error": job.get("error"), "flagged_bullets": meta.get("flagged_bullets"), "segments": segments,
+        "flag_ids": [f["id"] for f in meta.get("flags", [])],
+        "estimate_s": estimate, "busy": busy and status not in ACTIVE,
+        "model": "present" if installed else "missing",
+        "model_fix": None if installed else translator.check("en", "de"),
+    }
+
+
+def _auto_translate(run_id: str) -> None:
+    """Queue the German version as soon as an analysis finishes. Never fails the run: if it cannot start (model
+    missing, another analysis waiting), the German tab says why and offers the button."""
+    try:
+        start_translation(run_id)
+    except (Busy, RuntimeError, FileNotFoundError) as e:
+        print(f"[klaro] German version not started automatically for {run_id}: {e}", file=sys.stderr)

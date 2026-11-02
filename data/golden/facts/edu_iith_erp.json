@@ -1,0 +1,1309 @@
+{
+  "doc_id": "edu_iith_erp",
+  "model": "qwen3.5:4b",
+  "built_at": "2026-11-01T12:51:44+00:00",
+  "seconds": 1065,
+  "chunks": 12,
+  "failed_passes": 0,
+  "aggregated": {
+    "overview": [
+      {
+        "text": "Indian Institute of Technology Hyderabad (IITH) invites online bids for ERP and Web-based ERP-like solutions.",
+        "pages": [
+          12
+        ]
+      },
+      {
+        "text": "The RFP is structured into Volume I (Bidding Instructions) and Volume II (Technical Requirements).",
+        "pages": [
+          12
+        ]
+      },
+      {
+        "text": "This document is Volume I of the Request for Proposal.",
+        "pages": [
+          12
+        ]
+      },
+      {
+        "text": "IIT Hyderabad is a fully funded Autonomous Body under the Government of India established under the IITs Act 1961.",
+        "pages": [
+          12
+        ]
+      },
+      {
+        "text": "As of April 2020, the Institute has 220 faculty members and plans to accommodate over 4500 students by 2022.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "The purpose is to implement an End-to-End Web-based ERP Solution for Academic and Administrative functions.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "Tender documents can be downloaded from the e-tender portal, CPP Portal, or the IITH website.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Issuing organization is the Indian Institute of Technology Hyderabad (IIT Hyderabad), located in Kandi, Sangareddy - 502 285, Telangana, India.",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "The RFP process involves a composite Quality Cum Cost Based Selection (QCBS) with 70% weightage for technical evaluation and 30% for commercial evaluation.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Technical bids are opened on the scheduled date, while price bids are opened on a later date to be announced subsequently.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "IITH is requesting a web-based ERP system implementation for technical evaluation.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "The winning bid (H1) will be awarded based on the highest total score calculated with 70% technical and 30% commercial weightage.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "IITH reserves the right to ask bidders for clarification, site visits, and presentations of their proposed ERP solution.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "The RFP is issued by the Indian Institute of Technology Hyderabad (IITH), located at Kandi, Sangareddy - 502 285, Telangana, India.",
+        "pages": [
+          25,
+          35
+        ]
+      },
+      {
+        "text": "Contact details include Phone: 040-23016071, Website: www.iith.ac.in, and Email: office.erp@comp.iith.ac.in.",
+        "pages": [
+          25
+        ]
+      },
+      {
+        "text": "The project involves ERP implementation evaluated through a Quality cum Cost Based Selection (QCBS) scheme with a minimum technical score of 140 required for qualification.",
+        "pages": [
+          28
+        ]
+      },
+      {
+        "text": "The highest scoring bidder will be invited for negotiation with IITH before contract award.",
+        "pages": [
+          30
+        ]
+      },
+      {
+        "text": "The tender and price remain valid for six calendar months from the date of submission.",
+        "pages": [
+          30
+        ]
+      },
+      {
+        "text": "IITH reserves the right to accept, reject, or cancel bids without assigning reasons.",
+        "pages": [
+          31
+        ]
+      },
+      {
+        "text": "The contract period for providing services will be from the date of the agreement and will be valid for the timelines as per this RFP.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "Any subcontracting activity by the Implementing Agency (IA) requires prior approval from IIT Hyderabad.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "The tendering organization is the Indian Institute of Technology Hyderabad (IITH), located at Kandi, Sangareddy - 502 285, Telangana, India.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "Contact details for IITH include phone number 040-23016071, website www.iith.ac.in, and email office.erp@comp.iith.ac.in.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "The contract execution involves an Implementing Agency (IA) who must strictly adhere to the implementation schedule specified in the contract.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "Delays in bidder performance may lead to claims of liquidated damages or termination of the contract fully or partly.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "The RFP is for an IT/ERP solution development project managed by the Indian Institute of Technology (IITH) located in Kandi, Sangareddy, Telangana, India.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Bidders must provide documentary evidence specifying that quoted products are 'Make in India' products.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Local content is defined as the value added in India (excluding net domestic indirect taxes) minus imported content, expressed as a percentage of total value.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "The tender is for the selection of an Implementation Agency to supply, install, implement, and host an Enterprise Resource Planning (ERP) Solution.",
+        "pages": [
+          54
+        ]
+      },
+      {
+        "text": "The project aims to automate the Academic & Administrative Functions of IIT Hyderabad.",
+        "pages": [
+          54
+        ]
+      },
+      {
+        "text": "The issuing organization is the Indian Institute of Technology Hyderabad (IITH) located at Kandi, Sangareddy - 502 285, Telangana, India.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "The document is a Pre-Contract Integrity Pact issued by the Indian Institute of Technology Hyderabad.",
+        "pages": [
+          64
+        ]
+      },
+      {
+        "text": "The agreement is between the President of India acting through an officer (the BUYER) and the Bidder/Seller.",
+        "pages": [
+          64
+        ]
+      },
+      {
+        "text": "The Issuing Organization is Indian Institute of Technology Hyderabad, located at Kandi, Sangareddy - 502 285, Telangana, India.",
+        "pages": [
+          67
+        ]
+      },
+      {
+        "text": "The document outlines the Integrity Pact provisions, including declarations on transgression, earnest money requirements, and sanction for violations applicable to bidders.",
+        "pages": [
+          67
+        ]
+      }
+    ],
+    "issuing_organization": "Indian Institute of Technology Hyderabad",
+    "issuing_organization_pages": [
+      12,
+      15,
+      25,
+      35,
+      38,
+      53,
+      64,
+      67
+    ],
+    "scope": [
+      {
+        "text": "The solution should automate Academic and Administrative functions including Finance & Accounts, Stores & Purchases, Asset Management, HRM & Payroll, Estate Management, Project Management, and Asset Maintenance.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "The proposed ERP solution should facilitate the smooth creation of new departments/centers/courses.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "The system must enable smooth functioning, integration, and coordination of all units within the institute.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "Bidders must either port data from existing systems or integrate them to the ERP system to be deployed.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "The scope of work covers implementing a web-based ERP system for Higher Education Institutes.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "Implementation must adhere to Functional and Technical Requirement Specifications including Project Timelines and Payment Milestones.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Scope includes providing Post Implementation Application Maintenance and Enhancement Service (AMES) support.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "Technical evaluation includes a presentation covering Parts A to E and a demo of modules in Part F.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Part A covers Bidder's Profile including years of operation, annual revenue, and proposed team details.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Part B requires the Project Plan, Implementation Methodology, Risk Mitigation Strategies, and Training Plans.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Part C evaluates functional requirements via a mapping of direct fit, future releases, third-party offerings, and customizations.",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "Part D covers Non-Functional capabilities including Architecture, Security, API usage, Scalability, and Automation tools.",
+        "pages": [
+          23
+        ]
+      },
+      {
+        "text": "Part E requires Solution Case Studies from the higher education sector and references for data migration/issue management tools.",
+        "pages": [
+          23
+        ]
+      },
+      {
+        "text": "Part F consists of Proof of Concept (POC) demonstrations specifically in Finance, Payroll, Stores & Purchases, Academics, and Issue Management.",
+        "pages": [
+          24
+        ]
+      },
+      {
+        "text": "Part A evaluates Bidder Credentials, years of experience in the educational ERP domain, Annual Revenue, Project Management Capabilities, and proposed Support Team.",
+        "pages": [
+          25
+        ]
+      },
+      {
+        "text": "Part B covers Implementation Approach & Methodology including Project Plan, Business Design, Risks & Mitigation Strategies, Detailed timelines, Training, Change Management, Documentation, and Escalation Matrix.",
+        "pages": [
+          25
+        ]
+      },
+      {
+        "text": "Part C assesses Functional Evaluation as per FRSs through Standard ERP Solution, Future ERP Releases, Third Party offerings, or Customizations.",
+        "pages": [
+          26
+        ]
+      },
+      {
+        "text": "Part D covers Non-Functional (Technical) Capabilities such as Architecture, Modularity, Scalability, Security Framework, API usage, and backup/restore mechanisms.",
+        "pages": [
+          26
+        ]
+      },
+      {
+        "text": "Part E requires Solution Case Studies & Client References, specifically focusing on client base in the higher education sector in India (especially other IITs).",
+        "pages": [
+          26
+        ]
+      },
+      {
+        "text": "Part F requires Proof of Concept Demonstration for Finance and Accounting, Payroll, Stores & Purchases, Academics, and Issue Management System modules.",
+        "pages": [
+          27
+        ]
+      },
+      {
+        "text": "Services must ensure high security, reliability, and data integrity for all service components.",
+        "pages": [
+          33
+        ]
+      },
+      {
+        "text": "The bidder is responsible for providing unspecified services required to ensure performance and operability.",
+        "pages": [
+          33
+        ]
+      },
+      {
+        "text": "Development and roll-out must occur module-wise according to the FRS document.",
+        "pages": [
+          34
+        ]
+      },
+      {
+        "text": "Source code of ERP modules must be shared with IITH post-project for future enhancements.",
+        "pages": [
+          34
+        ]
+      },
+      {
+        "text": "All third-party licenses and products used must be acquired in the name of IITH.",
+        "pages": [
+          34
+        ]
+      },
+      {
+        "text": "The contract period covers performance and availability of the solution deployed.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "The IA warrants that the proposed ERP system shall be free from defects in the work executed.",
+        "pages": [
+          36
+        ]
+      },
+      {
+        "text": "The system shall be supported by the bidder for a period of one (1) year under warranty and three (3) Years under AMES.",
+        "pages": [
+          36
+        ]
+      },
+      {
+        "text": "The project scope includes development and delivery of Core Modules and Other Modules with an Architecture and Design phase completing within 4 months.",
+        "pages": [
+          45
+        ]
+      },
+      {
+        "text": "Payment milestones include a 15% release upon completion of detailed Architecture and Design for both core and other modules.",
+        "pages": [
+          45
+        ]
+      },
+      {
+        "text": "A further 10% payment is released upon successful delivery of Conference Room Pilot (CRP) demos, within 12 months for Core and 15 months for Other Modules.",
+        "pages": [
+          45
+        ]
+      },
+      {
+        "text": "Payments proceed upon successful cross-functional integration, load/stress testing, beta release, and Go-Live at the institute level, requiring completion within 15-18 months.",
+        "pages": [
+          45
+        ]
+      },
+      {
+        "text": "A 30% (Core) / 40% (Other) payment is released after end-to-end beta testing and commissioning of the stable version with User Acceptance Test (UAT) approval at 24 months.",
+        "pages": [
+          46
+        ]
+      },
+      {
+        "text": "Final payments for Core Modules occur after a 12-month warranty period, while Other Modules require completion within 24 months.",
+        "pages": [
+          46
+        ]
+      },
+      {
+        "text": "Core Modules must be completed within 15 months from the date of agreement signing, and Other Modules within 18 months.",
+        "pages": [
+          46
+        ]
+      },
+      {
+        "text": "Additional payments are required for data migration from legacy systems and integration with legacy systems upon successful production deployment.",
+        "pages": [
+          46
+        ]
+      },
+      {
+        "text": "The scope includes Application Maintenance & Enhancement Services (AMES) Support provided as equal quarterly instalments for three years post-warranty.",
+        "pages": [
+          46
+        ]
+      },
+      {
+        "text": "Scope includes the implementation of Core Modules as per the RFP scope.",
+        "pages": [
+          61
+        ]
+      },
+      {
+        "text": "Scope includes the implementation of Other Modules as per the RFP scope.",
+        "pages": [
+          61
+        ]
+      },
+      {
+        "text": "Scope covers data migration from legacy systems and integration of legacy systems with the ERP system.",
+        "pages": [
+          61
+        ]
+      },
+      {
+        "text": "Services support includes Application Maintenance & Enhancement for three years after the warranty period as per RFP scope.",
+        "pages": [
+          61
+        ]
+      },
+      {
+        "text": "The pact covers corrupt practices, unfair means, and illegal activities during pre-contract, bid evaluation, contracting, and implementation stages.",
+        "pages": [
+          65
+        ]
+      },
+      {
+        "text": "It ensures transparency by treating all Bidders alike and providing the same information to avoid advantageous disclosure.",
+        "pages": [
+          65
+        ]
+      },
+      {
+        "text": "The BIDDER must disclose payments made or intended for agents, brokers, or intermediaries in connection with the bid/contract.",
+        "pages": [
+          66
+        ]
+      },
+      {
+        "text": "The bidder declares no previous transgression in respect of corrupt practices with any Public Sector Enterprise or Government Department in India within the last three years.",
+        "pages": [
+          67
+        ]
+      },
+      {
+        "text": "The Earnest Money/Security Deposit is valid for a period of five years or the complete conclusion of contractual obligations including warranty, whichever is later.",
+        "pages": [
+          68
+        ]
+      },
+      {
+        "text": "Forfeiture of the Performance Bond may apply without assigning any reason for violation of the pact in case the BUYER decides to forfeit it.",
+        "pages": [
+          68
+        ]
+      }
+    ],
+    "key_requirements": [
+      {
+        "text": "Bidders must submit a document titled 'Response-To-Part-A-of-Technical-Evaluation.PDF'.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Bidders must submit a document titled 'Response-To-Part-B-of-Technical-Evaluation.PDF'.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Functional mapping must be submitted as a spreadsheet with mandatory fields including Module, Sub-module, Fitment Option, and supporting documents.",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "Detailed supporting documents like datasheets, user manuals, screenshots, integration methodology, and difficulty levels are required for customizations.",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "Part D response must include a document titled 'Response-To-Part-D-of-Technical-Evaluation.PDF'.",
+        "pages": [
+          23
+        ]
+      },
+      {
+        "text": "Part E requires client reference checks and case studies submitted following the format in Annexure V.",
+        "pages": [
+          23
+        ]
+      },
+      {
+        "text": "Bidders must provide reference checks for data migration and issue management tools used during the project tenure.",
+        "pages": [
+          24
+        ]
+      },
+      {
+        "text": "Only bidders scoring a minimum of 60% in Parts A to E are invited for Part F POC demonstrations.",
+        "pages": [
+          24
+        ]
+      },
+      {
+        "text": "Bidder responsibility for functional mapping includes defining fitment options with five specific categories: Direct Fit, Future Release, Third Party, Customization, or No Solution.",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "Performance Bank Guarantee (PBG) of 3% of contract price must be furnished within 15 days.",
+        "pages": [
+          33
+        ]
+      },
+      {
+        "text": "Proposals and documents must be written in English, with translations for non-English materials.",
+        "pages": [
+          33
+        ]
+      },
+      {
+        "text": "Bidders must submit a certified board resolution or Power of Attorney authorizing signatories.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "A certified copy of the extract of the resolution of its Board, authenticated by its Secretary, is required to authorize an official or officials to discuss or sign agreements.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "Proof of signature identification must be furnished for the purposes of signing agreements/contracts with IITH.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "The bidder shall execute a comprehensive, definitive Service Level Agreement (SLA) covering all terms and conditions of this RFP.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "The IA shall be solely and completely responsible for fixing and rectifying deficiencies in third-party components or services developed by subcontractors.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "Sufficient notice must be given to IITH if the IA withdraws or terminates the services of existing employees, with a replacement of equivalent qualification deployed.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "The date of successful completion of beta testing of core and other modules shall be treated as the date of Provisional Acceptance Certificate (PAC).",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "Termination for default requires a written notice of default with a notice period of 30 days sent to the IA.",
+        "pages": [
+          36
+        ]
+      },
+      {
+        "text": "Disputes between the IA and IITH shall be resolved/settled by arbitration in accordance with the Arbitration and Conciliation Act, 1996.",
+        "pages": [
+          37
+        ]
+      },
+      {
+        "text": "The place of arbitration proceedings shall be Hyderabad/Sangareddy, Telangana (St.), India.",
+        "pages": [
+          37
+        ]
+      },
+      {
+        "text": "Liquidated Damages will be levied at the rate of 1% per month subject to a maximum of 10% on the total value along with applicable taxes for non-fulfilment of delivery schedule.",
+        "pages": [
+          37
+        ]
+      },
+      {
+        "text": "The IA must strictly adhere to the implementation schedule specified in the contract, and delays will allow IITH to resort to liquidated damages or termination.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "The IA is required to maintain the highest level of secrecy regarding confidential information provided by IITH.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "No member of the IA's team shall use Confidential and Proprietary Information from IITH except for purposes of performing this Agreement without prior written consent.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "The IA shall not use data disclosed by IITH to provide services for the benefit of any third party as a service bureau or in any other manner.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "Bidders are required to submit a deposit amount specified in RFP as Earnest Money/Security Deposit via Bank Draft, confirmed bank guarantee, or other specified instruments.",
+        "pages": [
+          67
+        ]
+      },
+      {
+        "text": "The Earnest Money/Security Deposit must be valid for up to five years or the conclusion of contractual obligations including warranty, whichever is later.",
+        "pages": [
+          67
+        ]
+      },
+      {
+        "text": "No interest shall be payable by the BUYER to the BIDDER on the Earnest Money/Security Deposit during its currency.",
+        "pages": [
+          67
+        ]
+      },
+      {
+        "text": "The BIDDER must declare no previous transgression regarding corrupt practices with other companies or Indian public sector entities immediately before signing the Integrity Pact.",
+        "pages": [
+          67
+        ]
+      },
+      {
+        "text": "Submissions for declaration of local content must be on company letter head for tenders below Rs.10 Crores.",
+        "pages": [
+          71
+        ]
+      },
+      {
+        "text": "For tender values above Rs.10 Crores, the Local Content Declaration must be given by a Statutory Auditor, Cost Auditor, Cost Accountant, or CA.",
+        "pages": [
+          71
+        ]
+      },
+      {
+        "text": "Bidder shall provide necessary information and documents in English for examination during allegations of violation payment commission.",
+        "pages": [
+          69
+        ]
+      }
+    ],
+    "eligibility": [
+      {
+        "text": "Part A evaluation attributes include Years of Experience in the educational ERP domain and Annual Revenue over the past 5 years.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Table 1.3 specifies that Part A has a minimum of 6 marks required out of a maximum of 10 to meet technical eligibility thresholds.",
+        "pages": [
+          25
+        ]
+      },
+      {
+        "text": "The Implementing Agency must be liable for all deficiencies in service, products, and subcontracted modules.",
+        "pages": [
+          34
+        ]
+      },
+      {
+        "text": "Any employee withdrawal by the IA requires notice and deployment of a replacement with equivalent qualification.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "The bidder must furnish proof of signature identification for discussing or signing agreements/contracts with IITH.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "IITH may terminate the contract if the IA becomes bankrupt or otherwise insolvent.",
+        "pages": [
+          36
+        ]
+      },
+      {
+        "text": "The BIDDER must declare that no previous transgression occurred in the last three years regarding corrupt practices or exclusions from tender processes.",
+        "pages": [
+          67
+        ]
+      },
+      {
+        "text": "The BIDDER agrees that incorrect statements on previous transgressions can lead to disqualification, contract termination, or forfeiture of bonds.",
+        "pages": [
+          67
+        ]
+      },
+      {
+        "text": "If similar products are supplied to any other Ministry/Department of Government of India or PSU at a lower price, the difference in cost would be refunded by the BIDDER to the BUYER.",
+        "pages": [
+          69
+        ]
+      },
+      {
+        "text": "False declaration regarding local content can result in debarment for up to two years under General Financial Rules Rule 151(iii).",
+        "pages": [
+          71
+        ]
+      }
+    ],
+    "important_dates": [
+      {
+        "text": "Bid Submission Close Date is 15 Mar 2021 at 1700 hrs",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Opening of Technical Bids (Envelope 'A') is scheduled for 16 Mar 2021 at 1100 hrs",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Price Bids of eligible bidders will be opened on a later date. The date and time for opening of the Price Bids will be announced later.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "IITH may ask the Bidder for clarification regarding its bid, with replies received as part of the bid document.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "The tender and the price quoted shall be deemed to remain valid for acceptance for a period of six (6) Calendar months from the date of submission.",
+        "pages": [
+          30
+        ]
+      },
+      {
+        "text": "Security Deposit ... shall be deposited by way of Bank Guarantee from a Nationalized Bank. This Guarantee should be furnished immediately, but in any case, not later than fifteen (15) days from the date of signing the Contract.",
+        "pages": [
+          33
+        ]
+      },
+      {
+        "text": "The IA needs to execute a comprehensive, definitive Service Level Agreement (SLA) with IITH covering all terms and conditions of this RFP.",
+        "pages": [
+          34
+        ]
+      },
+      {
+        "text": "The contract period for providing services will be from the date of the agreement, and will be valid for the timelines as per this RFP.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "The system shall be supported by the bidder for a period of one (1) year under warranty and three (3) Years under AMES. After satisfactory completion of the four years period, IITH shall issue the Final Acceptance Certificate (FAC).",
+        "pages": [
+          36
+        ]
+      },
+      {
+        "text": "IITH may terminate the contract by written notice of default with a notice period of 30 days.",
+        "pages": [
+          36
+        ]
+      },
+      {
+        "text": "Disputes shall be resolved after issuance of 30 days' notice in writing to initiate arbitration proceedings.",
+        "pages": [
+          37
+        ]
+      },
+      {
+        "text": "Preference will be given to Make in India products while evaluating bids.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Earnest Money/Security Deposit valid upto a period of five years or the complete conclusion of contractual obligations, whichever is later.",
+        "pages": [
+          67
+        ]
+      },
+      {
+        "text": "The Earnest Money/Security Deposit shall be valid upto a period of five years or the complete conclusion of the contractual obligations to the complete satisfaction of both the BIDDER and the BUYER, including warranty period, whichever is later.",
+        "pages": [
+          67
+        ]
+      },
+      {
+        "text": "The validity of this Integrity Pact shall be from date of its signing and extend upto 5 years or the complete execution of the contract to the satisfaction of both the BUYER and the BIDDER/Seller, Including warranty period, whichever is later.",
+        "pages": [
+          69
+        ]
+      },
+      {
+        "text": "In case BIDDER is unsuccessful, this Integrity Pact shall expire after six months from the date of the signing of the contract.",
+        "pages": [
+          69
+        ]
+      },
+      {
+        "text": "The BIDDER declares the no previous transgression occurred in the last three years immediately before signing of the Integrity Pact.",
+        "pages": [
+          67
+        ]
+      }
+    ],
+    "commercial_requirements": [
+      {
+        "text": "Bidder has to select the payment option as e-payment to pay the tender fee / EMD as applicable and enter details of the instrument.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "In case of Bank Guarantee (BG), the BG in original should be posted/couriered/given in person to the concerned official of IIT Hyd before the Online Opening of Technical Bid. In case of non-receipt of BG in original by the said time, the uploaded bid will be summarily rejected.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "Bidders are requested to note that they should necessarily submit their financial bids in the format provided and no other format is acceptable.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "The firm registered with NSIC/MSME must give proof of registration along with their quotation failing which the bid will not be considered.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Exemption from submission of Bid Securing Declaration against valid and relevant NSIC /MSME Certification is permitted...",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "All prices are to be quoted in Indian Rupees only.",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "Price bid shall indicate per Unit prices and applicable Taxes separately.",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "Quoted prices should be inclusive of charges for all activities in scope of work, all types of required support, licenses, upgrades, accessories, tools, utilities, patches required for full functionality of the proposed system.",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "The bidders shall submit their quotes as per the format given in Annexure XI.",
+        "pages": [
+          28
+        ]
+      },
+      {
+        "text": "Financial proposals shall be evaluated on the basis of Consolidated Cost Summary (Inclusive of all Taxes) – 'Grand Total' offered by the bidder to IITH. Any monetary figure in decimal shall be rounded off to the nearest INR.",
+        "pages": [
+          28
+        ]
+      },
+      {
+        "text": "In cases of discrepancy between the prices quoted in words and in figures, the value as per the guidelines of Manual of Procurement shall prevail. For any other calculation/ summation error etc. the bid may be rejected.",
+        "pages": [
+          28
+        ]
+      },
+      {
+        "text": "Security Deposit in the form of Performance Bank Guarantee (PBG) valuing three percent (3%) of the Total Contract price (excluding taxes and duties).",
+        "pages": [
+          33
+        ]
+      },
+      {
+        "text": "IITH shall make all payments through RTGS or NEFT within 30 days of submission of all documents and as per the schedule of payments.",
+        "pages": [
+          34
+        ]
+      },
+      {
+        "text": "The incidental expenses of execution of Bid/Agreement shall be borne by the Implementing Agency.",
+        "pages": [
+          30
+        ]
+      },
+      {
+        "text": "The bidder must strictly adhere to the implementation schedule, as specified in the contract.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "Liquidated Damages will be levied at the rate of 1% per month subject to a maximum of 10% on the total value along with applicable taxes of the contract for non-fulfilment of delivery schedule.",
+        "pages": [
+          37
+        ]
+      },
+      {
+        "text": "Any subcontracting activity by the IA should take place only with the prior approval of IIT Hyderabad.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "Verification of Local Content requires self-certification or auditor certificate for procurement exceeding Rs.10 crores.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Bidders can be debarred for a period up to two years in case of false declaration.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Power of Attorney must be executed on INR 100.00 Non judicial Stamp Paper and duly notarized.",
+        "pages": [
+          50
+        ]
+      },
+      {
+        "text": "We <name and address of the OEM> who are established OEMs ... do hereby authorize ... to bid, negotiate and conclude the contract with you against the aforementioned tender reference for the following Software manufactured by us:",
+        "pages": [
+          60
+        ]
+      },
+      {
+        "text": "The parties hereto hereby agree to enter into this Integrity Pact and agree as follows: Commitments of the BUYER",
+        "pages": [
+          64
+        ]
+      },
+      {
+        "text": "Deposit Earnest Money/Security Deposit amount to be specified in RFP using instruments like Bank Draft, confirmed guarantee from Nationalised Bank, or other modes specified in RFP.",
+        "pages": [
+          67
+        ]
+      },
+      {
+        "text": "BIDDER must disclose payments made or intended to be made to agents/brokers or intermediaries regarding the bid/contract.",
+        "pages": [
+          66
+        ]
+      },
+      {
+        "text": "Indian BIDDER must disclose foreign principals or associates; BIDDER must confirm it is the original manufacturer/integrator/export entity and has not engaged any individual/firm to intercede for contract award.",
+        "pages": [
+          65
+        ]
+      },
+      {
+        "text": "No interest shall be payable by BUYER to BIDDER on Earnest Money/Security Deposit for the period of its currency.",
+        "pages": [
+          67
+        ]
+      },
+      {
+        "text": "The BUYER shall recover all sums paid to any middleman or agent or broker with a view to securing the contract upon violation.",
+        "pages": [
+          68
+        ]
+      },
+      {
+        "text": "The difference in cost will be refunded by the BIDDER to the BUYER if similar products were supplied at a lower price elsewhere.",
+        "pages": [
+          69
+        ]
+      },
+      {
+        "text": "False declaration of local content is a breach of Code of Integrity.",
+        "pages": [
+          71
+        ]
+      }
+    ],
+    "project_duration": [],
+    "important_conditions": [
+      {
+        "text": "The Prime Bidder must have experience as an ERP solution providing agency for 5 or more years",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "Bidder(s) must be registered with Tax Department (Self-Attested copy of the GST number issued by Government of India).",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "text": "Bids not fulfilling the pre-qualification conditions given below will be rejected.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Technical Bids must comply strictly to all Specifications, Scope of Work, Eligibility Criteria, and Terms & Conditions without deviations, exceptions, objections, conditionality or reservations.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "IITH may require clarifications; no change in Price of the bid shall be sought, offered or permitted via clarification.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "Bidder must submit a presentation of the proposed ERP solution and arrange site visits to similar client implementations as requested.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "Technically Acceptable bids (complying with Parts A-E) shall undergo Price bid evaluation before declaration as Technically Acceptable.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Technical evaluation consists of 6 Parts (A-F), carrying 70% overall weightage, split across 600 marks minimum (140 required for A-E combined).",
+        "pages": [
+          25
+        ]
+      },
+      {
+        "text": "To be invited for POC demonstration in Part F, the bidder must achieve a minimum of 60% score for each of Parts A to E.",
+        "pages": [
+          24
+        ]
+      },
+      {
+        "text": "Any variation found during evaluation/demonstration deemed fraudulent is liable for forfeiture of the PBG without prejudice to other legal remedies.",
+        "pages": [
+          23
+        ]
+      },
+      {
+        "text": "The bidder proposing a 'Conditional-Proposal' is liable to be disqualified.",
+        "pages": [
+          29
+        ]
+      },
+      {
+        "text": "During validity of the proposal, or its extended period after the last date and time for submission of Bids, if any, the Bidder increases the quoted prices.",
+        "pages": [
+          29
+        ]
+      },
+      {
+        "text": "Information submitted in a Qualification proposal is found to be misrepresented, incorrect or false, accidentally, unwittingly or otherwise, at any time during the processing of the Agreement (no matter at what stage) or during the tenure of Agreement including the extension period if any.",
+        "pages": [
+          29
+        ]
+      },
+      {
+        "text": "The Bidder(s) have been Debarred and / or blacklisted by any Central / State Govt. Department/Public Sector Undertaking / Organization in India etc. in the last five years.",
+        "pages": [
+          29
+        ]
+      },
+      {
+        "text": "In case any Bidder submits multiple proposals or if common interests are found in two or more Bidders, the Bids are likely to be disqualified.",
+        "pages": [
+          29
+        ]
+      },
+      {
+        "text": "Bidder fails to deposit the Performance Guarantee prior to signing of the Agreement or fails to enter into an Agreement within 15 working days of the date of signing of agreement.",
+        "pages": [
+          29
+        ]
+      },
+      {
+        "text": "The Bidder is responsible for all costs incurred in connection with participation in this process, including, but not limited to costs incurred in conduct of informative and other diligence activities, preparation of proposal, providing product demos, in providing any additional information required by IITH to facilitate the evaluation process, and in negotiating a definitive Service Agreement and all such activities related to the Bid process.",
+        "pages": [
+          29
+        ]
+      },
+      {
+        "text": "Failure of the Implementing Agency to agree with the Terms & Conditions of the RFP shall constitute sufficient grounds for the annulment of the award, in which event IITH may forfeit the Performance Bank Guarantee.",
+        "pages": [
+          30
+        ]
+      },
+      {
+        "text": "The IA will be solely and completely responsible for any deficiency in service, deficiency in the overall product/solution, any deficiency in any third party component/products, any part/module/service developed by subcontractors, and the IA would be completely responsible in fixing and rectifying these deficiencies.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "In case the IA fails to deliver any or all of the services within the time period(s) specified in the Contract, IITH may terminate the contract in whole or part.",
+        "pages": [
+          36
+        ]
+      },
+      {
+        "text": "IITH may engage other Bidders upon termination, and the IA shall be liable for any additional costs for such similar services limited to the total amount paid.",
+        "pages": [
+          36
+        ]
+      },
+      {
+        "text": "In case of bankruptcy or insolvency by the IA, IITH may terminate the contract without compensation to the IA.",
+        "pages": [
+          36
+        ]
+      },
+      {
+        "text": "IITH may terminate the contract at its convenience with a 30-day notice; on termination, the IA is entitled for compensation to the extent of work done.",
+        "pages": [
+          36
+        ]
+      },
+      {
+        "text": "IA shall not use the data disclosed by IITH under this Agreement to provide services for the benefit of any third party, as a service bureau or in any other manner.",
+        "pages": [
+          38
+        ]
+      },
+      {
+        "text": "The contract disputes are subject to arbitration in accordance with the Arbitration and Conciliation Act, 1996 under the exclusive jurisdiction of courts within Hyderabad/Sangareddy District.",
+        "pages": [
+          37
+        ]
+      },
+      {
+        "text": "The timelines for completion of Core Modules is 15 Months from the date of signing of agreement between IA and IITH.",
+        "pages": [
+          46
+        ]
+      },
+      {
+        "text": "Timelines for completion of other modules is 18 Months from the date of signing of agreement between IA and IITH (i.e., 3 Months after the completion of Core modules).",
+        "pages": [
+          46
+        ]
+      },
+      {
+        "text": "The Warranty period is 12 months and it starts after 24 Months.",
+        "pages": [
+          46
+        ]
+      },
+      {
+        "text": "BIDDER declares no previous transgression in last three years with any company in India or abroad regarding corrupt practices that could justify exclusion from tender.",
+        "pages": [
+          67
+        ]
+      },
+      {
+        "text": "If BIDDER makes incorrect statement on previous transgression, BIDDER can be disqualified or contract terminated.",
+        "pages": [
+          67
+        ]
+      },
+      {
+        "text": "BIDDER commits to refrain from giving complaints without supporting them with full and verifiable facts (duplicated in text).",
+        "pages": [
+          66
+        ]
+      },
+      {
+        "text": "BIDDER must disclose if it or its employees are relatives of BUYER officers, or if any relative has financial interest in BIDDER's firm.",
+        "pages": [
+          66
+        ]
+      },
+      {
+        "text": "BUYER officials are prohibited from accepting bribes; breach may lead to criminal proceedings and debarring the official from further dealings while contract proceedings continue.",
+        "pages": [
+          64
+        ]
+      },
+      {
+        "text": "BIDDER shall not disclose any confidential information provided by BUYER regarding plans, technical proposals, or business details contained in electronic data carriers.",
+        "pages": [
+          66
+        ]
+      },
+      {
+        "text": "BIDDER is prohibited from lending money to or borrowing money from any employee of the BUYER.",
+        "pages": [
+          66
+        ]
+      },
+      {
+        "text": "In case of incorrect statement on transgression, the BIDDER can be disqualified from the tender process or the contract, if already awarded, can be terminated.",
+        "pages": [
+          67
+        ]
+      },
+      {
+        "text": "No interest shall be payable by the BUYER to the BIDDER on Earnest Money/Security Deposit for the period of its currency.",
+        "pages": [
+          67
+        ]
+      },
+      {
+        "text": "Any breach of provisions entitles the BUYER to call off pre-contract negotiations without compensation, cancel the contract without compensation, or debar the BIDDER from future bidding processes for a minimum period of five years which may be further extended.",
+        "pages": [
+          68
+        ]
+      },
+      {
+        "text": "The decision of the BUYER that a breach has been committed shall be final and conclusive on the BIDDER, though the BIDDER can approach the Independent Monitor(s).",
+        "pages": [
+          69
+        ]
+      },
+      {
+        "text": "In cases where irrevocable Letters of Credit have been received in respect of any contract signed by the BUYER with the BIDDER, the same shall not be opened.",
+        "pages": [
+          68
+        ]
+      },
+      {
+        "text": "The actions stipulated in this Integrity Pact are without prejudice to any other legal action that may follow in accordance with the provisions of the extant law in force relating to any civil or criminal proceedings.",
+        "pages": [
+          70
+        ]
+      }
+    ]
+  }
+}

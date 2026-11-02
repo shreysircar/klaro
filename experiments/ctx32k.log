@@ -1,0 +1,100 @@
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/bfsi_iob_healthins.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 232.11 seconds. Prompt v1, prompt tokens 17496, context 23552.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/bfsi_iob_healthins.json
+======================================================================
+{"doc": "bfsi_iob_healthins", "seconds": 232.1, "prompt_tokens": 17496, "context": 23552, "ollama_memory_bytes": 3988258815, "expected_prompt_tokens": 17481, "truncated": false, "words_total": 871, "overview_words": 46, "limits_ok": false, "cited_pct": 100.0, "grounding_pct": 100.0, "traceability_pct": 100.0, "numbers_ok": 20, "numbers_total": 20, "dup_bullets": 4, "issuer": "Indian Overseas Bank", "issuer_golden": "Indian Overseas Bank; Marketing & Development Department, 763 Anna Salai, Centra", "issuer_status": "correct", "similarity": 37.7}
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/bfsi_lic_dpdptools.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 258.12 seconds. Prompt v1, prompt tokens 18052, context 23552.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/bfsi_lic_dpdptools.json
+======================================================================
+{"doc": "bfsi_lic_dpdptools", "seconds": 258.1, "prompt_tokens": 18052, "context": 23552, "ollama_memory_bytes": 3988258815, "expected_prompt_tokens": 18037, "truncated": false, "words_total": 625, "overview_words": 46, "limits_ok": true, "cited_pct": 100.0, "grounding_pct": 96.55, "traceability_pct": 100.0, "numbers_ok": 27, "numbers_total": 30, "dup_bullets": 2, "issuer": "Life Insurance Corporation of India (LIC), Central Office, Cyber Security Department", "issuer_golden": "Life Insurance Corporation of India (LIC); Central Office, ERM/CSD (Cyber Securi", "issuer_status": "correct", "similarity": 19.9}
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/bfsi_nabard_jboss.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 233.03 seconds. Prompt v1, prompt tokens 14432, context 20480.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/bfsi_nabard_jboss.json
+======================================================================
+{"doc": "bfsi_nabard_jboss", "seconds": 233.0, "prompt_tokens": 14432, "context": 20480, "ollama_memory_bytes": 3868710665, "expected_prompt_tokens": 14417, "truncated": false, "words_total": 480, "overview_words": 47, "limits_ok": true, "cited_pct": 100.0, "grounding_pct": 84.62, "traceability_pct": 100.0, "numbers_ok": 25, "numbers_total": 27, "dup_bullets": 0, "issuer": "National Bank for Agriculture and Rural Development (NABARD)", "issuer_golden": "National Bank for Agriculture and Rural Development (NABARD); Department of Info", "issuer_status": "correct", "similarity": 23.0}
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/bfsi_psb_furnish.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 156.28 seconds. Prompt v1, prompt tokens 13830, context 19456.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/bfsi_psb_furnish.json
+======================================================================
+{"doc": "bfsi_psb_furnish", "seconds": 156.3, "prompt_tokens": 13830, "context": 19456, "ollama_memory_bytes": 3828864777, "expected_prompt_tokens": 13815, "truncated": false, "words_total": 386, "overview_words": 47, "limits_ok": false, "cited_pct": 100.0, "grounding_pct": 78.95, "traceability_pct": 100.0, "numbers_ok": 9, "numbers_total": 14, "dup_bullets": 0, "issuer": "Punjab & Sind Bank, Zonal Office Bhopal", "issuer_golden": "Punjab & Sind Bank, Zonal Office Bhopal (Premises Department); e-Tender Ref. PSB", "issuer_status": "partial", "similarity": 17.8}
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/bfsi_sbi_bacs.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 259.12 seconds. Prompt v1, prompt tokens 20852, context 26624.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/bfsi_sbi_bacs.json
+======================================================================
+{"doc": "bfsi_sbi_bacs", "seconds": 259.1, "prompt_tokens": 20852, "context": 26624, "ollama_memory_bytes": 4107796479, "expected_prompt_tokens": 20837, "truncated": false, "words_total": 739, "overview_words": 48, "limits_ok": false, "cited_pct": 100.0, "grounding_pct": 100.0, "traceability_pct": 100.0, "numbers_ok": 16, "numbers_total": 16, "dup_bullets": 2, "issuer": "State Bank of India", "issuer_golden": "State Bank of India (SBI), Administrative Office, Bhubaneswar, on behalf of CGM ", "issuer_status": "partial", "similarity": 23.9}
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/civil_asi_itagi.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 220.95 seconds. Prompt v1, prompt tokens 21082, context 27648.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/civil_asi_itagi.json
+======================================================================
+{"doc": "civil_asi_itagi", "seconds": 221.0, "prompt_tokens": 21082, "context": 27648, "ollama_memory_bytes": 4147642367, "expected_prompt_tokens": 21067, "truncated": false, "words_total": 452, "overview_words": 59, "limits_ok": false, "cited_pct": 100.0, "grounding_pct": 95.65, "traceability_pct": 95.65, "numbers_ok": 19, "numbers_total": 19, "dup_bullets": 0, "issuer": "Superintending Archaeologist, Archaeological Survey of India (ASI), Hampi Circle", "issuer_golden": "Archaeological Survey of India (ASI), Ministry of Culture, Government of India; ", "issuer_status": "wrong", "similarity": 18.1}
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/civil_bsi_dais.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 179.11 seconds. Prompt v1, prompt tokens 14220, context 19456.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/civil_bsi_dais.json
+======================================================================
+{"doc": "civil_bsi_dais", "seconds": 179.1, "prompt_tokens": 14220, "context": 19456, "ollama_memory_bytes": 3828864777, "expected_prompt_tokens": 14205, "truncated": false, "words_total": 413, "overview_words": 49, "limits_ok": true, "cited_pct": 100.0, "grounding_pct": 100.0, "traceability_pct": 100.0, "numbers_ok": 15, "numbers_total": 15, "dup_bullets": 0, "issuer": "Executive Engineer, CED-IV, CCU (For and on behalf of the President of India)", "issuer_golden": "Executive Engineer, CED-IV, Civil Construction Unit (CCU), Ministry of Environme", "issuer_status": "wrong", "similarity": 24.3}
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/civil_iitpkd_road.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 70.68 seconds. Prompt v1, prompt tokens 1979, context 6144.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/civil_iitpkd_road.json
+======================================================================
+{"doc": "civil_iitpkd_road", "seconds": 70.7, "prompt_tokens": 1979, "context": 6144, "ollama_memory_bytes": 3338980555, "expected_prompt_tokens": 1964, "truncated": false, "words_total": 371, "overview_words": 36, "limits_ok": true, "cited_pct": 100.0, "grounding_pct": 100.0, "traceability_pct": 100.0, "numbers_ok": 15, "numbers_total": 15, "dup_bullets": 2, "issuer": "Institute", "issuer_golden": "Indian Institute of Technology Palakkad (IITPKD); Engineering Works Division (EW", "issuer_status": "partial", "similarity": 9.7}
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/civil_nhidcl_rfp.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 216.59 seconds. Prompt v1, prompt tokens 17189, context 23552.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/civil_nhidcl_rfp.json
+======================================================================
+{"doc": "civil_nhidcl_rfp", "seconds": 216.6, "prompt_tokens": 17189, "context": 23552, "ollama_memory_bytes": 3988258815, "expected_prompt_tokens": 17174, "truncated": false, "words_total": 635, "overview_words": 61, "limits_ok": false, "cited_pct": 100.0, "grounding_pct": 93.1, "traceability_pct": 100.0, "numbers_ok": 23, "numbers_total": 29, "dup_bullets": 0, "issuer": "National Highways & Infrastructure Development Corporation Limited (NHIDCL)", "issuer_golden": "National Highways & Infrastructure Development Corporation Limited (NHIDCL), Min", "issuer_status": "partial", "similarity": 25.1}
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/edu_iiitd_pgcat.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 114.25 seconds. Prompt v1, prompt tokens 4726, context 9216.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/edu_iiitd_pgcat.json
+======================================================================
+{"doc": "edu_iiitd_pgcat", "seconds": 114.3, "prompt_tokens": 4726, "context": 9216, "ollama_memory_bytes": 3445935307, "expected_prompt_tokens": 4711, "truncated": false, "words_total": 540, "overview_words": 50, "limits_ok": true, "cited_pct": 100.0, "grounding_pct": 100.0, "traceability_pct": 100.0, "numbers_ok": 23, "numbers_total": 32, "dup_bullets": 0, "issuer": "Indraprastha Institute of Information Technology Delhi", "issuer_golden": "Indraprastha Institute of Information Technology Delhi (IIIT-Delhi), a State Uni", "issuer_status": "partial", "similarity": 18.3}
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/edu_iith_erp.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 189.72 seconds. Prompt v1, prompt tokens 12131, context 17408.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx32k/edu_iith_erp.json
+======================================================================
+{"doc": "edu_iith_erp", "seconds": 189.7, "prompt_tokens": 12131, "context": 17408, "ollama_memory_bytes": 3749162515, "expected_prompt_tokens": 12116, "truncated": false, "words_total": 479, "overview_words": 51, "limits_ok": true, "cited_pct": 100.0, "grounding_pct": 86.36, "traceability_pct": 100.0, "numbers_ok": 18, "numbers_total": 18, "dup_bullets": 0, "issuer": "Indian Institute of Technology Hyderabad", "issuer_golden": "Indian Institute of Technology Hyderabad, Kandi, Sangareddy - 502 285, Telangana", "issuer_status": "partial", "similarity": 22.9}
+LEDGER {"label": "ctx32k", "change": "v1 prompt + KLARO_NUM_CTX=32768", "prompt": "v1", "num_ctx": 32768, "docs": 11, "words_total": 544.6, "overview_words": 49.1, "limits_ok_docs": "6/11", "grounding_pct": 94.1, "traceability_pct": 99.6, "dup_bullets": 0.9, "cited_pct": 100.0, "numbers_on_page_pct": 89.4, "issuer_correct": 3, "issuer_partial": 6, "similarity": 21.9, "seconds": 193.6, "prompt_tokens": 14180.8, "truncated_docs": 0, "verdict": ""}

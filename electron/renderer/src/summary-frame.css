@@ -77,3 +77,17 @@ li::marker { color: var(--ink-muted); }
 ::selection { background: var(--accent-border); }
 .citable { cursor: pointer; }
 .cited { background: var(--accent-tint); box-shadow: -8px 0 0 var(--accent-tint), 8px 0 0 var(--accent-tint); }
+
+h2 { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-md); }
+.cal-btn {
+  font: var(--weight-medium) var(--fs-ui) / var(--lh-ui) var(--font-sans);
+  padding: 0 var(--space-sm);
+  background: transparent;
+  color: var(--accent);
+  border: var(--hairline-w) solid var(--accent-border);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.cal-btn:hover { background: var(--accent-tint); }
+
+.flagged { background: var(--danger-tint); box-shadow: -8px 0 0 var(--danger-tint), 8px 0 0 var(--danger-tint); }

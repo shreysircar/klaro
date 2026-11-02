@@ -1,0 +1,4 @@
+label,change,prompt,num_ctx,docs,words_total,overview_words,limits_ok_docs,grounding_pct,traceability_pct,dup_bullets,cited_pct,numbers_on_page_pct,issuer_correct,issuer_partial,similarity,seconds,prompt_tokens,truncated_docs,verdict
+baseline,"today: v1 prompt, Ollama default ctx 4096",v1,0,11,4564.5,52.0,0/11,100.0,100.0,25.3,100.0,91.3,1,7,32.3,63.6,2043.5,0,
+ctx16k,v1 prompt + KLARO_NUM_CTX=16384,v1,16384,11,3053.6,48.8,4/11,96.6,99.7,16.1,100.0,92.9,2,6,27.1,126.4,9298.9,5,
+ctx32k,v1 prompt + KLARO_NUM_CTX=32768,v1,32768,11,544.6,49.1,6/11,94.1,99.6,0.9,100.0,89.4,3,6,21.9,193.6,14180.8,0,

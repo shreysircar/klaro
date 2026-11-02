@@ -82,14 +82,22 @@ def _artifact(run_id: str, rel: str, media_type: str) -> FileResponse:
     return FileResponse(path, media_type=media_type)
 
 
+def _summary_file(run_id: str, ext: str, media_type: str, lang: str) -> FileResponse:
+    if lang not in ("en", "de"):
+        raise HTTPException(400, "lang must be en or de.")
+    if lang == "de":
+        return _artifact(run_id, f"summary/executive_summary_de.{ext}", media_type)
+    return _artifact(run_id, f"summary/executive_summary.{ext}", media_type)
+
+
 @app.get("/runs/{run_id}/summary")
-def get_summary(run_id: str) -> FileResponse:
-    return _artifact(run_id, "summary/executive_summary.json", "application/json")
+def get_summary(run_id: str, lang: str = "en") -> FileResponse:
+    return _summary_file(run_id, "json", "application/json", lang)
 
 
 @app.get("/runs/{run_id}/summary.html", response_model=None)
-def get_summary_html(run_id: str, embed: bool = False) -> FileResponse | HTMLResponse:
-    page = _artifact(run_id, "summary/executive_summary.html", "text/html")
+def get_summary_html(run_id: str, embed: bool = False, lang: str = "en") -> FileResponse | HTMLResponse:
+    page = _summary_file(run_id, "html", "text/html", lang)
     if not embed:
         return page
     html = Path(page.path).read_text(encoding="utf-8")
@@ -108,6 +116,33 @@ def get_source_pdf(run_id: str) -> FileResponse:
 @app.get("/runs/{run_id}/evaluation")
 def get_evaluation(run_id: str) -> FileResponse:
     return _artifact(run_id, "evaluation/baseline_summary_evaluation.json", "application/json")
+
+
+@app.get("/runs/{run_id}/translation")
+def get_translation(run_id: str) -> dict:
+    status = jobs.translation_status(run_id)
+    if status is None:
+        raise HTTPException(404, "Run not found.")
+    return status
+
+
+@app.post("/runs/{run_id}/translation", status_code=202)
+def create_translation(run_id: str) -> dict:
+    try:
+        job = jobs.start_translation(run_id)
+    except FileNotFoundError as e:
+        raise HTTPException(404, str(e))
+    except jobs.Busy as e:
+        raise HTTPException(409, str(e))
+    except RuntimeError as e:
+        raise HTTPException(503, str(e))
+    return {"run_id": run_id, "status": job["status"]}
+
+
+@app.delete("/runs/{run_id}/translation", status_code=204)
+def cancel_translation(run_id: str) -> Response:
+    jobs.cancel_translation(run_id)
+    return Response(status_code=204)
 
 
 @app.delete("/runs/{run_id}", status_code=204)

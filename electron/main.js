@@ -171,7 +171,14 @@ ipcMain.handle('detect-language', async (_e, file) => {
   return runPythonModule(['backend.translation.detect', file]); // {language: de|en|unknown, confidence}
 });
 
-ipcMain.handle('check-translator', () => runPythonModule(['backend.translation.translator', '--check', 'de', 'en'])); // {ok, error}
+// {ok, error} is the German to English model (needed to analyse German RFPs); models['en-de'] is the one the German view needs.
+ipcMain.handle('check-translator', async () => {
+  const [deEn, enDe] = await Promise.all([
+    runPythonModule(['backend.translation.translator', '--check', 'de', 'en']),
+    runPythonModule(['backend.translation.translator', '--check', 'en', 'de']),
+  ]);
+  return { ...deEn, models: { 'de-en': deEn, 'en-de': enDe } };
+});
 
 ipcMain.handle('get-source', async (_e, runId) => {
   const file = runFile(runId, 'source.pdf');
@@ -236,6 +243,31 @@ ipcMain.handle('open-file', async (e) => {
   });
   if (canceled || filePaths.length === 0) return null;
   return { name: path.basename(filePaths[0]), path: filePaths[0], data: await fs.promises.readFile(filePaths[0]) };
+});
+
+// Saves the calendar file the renderer built. Main owns the dialog, the file name and the write (UTF-8, no BOM).
+ipcMain.handle('save-ics', async (e, name, text) => {
+  if (typeof name !== 'string' || typeof text !== 'string' || text.length > 2e6 || !text.startsWith('BEGIN:VCALENDAR')) {
+    throw new Error('Invalid calendar data.');
+  }
+  const safe = path.basename(name).replace(/[\\/:*?"<>|\u0000-\u001f]/g, ' ').replace(/\.ics$/i, '').trim().slice(0, 80) || 'rfp';
+  const { canceled, filePath } = await dialog.showSaveDialog(BrowserWindow.fromWebContents(e.sender), {
+    defaultPath: path.join(app.getPath('downloads'), `${safe}.ics`),
+    filters: [{ name: 'Calendar files', extensions: ['ics'] }],
+  });
+  if (canceled || !filePath) return null;
+  await fs.promises.writeFile(filePath, text, 'utf8');
+  return filePath;
+});
+
+// The one thing that leaves the machine, and only when the user clicks it: a Google Calendar "add event" link.
+ipcMain.handle('open-calendar-link', (_e, url) => {
+  let u;
+  try { u = new URL(url); } catch { throw new Error('Invalid link.'); }
+  if (u.protocol !== 'https:' || u.hostname !== 'calendar.google.com' || !['/calendar/render', '/calendar/r/settings/export'].includes(u.pathname)) {
+    throw new Error('Only Google Calendar links can be opened.');
+  }
+  return shell.openExternal(u.href);
 });
 
 ipcMain.handle('open-external', (_e, url) => {

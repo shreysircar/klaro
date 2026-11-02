@@ -1,0 +1,155 @@
+{
+  "built_at": "2026-10-31T15:29:38+00:00",
+  "mode": "facts",
+  "seed": 2026,
+  "max_seq_len": 32768,
+  "token_counts": "estimated (chars / 3.8); train_lora.py counts exactly",
+  "files": {
+    "train.jsonl": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "examples": 0
+    },
+    "val.jsonl": {
+      "sha256": "fc5c32d754398afe450f14eb9866f5e7796c9cc4063d31215eb53acc612ac310",
+      "examples": 1
+    },
+    "eval_inputs.jsonl": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "examples": 0
+    }
+  },
+  "doc_ids": {
+    "train": [],
+    "val": [
+      "bfsi_iob_healthins"
+    ],
+    "eval": []
+  },
+  "skipped": [
+    {
+      "doc_id": "bfsi_lic_dpdptools",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "bfsi_nabard_jboss",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "bfsi_psb_furnish",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "bfsi_sbi_bacs",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "civil_asi_itagi",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "civil_bsi_dais",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "civil_iitpkd_road",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "civil_nhidcl_rfp",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "edu_iiitd_pgcat",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "edu_iith_erp",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "edu_mea_itec",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "edu_svsu_erp",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "energy_gridco_repconsult",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "energy_mahatransco_pmc",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "energy_scppa_renewables",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "energy_seci_pmu",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "health_aiimsraipur_doppler",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "health_aiimsrishikesh_cysto",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "intl_alameda_econdev",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "it_igitsarang_erp",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "muni_ghmc_assetsurvey",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "bfsi_centralbank_sharetrading",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "civil_crpf_works",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "edu_iimtrichy_branding",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "energy_jreda_minigrid",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "health_wmchealth_epic",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "intl_kdc_culture",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "intl_santafe_bess",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "it_sikkim_smsda",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "it_trai_uccapp",
+      "reason": "facts not built yet"
+    },
+    {
+      "doc_id": "muni_ndmc_mswconsult",
+      "reason": "facts not built yet"
+    }
+  ],
+  "eval_leak_check": "passed"
+}

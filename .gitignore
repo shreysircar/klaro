@@ -40,3 +40,7 @@ data/golden/pdfs/
 models/
 data/translation_cache/
 .venv/
+
+# Translation A/B harness output
+scripts/translation_ab/out/
+.venv-finetune/

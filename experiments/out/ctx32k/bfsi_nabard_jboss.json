@@ -1,0 +1,202 @@
+{
+  "overview": {
+    "text": "National Bank for Agriculture and Rural Development (NABARD) is procuring subscription services for Red Hat JBoss Enterprise Application Platform (JBOSS EAP) and Extended Life Support (ELS) for a one-year term. The tender involves supply, implementation, and enabling support services to upgrade from the unsupported JBoss 5 version.",
+    "pages": [
+      1,
+      2,
+      3,
+      10
+    ]
+  },
+  "issuing_organization": "National Bank for Agriculture and Rural Development (NABARD)",
+  "issuing_organization_pages": [],
+  "scope": [
+    {
+      "text": "Supply of Red Hat JBoss EAP support subscription and Extended Life Support (ELS) subscription.",
+      "pages": [
+        2,
+        3,
+        10,
+        42,
+        62
+      ]
+    },
+    {
+      "text": "Services include supply, implementation, commissioning, maintenance, upgrades, updates, patches, and technical assistance within 48 hours of purchase order issuance.",
+      "pages": [
+        10,
+        17,
+        43,
+        44,
+        50
+      ]
+    },
+    {
+      "text": "Deliverables include valid support subscriptions, access credentials, documentation, and compliance/audit records.",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "text": "Services are restricted to OEM Licensed products; modified software is excluded. Advisory services may be provided on a time and materials basis.",
+      "pages": [
+        46,
+        50
+      ]
+    }
+  ],
+  "key_requirements": [
+    {
+      "text": "Bidders must submit an Earnest Money Deposit (EMD) of ₹2,76,000/- or a Bank Guarantee; Micro and Small Enterprises are exempt with valid Udyam Certificate.",
+      "pages": [
+        5,
+        9
+      ]
+    },
+    {
+      "text": "Successful bidders must submit KYC forms, sign the Service Level Agreement (SLA), Non-Disclosure Agreement (NDA), and Pre-Contract Integrity Pact on ₹500 stamp paper.",
+      "pages": [
+        7,
+        14,
+        21,
+        26
+      ]
+    },
+    {
+      "text": "Bidders must provide audited financial statements for the last three fiscal years and proof of no debarment/blacklisting since 01.04.2021.",
+      "pages": [
+        14,
+        18
+      ]
+    },
+    {
+      "text": "The Service Provider must furnish a Performance Bank Guarantee (PGB) for 3% of the total order value and retain records for 7 years post-termination.",
+      "pages": [
+        35,
+        47
+      ]
+    }
+  ],
+  "eligibility": [
+    {
+      "text": "Bidders must be duly organized entities capable of providing timely support and enabling OEM services for Red Hat products.",
+      "pages": [
+        35,
+        46
+      ]
+    },
+    {
+      "text": "Disqualification applies for violations of the Integrity Pact, incorrect statements regarding transgressions, or adverse litigations.",
+      "pages": [
+        20,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "text": "The Service Provider must comply with the Contract Labour Act and ensure subcontracted personnel undergo background checks.",
+      "pages": [
+        48,
+        52
+      ]
+    }
+  ],
+  "important_dates": [
+    {
+      "text": "Last date for submission of pre-Bid queries: 24th September 2025, 05:00 PM.",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "text": "Date of Pre-Bid Meeting: 25th September 2025, 3:00 PM.",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "text": "Last date for submission of Bid: 1st October 2025, 3:00 PM.",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "text": "Opening of Technical Bid: 03rd October 2025 (Online).",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "text": "Bids must remain valid for 180 days from the last date of opening of Commercial Bids.",
+      "pages": [
+        8
+      ]
+    }
+  ],
+  "commercial_requirements": [
+    {
+      "text": "Prices quoted must be firm and valid for the entire one-year contract period with no escalation allowed.",
+      "pages": [
+        15,
+        17
+      ]
+    },
+    {
+      "text": "All support subscriptions must be supplied within 48 hours of the issue of the purchase order.",
+      "pages": [
+        17
+      ]
+    },
+    {
+      "text": "Payment terms involve 100% release upon supply, implementation, and acceptance; invoices paid within 30 days subject to SLA deductions.",
+      "pages": [
+        12
+      ]
+    }
+  ],
+  "project_duration": [
+    {
+      "text": "The subscription services are valid for one year from the date of activation unless otherwise specified in the purchase order.",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "text": "The Integrity Pact expires for the Contractor 12 months after the last payment and for other Bidders 6 months after award.",
+      "pages": [
+        24
+      ]
+    }
+  ],
+  "important_conditions": [
+    {
+      "text": "Confidential Information must be returned or destroyed upon termination; oral information must be confirmed in writing within fifteen days.",
+      "pages": [
+        28,
+        29,
+        51
+      ]
+    },
+    {
+      "text": "Termination may occur for unjustifiable delays, failure to upgrade critical software, or non-attendance of after-sales calls (3+ occasions).",
+      "pages": [
+        57
+      ]
+    },
+    {
+      "text": "Disputes are resolved amicably within 30 days, followed by sole arbitration in Mumbai under the Arbitration and Conciliation Act, 1996.",
+      "pages": [
+        33,
+        59,
+        60
+      ]
+    },
+    {
+      "text": "The Service Provider must provide a Reverse Transition Mechanism for 3 months post-notice period, including data transfer in readable format.",
+      "pages": [
+        58
+      ]
+    }
+  ]
+}

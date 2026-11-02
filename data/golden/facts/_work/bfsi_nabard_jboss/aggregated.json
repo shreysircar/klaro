@@ -1,0 +1,1609 @@
+{
+  "overview": [
+    {
+      "text": "National Bank for Agriculture and Rural Development (NABARD) Department of Information Technology is inviting bids.",
+      "pages": [
+        1
+      ]
+    },
+    {
+      "text": "The purpose of this RFP is to supply Red Hat JBoss Enterprise Application Platform and Extended Life Support Subscriptions.",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "text": "The tender period is for one year.",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "text": "NABARD intends to upgrade from the previous JBoss 5 version which went out of support in 2019.",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "text": "NABARD is inviting bids for procurement of subscription services for Red Hat JBoss Enterprise Application Platform (JBOSS EAP) and ELS for one year.",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "text": "The Technical Bid will be evaluated only for bidders who submit an Earnest Money Deposit (EMD).",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "text": "The opening of the Technical Bid is scheduled to be held online on the portal at NABARD Head Office, Bandra-Kurla Complex, Mumbai.",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "text": "The document describes an Integrity Pact agreement between NABARD (Buyer) and Bidders/Contractors to prevent corruption.",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "text": "The Independent External Monitor (IEM) appointed for this pact is Shri Jagdeep Kumar Ghai, PTA & FS(Retd).",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "text": "The Integrity Pact begins when both parties have legally signed it.",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "text": "The pact expires for the Contractor 12 months after the last payment under the contract and for all other Bidders 6 months after the contract has been awarded.",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "text": "The Buyer is National Bank for Agriculture and Rural Development (NABARD).",
+      "pages": [
+        25
+      ]
+    },
+    {
+      "text": "The document establishes confidentiality obligations, intellectual property rights, and remedies for the System Integrator regarding information shared with NABARD.",
+      "pages": [
+        29
+      ]
+    },
+    {
+      "text": "The agreement remains binding and applies without limit in point of time upon termination.",
+      "pages": [
+        30
+      ]
+    },
+    {
+      "text": "Dispute resolution is conducted through sole arbitration in English at Mumbai under the Indian Arbitration and Conciliation Act 1996.",
+      "pages": [
+        33
+      ]
+    },
+    {
+      "text": "NABARD (National Bank for Agriculture and Rural Development) floated a Request for Proposal (RFP) to appoint a System Integrator.",
+      "pages": [
+        35
+      ]
+    },
+    {
+      "text": "The RFP Reference Number is specified in the document but left as a blank field 'RFP Ref No. __________________'.",
+      "pages": [
+        35
+      ]
+    },
+    {
+      "text": "A Performance Bank Guarantee (PGB) form was executed where the Bank guarantees payment to NABARD for the contractor's performance.",
+      "pages": [
+        35
+      ]
+    },
+    {
+      "text": "The document is a Service Level Agreement (SLA) between NABARD and a Service Provider.",
+      "pages": [
+        39
+      ]
+    },
+    {
+      "text": "NABARD is the First Party, identified as National Bank for Agriculture and Rural Development established under the Act of Parliament i.e., National Bank for Agriculture and Rural Development Act, 1981.",
+      "pages": [
+        39
+      ]
+    },
+    {
+      "text": "The agreement was entered into pursuant to a Principal Agreement/RFP/Purchase Order issued by NABARD via reference number (redacted) dated (redacted).",
+      "pages": [
+        40
+      ]
+    },
+    {
+      "text": "The project involves supply, implementation, and enabling support services related to Red Hat JBoss EAP support subscription and Red Hat JBoss EAP Extended Life Support (ELS) support subscription.",
+      "pages": [
+        43
+      ]
+    },
+    {
+      "text": "NABARD is the issuing organization requesting the Service Provider to perform these support services.",
+      "pages": [
+        43
+      ]
+    },
+    {
+      "text": "The document outlines operational terms for NABARD regarding inspection, support, performance measurement, and periodic review processes.",
+      "pages": [
+        48
+      ]
+    },
+    {
+      "text": "The SLA is an operational document to be reviewed at a minimum once per fiscal year.",
+      "pages": [
+        49
+      ]
+    },
+    {
+      "text": "The agreement defines conditions under which NABARD may cancel or terminate the Purchase Order/Contract at any time.",
+      "pages": [
+        57
+      ]
+    },
+    {
+      "text": "Termination occurs if there is a delay in project implementation beyond specified periods due solely to the Service Provider.",
+      "pages": [
+        57
+      ]
+    },
+    {
+      "text": "NABARD may terminate if the Service Provider fails to upgrade critical software within the specified period or extensions.",
+      "pages": [
+        57
+      ]
+    },
+    {
+      "text": "Contract termination is applicable if after-sales and maintenance calls are not attended for three or more occasions, with a 30-day notice.",
+      "pages": [
+        57
+      ]
+    },
+    {
+      "text": "The contract may be terminated if NABARD notes serious discrepancies in project implementation.",
+      "pages": [
+        57
+      ]
+    },
+    {
+      "text": "The agreement is governed by the laws of India.",
+      "pages": [
+        60
+      ]
+    },
+    {
+      "text": "Disputes shall be resolved amicably within a settlement period of 30 days between senior representatives.",
+      "pages": [
+        60
+      ]
+    },
+    {
+      "text": "Unresolved disputes must be referred to arbitration by a sole arbitrator under the Arbitration and Conciliation Act, 1996.",
+      "pages": [
+        60
+      ]
+    },
+    {
+      "text": "The seat, venue, jurisdiction, and language of proceedings are all set in Mumbai, India.",
+      "pages": [
+        60
+      ]
+    }
+  ],
+  "issuing_organization": "National Bank",
+  "issuing_organization_pages": [
+    1,
+    25,
+    35,
+    39
+  ],
+  "scope": [
+    {
+      "text": "Supply of Red Hat JBoss EAP support subscription.",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "text": "Supply of Red Hat JBoss EAP Extended Life Support (ELS) support subscription.",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "text": "The vendor must supply support subscriptions for Red Hat JBoss EAP and ELS as per specified specifications and quantities within 48 hours from the issue of contract/purchase order.",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "text": "The subscription services are valid for a period of one year from the date of activation unless otherwise specified in the purchase order.",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "text": "The vendor shall ensure all subscriptions remain valid for the duration specified in the purchase order and provide access to Red Hat support services including upgrades, updates, patches, and technical assistance.",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "text": "Deliverables include valid support subscription for JBoss EAP and ELS, access credentials and documentation for Red Hat support services, and compliance/audit documentation related to subscriptions.",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "text": "Bidders/Contractors commit to preventing corruption and observe principles during tender participation and contract execution.",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "text": "The pact begins when both parties sign it, expires for Contractors 12 months after the last payment, and for other Bidders 6 months after award.",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "text": "Bidders must not directly or indirectly offer benefits to Buyer's employees in exchange for advantages during tender or contract execution.",
+      "pages": [
+        22
+      ]
+    },
+    {
+      "text": "Bidders cannot enter undisclosed agreements with other bidders regarding prices, specifications, or competition actions.",
+      "pages": [
+        22
+      ]
+    },
+    {
+      "text": "The System Integrator and NABARD are collectively referred to as 'the Parties'.",
+      "pages": [
+        26
+      ]
+    },
+    {
+      "text": "Confidential Information includes data, documents, and information explicitly designated as 'Confidential' obtained during the course of engagement.",
+      "pages": [
+        27
+      ]
+    },
+    {
+      "text": "The scope includes intellectual property, technical/business information, proprietary/internal info regarding products/services, security policies, and organizational charts.",
+      "pages": [
+        27
+      ]
+    },
+    {
+      "text": "Information regarding NABARD and its Affiliates, customers, and their accounts is treated as Confidential Information irrespective of marking.",
+      "pages": [
+        29
+      ]
+    },
+    {
+      "text": "Confidential Information includes NABARD, its affiliates, customers, business processes, plans, personnel, financial info, and capital adequacy workings.",
+      "pages": [
+        29
+      ]
+    },
+    {
+      "text": "The System Integrator must not commercially use or disclose Confidential Information to anyone other than directly employed persons with a need-to-know.",
+      "pages": [
+        29
+      ]
+    },
+    {
+      "text": "News releases, public announcements, interviews, and advertisements are prohibited without prior written approval from NABARD.",
+      "pages": [
+        30
+      ]
+    },
+    {
+      "text": "The System Integrator shall not make news releases, public announcements, give interviews, issue or publish advertisements or publicize in any other manner whatsoever in connection with this Agreement.",
+      "pages": [
+        30
+      ]
+    },
+    {
+      "text": "The scope of works specified in the tender involves software development and maintenance as indicated by clauses regarding software failure and contract terms.",
+      "pages": [
+        36
+      ]
+    },
+    {
+      "text": "The PGB covers payment for loss or damage caused to NABARD due to contractor's failure to perform works as per the contract.",
+      "pages": [
+        36
+      ]
+    },
+    {
+      "text": "The Service Provider is engaged as a System Integrator, Reseller, and Supplier.",
+      "pages": [
+        39
+      ]
+    },
+    {
+      "text": "The project involves the supply, implementation, and enabling support services related to Red Hat JBoss EAP support subscription and Red Hat JBoss EAP Extended Life Support (ELS) support subscription.",
+      "pages": [
+        42
+      ]
+    },
+    {
+      "text": "The scope includes maintenance, support, and upgradation of the subscribed software.",
+      "pages": [
+        42
+      ]
+    },
+    {
+      "text": "Support services include any installation or service which makes good failed service pre-agreed or requested by NABARD.",
+      "pages": [
+        43
+      ]
+    },
+    {
+      "text": "Services include supply, implementation, commissioning, maintenance of software, and maintenance of desired service levels to provide quality customer service to NABARD.",
+      "pages": [
+        44
+      ]
+    },
+    {
+      "text": "The Scope of Work outlines details on Support Services including Service Levels, Expected Deliverables, and Timelines.",
+      "pages": [
+        45
+      ]
+    },
+    {
+      "text": "Service Provider must provide timely support or enable OEM support for Red Hat JBoss EAP subscriptions as the Vendor/System Integrator.",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "text": "Support Services include advisory and consultancy services to be mutually agreed upon between parties.",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "text": "Service Provider must provide electronic books of accounts, log-books, and operating records relating to Support Services.",
+      "pages": [
+        47
+      ]
+    },
+    {
+      "text": "NABARD shall provide the Service Provider with necessary access to its Personnel and equipment, including dial-in capabilities.",
+      "pages": [
+        48
+      ]
+    },
+    {
+      "text": "The Scope of Work includes monitoring, tracking, and providing reports on performance parameters during the Warranty and Support period.",
+      "pages": [
+        49
+      ]
+    },
+    {
+      "text": "Services are restricted to OEM Licensed products and services thereof; modified software is excluded.",
+      "pages": [
+        50
+      ]
+    },
+    {
+      "text": "Service Provider liability to meet SLAs is limited to 10% of the agreement cost for the year of subscription.",
+      "pages": [
+        51
+      ]
+    },
+    {
+      "text": "The Service Provider must provide Support Services in the premises of NABARD or an enclosed environment with restricted access.",
+      "pages": [
+        53
+      ]
+    },
+    {
+      "text": "NABARD is entitled to terminate the contract if the Service Provider fails to provide after-sales and maintenance services.",
+      "pages": [
+        57
+      ]
+    },
+    {
+      "text": "The Scope includes ensuring that core systems or core business of NABARD are not adversely affected by the project.",
+      "pages": [
+        57
+      ]
+    },
+    {
+      "text": "Termination conditions include a breach in the terms and conditions of the Purchase Order.",
+      "pages": [
+        57
+      ]
+    },
+    {
+      "text": "Scope includes support services for Red Hat JBoss EAP support subscription and Red Hat JBoss EAP Extended Life Support (ELS) support subscription.",
+      "pages": [
+        62
+      ]
+    },
+    {
+      "text": "In the event of termination, a Reverse Transition Mechanism requires the Service Provider to deliver data in readable format along with knowledge documents within one month (unless extended).",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "text": "The Reverse Transition Mechanism involves services and tasks required for the smooth handover of NABARD's deliverables and maintenance, lasting for a period of 3 months post the notice period.",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "text": "Supplier must bear the entire cost of transportation from the port of discharge to the destination.",
+      "pages": [
+        64
+      ]
+    }
+  ],
+  "key_requirements": [
+    {
+      "text": "Technical Bid must include response to technical and functional requirement specifications.",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "text": "Commercial Bid must furnish all relevant information as required.",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "text": "Bidder details with seal and signature as per Annexure-IV.",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "text": "Letter from OEM on its letterhead certifying the bidder is an authorized partner/SI.",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "text": "Pre-Contract Integrity Pact on ₹500 stamp paper as per Annexure-V.",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "text": "Submission of EMD or BG for ₹2,76,000/- (MSEs exempted with Udyam Certificate).",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "text": "Successful bidder must submit KYC form/CKYC number after contract award.",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "text": "Successful bidder must sign Service Level Agreement (Annexure-VIII).",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "text": "Successful bidder must sign Non-Disclosure Agreement (Annexure-VI) after contract award.",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "text": "Bidder details must be submitted in seal and signature as provided in Annexure – IV.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "A Pre-Contract Integrity Pact must be submitted on ₹500 stamp paper as per Annexure – V.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "Bidders must submit a Non-Blacklisting / Non-Debarment Declaration on the Organization's letterhead as per Annexure – III.",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "text": "Audited financial statements of the last three FYs (2022-23, 2023-24, 2024-25) are mandatorily submitted for calculation of average turnover.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "Bidders must provide at least three purchase orders issued in current or last three years (2022-23, 2023-24, 2024-25) from previous clients.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "The bidder should not be debarred/blacklisted since 01.04.2021 by any bank, Financial Institution, State/Central Govt.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "The Bidder must submit the Pre Contract Integrity Pact on Bond Paper of Value ₹500/-.",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "text": "The Bidder must declare that no previous transgressions occurred in the last three years with any company or Public Sector Enterprise regarding anti-corruption approaches.",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "text": "Bidder Details including incorporation date, website URL, PAN/GSTIN numbers, and Authorized Signatory particulars must be provided.",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "text": "The Bidder must disclose any payments made or intended for agents, brokers, or intermediaries in connection with the contract award.",
+      "pages": [
+        22
+      ]
+    },
+    {
+      "text": "The Non-Disclosure Agreement Form is on bond paper valued at Rs 200/- by the successful bidder.",
+      "pages": [
+        26
+      ]
+    },
+    {
+      "text": "Confidential Information in oral form must be identified as confidential at the time of disclosure and confirmed in writing within fifteen days.",
+      "pages": [
+        28
+      ]
+    },
+    {
+      "text": "Upon termination of the Agreement, Confidential information shall be returned to NABARD or destroyed at its directions.",
+      "pages": [
+        29
+      ]
+    },
+    {
+      "text": "In case of legal compulsion to disclose, the System Integrator must give sufficient notice of 45 days to NABARD.",
+      "pages": [
+        29
+      ]
+    },
+    {
+      "text": "The contractor must furnish a Performance Bank Guarantee (PGB) for an amount of 3% of the total value of order of works.",
+      "pages": [
+        35
+      ]
+    },
+    {
+      "text": "A performance bond on Non-Judicial Stamp Paper of ₹500.00 is required to execute this Deed of Guarantee.",
+      "pages": [
+        35
+      ]
+    },
+    {
+      "text": "The definition of 'Service' encompasses any installation, support which makes good of failed service either pre-agreed or requested by NABARD.",
+      "pages": [
+        43
+      ]
+    },
+    {
+      "text": "NABARD's Scheduled Business Operation Hours are defined as from 9:00 AM to 6:00 PM (IST) from Monday to Friday.",
+      "pages": [
+        43
+      ]
+    },
+    {
+      "text": "'Bugs' are defined as a failure of software to perform as specified in the applicable product description or guides due to defective distribution media.",
+      "pages": [
+        41
+      ]
+    },
+    {
+      "text": "'Reports' are defined as information from services in a desired format.",
+      "pages": [
+        43
+      ]
+    },
+    {
+      "text": "Bidder must submit the names of individuals involved in carrying out the Support Services for approval by NABARD.",
+      "pages": [
+        47
+      ]
+    },
+    {
+      "text": "Service Provider must retain all electronic books of accounts and operating records for a period of 7 years after Agreement expiry or termination.",
+      "pages": [
+        47
+      ]
+    },
+    {
+      "text": "NABARD will subject the Service Provider to audits by internal auditors, Reserve Bank of India, or other regulatory authorities regarding risk parameters.",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "text": "Service Provider must furnish audit reports and findings covering risk parameters to NABARD upon observation of deficiencies.",
+      "pages": [
+        47
+      ]
+    },
+    {
+      "text": "NABARD will permit inspection of premises and records only after receiving advance notice of three business days, whereas prior notice may not be given for Regulatory authority inspections.",
+      "pages": [
+        47
+      ]
+    },
+    {
+      "text": "Service Provider must ensure compliance with the Contract Labour Act and other labour laws regarding manpower hiring and regulatory obligations.",
+      "pages": [
+        48
+      ]
+    },
+    {
+      "text": "Service Provider shall permit NABARD and/or Authorized Representatives to inspect electronic records during normal business hours upon advance notice of 3 Business Days.",
+      "pages": [
+        48
+      ]
+    },
+    {
+      "text": "The Service Provider must comply with the Contract Labour Act and other labour laws regarding manpower hiring.",
+      "pages": [
+        48
+      ]
+    },
+    {
+      "text": "A copy of contract details between Service Provider and sub-contractor must be provided to NABARD within 30 days of engagement.",
+      "pages": [
+        51
+      ]
+    },
+    {
+      "text": "Service Provider shall establish security measures to prevent unauthorized access or use of NABARD's information and data.",
+      "pages": [
+        52
+      ]
+    },
+    {
+      "text": "Upon termination, the Service Provider must ensure proper transition with data transfer in readable format and knowledge documents.",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "text": "The reverse transition period is typically for 3 months post the notice period.",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "text": "The Service Provider agrees to provide warranty services after completion of the Term or upon termination at no less favorable terms.",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "text": "Bidders must provide necessary valid compliance certificates to NABARD upon request, including details of validity period from time to time and when there is a change.",
+      "pages": [
+        63
+      ]
+    },
+    {
+      "text": "The Service Provider will not release any factual information concerning SLA Agreements to any person or news media without prior permission of NABARD.",
+      "pages": [
+        63
+      ]
+    },
+    {
+      "text": "Notice given by one party must be sent in writing, by fax, or confirmed in writing to the specified address and acknowledged by the receiver.",
+      "pages": [
+        60
+      ]
+    },
+    {
+      "text": "If asked, the Service Provider must provide a copy of necessary valid compliance certificates with details of validity period at any time or upon change.",
+      "pages": [
+        63
+      ]
+    },
+    {
+      "text": "The Service Provider will not release factual information concerning SLAs to any person or media without prior permission from NABARD.",
+      "pages": [
+        63
+      ]
+    },
+    {
+      "text": "Supplier delivery and service performance must adhere strictly to the time schedule specified in the Purchase Order.",
+      "pages": [
+        64
+      ]
+    }
+  ],
+  "eligibility": [
+    {
+      "text": "If a Bidder commits a transgression violating Section 2 of the pact, NABARD is entitled to disqualify them from the tender process.",
+      "pages": [
+        22
+      ]
+    },
+    {
+      "text": "If the Bidder makes an incorrect statement regarding previous transgressions in Annexure-V, they can be disqualified.",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "text": "Bidders are required to submit details of any litigations or disputes on Company's letterhead; adverse litigations could lead to disqualification.",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "text": "Any violation of the Integrity Pact duration would entail disqualification of bidders and exclusion from future business dealings.",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "text": "If the Contractor is a partnership or consortium, this agreement must be signed by all partners or consortium members.",
+      "pages": [
+        25
+      ]
+    },
+    {
+      "text": "In case of any conflict of interest arising at a later date, the IEM shall inform the Chairman and recuse himself/herself from that case.",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "text": "The contractor must be registered or established under an Act, though the specific act is left blank in the form (___________________________ Act).",
+      "pages": [
+        35
+      ]
+    },
+    {
+      "text": "The total value of the order of works is to be filled in the form as Rs ___________________, but the exact figure is not provided in the text.",
+      "pages": [
+        35
+      ]
+    },
+    {
+      "text": "The Service Provider was selected as the successful bidder for the tender issued by NABARD.",
+      "pages": [
+        40
+      ]
+    },
+    {
+      "text": "The agreement extends to include and mean the Service Provider's successors and permitted assigns.",
+      "pages": [
+        39
+      ]
+    },
+    {
+      "text": "The Service Provider is expected to act as a Vendor/System Integrator capable of timely support and enabling OEM support for the specified Red Hat products.",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "text": "NABARD reserves the right to inspect records, documents, books, and accounts maintained by the Service Provider at any time if required under Applicable Law or upon notice.",
+      "pages": [
+        48
+      ]
+    },
+    {
+      "text": "Service Provider must represent that it is duly organized, validly existing, and authorized under the laws of its jurisdiction.",
+      "pages": [
+        52
+      ]
+    },
+    {
+      "text": "Service Provider must have requisite infrastructure, facilities, systems, adequate skill, know-how, and manpower to fulfill obligations independently.",
+      "pages": [
+        53
+      ]
+    },
+    {
+      "text": "Service Provider must not be bankrupt or insolvent, and there must be no pending insolvency proceedings affecting it.",
+      "pages": [
+        53
+      ]
+    },
+    {
+      "text": "Service Provider shall provide adequate insurance, risk management systems, contingency plans, and backup systems.",
+      "pages": [
+        53
+      ]
+    },
+    {
+      "text": "All subcontracted personnel must undergo necessary police verification, background checks, and due diligence to examine their antecedents.",
+      "pages": [
+        52
+      ]
+    },
+    {
+      "text": "The service provider relationship is defined as that of independent contractors; no employer/employee, partnership, or agent relationship is created.",
+      "pages": [
+        61
+      ]
+    },
+    {
+      "text": "Parties agree that employees/workmen of either party are not the employees/workmen of the other and neither shall assume liability for worker's compensation, disability insurance, leave, or sick pay regarding the other's staff.",
+      "pages": [
+        61
+      ]
+    },
+    {
+      "text": "Termination will mean a proper transition with data transfer in a readable format along with all knowledge documents.",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "text": "Service Provider agrees to continue providing warranty services to NABARD at no less favorable terms than those contained in the RFP/Agreement upon completion of the term or earlier termination, unless mutually agreed otherwise.",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "text": "Unjustifiable delays by the Supplier may result in forfeiture of performance security, penalties at Rs 50 per day per product of unfulfilled order, termination of contract, and risk purchase.",
+      "pages": [
+        64
+      ]
+    },
+    {
+      "text": "Penalties for unjustifiable delays shall not exceed 10% of the order value.",
+      "pages": [
+        64
+      ]
+    }
+  ],
+  "important_dates": [
+    {
+      "text": "Last date for submission of pre-Bid queries: 24th September 2025, 05:00 PM",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "text": "Date of Pre-Bid Meeting: 25th September 2025, 3:00 PM",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "text": "Last date & time for submission of Bid: 1st October 2025, 3:00 PM",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "text": "Opening of Technical Bid: 03rd October 2025",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "text": "Bids shall remain valid for a period of 180 days from the last date of opening of Commercial Bids",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "text": "The Technical Bid shall be opened online on portal on 03rd October 2025 at NABARD Head Office.",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "text": "The EMD of the bidder not qualified under Technical Bid will be returned within 30 days after opening the Commercial Bid of the technically qualified bidder.",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "text": "The date for opening of commercial bids will be separately advised.",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "text": "The Monitor must submit a written report to the Chairman, NABARD within 8 to 10 weeks from the date of reference or intimation.",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "text": "Obligation of confidentiality contemplated under this Agreement shall continue to be binding and applicable without limit in point in time.",
+      "pages": [
+        30
+      ]
+    },
+    {
+      "text": "This Guarantee shall expire at the close of business hours on___________ (this date should be the date of expiry of the Project Period plus 6 months claim period)",
+      "pages": [
+        36
+      ]
+    },
+    {
+      "text": "Unless the demand/claim under this guarantee is served upon us in writing before __________ or on or before the expiry of six months from the validity date extended by renewal of the guarantee",
+      "pages": [
+        38
+      ]
+    },
+    {
+      "text": "This Guarantee shall remain in force up to____________ or up to the date extended by renewal of this guarantee.",
+      "pages": [
+        38
+      ]
+    },
+    {
+      "text": "Unless the demand/claim under this guarantee is served upon us in writing before __________ or on or before the expiry of six months from the validity date extended by renewal of this guarantee.",
+      "pages": [
+        38
+      ]
+    },
+    {
+      "text": "No explicit deadline, validity period, or evaluation timeline is stated in the provided text.",
+      "pages": [
+        -1
+      ]
+    },
+    {
+      "text": "No specific review frequency is explicitly defined, though performance compliance must be verified by written confirmation to NABARD.",
+      "pages": [
+        43
+      ]
+    },
+    {
+      "text": "The SLA will be reviewed at a minimum once per fiscal year.",
+      "pages": [
+        49
+      ]
+    },
+    {
+      "text": "Contract details entered between Service Provider and sub-contractor to be made available by the Service Provider to NABARD within 30 days of engaging the sub-contractor.",
+      "pages": [
+        51
+      ]
+    },
+    {
+      "text": "In case of post or courier, any notice shall be deemed to have been given on the seventh day after the envelope containing the notice was posted.",
+      "pages": [
+        55
+      ]
+    },
+    {
+      "text": "Either party may change its address, telephone number or email-ID for notification purposes by giving the other party fifteen (15) days' notice of new address... upon which it will become effective.",
+      "pages": [
+        55
+      ]
+    },
+    {
+      "text": "If Service Provider fails to upgrade any or all of the critical software within the period(s) specified in the Contract or within any extension thereof granted by the NABARD.",
+      "pages": [
+        57
+      ]
+    },
+    {
+      "text": "Transition to take within a month unless extended by mutual consent.",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "text": "Reverse transition will be for the period of 3 months post the notice period.",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "text": "Notice given 30 days' written notice of default.",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "text": "Disputes to be resolved amicably for a period of 30 days from the date of appointment.",
+      "pages": [
+        60
+      ]
+    },
+    {
+      "text": "Force Majeure notice required within 24 hours after the start of non-performance.",
+      "pages": [
+        61
+      ]
+    }
+  ],
+  "commercial_requirements": [
+    {
+      "text": "Earnest Money Deposit (Refundable): ₹2,76,000/- OR Bank Guarantee of an equivalent amount issued by a Scheduled Commercial Bank valid for 180 days",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "text": "Micro and Small Enterprises (MSEs) are exempted from remitting EMD or BG provided valid Udyam Certificate is submitted.",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "text": "No interest will be payable on EMD under any circumstances",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "text": "Tender Reference No. and Date: NB. HO. DIT/91165/DIT-14-20 dated 22nd September 2025",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "text": "NABARD is inviting bids for procurement of subscription services for Red Hat JBoss Enterprise Application Platform (JBOSS EAP) and Red Hat JBoss EAP Extended Life Support (ELS).",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "text": "Prices quoted must remain firm and valid for the entire contract period (one year). No escalation in price will be entertained.",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "text": "The rates quoted would be applicable for a period of one year from the date of issue of PO for additional procurement, if required by NABARD.",
+      "pages": [
+        17
+      ]
+    },
+    {
+      "text": "All support subscriptions ordered by NABARD should be supplied within 48 hours of the issue of the purchase order.",
+      "pages": [
+        17
+      ]
+    },
+    {
+      "text": "100% of the dues, not more than the successful bid amount, shall be released upon supply of Red Hat JBoss EAP and ELS subscriptions, and implementation and its acceptance by NABARD.",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "text": "Upon receipt of invoice, all payments will be made by NABARD after deduction of penalties, as per SLA (if any) within 30 days from submission of invoices, subject to acceptance of the invoice by NABARD.",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "text": "The bidders should submit the Pre-Contract Integrity Pact on ₹500 stamp paper.",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "text": "On Bond Paper Value of ₹500/- to be submitted by all bidders",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "text": "The Contractor shall furnish to NABARD a Performance Bank Guarantee (PGB) for an amount of 3% of the total value order of works",
+      "pages": [
+        35
+      ]
+    },
+    {
+      "text": "NABARD discloses the Confidential Information without any representation or warranty, whether express, implied or otherwise, on truthfulness, accuracy, completeness, lawfulness, and merchantability, fitness for a particular purpose, title, non-infringement, or anything else.",
+      "pages": [
+        34
+      ]
+    },
+    {
+      "text": "Service Provider shall comply with relevant Service Levels; if not specified, performance will be at par with NABARD's expectations.",
+      "pages": [
+        45
+      ]
+    },
+    {
+      "text": "Additional advisory and consultancy services may be made available on mutually agreed terms based on time spent and materials required.",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "text": "All costs for audits or inspections conducted by NABARD shall be borne by NABARD.",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "text": "Additional services (advisory and consultancy) will be made available on a time and materials basis.",
+      "pages": [
+        50
+      ]
+    },
+    {
+      "text": "Service Provider liability to meet the SLAs is limited to 10% cost of agreement during the year of subscription in which the liability event occurred.",
+      "pages": [
+        52
+      ]
+    },
+    {
+      "text": "NABARD reserves its right to cancel the entire/ unexecuted part of Purchase Order at anytime without assigning appropriate reasons in the event of one or more of the following conditions...",
+      "pages": [
+        57
+      ]
+    },
+    {
+      "text": "If Service Provider provides remedy within 30 days of termination notice, NABARD may reconsider its decision of termination.",
+      "pages": [
+        57
+      ]
+    },
+    {
+      "text": "Transition to take within a month unless extended by mutual consent.",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "text": "Same terms (including payment terms) applicable during contract term should apply for reverse transition services.",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "text": "Service Provider shall offer same or better terms if NABARD wants to continue service after contract completion, unless mutually agreed rates remain firm.",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "text": "NABARD may deduct penalty from Service Provider's money in hands or against bank guarantee; no additional amounts payable to Service Provider beyond Principal Agreement/RFP/Purchase Order consideration.",
+      "pages": [
+        61
+      ]
+    },
+    {
+      "text": "Prorated payment for services rendered and accepted at sole discretion of NABARD upon termination, excluding costs incurred or irrevocably committed up to effective date.",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "text": "Service Provider shall provide valid compliance certificates with details of validity period from time to time.",
+      "pages": [
+        62
+      ]
+    },
+    {
+      "text": "In consideration of the Services and subject to the provisions of the RFP and this Agreement, the Bank shall pay the amounts in accordance with the Terms of Payment Schedule of the Purchase Order.",
+      "pages": [
+        63
+      ]
+    }
+  ],
+  "project_duration": [
+    {
+      "text": "The subscription services shall be valid for a period of one year from the date of activation, unless otherwise specified in the purchase order.",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "text": "In commercial bids, the L1 bidder shall be the first ranked bidder.",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "text": "The pact expires for the Contractor 12 months after the last payment under the contract, and for all other Bidders 6 months after the contract has been awarded.",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "text": "This Agreement shall commence on and from the Effective Date and shall remain valid until the subsistence of the Principal Agreement /RFP/Purchase Order (including all renewals thereof) ('Term'), unless terminated earlier in accordance with Clause (Termination).",
+      "pages": [
+        57
+      ]
+    },
+    {
+      "text": "Reverse Transition Mechanism would typically include service and tasks that are required to be performed /rendered by Service Provider to NABARD... The reverse transition will be for the period of 3 months post the notice period.",
+      "pages": [
+        58
+      ]
+    }
+  ],
+  "important_conditions": [
+    {
+      "text": "Adverse litigations could result in disqualification, at the sole discretion of the Bank",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "text": "If the Bidder makes incorrect statement on this subject, he can be disqualified from the tender process",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "text": "The Buyer is entitled to disqualify the Bidder(s) /Contractor(s) from the tender process",
+      "pages": [
+        22
+      ]
+    },
+    {
+      "text": "The Buyer will disqualify from the tender process all bidders who do not sign the Pact or violate its provisions",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "text": "Any violation of the same would entail disqualification of the bidders and exclusion from future business dealings",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "text": "Violation of the pact shall entail disqualification of bidders and exclusion from future business dealings.",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "text": "Confidential Information must be returned to NABARD or destroyed at its directions upon termination of the Agreement, witnessed in writing by authorized representatives.",
+      "pages": [
+        29
+      ]
+    },
+    {
+      "text": "If legally compelled to disclose Confidential Information, the System Integrator must give sufficient notice of 45 days to NABARD.",
+      "pages": [
+        29
+      ]
+    },
+    {
+      "text": "Confidential Information in oral form must be identified as confidential at the time of disclosure and confirmed in writing within fifteen days.",
+      "pages": [
+        28
+      ]
+    },
+    {
+      "text": "The Integrity Pact clause prevails over any contradictions found in its Annexure.",
+      "pages": [
+        25
+      ]
+    },
+    {
+      "text": "Side agreements have not been made; changes and supplements must be made in writing.",
+      "pages": [
+        25
+      ]
+    },
+    {
+      "text": "Confidential Information remains the sole and exclusive property of NABARD.",
+      "pages": [
+        29
+      ]
+    },
+    {
+      "text": "The Bank both hereby irrevocably and unconditionally guarantee to pay to NABARD, forthwith on mere demand and without any demur",
+      "pages": [
+        36
+      ]
+    },
+    {
+      "text": "Notwithstanding anything to the contrary, the decision of NABARD as to whether software has failed to perform as per the contract and whether the contractor has failed to maintain the software as per the terms of the contract will be final and binding on the Bank",
+      "pages": [
+        36
+      ]
+    },
+    {
+      "text": "Notwithstanding anything to the contrary contained herein, it shall not be necessary for NABARD to exhaust its remedies against the Contractor before invoking this guarantee",
+      "pages": [
+        38
+      ]
+    },
+    {
+      "text": "Our liability under this Bank Guarantee shall not exceed and is restricted to _______________ only",
+      "pages": [
+        38
+      ]
+    },
+    {
+      "text": "This Guarantee shall remain in force up to________________ or up to the date extended by renewal of this guarantee",
+      "pages": [
+        38
+      ]
+    },
+    {
+      "text": "Provided that the situation such as COVID -19 and/or lockdowns due to COVID -19 or similar circumstances shall not be considered as Force Majeure Event under this Agreement.",
+      "pages": [
+        42
+      ]
+    },
+    {
+      "text": "The Parties have now decided to enter into this Agreement to record the terms and conditions which will govern the Support Services rendered by the Service Provider to NABARD during the Term (as defined hereinafter).",
+      "pages": [
+        40
+      ]
+    },
+    {
+      "text": "Service Provider must retain all electronic books of accounts and operating records for a period of 7 (seven) years after the expiry or earlier termination of the Agreement.",
+      "pages": [
+        47
+      ]
+    },
+    {
+      "text": "NABARD reserves the right to call and/or retain any relevant material information/reports including audit, financial, internal control, and security reviews undertaken by the Service Provider.",
+      "pages": [
+        47
+      ]
+    },
+    {
+      "text": "If a deficiency is observed during an audit regarding risk parameters, Service Provider must correct/resolve it within timelines prescribed by NABARD.",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "text": "Service Provider shall furnish relevant information, records, and data to auditors when required. Audit requires at least 5 business days' prior written notice from NABARD (prior notice may not be given for regulatory authorities).",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "text": "Service Provider must comply with Applicable Laws, including the Contract Labour Act and other labour laws regarding manpower hiring.",
+      "pages": [
+        47
+      ]
+    },
+    {
+      "text": "Service Provider shall appoint sufficient individuals; any change to the team requires prior written approval from NABARD.",
+      "pages": [
+        47
+      ]
+    },
+    {
+      "text": "Service Provider must permit NABARD access to inspect electronic records within normal business hours upon receipt of a 3 (three) Business Days advance notice.",
+      "pages": [
+        47
+      ]
+    },
+    {
+      "text": "Service Provider must allow Governmental Authority access to inspect records, documents, books, and accounts if required under Applicable Law.",
+      "pages": [
+        48
+      ]
+    },
+    {
+      "text": "NABARD shall provide necessary access to Personnel and equipment only as necessary for provision of Support Services, including ability to dial-in or obtain access with highest privilege/clearance level strictly as necessary.",
+      "pages": [
+        48
+      ]
+    },
+    {
+      "text": "All of NABARD’s Support inquiries must be initialized through a single appointed primary contact individual knowledgeable in IT operations.",
+      "pages": [
+        48
+      ]
+    },
+    {
+      "text": "Service Provider shall permit NABARD and/or its Authorized Representative(s) to access premises to inspect electronic records upon receipt of advance notice of 3 (three) Business Days.",
+      "pages": [
+        48
+      ]
+    },
+    {
+      "text": "If required under Applicable Law, the Service Provider shall provide access to any Governmental Authority to inspect records, documents, books and accounts maintained in relation to Support Services rendered under this Agreement.",
+      "pages": [
+        48
+      ]
+    },
+    {
+      "text": "The Parties agree that the Support services will be provided only on the OEM Licensed products and services thereof.",
+      "pages": [
+        50
+      ]
+    },
+    {
+      "text": "Support by Service Provider shall not include, by default but may provide at additional cost if solicited by Bank, the restoration of any service lost due to failure of NABARD.",
+      "pages": [
+        50
+      ]
+    },
+    {
+      "text": "The Provision of Confidential Information shall survive termination or expiration on this agreement.",
+      "pages": [
+        51
+      ]
+    },
+    {
+      "text": "In case of termination of the agreement, confidential information obtained in material form (except for data captured and supplied to Bank) should be returned back to the other party.",
+      "pages": [
+        51
+      ]
+    },
+    {
+      "text": "Unless otherwise agreed in writing, no sub-contracting of such duties shall relieve Service Provider of responsibility for their due performance.",
+      "pages": [
+        51
+      ]
+    },
+    {
+      "text": "Service Provider agrees that it shall not transfer/assign to any of its rights and/or obligations under this agreement without the prior written permission from NABARD.",
+      "pages": [
+        51
+      ]
+    },
+    {
+      "text": "No representation or warranty by it contained herein or in any other document furnished by it to NABARD... contains or shall contain any untrue or misleading statement of material fact...",
+      "pages": [
+        54
+      ]
+    },
+    {
+      "text": "Any notice or other information required or authorized to serve under these SLA shall be in writing, in English language...",
+      "pages": [
+        55
+      ]
+    },
+    {
+      "text": "Service Provider shall indemnify and agrees to defend and to keep NABARD... indemnified, from any and all Losses suffered arising from, or in connection with, any of the following: non-performance..., negligence or wilful misconduct...",
+      "pages": [
+        56
+      ]
+    },
+    {
+      "text": "In case of post or courier, any notice shall be deemed to have been given on the seventh day after the envelope containing the notice was posted.",
+      "pages": [
+        55
+      ]
+    },
+    {
+      "text": "Service Provider shall not, whether during or after the Term of this Agreement, make any announcements or statements to any person that are or may be derogatory, defamatory or prejudicial to NABARD...",
+      "pages": [
+        55
+      ]
+    },
+    {
+      "text": "Transition to take within a month unless extended by mutual consent.",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "text": "There shall be no termination compensation payable to Service Provider.",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "text": "Termination includes no termination compensation payable to Service Provider, but NABARD may make prorated payments for accepted services.",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "text": "Service Provider shall not be relieved of obligations under Reverse Transition Mechanism or warranty services notwithstanding termination or expiry.",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "text": "Confidential Information must be promptly returned to requesting Party, destroyed (and certified in writing), and no copies/derivatives retained.",
+      "pages": [
+        59
+      ]
+    },
+    {
+      "text": "Termination shall not release any Party from liability for matters done, observed, or performed prior to termination or liabilities already accrued.",
+      "pages": [
+        59
+      ]
+    },
+    {
+      "text": "Agreement is governed by the laws of India; disputes resolved amicably first, then via sole arbitrator in Mumbai under Arbitration and Conciliation Act, 1996.",
+      "pages": [
+        59
+      ]
+    },
+    {
+      "text": "Agreement does not create an employer/employee relationship; neither party is bound by acts or conduct of the other; Service Provider remains independent contractor.",
+      "pages": [
+        60
+      ]
+    },
+    {
+      "text": "Liquidated damages of 0.5% per week (max 10%) apply for failure to deliver services or meet service levels; undue delay beyond 15 days may be ground for termination.",
+      "pages": [
+        61
+      ]
+    },
+    {
+      "text": "Agreement effective during entire subscription period unless terminated as per clauses, subject to Terms of Payment Schedule of Purchase Order.",
+      "pages": [
+        62
+      ]
+    },
+    {
+      "text": "Service Provider shall not use other party's name/trademark/logo in marketing without prior written consent; facts concerning SLAs not to be released to media without permission.",
+      "pages": [
+        63
+      ]
+    },
+    {
+      "text": "Delivery of the goods and the performance of services shall be made by the Supplier in accordance with the time schedule specified in the Purchase Order.",
+      "pages": [
+        64
+      ]
+    },
+    {
+      "text": "Forfeiture of its performance security, Imposition of penalties @Rs 50/- per day per product of the unfulfilled order. The maximum penalty will not exceed 10% of the order value.",
+      "pages": [
+        64
+      ]
+    },
+    {
+      "text": "Termination of the contract and risk purchase at Supplier's risk.",
+      "pages": [
+        64
+      ]
+    },
+    {
+      "text": "Any unjustifiable delay by the Supplier in the performance of his delivery obligation may render the Supplier liable to any or all the following:",
+      "pages": [
+        64
+      ]
+    },
+    {
+      "text": "The Service Provider will not release any factual information concerning these SLA Agreement to any person/news media without prior permission of NABARD.",
+      "pages": [
+        63
+      ]
+    },
+    {
+      "text": "The Service Provider will also have to adhere to the General Terms and Conditions as stipulated in Schedule “A” of the SLA.",
+      "pages": [
+        63
+      ]
+    }
+  ]
+}

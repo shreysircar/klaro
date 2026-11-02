@@ -29,7 +29,7 @@ safe to repeat), then opens the app:
 |---|---|---|
 | 1-2 | finds Python 3.11+, creates `.venv` | seconds |
 | 3 | `pip install -r requirements.txt` (only when that file changes) | several minutes, about 1 GB (PyTorch) |
-| 4 | downloads the German to English model `Helsinki-NLP/opus-mt-de-en` into `models/` | one time, about 310 MB |
+| 4 | downloads the German to English model `Helsinki-NLP/opus-mt-de-en` and the English to German model `Helsinki-NLP/opus-mt-en-de` (German view of a summary; optional) into `models/` | one time, about 310 MB each |
 | 5 | checks that Ollama is running and has the model; prints the fix if not, never blocks | seconds |
 
 The setup script is the only thing in Klaro that uses the internet (PyPI and huggingface.co). Once it has run, the app works

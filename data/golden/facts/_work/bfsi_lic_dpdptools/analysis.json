@@ -1,0 +1,2081 @@
+{
+  "document_name": "chunks",
+  "total_chunks": 25,
+  "total_pass_a_inference_time_seconds": 6208.28,
+  "total_pass_b_inference_time_seconds": 4079.57,
+  "total_inference_time_seconds": 10287.85,
+  "chunks": [
+    {
+      "chunk_id": 1,
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 61.3,
+      "pass_b_inference_time_seconds": 58.3,
+      "total_inference_time_seconds": 119.6,
+      "information": {
+        "overview": [
+          {
+            "text": "The issuing organization is Life Insurance Corporation of India (LIC), Central Office, Cyber Security Department.",
+            "page": 1
+          },
+          {
+            "text": "The RFP process is for the Procurement and Implementation of Tools related to DPDP Act, 2023 and DPDP Rules, 2025.",
+            "page": 1
+          },
+          {
+            "text": "The reference number for this document is LIC-CO/ERM/CSD/RFP/2026-27/DPDPA_Tools dated 13/07/2026.",
+            "page": 1
+          }
+        ],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [],
+        "commercial_requirements": [
+          {
+            "text": "The lowest commercial bid made by the successful vendor during online reverse auction and/or price negotiation determines the Contract Value.",
+            "page": 6
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 2,
+      "pages": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 62.73,
+      "pass_b_inference_time_seconds": 51.64,
+      "total_inference_time_seconds": 114.37,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP is for the Procurement and Implementation of Tools related to DPDP Act, 2023 and DPDP Rules, 2025.",
+            "page": 9
+          },
+          {
+            "text": "The tendering period is set for five (5) years.",
+            "page": 9
+          },
+          {
+            "text": "E-Tendering online bids are invited through the portal https://www.tenderwizard.com/LIC.",
+            "page": 9
+          }
+        ],
+        "scope": [
+          {
+            "text": "The scope of work includes Procurement and Implementation of Tools related to DPDP Act, 2023 and DPDP Rules, 2025.",
+            "page": 9
+          },
+          {
+            "text": "All information processed by the Bidder during solution deployment and maintenance belongs to LIC.",
+            "page": 9
+          }
+        ],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "Submission of pre-bid queries and participant's detail for pre-bid meeting: 20-07-2026, latest by 03.00 PM",
+            "page": 9
+          },
+          {
+            "text": "Pre-bid meeting date and time: 22-07-2026, 11:00 am to 1:30 pm",
+            "page": 9
+          },
+          {
+            "text": "Last date & time for submission of bids: 10-08-2026, latest by 03:00 PM",
+            "page": 10
+          },
+          {
+            "text": "Bid opening date & time (Eligibility): 10-08-2026, 03:15 PM",
+            "page": 10
+          }
+        ],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 3,
+      "pages": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 179.37,
+      "pass_b_inference_time_seconds": 83.56,
+      "total_inference_time_seconds": 262.93,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP is for providing DPDP Tools to Life Insurance Corporation of India (LIC) under reference LIC-CO/ERM/CSD/RFP/2026-27/DPDPA_Tools dated 13/07/2026.",
+            "page": 10
+          },
+          {
+            "text": "The current setup includes Corporate Office in Mumbai, 8 Zonal Offices, 9 Zonal training centers, 1 Management Development Centre, 113 Divisional Offices, 72 Pension & Group Scheme Units, 2048 Branch Offices, and over 1350 Satellite/other offices.",
+            "page": 10
+          },
+          {
+            "text": "Bid submission must be made online via www.tenderwizard.com/LIC by 10-08-2026 at 03:00 PM.",
+            "page": 10
+          },
+          {
+            "text": "The last date and time for bid opening is 10-08-2026 at 03:15 PM, subject to eligibility verification.",
+            "page": 10
+          }
+        ],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "Last date & time for submission of bids: 10-08-2026, latest by 03:00 PM",
+            "page": 10
+          },
+          {
+            "text": "Bid opening date & time (Eligibility): 10-08-2026, 03:15 PM",
+            "page": 10
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "Bid processing fee Non-refundable Rs.11,800/- (Rupees Eleven Thousand Eight Hundred Only) inclusive of GST (10000+18%GST) through online mode in Account No - LIC9NETW , IFSC - UBIN0996335",
+            "page": 10
+          },
+          {
+            "text": "Earnest Money deposit (EMD) INR 83,00,000 (Rupees Eighty-Three Lakhs Only) in form of a Bank Guarantee as per Annexure-VI",
+            "page": 13
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 4,
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 38.47,
+      "pass_b_inference_time_seconds": 5.7,
+      "total_inference_time_seconds": 44.17,
+      "information": {
+        "overview": [],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 5,
+      "pages": [
+        16,
+        17
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 176.44,
+      "pass_b_inference_time_seconds": 97.52,
+      "total_inference_time_seconds": 273.96,
+      "information": {
+        "overview": [
+          {
+            "text": "Ref: LIC-CO/ERM/CSD/RFP/2026-27/DPDPA_Tools Dated: 13/07/2026",
+            "page": 16
+          },
+          {
+            "text": "This is an E-Tender and bids must be submitted online through the e-procurement portal, except for a separate two-bid system (Eligibility and Commercial).",
+            "page": 16
+          },
+          {
+            "text": "Consortium bids are not permitted; all such consortium bids will be summarily rejected.",
+            "page": 16
+          }
+        ],
+        "scope": [
+          {
+            "text": "Procurement and Implementation of Tools related to DPDP Act, 2023 and DPDP Rules, 2025",
+            "page": 16
+          },
+          {
+            "text": "Bidder should have the capability to implement and maintain the project during a contract period of 5 years.",
+            "page": 17
+          },
+          {
+            "text": "Vendor must be able to carry out any changes if necessitated by LIC during the contract period of 5 years.",
+            "page": 17
+          },
+          {
+            "text": "Prices quoted should include costs excluding GST, with local taxes like Octroi, Entry Tax, VAT, and GST paid extra on actual basis by LIC.",
+            "page": 17
+          },
+          {
+            "text": "No price increase or variation is allowed during the contract period; bidder must ensure prices are inclusive of support required from OEM and continuous monitoring.",
+            "page": 17
+          }
+        ],
+        "requirements": [
+          {
+            "text": "Eligibility bid documents must be submitted in a separate envelope along with a pen drive, sealed and superscribed as 'ELIGIBILITY bid for Procurement and Implementation of Tools...'.",
+            "page": 16
+          },
+          {
+            "text": "Commercial bid must be submitted in a separate envelope along with a commercial pen drive, sealed and superscribed as 'COMMERCIAL BID for Procurement...'.",
+            "page": 16
+          },
+          {
+            "text": "The Eligibility Bid is not to indicate any prices; indicative prices are only to be quoted in the Commercial Bid.",
+            "page": 16
+          },
+          {
+            "text": "Bid processing fee, EMD (Earnest Money Deposit), and a Pre-contract Integrity Pact must be submitted separately in a sealed envelope bearing the bidder's name and address.",
+            "page": 16
+          },
+          {
+            "text": "Hard copy bids must be typed on 8.27\" by 11.69\" (A4) paper, indelible ink, and spirally bound with serial numbering.",
+            "page": 16
+          },
+          {
+            "text": "All bid documents must be signed and stamped on each page by the duly authorised signatory.",
+            "page": 16
+          },
+          {
+            "text": "The bid language must be in English, and numbers must be in English numerals.",
+            "page": 16
+          },
+          {
+            "text": "The Commercial Bid format sheet in spreadsheets will be password protected; if the password does not match, EMD may be forfeited and bid rejected.",
+            "page": 17
+          },
+          {
+            "text": "Spreadsheets must be opened only in MS Excel to avoid losing password protection when edited as an open-source file might remove it.",
+            "page": 17
+          },
+          {
+            "text": "Penalty of Rs.5,000 per violation will be charged and recovered from EMD; upper cap is Rs.10,000.",
+            "page": 17
+          }
+        ],
+        "eligibility": [
+          {
+            "text": "Bids submitted without the Pre-contract Integrity Pact (duly filled and signed) will lead to rejection.",
+            "page": 16
+          },
+          {
+            "text": "LIC may disqualify a bidder who has made misleading or false representations.",
+            "page": 17
+          },
+          {
+            "text": "Bidders exhibiting a record of poor performance may be disqualified.",
+            "page": 17
+          },
+          {
+            "text": "Failure to provide clarifications related thereto when sought by LIC may lead to disqualification.",
+            "page": 17
+          },
+          {
+            "text": "Bidders declared ineligible by the Government of India/State/UT Government/PSUs for corrupt and fraudulent practices or blacklisted are disqualified.",
+            "page": 17
+          }
+        ],
+        "important_dates": [
+          {
+            "text": "Three working days of eligibility bid opening.",
+            "page": 16
+          },
+          {
+            "text": "Within 5 working days (business days) of being called for to avoid bid rejection.",
+            "page": 17
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "Prices must be quoted in Indian Rupees (INR) only; bids in other currencies will not be considered.",
+            "page": 17
+          },
+          {
+            "text": "Prices must exclude GST, with LIC paying extra for CST, Octroi, Entry Tax, Local Body Tax, VAT, etc., on actual basis.",
+            "page": 17
+          },
+          {
+            "text": "Spreadheets for commercial bids must be password protected; mismatched or unencrypted files lead to EMD forfeiture and bid rejection.",
+            "page": 17
+          },
+          {
+            "text": "Indicative prices are quoted in the commercial bid only; prices cannot vary post-quote due to exchange rate, taxes, duties, or labor rates.",
+            "page": 17
+          }
+        ],
+        "project_duration": [
+          {
+            "text": "Contract period of 5 years.",
+            "page": 17
+          }
+        ],
+        "important_conditions": [
+          {
+            "text": "Bidder cannot submit bids in consortium; such consortium bids will be summarily rejected.",
+            "page": 16
+          },
+          {
+            "text": "Participation means acceptance of all terms and conditions, including subsequent modifications, at the bidder's discretion.",
+            "page": 16
+          },
+          {
+            "text": "Bid processing fee, EMD (Earnest Money Deposit), and Pre-contract Integrity Pact must be submitted separately in a sealed envelope.",
+            "page": 16
+          },
+          {
+            "text": "Pre-contract Integrity Pact is operative from signing by both parties till completion of the contract.",
+            "page": 16
+          },
+          {
+            "text": "Bids submitted in scanned format will lead to rejection; original hardcopies must be spirally bound, serially numbered, and signed on every page.",
+            "page": 17
+          },
+          {
+            "text": "Penalty of Rs.5,000 per violation for non-compliance instructions, capped at Rs.10,000, recovered from EMD.",
+            "page": 17
+          },
+          {
+            "text": "LIC may disqualify a bidder for making misleading representations, poor performance record, or if declared blacklisted by any government authority.",
+            "page": 17
+          },
+          {
+            "text": "Bids with price adjustment/variation provisions will lead to disqualification.",
+            "page": 17
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": 6,
+      "pages": [
+        17,
+        18,
+        19
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 38.57,
+      "pass_b_inference_time_seconds": 31.14,
+      "total_inference_time_seconds": 69.71,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP is for the procurement and implementation of tools related to the Data Protection and Privacy Act, 2023 and DPDP Rules, 2025.",
+            "page": 17
+          },
+          {
+            "text": "The issuing organization is LIC (Life Insurance Corporation).",
+            "page": 17
+          },
+          {
+            "text": "The reference number for the RFP is LIC-CO/ERM/CSD/RFP/2026-27/DPDPA_Tools.",
+            "page": 17
+          },
+          {
+            "text": "The date of issue for this document is dated 13/07/2026.",
+            "page": 17
+          }
+        ],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "If any compliance or clarification sought by LIC is not submitted within 5 working days of being called for, the bids are liable to be rejected.",
+            "page": 17
+          },
+          {
+            "text": "Bids shall remain valid for 1 year from the last date of bid submission under this RFP.",
+            "page": 18
+          }
+        ],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 7,
+      "pages": [
+        19,
+        20,
+        21
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 33.11,
+      "pass_b_inference_time_seconds": 32.45,
+      "total_inference_time_seconds": 65.56,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP reference is LIC-CO/ERM/CSD/RFP/2026-27/DPDPA_Tools.",
+            "page": 19
+          },
+          {
+            "text": "Commercial bids indicative of shortlisted bidders will be opened by the Tender Opening Committee (TOC).",
+            "page": 19
+          },
+          {
+            "text": "Evaluation responses and selection are entirely at LIC's discretion, which is final and binding.",
+            "page": 19
+          },
+          {
+            "text": "The RFP process may be terminated or cancelled by LIC without assigning reasons or incurring liability.",
+            "page": 20
+          }
+        ],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 8,
+      "pages": [
+        21,
+        22,
+        23
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 40.55,
+      "pass_b_inference_time_seconds": 42.39,
+      "total_inference_time_seconds": 82.94,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP reference number is LIC-CO/ERM/CSD/RFP/2026-27/DPDPA_Tools and the date of issue is 13/07/2026.",
+            "page": 21
+          },
+          {
+            "text": "All notices must be addressed to The ED (ERM), LIC of India, Central Office, CSD Department, 2nd Floor, Jeevan Seva-SSS Building, S.V. Road, Santa Cruz – West, MUMBAI 400054.",
+            "page": 21
+          },
+          {
+            "text": "The selected vendor must sign a Master Service Agreement (MSA) on a Rs.500/- non-judicial stamp-paper which serves as the permanent contract document.",
+            "page": 22
+          }
+        ],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 9,
+      "pages": [
+        23,
+        24,
+        25
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 50.69,
+      "pass_b_inference_time_seconds": 50.19,
+      "total_inference_time_seconds": 100.88,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP refers to 'LIC-CO/ERM/CSD/RFP/2026-27/DPDPA_Tools' dated 13/07/2026.",
+            "page": 23
+          },
+          {
+            "text": "Dispute resolution arbitration costs and fees shall be shared equally by the Parties unless the award otherwise provides.",
+            "page": 23
+          },
+          {
+            "text": "The Vendor is not entitled to suspend services or job completion pending resolution of disputes between the Parties.",
+            "page": 23
+          }
+        ],
+        "scope": [
+          {
+            "text": "LIC may terminate the contract for delay beyond four (4) consecutive weeks in any phase for delivery and installation.",
+            "page": 23
+          },
+          {
+            "text": "If non-performance or diminished performance due to Force Majeure continues for more than 30 consecutive days, LIC may terminate immediately with 90 days notice.",
+            "page": 24
+          },
+          {
+            "text": "The Vendor must indemnify LIC against all claims arising from infringement of patents, trademarks, or industrial design rights provided the Vendor has a back-to-back agreement with OEMs.",
+            "page": 25
+          }
+        ],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 10,
+      "pages": [
+        25,
+        26,
+        27
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 60.81,
+      "pass_b_inference_time_seconds": 54.84,
+      "total_inference_time_seconds": 115.65,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP is for DPDP Tools with reference number LIC-CO/ERM/CSD/RFP/2026-27/DPDPA_Tools, issued by Life Insurance Corporation (LIC) dated 13/07/2026.",
+            "page": 25
+          },
+          {
+            "text": "The tender process requires bidders to observe the highest standard of ethics and prohibits corrupt, fraudulent, coercive, undesirable, or restrictive practices.",
+            "page": 25
+          }
+        ],
+        "scope": [
+          {
+            "text": "The solution must support DPDP Act & Rules compliance and enable privacy, security, and governance across applications, internal processing, data sharing, AI, and regulatory readiness.",
+            "page": 27
+          },
+          {
+            "text": "The scope includes modules for Data Privacy Notice Management, Consent Management Platform, Cookie Consent Management, Data Discovery & Mapping, Data Principal Rights Management, Data Protection Impact Assessment, Record of Processing Activities (ROPA), Personal Data Breach Management, Third Party Vendor Risk Management, Compliance Reporting & Dashboards, Workflow Management, and DPDP Program Management portal.",
+            "page": 27
+          },
+          {
+            "text": "Phase 1 involves Planning & Designing activities such as conducting kick-off meetings, studying LIC's present architecture at data centres and security environment, and creating a Detailed Project Plan for each module.",
+            "page": 27
+          }
+        ],
+        "requirements": [
+          {
+            "text": "Bidders must include a maximum of 25% scope changes within the services cost to be quoted in the commercial bid.",
+            "page": 26
+          },
+          {
+            "text": "Variations proposed by LIC will take effect only after executing a Change Order signed by both parties.",
+            "page": 26
+          },
+          {
+            "text": "LIC reserves the right to debar bidders who make factually incorrect statements and to reject or cancel bids or the RFP process at any time before award without assigning reasons.",
+            "page": 27
+          },
+          {
+            "text": "The bidder must indemnify LIC against third-party claims, losses due to negligence, and penalties under the Data Protection Board of India's DPDP Act.",
+            "page": 25
+          }
+        ],
+        "eligibility": [
+          {
+            "text": "Bidders are subject to debarment for a period decided by LIC if found guilty of corrupt practices.",
+            "page": 25
+          },
+          {
+            "text": "A bidder may not participate in any RFP issued by LIC for a period of two years from the date of finding corrupt practices.",
+            "page": 25
+          }
+        ],
+        "important_dates": [
+          {
+            "text": "LIC shall convey its decision on conflict of interest to the Vendor within a period not exceeding 15 (fifteen) days.",
+            "page": 26
+          },
+          {
+            "text": "Any claim by the vendor for adjustment under the change order clause will be asserted within fifteen (15) days from the date of the vendor's receipt of LIC's change order.",
+            "page": 27
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "Vendors must factor in a maximum of 25% scope changes within the services cost to be quoted in the commercial bid.",
+            "page": 26
+          },
+          {
+            "text": "The basis of additional cost for change requests will be as quoted by the vendor in the Annexure-VIII - Indicative Commercial Bid.",
+            "page": 27
+          },
+          {
+            "text": "Payment under the variation/change clauses will be made only if Change orders/requests are exercised, approved and delivered.",
+            "page": 27
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": [
+          {
+            "text": "LIC shall reject a Bid or terminate the contract without being liable in any manner whatsoever if corrupt/fraudulent practices are found, and forfeit EMD/PBG for time, cost, and effort.",
+            "page": 25
+          },
+          {
+            "text": "If the bidder/vendor is found to have engaged in prohibited practices, they may not be allowed to participate in any RFP issued by LIC during a period of two years from the date of such finding.",
+            "page": 25
+          },
+          {
+            "text": "LIC reserves the right to debar the Bidder from participating in future RFPs for a period decided by LIC if factually incorrect statements are made.",
+            "page": 26
+          },
+          {
+            "text": "LIC may terminate the agreement if it determines at any time that vendors or their representatives were engaged in corrupt, fraudulent, collusive or coercive practices during the selection process or execution of the agreement.",
+            "page": 26
+          },
+          {
+            "text": "Any variation in or modification of the terms of the contract shall be made only by written amendment signed by both LIC and the vendors.",
+            "page": 27
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": 11,
+      "pages": [
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 117.56,
+      "pass_b_inference_time_seconds": 60.27,
+      "total_inference_time_seconds": 177.83,
+      "information": {
+        "overview": [],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 12,
+      "pages": [
+        31,
+        32
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 1008.85,
+      "pass_b_inference_time_seconds": 1928.07,
+      "total_inference_time_seconds": 2936.92,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP is for DPDPA Tools (Data Protection and Privacy Automation) to be implemented by LIC-CO/ERM/CSD department.",
+            "page": 31
+          },
+          {
+            "text": "The document reference is LIC-CO/ERM/CSD/RFP/2026-27/DPDPA_Tools dated 13/07/2026.",
+            "page": 31
+          }
+        ],
+        "scope": [
+          {
+            "text": "Services include high level design, detailed design, configuration of individual features on appliances, general testing, and scenario-based fail-over testing.",
+            "page": 31
+          },
+          {
+            "text": "Bidder must provide SOPs for all in-scope solutions designed, reviewed, and updated half-yearly or based on regulatory changes.",
+            "page": 31
+          },
+          {
+            "text": "Documentation must cover privacy automation tools compliant with DPDP Act, Rules, and guidelines from CERT-In, RBI, IRDAI, SEBI.",
+            "page": 31
+          },
+          {
+            "text": "Deliverables include Documentation, Delivery and Installation Report, Warranty certificates, and License Copies for all supplied items.",
+            "page": 31
+          },
+          {
+            "text": "Bidder must provide training on product architecture, functionality, design, day-to-day operations, alert monitoring, policy configuration, and rule creation.",
+            "page": 31
+          },
+          {
+            "text": "Training materials must cover installation, operation, integration, maintenance, troubleshooting, and other necessary areas for each module.",
+            "page": 31
+          },
+          {
+            "text": "Support process includes day-to-day maintenance of complete solution setups, regular configuration from scratch, and patch management.",
+            "page": 31
+          },
+          {
+            "text": "On-site support personnel must be able to troubleshoot problems, maintain logs with root cause analysis, and report to LIC administrators in detail.",
+            "page": 31
+          },
+          {
+            "text": "In case issues are not rectified by L1 & L2 onsite personnel within 1 hour, the issue must be escalated and resolved within 4 hours.",
+            "page": 32
+          },
+          {
+            "text": "Services include 24x7 real-time monitoring uptime, availability, health performance of DPDP modules with mitigation support.",
+            "page": 32
+          },
+          {
+            "text": "Bidder must provide a portal application with authentication to implement, assess, and track trouble tickets for higher officials.",
+            "page": 32
+          },
+          {
+            "text": "Services include quarterly review of rules, policies, capacity planning of LIC's private cloud service, and underutilized/overutilized applications.",
+            "page": 32
+          },
+          {
+            "text": "Bidder must coordinate with OEM for hardware malfunctioning, firmware upgrades, and all faults related to in-scope devices.",
+            "page": 32
+          }
+        ],
+        "requirements": [
+          {
+            "text": "All documents must be supplied in properly bound volumes of A4 size sheets, three sets of hardcopies, and one softcopy on CD.",
+            "page": 31
+          },
+          {
+            "text": "Standard Operating Procedures (SOPs) must be designed by the bidder, reviewed, and updated half-yearly or based on regulatory changes.",
+            "page": 31
+          },
+          {
+            "text": "Training must be provided at no additional cost to LIC through OEM approved Authorized agencies/faculties at LIC's premises.",
+            "page": 31
+          },
+          {
+            "text": "Training includes certification level training for three participants, and the bidder bears all out-of-pocket expenses related to training.",
+            "page": 31
+          },
+          {
+            "text": "The Bidder must provide an escalation matrix in consultation with the ERM/CSD Department for different categories of support calls.",
+            "page": 31
+          },
+          {
+            "text": "Support personnel must be conversant with configuration from scratch, integration, rule creation, patch management, and backup procedures.",
+            "page": 31
+          },
+          {
+            "text": "Bidder must provide ad-hoc trainings for minimum one day to acquaint LIC staff with latest features and functionalities.",
+            "page": 31
+          },
+          {
+            "text": "The Bidder has a right to review their processes, including SOPs for all processes executed under the agreement.",
+            "page": 32
+          },
+          {
+            "text": "LIC has a right to assess the skill sets of Bidder resources deployed.",
+            "page": 32
+          },
+          {
+            "text": "Advance information about deployed resources must be communicated, and proper hand-over of charge with complete documentation approved by LIC is required for new resources.",
+            "page": 32
+          },
+          {
+            "text": "Services include creating, updating, and deleting access control rules, groups, and policies for DPDP modules after obtaining approval.",
+            "page": 32
+          },
+          {
+            "text": "Upgradation of products to the latest version must follow a risk-based approach with documented procedures submitted before execution.",
+            "page": 32
+          }
+        ],
+        "eligibility": [
+          {
+            "text": "Training must be imparted by certified and experienced personnel (other than on-site Personnel) through proper courseware.",
+            "page": 31
+          },
+          {
+            "text": "Bidder resources must have adequate experience to support training if the bidder does not have such resources internally.",
+            "page": 31
+          },
+          {
+            "text": "The bidder must ensure that all documentation is updated annually or based on changes in regulatory requirements.",
+            "page": 31
+          }
+        ],
+        "important_dates": [
+          {
+            "text": "Standard Operating Procedures for all in scope solution, and all processes should be designed by the bidder, reviewed and updated on a half yearly basis",
+            "page": 31
+          },
+          {
+            "text": "All documentation prepared a part of this RFP needs to be updated annually and/or basis changes in regulatory requirements or any other requirements as per the law of the land.",
+            "page": 31
+          },
+          {
+            "text": "If the problem is not being rectified by the onsite L1 & L2 Personnel even after 1 hour, the issue should be escalated and resolved within 4 hr. from time of incident.",
+            "page": 32
+          },
+          {
+            "text": "Quarterly review of rules, policies etc. of applications and recommend optimization of the same.",
+            "page": 32
+          },
+          {
+            "text": "Quarterly review of capacity planning of LIC's private cloud service...",
+            "page": 32
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "Training cost shall be inclusive of Certification level training for three participants.",
+            "page": 31
+          },
+          {
+            "text": "The bidder is required to provide all trainees with detailed training material and 3 additional copies to the LIC for each module as per the scope of work...",
+            "page": 31
+          },
+          {
+            "text": "All out of pocket expenses related to training shall be borne by the selected bidder.",
+            "page": 31
+          },
+          {
+            "text": "The bidder and OEM are required to provide ad-hoc trainings to the LIC staff as required by LIC... for minimum of one day.",
+            "page": 31
+          },
+          {
+            "text": "All the documents shall be supplied in properly bound volumes of A4 size sheets...",
+            "page": 31
+          },
+          {
+            "text": "Three sets of hardcopies as applicable and one softcopy on CD shall be supplied as final document.",
+            "page": 31
+          },
+          {
+            "text": "All documentation prepared a part of this RFP needs to be updated annually...",
+            "page": 31
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": [
+          {
+            "text": "The Service Provider shall ensure that any subcontractors involved in providing Services under this Agreement also maintain appropriate BCP/DRP measures consistent with the obligations set forth in this clause.",
+            "page": 31
+          },
+          {
+            "text": "Vendor shall ensure to guarantee that the documentation of all the process related to the privacy automation tools compliant with DPDP Act and Rules and other regulatory guidelines issued time to time...",
+            "page": 31
+          },
+          {
+            "text": "The Bidder should ensure that there will be a proper change & configuration management, backup management, security management.",
+            "page": 31
+          },
+          {
+            "text": "In case the problem is not being rectified by the onsite L1 & L2 Personnel even after 1 hour, the issue should be escalated and resolved within 4 hr. from time of incident.",
+            "page": 32
+          },
+          {
+            "text": "No telephone connection will be provided by LIC to the onsite support persons.",
+            "page": 32
+          },
+          {
+            "text": "The on-site support personnel may also be required to work on Sunday/LIC holidays or beyond office hours on working days, for which an advance notice will be given",
+            "page": 32
+          },
+          {
+            "text": "LIC has a right to review their processes...",
+            "page": 32
+          },
+          {
+            "text": "SOPs for the processes.",
+            "page": 32
+          },
+          {
+            "text": "The Bidder has to comply with the following attributes related to all the in-scope modules: LIC has a right to assess the skill sets of Bidder resources.",
+            "page": 32
+          },
+          {
+            "text": "Advance information about the resources deployed is to be communicated and proper hand-over of charge with complete documentation has to be done for the new resources, which should be approved by LIC.",
+            "page": 32
+          },
+          {
+            "text": "All necessary steps/changes have to be made in security infrastructure as per the requirements of ISO27001, Certifying Authority/ Body etc. or any third-party security audit / inspection report.",
+            "page": 32
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": 13,
+      "pages": [
+        32,
+        33,
+        34
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 966.31,
+      "pass_b_inference_time_seconds": 1113.08,
+      "total_inference_time_seconds": 2079.39,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP reference is LIC-CO/ERM/CSD/RFP/2026-27/DPDPA_Tools dated 13/07/2026.",
+            "page": 32
+          },
+          {
+            "text": "The bidding period and end date for the tender are specified in this document.",
+            "page": 32
+          }
+        ],
+        "scope": [
+          {
+            "text": "Bidder is responsible for end-to-end implementation, configuration, customization, testing, deployment, and commissioning of the solution in LIC's environment.",
+            "page": 33
+          },
+          {
+            "text": "Scope includes supply, design, installation, integration, support, and maintenance of all in-scope solutions including hardware, software, licenses, and accessories.",
+            "page": 33
+          },
+          {
+            "text": "The solution must be seamlessly integrated with the existing SIEM solution and capable of storing logs for at least 12 months (2 years for Preservation policy).",
+            "page": 34
+          },
+          {
+            "text": "Bidder must prepare a detailed execution plan submitted within 5 weeks of placing the order, which must be approved before execution.",
+            "page": 34
+          },
+          {
+            "text": "Scope includes conducting a workshop to gather inputs on solution architecture, sizing, policy configuration, and integration points.",
+            "page": 34
+          }
+        ],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "Advance information about resources deployed is to be communicated; proper hand-over with complete documentation for new resources approved by LIC.",
+            "page": 32
+          },
+          {
+            "text": "Periodic Reports on backup status must be submitted as per compliance to DPDP Act & Rules and IRDAI cybersecurity guidelines.",
+            "page": 33
+          },
+          {
+            "text": "OEM approved deployment audit after completion of initial deployment and at the end of the first and second year of initial deployment.",
+            "page": 34
+          },
+          {
+            "text": "Detailed execution plan must be submitted to LIC with supported designs and drawings within 5 weeks of placing the order.",
+            "page": 34
+          },
+          {
+            "text": "Full details regarding this RFP were dated: 13/07/2026",
+            "page": 32
+          }
+        ],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 14,
+      "pages": [
+        34,
+        35,
+        36
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 2907.34,
+      "pass_b_inference_time_seconds": 29.2,
+      "total_inference_time_seconds": 2936.54,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP is for DPDPA Tools with Ref code LIC-CO/ERM/CSD/RFP/2026-27/DPDPA_Tools.",
+            "page": 34
+          },
+          {
+            "text": "The contract period is for a five-year term.",
+            "page": 34
+          }
+        ],
+        "scope": [
+          {
+            "text": "Bidder shall procure hardware, licenses, and software components, registering all licenses under Life Insurance Corporation of India.",
+            "page": 35
+          },
+          {
+            "text": "The solution must be seamlessly integrated with LIC's existing NTP Solution.",
+            "page": 34
+          },
+          {
+            "text": "The solution must integrate with the existing SIEM solution of LIC.",
+            "page": 34
+          },
+          {
+            "text": "Log storage capability must be at least 12 months and 2 years, retrievable within 5 hours of a breach (aligned with Preservation policy).",
+            "page": 34
+          },
+          {
+            "text": "The solution must be compatible with Docker Containers & Virtual cloud for on-premises deployment.",
+            "page": 36
+          },
+          {
+            "text": "The software must adhere to IPv6 compatibility and TLS 1.3 or higher protocols.",
+            "page": 35
+          },
+          {
+            "text": "Bidder is responsible for implementing solutions for LIC's IT infrastructure including installation, implementation, integration, management, maintenance, support, and audit compliance.",
+            "page": 35
+          },
+          {
+            "text": "The bidder must provide a load balancer or corresponding software to distribute application traffic among multiple endpoints.",
+            "page": 36
+          }
+        ],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "The complete documented plan must be submitted to LIC with supported designs and drawings (if any) within 5 weeks of placing the order.",
+            "page": 34
+          },
+          {
+            "text": "Audits will be conducted after completion of initial deployment and at the end of the first and second year of initial deployment.",
+            "page": 34
+          },
+          {
+            "text": "Bidder must provide post implementation support to LIC's post system go-live stage till end of contract.",
+            "page": 36
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "The upfront quotation for all licenses should be transparent and also include a breakdown of charges for additional licenses, considering the anticipated 10% YoY project growth.",
+            "page": 34
+          },
+          {
+            "text": "Hardware, product license and software pre-requisites to be delivered as part of proposed solution.",
+            "page": 35
+          },
+          {
+            "text": "The bidder is responsible for procuring and obtaining the hardware, licenses and the required software components.",
+            "page": 35
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 15,
+      "pages": [
+        36,
+        37,
+        38,
+        39
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 41.92,
+      "pass_b_inference_time_seconds": 4.82,
+      "total_inference_time_seconds": 46.74,
+      "information": {
+        "overview": [],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 16,
+      "pages": [
+        39,
+        40,
+        41
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 57.32,
+      "pass_b_inference_time_seconds": 45.3,
+      "total_inference_time_seconds": 102.62,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP reference is LIC-CO/ERM/CSD/RFP/2026-27/DPDPA_Tools.",
+            "page": 39
+          },
+          {
+            "text": "The Bidder is required to complete the risk assessment before onboarding and support necessary documents for this purpose.",
+            "page": 39
+          },
+          {
+            "text": "The contract completion target for all activities is within 20 weeks from signing.",
+            "page": 40
+          },
+          {
+            "text": "Hardware and Software Maintenance services are to be provided for a period of five years post the go-live stage.",
+            "page": 40
+          }
+        ],
+        "scope": [
+          {
+            "text": "Services include designing workshops, system configuration, kick-off, plan creation, and project governance.",
+            "page": 39
+          },
+          {
+            "text": "The Bidder must prepare a Business Requirement Specification (BRS) & System Requirement Specification (SRS).",
+            "page": 39
+          },
+          {
+            "text": "Scope includes conducting architecture and design for the Foundation Build.",
+            "page": 39
+          },
+          {
+            "text": "Bidder is responsible for building all required VMs as per OEM specification.",
+            "page": 39
+          },
+          {
+            "text": "Implementation scope covers preparing an implementation strategy and a detailed phase-wise plan.",
+            "page": 40
+          },
+          {
+            "text": "Bidder must ensure integration of security and compliance requirements during implementation.",
+            "page": 40
+          },
+          {
+            "text": "User acceptance testing (UAT) includes providing access, preparing scenarios, performing testing, and resolving discrepancies.",
+            "page": 40
+          },
+          {
+            "text": "Movement to production environment involves deploying the final version and providing certification of successful deployment.",
+            "page": 40
+          },
+          {
+            "text": "Training scope includes preparing schedules, developing reference materials, and conducting training sessions.",
+            "page": 40
+          },
+          {
+            "text": "Post go-live support includes providing core team support for 5 years, refresher training, resolution of production defects, and incorporating changes on request.",
+            "page": 40
+          },
+          {
+            "text": "Maintenance services cover all product upgrades, modifications, enhancements, version migrations, performance tuning, bug fixes, and error resolutions free of charge.",
+            "page": 40
+          },
+          {
+            "text": "The Bidder must adhere to a Recovery Time Objective (RTO) of 4 hours and Recovery Point Objective (RPO) of 15 minutes.",
+            "page": 41
+          },
+          {
+            "text": "Continuity arrangements include assisting LIC and any new contractor during termination or expiry for smooth service switch-over.",
+            "page": 41
+          }
+        ],
+        "requirements": [
+          {
+            "text": "Bidder must submit a comprehensive RACI matrix for the proposed services similar to the provided non-exhaustive table.",
+            "page": 39
+          },
+          {
+            "text": "Documentation policies and procedures for encryption and safeguarding sensitive information must be maintained.",
+            "page": 39
+          },
+          {
+            "text": "Bidder must document and test incident response processes and procedures adhering to relevant regulatory guidelines.",
+            "page": 39
+          },
+          {
+            "text": "A comprehensive Information Security and Privacy Awareness Training Program is required for employees and contractors.",
+            "page": 39
+          },
+          {
+            "text": "Bidder must deploy and maintain a Security Information and Event Management (SIEM) system for network monitoring.",
+            "page": 39
+          },
+          {
+            "text": "Periodic vulnerability assessments and penetration tests on networks, servers, and clients are required to identify risks.",
+            "page": 39
+          },
+          {
+            "text": "The Vendor must comply with Information security related guidelines issued by Govt. or regulator from time to time.",
+            "page": 41
+          },
+          {
+            "text": "Bidder shall get itself annually audited by external empanelled Auditors appointed by LIC/IRDAI in the areas of products and services provided.",
+            "page": 41
+          }
+        ],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "The Bidder shall complete the entire activity within 20 weeks of signing of contract.",
+            "page": 40
+          },
+          {
+            "text": "The bidder agrees for the following continuity arrangements... In the event this Agreement comes to end on account of termination or by the expiry of the term/ renewed term of the Agreement...",
+            "page": 41
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "Enhancements would include changes in the hardware, software due to Statutory and Regulatory changes... The Bidder is requested to provide per hour rate for execution of the Change request which must be included in the overall costing.",
+            "page": 40
+          },
+          {
+            "text": "No customisation and subsequent implementation charges will be payable by LIC for enhancements, modifications and upgrades within the scope of the contract.",
+            "page": 41
+          },
+          {
+            "text": "All product upgrades, modifications, enhancements that have to be provided to LIC free of charge. No additional charges would be paid by LIC for [version migrations and performance tuning] during the period of the contract.",
+            "page": 40
+          },
+          {
+            "text": "The Bidder shall apply regular patches to the licensed software provided by Bidder as part of this Contract for which LIC will bear no additional costs.",
+            "page": 41
+          },
+          {
+            "text": "All costs for such audit [annual external audit] shall be borne by LIC.",
+            "page": 41
+          }
+        ],
+        "project_duration": [
+          {
+            "text": "The Bidder shall complete the entire activity within 20 weeks of signing of contract.",
+            "page": 40
+          },
+          {
+            "text": "Phase 7 – Post Go-Live support: 5 years from Go-live date",
+            "page": 40
+          }
+        ],
+        "important_conditions": [
+          {
+            "text": "The bidder shall render all reasonable assistance and help to LIC and to any new contractor engaged by LIC, for the smooth switch over and continuity of the Services.",
+            "page": 41
+          },
+          {
+            "text": "In the event of failure of the Service Provider to render the Service, without prejudice to any other right LIC shall have as per this Agreement...",
+            "page": 41
+          },
+          {
+            "text": "...LIC at its sole discretion may make alternative arrangements for getting the Services from any other source. And if LIC gives a prior notice to the Service Provider before availing such service from any other alternative source, the Service Provider shall be liable to reimburse the expenses, if any incurred by LIC in availing such services from the alternative source.",
+            "page": 41
+          },
+          {
+            "text": "The Vendor shall have to comply with LIC‟s IT & IS Security policy... details of which will be shared with the finally selected Bidder.",
+            "page": 41
+          },
+          {
+            "text": "Confidentiality, integrity and availability, non-repudiation, authenticity, privacy of data/information must be ensured as per DPDP Act and DLP.",
+            "page": 41
+          },
+          {
+            "text": "The bidder agrees for the following continuity arrangements to ensure the business continuity of LIC...",
+            "page": 41
+          },
+          {
+            "text": "It is agreed by and between the parties that the Service Provider shall get itself annually audited by external empanelled Auditors appointed by LIC/ inspecting official from the IRDAI or any regulatory authority...",
+            "page": 41
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": 17,
+      "pages": [
+        41,
+        42,
+        43,
+        44
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 25.24,
+      "pass_b_inference_time_seconds": 27.5,
+      "total_inference_time_seconds": 52.74,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP reference is LIC-CO/ERM/CSD/RFP/2026-27/DPDPA_Tools dated 13/07/2026 and spans pages 41 to 44.",
+            "page": 41
+          },
+          {
+            "text": "The contract prices will be fixed based on the Final L1 quote after an Online Reverse Auction (or lowest commercial bid) and are exclusive of GST.",
+            "page": 42
+          },
+          {
+            "text": "There is no entitlement for any escalation of costs or price variation on materials, items, or services throughout the contract period.",
+            "page": 42
+          }
+        ],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "Contract dated: 13/07/2026",
+            "page": 41
+          },
+          {
+            "text": "Recovery Time Objective (RTO): 4 hours",
+            "page": 41
+          },
+          {
+            "text": "Recovery Point Objective (RPO): 15 minutes",
+            "page": 41
+          },
+          {
+            "text": "Annual Audit by external empanelled Auditors appointed by LIC/IRDAI or regulatory authority",
+            "page": 42
+          }
+        ],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 18,
+      "pages": [
+        44,
+        45,
+        46
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 50.36,
+      "pass_b_inference_time_seconds": 75.97,
+      "total_inference_time_seconds": 126.33,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP is for DPDPA_Tools with reference LIC-CO/ERM/CSD/RFP/2026-27/DPDPA_Tools, dated 13/07/2026.",
+            "page": 44
+          },
+          {
+            "text": "The tender requires provision of on-site support personnel at the Central Office (IT), Mumbai throughout the contract period.",
+            "page": 45
+          }
+        ],
+        "scope": [
+          {
+            "text": "Scope includes providing onsite support for privacy modules including Consent Management, Cookie Consent, Data Discovery & Mapping, DPIA, and Breach Management.",
+            "page": 44
+          },
+          {
+            "text": "The bidder must maintain a total of 24 resources on a complete duration basis.",
+            "page": 44
+          },
+          {
+            "text": "Team composition requires at least one member certified in privacy from IAPP, ISC2, ISACA, etc.",
+            "page": 44
+          },
+          {
+            "text": "Onsite support personnel must possess a sound working knowledge of the respective phase for which they will be onboarded.",
+            "page": 45
+          },
+          {
+            "text": "The vendor must coordinate closely with LIC's internal departments and stakeholders.",
+            "page": 45
+          }
+        ],
+        "requirements": [
+          {
+            "text": "The bidder must submit a Background Verification Report conducted by the Police for all resources deployed (onsite resource and Project Manager).",
+            "page": 45
+          },
+          {
+            "text": "Details of concerned candidates with CVs, photo-identity, and supporting documents must be provided within 1 week from the date of purchase order/Letter-of-Intent.",
+            "page": 45
+          },
+          {
+            "text": "The vendor must provide a detailed plan on the implementation support for the Digital Personal Data protection Act.",
+            "page": 45
+          },
+          {
+            "text": "All necessary steps/changes must be effected in security infrastructure as per requirements of ISO27001, Certifying Authority/Body, or any third party security audit/inspection report.",
+            "page": 46
+          },
+          {
+            "text": "Payment will not be released until the completion of in-scope activities.",
+            "page": 46
+          },
+          {
+            "text": "The vendor is required to submit invoices printed on bidder's own letterhead with proof of payment of GST/Octroi/Entry Tax.",
+            "page": 46
+          }
+        ],
+        "eligibility": [
+          {
+            "text": "Replacement resources proposed by the bidder must meet eligibility criteria as defined in the RFP or contract.",
+            "page": 44
+          },
+          {
+            "text": "All onsite resources shall be full-time employees on the payroll of the selected vendor; engagement of outsourced, subcontracted, or third-party personnel is not permitted.",
+            "page": 45
+          },
+          {
+            "text": "The vendor must provide a designated backup resource with comparable skills and qualifications for each onsite resource to ensure continuity.",
+            "page": 45
+          },
+          {
+            "text": "If an invoice is found incorrectly rendered after payment, any underpayment or overpayment will be recoverable from the vendor.",
+            "page": 46
+          }
+        ],
+        "important_dates": [
+          {
+            "text": "Payment related objections raised after 3 months from the date of release of payment will not be entertained.",
+            "page": 46
+          },
+          {
+            "text": "CV and supporting documents for onsite support candidates must be provided within 1 week from the date of issue of purchase order/Letter-of-Intent.",
+            "page": 45
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "No advance payment or interest payment will be made by LIC.",
+            "page": 46
+          },
+          {
+            "text": "Payment will not be released till the completion of the in-scope activities and is to be made Phase wise based on completed activities.",
+            "page": 46
+          },
+          {
+            "text": "Payments shall be made in Indian Rupee (INR) via NEFT only, after deduction of penalties and applicable taxes at source.",
+            "page": 46
+          },
+          {
+            "text": "Efforts will be made by LIC to settle all payments with 30 days of receipt of invoices, subject to bidder ensuring all requirements are submitted.",
+            "page": 46
+          },
+          {
+            "text": "The amount against penalties is recoverable from the payment or from any other payment due to the Vendor or from performance Bank Guarantee.",
+            "page": 46
+          },
+          {
+            "text": "Bidder is duty bound to report LIC about short recovery of taxes, cess etc. at source; failure results in LIC's right to recover with interest and penalties per demand note.",
+            "page": 46
+          },
+          {
+            "text": "Vendor cannot be entitled to charge LIC for any other fees, charges or expenses including travel, accommodation, document reproduction, transportation, courier charges, and telecommunications.",
+            "page": 46
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 19,
+      "pages": [
+        46,
+        47,
+        48,
+        49
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 24.87,
+      "pass_b_inference_time_seconds": 24.02,
+      "total_inference_time_seconds": 48.89,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP is for DPDPA Tools Support, covering planning, delivery, implementation, and five years of post-go-live support.",
+            "page": 46
+          },
+          {
+            "text": "Issuing organization: LIC (Life Insurance Corporation), ERM/CSD Department, Central Office, Mumbai.",
+            "page": 46
+          },
+          {
+            "text": "RFP Reference Number: LIC-CO/ERM/CSD/RFP/2026-27/DPDPA_Tools.",
+            "page": 46
+          }
+        ],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 20,
+      "pages": [
+        49,
+        50,
+        51,
+        52,
+        53
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 41.07,
+      "pass_b_inference_time_seconds": 40.62,
+      "total_inference_time_seconds": 81.69,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP Ref No: LIC-CO/ERM/CSD/RFP/2026-27/DPDPA_Tools dated 13/07/2026 is for the procurement and implementation of tools related to DPDP Act, 2023 and DPDP Rules, 2025.",
+            "page": 49
+          },
+          {
+            "text": "The total duration of the engagement for implementation is five (5) years or sixty (60) months from the date of issuance of the Letter of Award (LoA).",
+            "page": 49
+          },
+          {
+            "text": "LIC reserves the right to extend maintenance and support services for up to an additional two years (i.e., 6th and 7th year) at a mutually agreed rate.",
+            "page": 50
+          },
+          {
+            "text": "The successful vendor must provide an SLA management tool for providing SLA reports.",
+            "page": 49
+          }
+        ],
+        "scope": [
+          {
+            "text": "Services cover supply, delivery, installation, maintenance, and management of equipment's/devices/appliances.",
+            "page": 53
+          },
+          {
+            "text": "Scope includes addressing breakdowns of appliances, hardware, components, accessories, systems software, and any products within a 4-hour rectification window.",
+            "page": 51
+          },
+          {
+            "text": "Scope includes handling structured weekly meetings during the implementation phase up to go-live with ED(ERM)/CISO/DPO.",
+            "page": 51
+          },
+          {
+            "text": "Scope covers on-site personnel presence in LIC's premises as per RFP conditions, including change management rules.",
+            "page": 49
+          }
+        ],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "The total duration of the engagement for implementation shall be five (5) years, equivalent to sixty (60) months, from the date of issuance of the Letter of Award (LoA), subject to extension at the discretion of LIC.",
+            "page": 49
+          },
+          {
+            "text": "LIC reserves the right to extend the maintenance and support services for up to additional two years (i.e. 6th and 7th year) at a mutually agreed rate.",
+            "page": 50
+          },
+          {
+            "text": "If our Bid for this RFP/tender is accepted, we undertake to enter into and execute at our cost, when called upon by LIC to do so, a contract in the prescribed form.",
+            "page": 53
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "The Amount against Penalties (as per SLA) if any will be recoverable from payments OR from performance Bank Guarantee OR from any other payment due to the Bidder.",
+            "page": 49
+          },
+          {
+            "text": "For Payment for the Onsite Services: Payment for the Onsite Services will be done on quarterly basis at the end of each quarter on production of the following: Invoice, Performance Report of the onsite Personnel, and Verification of Service level agreements.",
+            "page": 49
+          },
+          {
+            "text": "The penalty so calculated will either be adjusted with the payments or will be separately realized from the bidder.",
+            "page": 50
+          },
+          {
+            "text": "LIC has full rights to forfeit the earnest money deposit (EMD) of Rs.83, 00, 000/- submitted to LIC by us after the bidding process is complete.",
+            "page": 53
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 21,
+      "pages": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 36.81,
+      "pass_b_inference_time_seconds": 38.84,
+      "total_inference_time_seconds": 75.65,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP is for the Procurement and Implementation of Tools related to DPDP Act, 2023 and DPDP Rules, 2025.",
+            "page": 53
+          },
+          {
+            "text": "The issuing organization is Life Insurance Corporation of India (LIC), Central Office, ERM/ERM/CSD Dept.",
+            "page": 53
+          },
+          {
+            "text": "The RFP Reference Number is LIC-CO/ERM/CSD/RFP/2026-27/DPDPA_Tools.",
+            "page": 53
+          }
+        ],
+        "scope": [
+          {
+            "text": "Supply, deliver, install, maintain, and manage equipment/devices/appliances related to DPDP tools.",
+            "page": 53
+          },
+          {
+            "text": "The scope includes implementation of privacy automation solutions comprising consent management, data principal rights management, and data discovery.",
+            "page": 55
+          },
+          {
+            "text": "Bidder must provide proof of implementing these solutions for at least two organizations in the insurance and/or banking sectors.",
+            "page": 55
+          }
+        ],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [],
+        "commercial_requirements": [
+          {
+            "text": "If our Bid for this RFP/tender is accepted, we undertake to enter into and execute at our cost, when called upon by LIC to do so, a contract in the prescribed form.",
+            "page": 53
+          },
+          {
+            "text": "LIC has full rights to forfeit the earnest money deposit (EMD) of Rs.83,00,000/- submitted to LIC by us after the bidding process is complete if the bidder fails to accept the L1 price arrived at on the basis of commercial bid and/or reverse auction.",
+            "page": 53
+          },
+          {
+            "text": "The proposed privacy automation solution shall be commercially available for a minimum of two years and implemented/under implementation in at least three enterprise customers.",
+            "page": 56
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 22,
+      "pages": [
+        58,
+        59,
+        60,
+        61,
+        62
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 50.8,
+      "pass_b_inference_time_seconds": 48.13,
+      "total_inference_time_seconds": 98.93,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP is for the 'Procurement and Implementation of Tools related to DPDP Act, 2023 and DPDP Rules, 2025'.",
+            "page": 58
+          },
+          {
+            "text": "The issuing organization is Life Insurance Corporation of India (LIC), addressed at the Central Office in Mumbai.",
+            "page": 58
+          },
+          {
+            "text": "The tender reference number is LIC-CO/ERM/CSD/RFP/2026-27/DPDPA_Tools.",
+            "page": 58
+          },
+          {
+            "text": "The RFP was dated 13/07/2026.",
+            "page": 59
+          }
+        ],
+        "scope": [
+          {
+            "text": "The scope covers the Procurement and Implementation of Tools related to DPDP Act, 2023 and DPDP Rules, 2025.",
+            "page": 61
+          },
+          {
+            "text": "The work is to be executed at locations specified by LIC.",
+            "page": 59
+          }
+        ],
+        "requirements": [
+          {
+            "text": "Bidder must declare capability to perform the entire scope without outsourcing to any third party in Annexure-III.",
+            "page": 58
+          },
+          {
+            "text": "Bidder must confirm in Annexure-IV that they have not been black-listed or de-barred by any Govt./PSU/BFSI organization and no customer disassociation has occurred in the last three years.",
+            "page": 59
+          },
+          {
+            "text": "Bidder must provide details of undertaken projects, including client name, project details, order value, and representative contact info in Annexure-V.",
+            "page": 60
+          },
+          {
+            "text": "Bidder must attach documentary evidence like PO copies or certificates from customers for the provided information.",
+            "page": 60
+          },
+          {
+            "text": "The bank guarantee amount must not exceed Rs.83,00,000/- and should be issued by a Scheduled Bank within the Reserve Bank of India Act.",
+            "page": 61
+          },
+          {
+            "text": "A Non-Disclosure Agreement (NDA) must be executed over Rs.500 Stamp/Franked paper & notarized in Annexure-VII.",
+            "page": 62
+          }
+        ],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "Validity of BG should be one year from the date of submission of BG to the Corporation, including the claim period.",
+            "page": 61
+          },
+          {
+            "text": "Date: E-mail ID: Place: FAX No. (Signature field)",
+            "page": 58
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "We hereby declare and confirm that: 1) We have the proven capability to perform the entire scope of the assignment without outsourcing the same to any third party.",
+            "page": 58
+          },
+          {
+            "text": "Bank Guarantee valid up to a total amount of Rs.20,00,000/- (Rupees Twenty Lakhs Only).",
+            "page": 61
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 23,
+      "pages": [
+        62,
+        63,
+        64
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 40.79,
+      "pass_b_inference_time_seconds": 40.61,
+      "total_inference_time_seconds": 81.4,
+      "information": {
+        "overview": [
+          {
+            "text": "The document is a Non-Disclosure Agreement (NDA) executed between Life Insurance Corporation of India (LIC) and a Respondent company.",
+            "page": 62
+          },
+          {
+            "text": "The NDA refers to the underlying RFP titled LIC-CO/ERM/CSD/RFP/2026-27/DPDPA_Tools dated 13/07/2026.",
+            "page": 62
+          },
+          {
+            "text": "The agreement requires execution on Rs.500 Stamp/Franked paper and must be notarized, with no deviations in wordings permitted.",
+            "page": 62
+          }
+        ],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 24,
+      "pages": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 44.29,
+      "pass_b_inference_time_seconds": 21.36,
+      "total_inference_time_seconds": 65.65,
+      "information": {
+        "overview": [],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 25,
+      "pages": [
+        69,
+        70
+      ],
+      "word_count": 1784,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 52.71,
+      "pass_b_inference_time_seconds": 74.05,
+      "total_inference_time_seconds": 126.76,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP is for DPDPA Tools issued by Life Insurance Corporation of India (LIC), Central Office, Mumbai, with Reference No. LIC-CO/ERM/CSD/RFP/2026-27 and dated 13/07/2026.",
+            "page": 69
+          },
+          {
+            "text": "The tender process is conducted via an Online Electronic Tendering System (e-TS) hosted on the portal http://www.tenderwizard.com/LIC.",
+            "page": 69
+          }
+        ],
+        "scope": [
+          {
+            "text": "Conducting Pre-bid discussions with prospective bidders to clarify doubts regarding the RFP.",
+            "page": 70
+          },
+          {
+            "text": "All online tender activities are time-tracked and enforced by system time locks.",
+            "page": 69
+          }
+        ],
+        "requirements": [
+          {
+            "text": "Bidders must register on the e-Tender Portal to obtain a User ID and Password.",
+            "page": 69
+          },
+          {
+            "text": "Bids must be encrypted and signed electronically using a Digital Signature Certificate (DSC).",
+            "page": 69
+          },
+          {
+            "text": "Bidders must upload scanned copies of receipts for Bid Processing Fees, Earnest Money Deposits, and credentials during submission.",
+            "page": 70
+          },
+          {
+            "text": "Bidders must submit a sealed envelope with an original Bank Guarantee (E.M.D.) to the Executive Director within Key Dates to allow evaluation.",
+            "page": 70
+          },
+          {
+            "text": "Clarification requests regarding bidding documents must be submitted in writing by two days before the scheduled Pre-bid meeting.",
+            "page": 70
+          },
+          {
+            "text": "The status of a stage must show as 'Completed' with a receipt before the expiry date/time of that stage.",
+            "page": 69
+          }
+        ],
+        "eligibility": [
+          {
+            "text": "Bidders must obtain Class III Digital Signature Certificates (DSC) from an approved Certifying Authority or Sub-certifying Authority authorized by CCA India.",
+            "page": 69
+          },
+          {
+            "text": "An Authorization Certificate signed by all partners must be used to authorize a specific individual for using the DSC.",
+            "page": 70
+          },
+          {
+            "text": "For private or public limited companies, the Authorization Certificate must be signed by the directors.",
+            "page": 70
+          },
+          {
+            "text": "Bidders must verify the validity of their Digital Signature Certificate before bidding on a specific work.",
+            "page": 70
+          }
+        ],
+        "important_dates": [
+          {
+            "text": "Key dates for the specific Bid/tender are time-binding and enforceable, with strict time locks ensuring no activity outside start and end dates.",
+            "page": 69
+          },
+          {
+            "text": "Corrigendums or amendments to the schedule may change key dates.",
+            "page": 69
+          },
+          {
+            "text": "Clarification requests must be submitted in writing up to two (2) days before the scheduled Pre-bid meeting.",
+            "page": 70
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "Bidders (except MSEs) must submit a non-refundable Bid Price via NEFT for processing fee, uploading a receipt copy at submission time with UTR and transaction date in email.",
+            "page": 70
+          },
+          {
+            "text": "A scanned copy of the receipt evidencing Tender Fees payment is mandatory during the Bid Hash Submission stage as per Key Dates.",
+            "page": 70
+          },
+          {
+            "text": "Tender document fees are non-refundable if tenders are cancelled or re-called on any grounds.",
+            "page": 70
+          },
+          {
+            "text": "Earnest Money Deposit (EMD) is payable in a Nationalized/Scheduled Bank drawn in favor of Life Insurance Corporation of India at Mumbai only.",
+            "page": 70
+          },
+          {
+            "text": "A Bank Guarantee for EMD must be uploaded during Bid submission and the original BG submitted physically to the Executive Director (ERM) within Key Dates; otherwise, evaluation is refused.",
+            "page": 70
+          },
+          {
+            "text": "Refund of Earnest Money Deposit to unsuccessful bidders will be made via RTGS/NEFT or returned as per applicable procedures.",
+            "page": 70
+          },
+          {
+            "text": "Bids must be encrypted and signed electronically using a Digital Signature Certificate (DSC).",
+            "page": 69
+          },
+          {
+            "text": "Users may obtain Class III digital certificates from authorized Certifying Authorities.",
+            "page": 69
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": [
+          {
+            "text": "Bidders cannot change technical details or offer rates after the expiry date and time on the online portal.",
+            "page": 70
+          },
+          {
+            "text": "The Digital Signature of an authorized user will be binding on the firm if not revoked, representing adequate authority per Indian Information Technology Act, 2000.",
+            "page": 69
+          },
+          {
+            "text": "Firms must obtain an Authorization Certificate signed by partners (individuals) or directors (companies) to use a Digital Certificate for bidding.",
+            "page": 69
+          },
+          {
+            "text": "In case of change of authorized user, management must inform the certifying authority of the change, and if DSC is lost due to virus/hardware issues, the bidder may not be able to submit the bid.",
+            "page": 70
+          },
+          {
+            "text": "If the bidder fails to submit their bid seal (hash) within the stipulated time, they will not be allowed to proceed with Re-Encryption.",
+            "page": 70
+          },
+          {
+            "text": "The 'Digitally signed tender Super-Hash' generated after bid submission closure is equivalent to sealing the tender box and marks transfer of control to LIC.",
+            "page": 70
+          }
+        ]
+      }
+    }
+  ]
+}

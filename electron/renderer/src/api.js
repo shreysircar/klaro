@@ -26,6 +26,7 @@ const id = (runId) => encodeURIComponent(runId);
 export const health = () => request('/health');
 export const listRuns = () => request('/runs');
 export const getRun = (runId) => request(`/runs/${id(runId)}`);
+export const getSummary = (runId, lang = 'en') => request(`/runs/${id(runId)}/summary${lang === 'en' ? '' : `?lang=${lang}`}`);
 export const getEvaluation = (runId) => request(`/runs/${id(runId)}/evaluation`);
 export const deleteRun = (runId) => request(`/runs/${id(runId)}`, { method: 'DELETE' });
 
@@ -35,3 +36,7 @@ export function uploadPdf(name, blob, sourceLang = 'auto') {
   form.append('source_lang', sourceLang);
   return request('/runs', { method: 'POST', body: form });
 }
+
+export const getTranslationStatus = (runId) => request(`/runs/${id(runId)}/translation`);
+export const startTranslation = (runId) => request(`/runs/${id(runId)}/translation`, { method: 'POST' });
+export const cancelTranslation = (runId) => request(`/runs/${id(runId)}/translation`, { method: 'DELETE' });

@@ -15,6 +15,12 @@ HOST = "127.0.0.1"
 # OPUS-MT translation models, one folder per direction (models/opus-mt-de-en). Never downloaded at run time.
 MODELS_DIR = Path(os.environ.get("KLARO_MODELS_DIR", Path(__file__).resolve().parents[1] / "models"))
 
+# Summary stage (stage 5). Defaults keep today's behaviour: the original prompt and Ollama's default context (4096).
+SUMMARY_PROMPT = os.environ.get("KLARO_SUMMARY_PROMPT", "v1")  # v1 = original prompt, v2 = golden-spec rules
+NUM_CTX = int(os.environ.get("KLARO_NUM_CTX", "0"))  # 0 = Ollama default; else the cap for the summary stage's context
+SUMMARY_OUT_TOKENS = int(os.environ.get("KLARO_SUMMARY_OUT_TOKENS", "4096"))  # room reserved for the answer inside the context
+CHARS_PER_TOKEN = 3.5  # conservative estimate for JSON facts (measured 3.9 with the Qwen tokenizer)
+
 # Every pipeline LLM call goes through this client so host and timeout apply everywhere.
 llm = ollama.Client(host=OLLAMA_URL, timeout=LLM_TIMEOUT)
 

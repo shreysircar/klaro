@@ -1,0 +1,114 @@
+[WARN] The facts need about 23424 tokens of context but KLARO_NUM_CTX caps it at 16384: about 7040 tokens of the input will be cut and the summary may miss facts. Raise KLARO_NUM_CTX or lower KLARO_SUMMARY_OUT_TOKENS.
+[WARN] Ollama read only 8194 of about 19328 prompt tokens (context 16384): the facts were cut off and the summary covers only part of the document. Set KLARO_NUM_CTX (for example 16384).
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/bfsi_iob_healthins.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 94.89 seconds. Prompt v1, prompt tokens 8194, context 16384.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/bfsi_iob_healthins.json
+======================================================================
+{"doc": "bfsi_iob_healthins", "seconds": 94.9, "prompt_tokens": 8194, "context": 16384, "ollama_memory_bytes": 3644210543, "expected_prompt_tokens": 17481, "truncated": true, "words_total": 6141, "overview_words": 57, "limits_ok": false, "cited_pct": 100.0, "grounding_pct": 100.0, "traceability_pct": 100.0, "numbers_ok": 44, "numbers_total": 46, "dup_bullets": 60, "issuer": "Indian Overseas Bank", "issuer_golden": "Indian Overseas Bank; Marketing & Development Department, 763 Anna Salai, Centra", "issuer_status": "correct", "similarity": 39.5}
+[WARN] The facts need about 22798 tokens of context but KLARO_NUM_CTX caps it at 16384: about 6414 tokens of the input will be cut and the summary may miss facts. Raise KLARO_NUM_CTX or lower KLARO_SUMMARY_OUT_TOKENS.
+[WARN] Ollama read only 8194 of about 18702 prompt tokens (context 16384): the facts were cut off and the summary covers only part of the document. Set KLARO_NUM_CTX (for example 16384).
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/bfsi_lic_dpdptools.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 109.66 seconds. Prompt v1, prompt tokens 8194, context 16384.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/bfsi_lic_dpdptools.json
+======================================================================
+{"doc": "bfsi_lic_dpdptools", "seconds": 109.7, "prompt_tokens": 8194, "context": 16384, "ollama_memory_bytes": 3644210543, "expected_prompt_tokens": 18037, "truncated": true, "words_total": 5257, "overview_words": 45, "limits_ok": false, "cited_pct": 100.0, "grounding_pct": 100.0, "traceability_pct": 100.0, "numbers_ok": 115, "numbers_total": 117, "dup_bullets": 24, "issuer": "Central Office", "issuer_golden": "Life Insurance Corporation of India (LIC); Central Office, ERM/CSD (Cyber Securi", "issuer_status": "partial", "similarity": 35.6}
+[WARN] The facts need about 19824 tokens of context but KLARO_NUM_CTX caps it at 16384: about 3440 tokens of the input will be cut and the summary may miss facts. Raise KLARO_NUM_CTX or lower KLARO_SUMMARY_OUT_TOKENS.
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/bfsi_nabard_jboss.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 148.84 seconds. Prompt v1, prompt tokens 14432, context 16384.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/bfsi_nabard_jboss.json
+======================================================================
+{"doc": "bfsi_nabard_jboss", "seconds": 148.8, "prompt_tokens": 14432, "context": 16384, "ollama_memory_bytes": 3644210543, "expected_prompt_tokens": 14417, "truncated": false, "words_total": 362, "overview_words": 47, "limits_ok": true, "cited_pct": 100.0, "grounding_pct": 88.89, "traceability_pct": 100.0, "numbers_ok": 15, "numbers_total": 16, "dup_bullets": 0, "issuer": "National Bank for Agriculture and Rural Development (NABARD)", "issuer_golden": "National Bank for Agriculture and Rural Development (NABARD); Department of Info", "issuer_status": "correct", "similarity": 17.3}
+[WARN] The facts need about 19256 tokens of context but KLARO_NUM_CTX caps it at 16384: about 2872 tokens of the input will be cut and the summary may miss facts. Raise KLARO_NUM_CTX or lower KLARO_SUMMARY_OUT_TOKENS.
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/bfsi_psb_furnish.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 169.38 seconds. Prompt v1, prompt tokens 13830, context 16384.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/bfsi_psb_furnish.json
+======================================================================
+{"doc": "bfsi_psb_furnish", "seconds": 169.4, "prompt_tokens": 13830, "context": 16384, "ollama_memory_bytes": 3644210543, "expected_prompt_tokens": 13815, "truncated": false, "words_total": 572, "overview_words": 47, "limits_ok": false, "cited_pct": 100.0, "grounding_pct": 92.59, "traceability_pct": 96.3, "numbers_ok": 11, "numbers_total": 13, "dup_bullets": 0, "issuer": "Punjab & Sind Bank, Zonal Office Bhopal", "issuer_golden": "Punjab & Sind Bank, Zonal Office Bhopal (Premises Department); e-Tender Ref. PSB", "issuer_status": "partial", "similarity": 24.0}
+[WARN] The facts need about 26576 tokens of context but KLARO_NUM_CTX caps it at 16384: about 10192 tokens of the input will be cut and the summary may miss facts. Raise KLARO_NUM_CTX or lower KLARO_SUMMARY_OUT_TOKENS.
+[WARN] Ollama read only 8194 of about 22480 prompt tokens (context 16384): the facts were cut off and the summary covers only part of the document. Set KLARO_NUM_CTX (for example 16384).
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/bfsi_sbi_bacs.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 124.60 seconds. Prompt v1, prompt tokens 8194, context 16384.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/bfsi_sbi_bacs.json
+======================================================================
+{"doc": "bfsi_sbi_bacs", "seconds": 124.6, "prompt_tokens": 8194, "context": 16384, "ollama_memory_bytes": 3644210543, "expected_prompt_tokens": 20837, "truncated": true, "words_total": 6949, "overview_words": 57, "limits_ok": false, "cited_pct": 100.0, "grounding_pct": 100.0, "traceability_pct": 100.0, "numbers_ok": 97, "numbers_total": 102, "dup_bullets": 29, "issuer": "State Bank of India", "issuer_golden": "State Bank of India (SBI), Administrative Office, Bhubaneswar, on behalf of CGM ", "issuer_status": "partial", "similarity": 33.3}
+[WARN] The facts need about 26760 tokens of context but KLARO_NUM_CTX caps it at 16384: about 10376 tokens of the input will be cut and the summary may miss facts. Raise KLARO_NUM_CTX or lower KLARO_SUMMARY_OUT_TOKENS.
+[WARN] Ollama read only 8194 of about 22664 prompt tokens (context 16384): the facts were cut off and the summary covers only part of the document. Set KLARO_NUM_CTX (for example 16384).
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/civil_asi_itagi.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 105.90 seconds. Prompt v1, prompt tokens 8194, context 16384.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/civil_asi_itagi.json
+======================================================================
+{"doc": "civil_asi_itagi", "seconds": 105.9, "prompt_tokens": 8194, "context": 16384, "ollama_memory_bytes": 3644210543, "expected_prompt_tokens": 21067, "truncated": true, "words_total": 6537, "overview_words": 53, "limits_ok": false, "cited_pct": 100.0, "grounding_pct": 100.0, "traceability_pct": 100.0, "numbers_ok": 140, "numbers_total": 144, "dup_bullets": 23, "issuer": "Issuing Organization", "issuer_golden": "Archaeological Survey of India (ASI), Ministry of Culture, Government of India; ", "issuer_status": "wrong", "similarity": 35.2}
+[WARN] The facts need about 19112 tokens of context but KLARO_NUM_CTX caps it at 16384: about 2728 tokens of the input will be cut and the summary may miss facts. Raise KLARO_NUM_CTX or lower KLARO_SUMMARY_OUT_TOKENS.
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/civil_bsi_dais.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 165.24 seconds. Prompt v1, prompt tokens 14220, context 16384.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/civil_bsi_dais.json
+======================================================================
+{"doc": "civil_bsi_dais", "seconds": 165.2, "prompt_tokens": 14220, "context": 16384, "ollama_memory_bytes": 3644210543, "expected_prompt_tokens": 14205, "truncated": false, "words_total": 396, "overview_words": 49, "limits_ok": true, "cited_pct": 100.0, "grounding_pct": 100.0, "traceability_pct": 100.0, "numbers_ok": 15, "numbers_total": 15, "dup_bullets": 0, "issuer": "Executive Engineer, CED-IV, CCU (For and on behalf of the President of India)", "issuer_golden": "Executive Engineer, CED-IV, Civil Construction Unit (CCU), Ministry of Environme", "issuer_status": "wrong", "similarity": 22.6}
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/civil_iitpkd_road.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 71.36 seconds. Prompt v1, prompt tokens 1979, context 6144.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/civil_iitpkd_road.json
+======================================================================
+{"doc": "civil_iitpkd_road", "seconds": 71.4, "prompt_tokens": 1979, "context": 6144, "ollama_memory_bytes": 3338980555, "expected_prompt_tokens": 1964, "truncated": false, "words_total": 372, "overview_words": 36, "limits_ok": true, "cited_pct": 100.0, "grounding_pct": 100.0, "traceability_pct": 100.0, "numbers_ok": 15, "numbers_total": 15, "dup_bullets": 2, "issuer": "Institute", "issuer_golden": "Indian Institute of Technology Palakkad (IITPKD); Engineering Works Division (EW", "issuer_status": "partial", "similarity": 9.6}
+[WARN] The facts need about 22847 tokens of context but KLARO_NUM_CTX caps it at 16384: about 6463 tokens of the input will be cut and the summary may miss facts. Raise KLARO_NUM_CTX or lower KLARO_SUMMARY_OUT_TOKENS.
+[WARN] Ollama read only 8194 of about 18751 prompt tokens (context 16384): the facts were cut off and the summary covers only part of the document. Set KLARO_NUM_CTX (for example 16384).
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/civil_nhidcl_rfp.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 127.55 seconds. Prompt v1, prompt tokens 8194, context 16384.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/civil_nhidcl_rfp.json
+======================================================================
+{"doc": "civil_nhidcl_rfp", "seconds": 127.6, "prompt_tokens": 8194, "context": 16384, "ollama_memory_bytes": 3709316627, "expected_prompt_tokens": 17174, "truncated": true, "words_total": 5799, "overview_words": 53, "limits_ok": false, "cited_pct": 100.0, "grounding_pct": 100.0, "traceability_pct": 100.0, "numbers_ok": 121, "numbers_total": 142, "dup_bullets": 39, "issuer": "Evaluation Committee", "issuer_golden": "National Highways & Infrastructure Development Corporation Limited (NHIDCL), Min", "issuer_status": "wrong", "similarity": 36.7}
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/edu_iiitd_pgcat.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 122.43 seconds. Prompt v1, prompt tokens 4726, context 9216.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/edu_iiitd_pgcat.json
+======================================================================
+{"doc": "edu_iiitd_pgcat", "seconds": 122.4, "prompt_tokens": 4726, "context": 9216, "ollama_memory_bytes": 3445935307, "expected_prompt_tokens": 4711, "truncated": false, "words_total": 730, "overview_words": 50, "limits_ok": false, "cited_pct": 100.0, "grounding_pct": 100.0, "traceability_pct": 100.0, "numbers_ok": 26, "numbers_total": 36, "dup_bullets": 0, "issuer": "Indraprastha Institute of Information Technology Delhi", "issuer_golden": "Indraprastha Institute of Information Technology Delhi (IIIT-Delhi), a State Uni", "issuer_status": "partial", "similarity": 21.4}
+[WARN] The facts need about 17209 tokens of context but KLARO_NUM_CTX caps it at 16384: about 825 tokens of the input will be cut and the summary may miss facts. Raise KLARO_NUM_CTX or lower KLARO_SUMMARY_OUT_TOKENS.
+======================================================================
+RUNNING EXECUTIVE SUMMARY AGENT
+Input file: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/edu_iith_erp.facts.json
+Model:      qwen3.5:4b
+======================================================================
+Inference completed in 150.31 seconds. Prompt v1, prompt tokens 12131, context 16384.
+Saved Executive Summary to: /Users/yasharthsingh/Coding/major/klaro/experiments/out/ctx16k/edu_iith_erp.json
+======================================================================
+{"doc": "edu_iith_erp", "seconds": 150.3, "prompt_tokens": 12131, "context": 16384, "ollama_memory_bytes": 3709316627, "expected_prompt_tokens": 12116, "truncated": false, "words_total": 475, "overview_words": 43, "limits_ok": true, "cited_pct": 100.0, "grounding_pct": 80.95, "traceability_pct": 100.0, "numbers_ok": 18, "numbers_total": 18, "dup_bullets": 0, "issuer": "Indian Institute of Technology Hyderabad", "issuer_golden": "Indian Institute of Technology Hyderabad, Kandi, Sangareddy - 502 285, Telangana", "issuer_status": "partial", "similarity": 22.4}
+LEDGER {"label": "ctx16k", "change": "v1 prompt + KLARO_NUM_CTX=16384", "prompt": "v1", "num_ctx": 16384, "docs": 11, "words_total": 3053.6, "overview_words": 48.8, "limits_ok_docs": "4/11", "grounding_pct": 96.6, "traceability_pct": 99.7, "dup_bullets": 16.1, "cited_pct": 100.0, "numbers_on_page_pct": 92.9, "issuer_correct": 2, "issuer_partial": 6, "similarity": 27.1, "seconds": 126.4, "prompt_tokens": 9298.9, "truncated_docs": 5, "verdict": ""}

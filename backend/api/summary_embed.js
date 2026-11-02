@@ -1,6 +1,6 @@
 // Runs inside the app's summary iframe only (served with ?embed=1; the file on disk stays script-free).
 // Turns "Pages 7, 8" tags into one chip per page and makes each bullet clickable; both ask the parent to open
-// the PDF there (klaro:cite, with the bullet's evidence id). Also swaps the standalone styling for the app stylesheet the parent sends.
+// the PDF there (klaro:cite, with the bullet's evidence id). The timeline heading gets an "Add to calendar" button (klaro:calendar). Also swaps the standalone styling for the app stylesheet the parent sends.
 (() => {
   const root = document.documentElement;
   root.style.visibility = 'hidden'; // no flash of the standalone blue styling
@@ -25,8 +25,17 @@
     window.parent.postMessage({ type: 'klaro:cite', id, page, chip }, '*');
   };
 
+  const byId = {};
   document.querySelectorAll('.summary-section').forEach((section, s) => {
     const key = KEYS[s];
+    if (key === 'important_dates') {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'cal-btn';
+      button.textContent = document.documentElement.lang === 'de' ? 'Zum Kalender hinzufügen' : 'Add to calendar';
+      button.addEventListener('click', () => window.parent.postMessage({ type: 'klaro:calendar' }, '*'));
+      section.querySelector('h2')?.appendChild(button);
+    }
     const bullets = key === 'overview' ? [...section.querySelectorAll('p:not(.empty-notice)')].slice(0, 1) : [...section.querySelectorAll('li')];
     bullets.forEach((bullet, i) => {
       const id = key === 'issuing_organization' ? null : `${key}-${i}`;
@@ -38,7 +47,7 @@
           chip.type = 'button';
           chip.className = 'page-chip';
           chip.textContent = `p. ${page}`;
-          chip.title = `Open page ${page} of the source PDF`;
+          chip.title = document.documentElement.lang === 'de' ? `Seite ${page} des Original-PDFs öffnen` : `Open page ${page} of the source PDF`;
           chip.addEventListener('click', (e) => {
             e.stopPropagation();
             cite(bullet, id, page, true);
@@ -47,11 +56,18 @@
           return chip;
         }));
       }
+      if (id) byId[id] = bullet;
       if (id && pages.length) {
         bullet.classList.add('citable');
         bullet.addEventListener('click', () => cite(bullet, id, pages[0], false));
       }
     });
+  });
+  // The app says which bullets have number mismatches; they get the .flagged (light red) mark.
+  window.addEventListener('message', (e) => {
+    if (e.source !== window.parent || e.data?.type !== 'klaro:flags' || !Array.isArray(e.data.ids)) return;
+    for (const el of document.querySelectorAll('.flagged')) el.classList.remove('flagged');
+    for (const id of e.data.ids) if (typeof id === 'string') byId[id]?.classList.add('flagged');
   });
   window.parent.postMessage({ type: 'klaro:ready' }, '*');
 })();

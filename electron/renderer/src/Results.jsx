@@ -1,5 +1,8 @@
-import { useEffect, useRef, useState } from 'react';
-import { apiBase, getEvaluation, getRun } from './api.js';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { apiBase, cancelTranslation, getEvaluation, getRun, getSummary, getTranslationStatus, startTranslation } from './api.js';
+import CalendarDialog from './CalendarDialog.jsx';
+import GermanPanel from './GermanPanel.jsx';
+import { extractEvents } from './calendar.js';
 import { formatDate } from './format.js';
 import { frameCss } from './frameStyle.js';
 import { ArrowLeft } from './icons.jsx';
@@ -63,13 +66,64 @@ export default function Results({ runId, onBack }) {
   const [focus, setFocus] = useState(null); // { page, key }: where the source panel should scroll to
   const [evidence, setEvidence] = useState(null); // evidence.json, or null for runs made before it existed
   const [selected, setSelected] = useState(null); // the clicked bullet's evidence item
+  const [lang, setLang] = useState('en'); // language of the summary shown
+  const [summary, setSummary] = useState(null); // its JSON, for the calendar export
+  const [calendarOpen, setCalendarOpen] = useState(false);
+  const [tstatus, setTstatus] = useState(null); // the German version: { status, available, done, total, ... }
+  const [tError, setTError] = useState(null);
+  const [segments, setSegments] = useState(null); // translation/segments.json of German-source runs
+  const [dismissed, setDismissed] = useState({}); // banners the user closed
 
   useEffect(() => {
     apiBase().then(setBase);
     getRun(runId).then(setRun, (e) => setError(e.message));
     getEvaluation(runId).then(setEv, (e) => setEvError(e.message));
     window.klaro.getEvidence(runId).then(setEvidence, () => setEvidence(null));
+    window.klaro.getTranslation(runId).then(setSegments, () => setSegments(null));
   }, [runId]);
+
+  useEffect(() => {
+    setSummary(null);
+    getSummary(runId, lang).then(setSummary, () => setSummary(null));
+  }, [runId, lang]);
+
+  // The German version's state: read once, and polled every second while it is being made.
+  const active = tstatus?.status === 'queued' || tstatus?.status === 'running';
+  useEffect(() => {
+    let alive = true;
+    const load = () => getTranslationStatus(runId).then((t) => alive && setTstatus(t), (e) => alive && setTError(e.message));
+    load();
+    if (!active) return () => { alive = false; };
+    const t = setInterval(load, 1000);
+    return () => { alive = false; clearInterval(t); };
+  }, [runId, active]);
+
+  const germanReady = tstatus?.available === true;
+  const showLang = (next) => { setLang(next); setSummary(null); };
+  const create = () => { setTError(null); startTranslation(runId).then(() => getTranslationStatus(runId)).then(setTstatus, (e) => setTError(e.message)); };
+  const cancel = () => cancelTranslation(runId).then(() => getTranslationStatus(runId)).then(setTstatus, (e) => setTError(e.message));
+
+  // Bullets to mark light red. English view of a German run: built on a segment whose numbers did not survive
+  // translation. German view: the bullets the number check flagged.
+  const flagIds = useMemo(() => {
+    if (lang === 'de') return tstatus?.flag_ids ?? [];
+    const bad = new Set((segments ?? []).filter((s) => s.flags.length).map((s) => s.id));
+    return (evidence?.items ?? []).filter((i) => i.segment_ids?.some((id) => bad.has(id))).map((i) => i.id);
+  }, [lang, tstatus, segments, evidence]);
+  const flagRef = useRef(flagIds);
+  flagRef.current = flagIds;
+  const sendFlags = () => base && frameRef.current?.contentWindow?.postMessage({ type: 'klaro:flags', ids: flagRef.current }, new URL(base).origin);
+  useEffect(() => { sendFlags(); }, [flagIds, base]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const calendar = useMemo(() => (calendarOpen && summary ? extractEvents(summary, runId) : null), [calendarOpen, summary, runId]);
+
+  const openPage = (p) => {
+    if (Number.isInteger(p) && p >= 1 && (run?.pages == null || p <= run.pages)) {
+      setSelected(null);
+      setFocus((f) => ({ page: p, key: (f?.key ?? 0) + 1 }));
+      setTab('source');
+    }
+  };
 
   // Messages from the summary iframe: accept only our frame, from the API origin, with valid pages.
   useEffect(() => {
@@ -77,8 +131,11 @@ export default function Results({ runId, onBack }) {
     const origin = new URL(base).origin;
     const onMessage = (e) => {
       if (e.source !== frameRef.current?.contentWindow || e.origin !== origin) return;
-      if (e.data?.type === 'klaro:ready') {
+      if (e.data?.type === 'klaro:calendar') {
+        setCalendarOpen(true);
+      } else if (e.data?.type === 'klaro:ready') {
         e.source.postMessage({ type: 'klaro:style', css: frameCss }, origin);
+        sendFlags();
       } else if (e.data?.type === 'klaro:cite') {
         const { id, page: p, chip } = e.data;
         const item = typeof id === 'string' ? evidence?.items.find((i) => i.id === id) ?? null : null;
@@ -107,21 +164,42 @@ export default function Results({ runId, onBack }) {
       <div className="subbar">
         <button className="icon-button" onClick={onBack} aria-label="Back"><ArrowLeft /></button>
         <span className="subbar-title">{run?.filename ?? ''}</span>
+        <div className="segmented" role="tablist" aria-label="Summary language">
+          <button role="tab" aria-selected={lang === 'en'} onClick={() => showLang('en')}>English</button>
+          <button role="tab" aria-selected={lang === 'de'} onClick={() => showLang('de')}>Deutsch</button>
+        </div>
         <span className="mono muted">{meta.join(' · ')}</span>
+        <button className="secondary small" style={{ marginLeft: 'auto' }} disabled={!summary} onClick={() => setCalendarOpen(true)}>
+          {lang === 'de' ? 'Alle Termine zum Kalender' : 'Add all dates to calendar'}
+        </button>
       </div>
       {error && <p className="error-box">{error}</p>}
-      {evidence?.source_lang === 'de' && (
-        <p className="notice">
-          Translated from German. English text is machine translation. Page numbers refer to the original PDF.
-          {' '}{evidence.flagged_segments} {evidence.flagged_segments === 1 ? 'passage' : 'passages'} flagged for number mismatches.
+      {evidence?.source_lang === 'de' && lang === 'en' && !dismissed.en && (
+        <p className={`notice${evidence.flagged_segments ? ' warn' : ''}`}>
+          <span>
+            Translated from German. English text is machine translation. Page numbers refer to the original PDF.
+            {' '}{evidence.flagged_segments} {evidence.flagged_segments === 1 ? 'passage' : 'passages'} flagged for number mismatches
+            {flagIds.length > 0 && ' (marked in red)'}.
+          </span>
+          <button className="notice-close" aria-label="Dismiss" onClick={() => setDismissed((d) => ({ ...d, en: true }))}>×</button>
+        </p>
+      )}
+      {lang === 'de' && germanReady && !dismissed.de && (
+        <p className={`notice${tstatus.flagged_bullets ? ' warn' : ''}`} lang="de">
+          <span>
+            Maschinelle Übersetzung. Die englische Fassung ist maßgeblich.
+            {' '}{tstatus.flagged_bullets ?? 0} {tstatus.flagged_bullets === 1 ? 'Punkt' : 'Punkte'} mit abweichenden Zahlen oder Beträgen markiert.
+          </span>
+          <button className="notice-close" aria-label="Schließen" onClick={() => setDismissed((d) => ({ ...d, de: true }))}>×</button>
         </p>
       )}
 
       <main className="results">
         <div className="reader">
-          {base && run && (
-            <iframe ref={frameRef} title="Executive summary" className="summary-frame"
-              src={`${base}/runs/${id}/summary.html?embed=1`} sandbox="allow-scripts allow-same-origin" />
+          {lang === 'de' && !germanReady && <GermanPanel status={tstatus} error={tError} onStart={create} onCancel={cancel} />}
+          {base && run && (lang === 'en' || germanReady) && (
+            <iframe key={lang} ref={frameRef} title="Executive summary" className="summary-frame"
+              src={`${base}/runs/${id}/summary.html?embed=1${lang === 'de' ? '&lang=de' : ''}`} sandbox="allow-scripts allow-same-origin" />
           )}
         </div>
 
@@ -140,6 +218,11 @@ export default function Results({ runId, onBack }) {
           </div>
         </aside>
       </main>
+      {calendar && (
+        <CalendarDialog events={calendar.events} review={calendar.review} onClose={() => setCalendarOpen(false)}
+          onPage={(p) => { setCalendarOpen(false); openPage(p); }}
+          meta={{ runId, lang, rfpTitle: (run?.filename ?? '').replace(/\.pdf$/i, ''), issuer: summary?.issuing_organization || null }} />
+      )}
     </div>
   );
 }

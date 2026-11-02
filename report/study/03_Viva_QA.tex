@@ -1,0 +1,71 @@
+\input{pre}
+\begin{document}
+{\LARGE\bfseries\color{ac} Viva: counter questions and answers}\par
+\vspace{2pt}Study guide 3 of 3. Answers are short on purpose, so you can say them aloud. Where the honest answer is ``we did not do that'', say so; it scores better than bluffing.
+
+\section{Basic concepts}
+\qa{What is an RFP?}{A Request for Proposal: a document an organisation publishes asking companies to bid for work. It lists the work, eligibility, deadlines, payment terms and conditions.}
+\qa{Why not just use ChatGPT?}{That means uploading the tender to someone else's servers. Bid teams usually cannot do that with confidential tenders. Klaro runs the model on the laptop, so nothing leaves it.}
+\qa{What is a local model? What is Ollama?}{A model that runs on your own computer. Ollama is the program that downloads and runs open models and serves them on localhost port 11434. Klaro talks to it over HTTP on the same machine.}
+\qa{What is a token? What is context size?}{A token is the small unit a model reads, often part of a word. Context size is how many tokens the model can see in one call. Ollama's default here is 4,096.}
+\qa{What is a parameter? What does 4B mean?}{A parameter is one learned number in the model. 4B means about 4 billion. (Note: the benchmark table in the report lists Qwen3.5 as 4.7B parameters while the model tag says 4b. If asked, say the tag is the name and 4.7 is the figure we recorded; we did not check the difference.)}
+\qa{What is fine-tuning? What is LoRA?}{Fine-tuning trains a model further on your own examples. LoRA freezes the big model and trains a small add-on (the adapter), which needs far less memory. That is why it is possible on an 8 GB card.}
+\qa{What is hallucination?}{The model states something that is not in the document. Klaro makes the model cite a page for every point and checks each point against the extracted facts.}
+
+\section{Design choices}
+\qa{Why Qwen3.5 4B and not Gemma or Phi?}{We gave three models the same 20 chunks with 47 hand-marked requirements. Qwen was the most careful: 74\% precision and 8 wrong items, against Gemma's 60\% and 22. Gemma had the higher F1 (65\% vs 59\%) but is a 9.6 GB download against 3.4 GB. Phi-4-mini found only 7 of 47 and made one up. A wrong point hurts more than a missing one, because the second question set catches misses.}
+\qa{Gemma has a better F1. Isn't Gemma simply better?}{On F1 yes, and we say so. Our choice weighs precision, size and the cost of wrong points. The benchmark is also small (20 chunks, 47 requirements), so we do not claim Qwen is better in general.}
+\qa{Why chunks of 1,800 words with 200 overlap?}{A small model cannot read 84 pages at once and loses the middle of long inputs. About four pages per chunk fits the context; the overlap keeps a sentence cut at a boundary. (We did not run a study comparing chunk sizes.)}
+\qa{Why read each chunk twice?}{With one question for everything, 2 of 5 test answers were empty and 1 was cut off. Two smaller questions are more reliable.}
+\qa{Why not use LangGraph or another agent framework?}{The steps are a fixed sequence, so a few lines of Python do it. Fewer dependencies, easier to debug.}
+\qa{Why Electron and Python instead of one stack?}{The pipeline already existed in Python and the Python ecosystem has the PDF, model and translation tools. Electron gives a desktop app on macOS and Windows. They talk over a local HTTP API.}
+\qa{Why does only one job run at a time?}{One local model on one laptop. Running two would slow both and could run out of memory. Others wait in a queue.}
+
+\section{Privacy and security}
+\qa{How do you prove nothing leaves the laptop?}{By design: the app only connects to localhost (its own API and Ollama), fonts and models are bundled or downloaded once at setup. We did not run a network capture to prove it, so say ``by design and by code review''. The only run-time outside call is the Google Calendar button, on click, sending one event's title and date.}
+\qa{What are the Electron security settings?}{contextIsolation on, nodeIntegration off, sandbox on. The window gets a narrow list of functions through a preload script. The PDF viewer can read only the current run's folder. The summary iframe can only ask to jump to a page number that exists.}
+
+\section{German path}
+\qa{How do you detect German?}{Count common German and English words, offline. If the text is too short or another language, the run stops and asks the user.}
+\qa{Why translate first instead of using a German model?}{The English prompts and the 4B model are tested for English. We translate with OPUS-MT, then the unchanged pipeline runs. German text is never given to the English prompts.}
+\qa{How good is the translation?}{We do not know. No German speaker has judged it and we did not run the A/B test script. What we did measure is a number check: 23 of 581 segments flagged in G1 (4.0\%), 4 of 589 in G2 (0.7\%).}
+\qa{What is a flag?}{A number in the German segment that does not appear in the English one. It is shown in red and never fixed automatically. The rule is rough: times like 14:00 and two-digit years can trigger it wrongly.}
+\qa{How does clicking a point highlight the passage?}{After the summary is written, Klaro scores windows of 1 to 3 neighbouring segments on the cited page by word overlap and keeps the best if the score is 0.6 or more. Below that it says the passage was not found on that page. The highlight is whole lines, not exact characters. In G1, 90 of 104 points were linked.}
+\qa{Why 0.6?}{It is a threshold we chose to avoid claiming a wrong quote. We did not tune it systematically.}
+
+\section{Results and evaluation}
+\qa{How do you measure quality?}{Nine automatic checks: structure, grounding, traceability, coverage, duplication, conciseness, hallucination, information loss, wrong heading. They compare words with the extracted facts.}
+\qa{Your grounding is 100\%. Isn't that great?}{Partly an artefact. We found the summary step saw only about 2,050 of 17,496 tokens, so its output was unusable and the code copied every fact in. Copied facts always match themselves. With the context fix, grounding is 94.1\% but summaries are far shorter.}
+\qa{Explain the context-size bug.}{Ollama's default window is 4,096 tokens. All facts go in one prompt. The facts were 17,496 tokens, the model saw 2,050 and the rest was cut silently. We added \texttt{KLARO\_NUM\_CTX}. On 11 documents, average summary went from 4,565 to 545 words with 32,768, and duplicates from 25.3 to 0.9.}
+\qa{Then why is the fix off by default?}{It is about three times slower on the summary step (64 s to 194 s), only 6 of 11 summaries came within limits, and on one German run facts used fell from 98.3\% to 64.8\%. We have no human judgement of which summary is better, so we left the default unchanged.}
+\qa{Why did coverage drop on G3?}{We do not know for sure. A possible reason is that the long fact list makes the model drop items (compare ``lost in the middle''), but we did not test it.}
+\qa{Why did the same PDF give 236 and 243 facts?}{The model is not deterministic. So an improvement must be judged over several runs, not one.}
+\qa{Do the hardware and run times generalise?}{All runs were on one Apple M4 laptop with 24 GB. A 8 GB Windows laptop will be slower. Windows was not tested by us.}
+\qa{How many runs support your claims?}{Six full runs (3 English, 3 German) and 11 documents for the context test. Small samples; we call the results indications, not proof.}
+\qa{Why does the report say 22 to 25 minutes?}{Three English runs: 22m51s, 25m19s, 22m16s. About 75 to 95\% of the time is the chunk analysis step.}
+
+\section{Golden dataset and fine-tuning}
+\qa{What is the golden dataset?}{45 English RFPs (8 sectors, 2,583 pages) with 32 reference summaries. 35 documents for training, 10 for testing, split by sector with a fixed seed.}
+\qa{Are the golden summaries correct?}{They are \emph{auto-checked}, not verified. An AI drafted them and automatic checks passed. No human has verified any. A guide for the human check exists (20 to 25 minutes per document).}
+\qa{Did the fine-tuning improve the model?}{No result yet. The kit ran only on the 0.8B model on a Mac (loss 1.62 to 0.20 over 5 epochs, merged model loaded in Ollama). Nothing was trained or tested on the 4B model, so no claim about improvement.}
+\qa{Why per-section training examples?}{Whole summaries are too long for an 8 GB card: median 34,597 tokens. We estimate 14.7 GiB for 4-bit 4B at 32k tokens. Per-section examples (at most 4,096 tokens) need about 7.3 GiB, borderline on 8 GB. Memory numbers are estimates, $\pm$30\%, nothing run on a GPU.}
+\qa{Does the app use the fine-tuned model?}{No. The app writes the whole summary in one call, the adapter is per section. To use it we would need a section-by-section summary step. Using a tuned model needs only \texttt{KLARO\_MODEL} set to its Ollama tag.}
+\qa{How do you avoid training on test data?}{Training reads the train split only. The scoring script refuses a document that was used for training.}
+
+\section{Calendar and UI}
+\qa{How do you read dates?}{Month names in English and German, ISO dates, ranges, 12h/24h times. 03/04/2026 is read day first and marked ``assumed''. No year, no day or impossible dates go to ``needs review''. We never guess a year. Output is an \texttt{.ics} file.}
+\qa{What testing did you do?}{68 JavaScript tests (54 for calendar) and 43 Python tests pass. We drove the app by hand on macOS. No automated test drives the real window, and Windows is untested by us.}
+
+\section{Hard or trick questions}
+\qa{What is new in your work compared to the papers?}{We found no earlier work that combines offline translation, a small summary model and page-level checking for tenders on a laptop. The papers handle English only or need strong hardware. This is our reading of the papers we studied, not a full survey.}
+\qa{What would you do with more time?}{Train the adapter on the real model on the university supercomputer, human-verify the golden set, add a section-by-section summary step, scanned PDFs with OCR, and a Proposal Assistant.}
+\qa{What is the weakest part of the project?}{Evidence of quality. The checks compare words, the golden set is not human-verified, the translation was not judged by a German speaker, and the fine-tuning was not run on the real model.}
+\qa{What is the biggest finding?}{The silent context cut-off. It made summaries nearly as long as the facts and inflated the grounding score. The fix helps length but costs time and sometimes facts.}
+\qa{Who did what?}{Yasharth: desktop app, local server, German path, calendar, setup, golden scripts, fine-tuning kit. Nikunj: summary pipeline, evaluator, renderer, CLI. Shrey: PDF reader, chunker, section detector, baseline analyzer, first summary translation. Be ready to explain your own part in detail.}
+\qa{Can it handle scanned PDFs, Word files, other languages?}{No. Text-based PDFs in English or German only.}
+\qa{Does it cost money or need a GPU?}{No cost; it ran on a laptop CPU/GPU of an Apple M4. Minimum we state: 8 GB memory. We tested only on 24 GB.}
+\qa{Is the summary legally reliable?}{No. The app says scores are word-overlap checks, not a guarantee. The user should verify against the cited pages.}
+
+\section{If you are stuck}
+Say what you did, what you measured and what you did not do. Useful phrases: ``We measured X on N runs''; ``we did not test that''; ``it is an estimate, plus or minus 30\%''; ``it is auto-checked, not human-verified''.
+\end{document}

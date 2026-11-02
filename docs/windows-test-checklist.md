@@ -31,7 +31,11 @@ Tick each box. Where it fails, screenshot the window **and** copy the terminal t
     `$env:KLARO_SKIP_SETUP=1; npm run dev`, choose the German PDF. The Start button must be replaced by a message that says how to
     fix it (`npm run setup`). Rename the folder back.
 12. [ ] **Quit.** Close the window. Task Manager shows no leftover `python.exe` or `electron.exe` from Klaro.
-13. [ ] **Non-ASCII user folder** (only if your Windows user name has an accent or space): everything above still works.
+13. [ ] **German view.** Open a finished run, click **Deutsch**, then **Create German version**. Progress counts up, the summary appears in
+    German with the banner "Maschinelle Übersetzung...". Click a bullet: the same PDF page opens. Try **Cancel** once mid-way (no leftover `python.exe`).
+14. [ ] **Calendar export.** In "Important dates" click **Add to calendar**, then **Download .ics** (try the file name `Prüfung Größe für Käufer`).
+    Open the file with Outlook or Calendar: times and dates match the PDF. Repeat in the German view.
+15. [ ] **Non-ASCII user folder** (only if your Windows user name has an accent or space): everything above still works.
 
 ## What to send me
 - Screenshot of any failure, the terminal output of `npm run dev`, and `%APPDATA%\klaro\logs\backend.log`.

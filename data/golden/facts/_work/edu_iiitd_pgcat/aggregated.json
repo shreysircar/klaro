@@ -1,0 +1,446 @@
+{
+  "overview": [
+    {
+      "text": "Indraprastha Institute of Information Technology Delhi (IIIT-Delhi) invites sealed bids for conducting the Post Graduate Computer Science & Engineering Admission Test (PGCAT-IIITD) on a pan-India level.",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "text": "The tender ID is IIIT-D/Acad./Test/001/2026-27 and the RFP was issued by IIIT-Delhi.",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "text": "An earnest money deposit (EMD) of Rs. 50,000/- must be deposited in the form of a demand draft; this amount is exempted for MSMEs/NSIC registered suppliers.",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "text": "The last date for bid submission is 9th March 2026 up to 12:00 Noon, and technical bids will be opened on 10th March 2026 at 3:00 P.M.",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "text": "The RFP is for providing infrastructure and services for the PAN-INDIA PGCAT exam conducted by IIIT-D.",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "text": "The tender process uses a Quality and Cost Based Selection (QCBS) methodology.",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "text": "Issuing organization: IIIT-Delhi (IIIT-D).",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "text": "The examination is a Computer-Based MCQ Test with a duration of 02 hours.",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "text": "The tender evaluates bidders on a Quality and Cost-Based Selection Criterion with a Technical Evaluation system awarding a maximum of 60 points.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "Bidders must submit a Proposed Plan for Smooth Exam Conduction at the presentation time to earn up to 10 points.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "Bidders must demonstrate the Exam Platform at the presentation time to earn up to 10 points.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "Bidders must present in-person at the presentation time to earn up to 10 points.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "The Technical Evaluation scoring is based on experience: 5 years earns 10 points, 5-8 years earns 20 points, and 8 years or more earns 30 points.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "Upon declaring the intending vendor as Successful, they are subject to General Terms & Conditions including Performance Bank Guarantee (PBG) requirements.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "The financial bid must be quoted in INR only.",
+      "pages": [
+        19
+      ]
+    }
+  ],
+  "issuing_organization": "Indraprastha Institute of Information Technology Delhi",
+  "issuing_organization_pages": [
+    2
+  ],
+  "scope": [
+    {
+      "text": "The bidder must submit a performance bank guarantee (PBG) equivalent to 5% of the PO value within 15 days from the date of Purchase Order.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "The PBG must be in favour of 'IIIT-Delhi Collections' and payable at New Delhi, valid for 60 days beyond the stipulated cessation date.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "The bidder is required to appoint a dedicated Single Point of Contact (SPOC) or Project Manager responsible for overseeing execution and delivery.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "The offered solution must have capability to make changes or customize the platform as per IIIT-Delhi requirements.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "In the event of SLA breach, a penalty of Rs. 5000/- per day is levied for the first seven days, and Rs. 8000/- per day from the 8th day onwards.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "The bidder must ensure an emergency management plan for server/node management, additional locations, and student/applicant data failure.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "The bidder must provide uninterrupted power supply (UPS) to IT infrastructure at every test center and guarantee generator availability.",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "text": "The organization must maintain documented test cases and evidence of successful test execution covering all test cases by QA professionals.",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "text": "Testing must cover performance, security, Usability, High Availability, Business Continuity, and disaster recovery beyond system features.",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "text": "The bidder is strictly prohibited from disclosing the applicant's database to any third party or individual.",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "text": "The bidder must design a high-performance system and make performance test results available for each major release of the exam system.",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "text": "The bidder must design a secure system, conduct security tests on source code, binaries, and infrastructure, and provide security test results per major release.",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "text": "Conducting PGCAT Exam as per scope of work.",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "text": "The quote should include all taxes/charges and installation at IIIT-Delhi campus.",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "text": "The rate quoted shall remain valid for a period of 60 days from the last date of the tender document, i.e., 60 days from 23rd February 2026.",
+      "pages": [
+        19
+      ]
+    }
+  ],
+  "key_requirements": [
+    {
+      "text": "The contractor must undertake to comply with all relevant laws including Contract Labour (Regulation and Abolition) Act, 1970; Employees' State Insurance Acts; Minimum Wages Act, 1948; Payment of Bonus Act, 1972; Payment of Wages Act, 1936; Income Tax Act; GST Act etc.",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "text": "The contractor must indemnify the IIITD from its acts of omission or commission regarding compliance with relevant laws.",
+      "pages": [
+        20
+      ]
+    }
+  ],
+  "eligibility": [],
+  "important_dates": [
+    {
+      "text": "Last date for submission of Bid is 9th March 2026 up to 12:00 Noon.",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "text": "Technical Bids shall be opened on 10th March 2026 at 3.00 P.M.",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "text": "Sealed quotations shall be received no later than 12.00 Noon on 9th March, 2026.",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "text": "Performance Bank Guarantee (PBG) should be submitted within 15 days from the date of the award of the work.",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "text": "Last Date and Time of Online Application: Monday, April 13, 2026",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "text": "Release Admit Card: Monday, April 20, 2026",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "text": "PGCAT-IIITD Exam for CSE and CSE-Research: Sunday, May 3, 2026",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "text": "Sharing of Result (Raw data): Sunday, May 3, 2026",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "text": "Sharing of Result (Final): Monday, May 4, 2026",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "text": "The price quoted shall remain valid for a period of 60 days from the last date of the tender document, i.e., 60 days from 23rd February 2026.",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "text": "On placing of the Purchase Order (PO), the successful Bidder is required to submit a performance bank guarantee (PBG) within 15 days from the date of PO.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "We accept that the rate quoted above shall remain valid for a period of 60 days from the last date of the tender document, i.e., 60 days from 23rd February 2026.",
+      "pages": [
+        19
+      ]
+    }
+  ],
+  "commercial_requirements": [
+    {
+      "text": "Bidder must deposit an earnest money (EMD) of Rs.50,000/- in the form of a demand draft.",
+      "pages": [
+        1
+      ]
+    },
+    {
+      "text": "Tender Document Fee is Rs.1,180/- excluding tender document fee cost mentioned as Rs.1000 +18% GST",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "text": "Performance Bank Guarantee (PBG) of Five percent (5%) of contract value.",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "text": "The bid document must include details such as Name of the vendor, Address, Telephone/Mobile numbers, E-Mail address, Details of Registration, Date of formation/incorporation, Type of organization, and Average Annual Turnover of Last Three Financial Years.",
+      "pages": [
+        17
+      ]
+    },
+    {
+      "text": "All documents must be encoupled; in case of firm, partnership deed, Articles of Association or Affidavit is required.",
+      "pages": [
+        17
+      ]
+    },
+    {
+      "text": "The bidder shall furnish an undertaking on company letterhead regarding Blacklisting/Non-debarment for the last 3 years.",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "text": "The Proforma Financial Bid must quote costs in INR only, inclusive of all taxes, charges, and installation at IIIT-Delhi campus.",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "text": "The Bidder quote in financial Bid should be INR only.",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "text": "Please note the price should be quoted for each of the items and should be inclusive of all taxes/charges and installation at IIIT-Delhi.",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "text": "The discount, if any, should be mentioned herein and nowhere else.",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "text": "It is certified that the rates quoted above are not more than the rates charged from any Central / State Govt. Deptt. / Institution / GeM.",
+      "pages": [
+        19
+      ]
+    }
+  ],
+  "project_duration": [],
+  "important_conditions": [
+    {
+      "text": "In case of breach (failure to submit PBG within 15 days or assigning sub-contract), the bidder shall be notified as blacklisted.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "Upon placing of Purchase Order, successful Bidder must submit a Performance Bank Guarantee (PBG) equivalent to 5% of the PO value. No interest is payable on the PBG.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "The PBG will be valid for 60 days beyond the stipulated date for cessation of the contract, which is co-terminus with the warranty period.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "In case of failure leading to re-examination, the cost of the second examination shall be borne by the bidder.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "Penalty of Rs. 5000/- per day for first seven days of SLA breach, and Rs. 8,000/- per day from 8th day onwards.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "text": "The successful vendor shall not assign the sub-contract. In case of breach, IIIT-Delhi may rescind the contract.",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "text": "If the vendor fails to complete work within specified period, they are liable to pay compensation at 1% per week subject to a maximum of 10% of the contract amount.",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "text": "The Institute may terminate the contract for default/substantial breach uncorrected within 15 days by giving 30 days written notice, or at any time with one month's notice without assigning reason.",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "text": "In case of earlier termination, the Performance Security Deposit shall stand forfeited by the Institute.",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "text": "Upon expiry or earlier termination, the vendor must return all materials and equipment belonging to the Institute.",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "text": "The Institute is entitled to recover extra costs (execution, remedying defects, completion) from the Contractor, adjusted against the Performance Security Deposit.",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "text": "All disputes shall be referred to the Director IIIT-Delhi for decision. If unsatisfied, dispute shall be settled by arbitration in Delhi under Indian law.",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "text": "The bidder is strictly prohibited from disclosing the applicant's database to any third party or individual.",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "text": "The selected bidder must sign an agreement with IIITD on stamp paper after issue of Purchase/Work order.",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "text": "Whereas the contractor undertakes to comply with all relevant laws like Contract Labour (Regulation and Abolition) Act, 1970; Employees' State Insurance and Miscellaneous Provisions Act, 1952; Employees' State Insurance Act, 1948; Minimum Wages Act, 1948; Payment of Bonus Act, 1972; Payment of Wages Act, 1936; Income Tax Act; GST Act etc. and to indemnify the IIITD from the contractor's acts of omission or commission, as regards the compliance with the relevant laws;",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "text": "Whereas the contractor declares that he/she/it shall own all responsibility for any act of omission or commission, as regards the compliance with the relevant laws;",
+      "pages": [
+        20
+      ]
+    }
+  ]
+}

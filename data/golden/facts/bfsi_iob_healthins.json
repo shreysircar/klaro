@@ -1,0 +1,1963 @@
+{
+  "doc_id": "bfsi_iob_healthins",
+  "model": "qwen3.5:4b",
+  "built_at": "2026-10-31T15:26:12+00:00",
+  "seconds": 2303,
+  "chunks": 13,
+  "failed_passes": 1,
+  "aggregated": {
+    "overview": [
+      {
+        "text": "The RFP is issued by Indian Overseas Bank (IOB) to select Stand-Alone Health Insurance providers for a Corporate Agency Arrangement.",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "text": "The purpose of the RFP is to offer Health Insurance based products to customers of Indian Overseas Bank.",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "IOB is a public sector bank headquartered in Chennai with 92.44% Government of India share capital as on 31.03.2026.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "IOB has 89 years of service excellence with over 3,400 branches and 3,600 ATMs.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "The RFP is for a Corporate Agency Arrangement with Stand-Alone Health Insurance providers to offer health insurance products to Indian Overseas Bank customers.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "Issued by Indian Overseas Bank (IOB), a public sector bank founded in 1937 and headquartered in Chennai.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "The RFP is for a Corporate Agency Arrangement to select stand-alone health insurance providers.",
+        "pages": [
+          9,
+          17
+        ]
+      },
+      {
+        "text": "The issuing organization is Indian Overseas Bank (IOP).",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Bids must be submitted via the bank's e-tendering portal.",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "Request for Proposal for Corporate Agency Arrangement for Selection of Stand-Alone Health insurance provider/s to offer Health Insurance based products to Customers of Indian Overseas Bank.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "The last date of submission of proposal is 08.06.2026 by 5 PM.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "All proposals shall be valid for a period of 180 days from the last date of submission.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "The Bank reserves the right to accept or reject any application without assigning any reason whatsoever at any stage of the process.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "The purpose is to offer health insurance based products to the customers of Indian Overseas Bank.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Stage 3 involves inviting top shortlisted bidders for a presentation before a Committee appointed by the Bank.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "The presentation round carries a weightage of 30 marks.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "The tie-up between the selected company and the Bank shall be for a minimum period of 3 years.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "The tender is a Request for Proposal for a Corporate Agency Arrangement to select a stand-alone health insurance provider to offer health insurance products to Indian Overseas Bank customers.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "The issuing organization is Indian Overseas Bank (IOB), and the RFP is not an offer but an invitation to receive proposals from eligible bidders.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "No contractual obligations arise from the RFP process unless a formal contract is signed and executed by the bank with the shortlisted or successful bidder(s).",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "The RFP is for a Corporate Agency Arrangement to select a standalone health insurance provider to offer Health Insurance based products to customers of Indian Overseas Bank.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "The RFP is for a Corporate Agency Arrangement to select standalone health insurance providers to offer Health Insurance based products to Indian Overseas Bank customers.",
+        "pages": [
+          41
+        ]
+      },
+      {
+        "text": "This document covers pages 41 to 44 of the Request for Proposal.",
+        "pages": [
+          41
+        ]
+      },
+      {
+        "text": "The RFP is for a Corporate Agency Arrangement to select a Stand-Alone Health Insurance provider/s to offer health insurance products to customers of Indian Overseas Bank.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Indian Overseas Bank has appointed an Independent External Monitor (IEM) to monitor the RFP process and contract execution for compliance with integrity principles.",
+        "pages": [
+          46
+        ]
+      },
+      {
+        "text": "The RFP is for a Corporate Agency Arrangement to select stand-alone health insurance providers for Indian Overseas Bank customers.",
+        "pages": [
+          47
+        ]
+      },
+      {
+        "text": "All known prejudiced persons will be excluded from the selection process by the Bank.",
+        "pages": [
+          47
+        ]
+      },
+      {
+        "text": "The RFP is for a Corporate Agency Arrangement to select stand-alone health insurance providers for customers of Indian Overseas Bank.",
+        "pages": [
+          50
+        ]
+      },
+      {
+        "text": "The RFP is for a Corporate Agency Arrangement to select standalone health insurance providers to offer health insurance products to customers of Indian Overseas Bank.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "The issuing organization is the Division of the Bank that has floated the RFP, with jurisdiction located at their Head Office/Head Quarters.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "The Integrity Pact formed by the parties takes precedence over the RFP documents regarding its covered provisions.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "Changes and supplements to the agreement must be made in writing, signed by authorized representatives of both the Bidder and the Bank, with no parallel or side agreements allowed.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "If any provision of the Pact turns out invalid, the remainder remains valid, and parties will strive for an agreement to original intentions.",
+        "pages": [
+          53
+        ]
+      }
+    ],
+    "issuing_organization": "Indian Overseas Bank",
+    "issuing_organization_pages": [
+      1,
+      4,
+      6,
+      9,
+      13,
+      17,
+      20,
+      21,
+      35,
+      41,
+      44,
+      46,
+      47,
+      50,
+      53
+    ],
+    "scope": [
+      {
+        "text": "The Scope involves providing Health Insurance based products to the Bank's customers as a Corporate Agent.",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "text": "The services include support & services, technology support, manpower support, and claim settlement.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "IOB already has corporate agency tie-ups with M/s Universal Sompo General Insurance Company Ltd and M/s SBI General Insurance Company Ltd.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "IOB currently has tie-ups with M/s Niva Bupa Health Insurance and M/s HDFC Ergo only for renewal business.",
+        "pages": [
+          6
+        ]
+      },
+      {
+        "text": "Provide full range of health insurance products including individual and group policies through bank branches, outlets, internet banking, and mobile banking.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Offer sales, renewals, claims handling, customer complaint resolutions, MIS updates, training, IT support, and manpower assistance.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "Provide real-time data sharing on policies issued, policy renewals, lapsed policies, and claims via the Bidder's portal using a specific User ID and password.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "The successful bidder must provide operational support for sales, training, renewals, claim settlement, and grievance redressal.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Claims must be settled within timelines prescribed by IRDAI, subject to receipt of intimation and submission of documents.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "The bidder must ensure renewal notices are issued well before policy expiry.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Redressal of grievances within IRDAI timelines is required, whether from the policyholder directly or via the Corporate Agent.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Customer data must be kept confidential and cannot be used for any purpose other than rendering services to policyholders and the Bank.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "No part of services can be sub-contracted without prior written consent of the Bank.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "The bidder must provide a minimum Claim Settlement Ratio of 90% during the last two financial years.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "The bidder must have a minimum Solvency Ratio of 150%.",
+        "pages": [
+          10
+        ]
+      },
+      {
+        "text": "To offer Health Insurance based products to Customers of Indian Overseas Bank via a stand-alone health insurance provider/s corporate agency arrangement.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "The tie-up between the selected Company and the Bank shall be for a minimum period of 3 years subject to termination, commencing from a date to be determined /advised after completion of the process of selection.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Presentation cover areas including Marketing Strategy, Manpower Support, Digital Infrastructure & capability to integrate with Bank's Core Banking Solution, Revenue Projection strategy, Risk Mitigation Measures, Online access for system generated MIS, and Value Proposition.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Shortlisted bidders must present their Marketing Strategy.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Bidder's scope includes Manpower Support.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Scope includes Digital Infrastructure & capability to integrate with the Bank's Core Banking Solution.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Bidder must present a Strategy to achieve Revenue Projection for the coming 3 financial years.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Scope includes Risk Mitigation Measures to comply with regulations.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Bidder must ensure online access for system generated MIS.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "The presentation should include the Value Proposition.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "The selected company must comply with performance standards stipulated by the Bank.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Company is responsible to provide uninterrupted service to customers.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Company must provide necessary training to the staff of the Bank.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "The selected insurance company must provide health insurance products to cater to all needs and requirements of the bank's customers.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "The company must submit a process document on application collection, premium reconciliation, and claim settlement as per the format in the invitation document.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "The company should provide necessary training to the staff of the Bank.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "The company must be technologically enabled to install an interface utility to provide a list of policies issued on a pan-India basis with all details and consolidated statements by the 10th of the succeeding month.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "The company must remit the revenue/commission payable to the Bank every month at the corporate level with complete details.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "The bank acts as a facilitator between the customer and the insurer, while the insurer is responsible for settling claims and not raising disputes with the bank regarding claim settlements.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "The selected company must have a fair and speedy claim settlement record.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "Bidder must provide business and revenue estimates for the next 3 years regarding potential standalone health insurance business and earnings for the Bank.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "Bidder must submit a detailed Business strategy and roadmap to achieve the estimated targets.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "Bidder must provide a roadmap on how the company will penetrate untapped sources of the Bank's customer base.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "Bidder must provide support in manpower, training, marketing, operational aspects, claims & service, and technology (including dedicated portal, mobile app, virtual sales, and digital readiness for API).",
+        "pages": [
+          36
+        ]
+      },
+      {
+        "text": "Bidder must commit to providing MIS support.",
+        "pages": [
+          36
+        ]
+      },
+      {
+        "text": "The scope includes Standard Operating Procedures (SOP) for Premium Collection, Policy Login/Issuance/Underwriting, Claim Settlement, IT Integration, Grievance Redressal, and System Support.",
+        "pages": [
+          37
+        ]
+      },
+      {
+        "text": "Bidder must comply with the Bank's Information Security Policy, API policy, data retention policy, Digital Payment Security Controls Policy, and RTO/RPO requirements.",
+        "pages": [
+          40
+        ]
+      },
+      {
+        "text": "Bidder must ensure end-to-end compliance with Digital Personal Data Protection (DPDP) requirements including readiness for future integrations and safeguards.",
+        "pages": [
+          40
+        ]
+      },
+      {
+        "text": "All critical and PII data of the bank must be maintained on-premises, physically and logically segregated from other entities' data hosted on the bidder's premises using compartmentalization techniques.",
+        "pages": [
+          40
+        ]
+      },
+      {
+        "text": "Any AI/ML models used by the bidder must not be trained, fine-tuned, or retrained using Bank or Bank customer sensitive data; such models shall be deployed on-premises by default with explicit prior approval for any cloud-based deployment.",
+        "pages": [
+          40
+        ]
+      },
+      {
+        "text": "The security environment must be segregated into a militarized zone (MZ) and demilitarized zone (DMZ) separated by a firewall, permitting external entity access only through the DMZ.",
+        "pages": [
+          40
+        ]
+      },
+      {
+        "text": "SB environment must provide flexibility to allow seamless data migration in case the bank decides to switch to another SB or host it on Bank's own premises.",
+        "pages": [
+          41
+        ]
+      },
+      {
+        "text": "Stand-alone Health insurance provider/contractor to offer health insurance products to customers of Indian Overseas Bank.",
+        "pages": [
+          41
+        ]
+      },
+      {
+        "text": "Service providers must have a captive or Managed Service SOC for monitoring systems and operations.",
+        "pages": [
+          41
+        ]
+      },
+      {
+        "text": "Provide 24/7 monitoring of the Bank's critical and PII data and periodic reports to the Bank's SOC team.",
+        "pages": [
+          41
+        ]
+      },
+      {
+        "text": "Alerts, logs, and events from the service provider must integrate with the Bank's incident response process (SOC).",
+        "pages": [
+          41
+        ]
+      },
+      {
+        "text": "Security controls required include protection for hypervisors, containers, and Software defined networks.",
+        "pages": [
+          41
+        ]
+      },
+      {
+        "text": "Service providers must implement multi-factor authentication methods such as username, password, OTP, RSA Token, and biometric authentication.",
+        "pages": [
+          42
+        ]
+      },
+      {
+        "text": "Implementation of open-source technologies must comply with the Bank's Information Security (IS) policy.",
+        "pages": [
+          42
+        ]
+      },
+      {
+        "text": "Service providers must ensure source code audits and VAPT through CERT-In empanelled auditors.",
+        "pages": [
+          42
+        ]
+      },
+      {
+        "text": "A comprehensive Disaster Recovery (DR) setup must be implemented and tested prior to go-live.",
+        "pages": [
+          43
+        ]
+      },
+      {
+        "text": "Solution must follow Secure SDLC processes including Risk Assessment, Threat Modelling, Secure Static Analysis, and Dynamic Application Security Testing.",
+        "pages": [
+          43
+        ]
+      },
+      {
+        "text": "Secure exchange of payment messages is required through mechanisms like secure message queues, secure file transfer, or secure APIs.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Web Application Firewall (WAF) must be implemented to protect against malicious inputs and application attacks.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Service providers must ensure compartmentalization techniques to isolate Bank data from other customers' data.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Service providers must secure exchange of payment messages through mechanisms like secure message queues, secure file transfer, or secure API.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Service Backups (SB) applications must prevent direct access from user interface layers to database layers and meet zoning security requirements.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "The service provider must implement Data Localization norms as per regulatory requirements.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Compartmentalization techniques must be employed to isolate Bank data from other customers' data, with details shared with the Bank.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Service providers must adhere to the Bank's data retention and destruction policies and certify complete data destruction upon request.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Regular backup and recovery tests must be conducted by the service provider in accordance with Bank policies.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "A Web Application Firewall (WAF) must be implemented to protect against malicious inputs and application attacks.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Service providers must ensure secure resource allocation, OS hardening, VM image encryption, and monitoring of virtual machines with disabled USB access on dedicated partitions.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Devices must be integrated with Security Information and Event Management (SIEM) systems for continuous monitoring of access, threats, and audit logs.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Robust physical and logical protection mechanisms must be ensured for hardware storing the Bank's data to ensure integrity and confidentiality.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Privileged admin access to database and server infrastructure must be controlled through a Privileged Identity Management (PIM) solution with strict access controls and audit trails.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "The service provider must provide forensic investigation support to the Bank when required.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "The Service Provider shall provide at least half yearly DR (Disaster Recovery) testing reports covering exercise scope, final outcomes, and recommendations.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Fraud risk management use cases must be configurable, such as restricting application access to specific time periods.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Service providers must support any Bank regularity audits, including physical visits to SB premises.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "The service provider must comply with Indian data privacy laws, including the Digital Personal Data Protection Act and other applicable directives like the Data Privacy Act and E-Commerce Directive.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Any suspected or confirmed Data Breach must be notified to the Bank immediately; suspected breaches must be reported within 4 hours of discovery.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "The Service Provider is responsible for financial losses or penalties incurred due to their own breach, up to an agreed Cap.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "The Service Provider must support seamless return of data to the Bank without vendor lock-in.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Bidders must commit to taking necessary measures to prevent corrupt practices, unfair means, and illegal activities during bid and contract stages.",
+        "pages": [
+          47
+        ]
+      },
+      {
+        "text": "Bidders of foreign origin must disclose the name and address of any agents/representatives in India, while Indian bidders must disclose foreign principals.",
+        "pages": [
+          48
+        ]
+      },
+      {
+        "text": "All payments made to Indian agents/representatives must be in Indian rupees only.",
+        "pages": [
+          48
+        ]
+      },
+      {
+        "text": "Bidder services include offering health insurance based products to customers of Indian Overseas Bank as a channel partner.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "The Company must maintain safe custody of all records related to policy documents of the policy holders.",
+        "pages": [
+          57
+        ]
+      },
+      {
+        "text": "The Company must provide online system access for MIS (Management Information System) and provide MIS reports related to business under the contract to the Bank as per requirements.",
+        "pages": [
+          57
+        ]
+      },
+      {
+        "text": "The selected Insurance Company must provide uninterrupted service to the customer/s, with sole responsibility on the Company side.",
+        "pages": [
+          57
+        ]
+      },
+      {
+        "text": "The Company must procure necessary licenses, permissions, and approvals from competent authorities and comply with applicable laws regarding insurance business and sub-contractors.",
+        "pages": [
+          57
+        ]
+      },
+      {
+        "text": "Company services must comply with regulatory guidelines issued by IRDAI and RBI concerning Unfair Trade Practices, Mis-selling, Business Malpractices, and Anti-Consumer Policies.",
+        "pages": [
+          57
+        ]
+      },
+      {
+        "text": "The Company shall indemnify the Bank against all claims resulting from infringement of laws pertaining to patent, trademarks, copyrights, or other statutory infringements in respect of its insurance business.",
+        "pages": [
+          57
+        ]
+      }
+    ],
+    "key_requirements": [
+      {
+        "text": "Bidder must submit proposals as per broad specifications listed in the invitation document.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Pay remuneration/commission to the bank by the 10th working day of every month for policies issued till the end of the previous month.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "Provide MIS updates on the status of customer complaints on a weekly, fortnightly, or monthly basis as mutually agreed.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Ensure prompt settlement of claims within IRDAI prescribed timelines upon receipt of intimation and document submission.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Keep bank customers data confidential and prevent any exploitation or disclosure to third parties not authorized by the RFP/Agreement.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Inform the bank within 24 hours of any regulatory breach, penalty, show cause, or warning from IRDAI, SEBI, RBI, or other authorities.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "The selected Bidder shall not be liable for termination on account of Force Majeure events (e.g., wars, epidemics).",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "The Bank is bound by confidentiality; the Bidder must keep all information confidential and not disclose it to third parties.",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "Reproduction of the RFP document without prior consent is strictly prohibited.",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "The selected Bidder must adhere to the Laws of India and submit disputes to Courts in Chennai.",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "Disputes shall be resolved by a sole Arbitrator mutually appointed by the parties, with venue at Chennai under the Arbitration and Conciliation Act, 1996.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "All Bidder records must be made available to the Bank for audit during normal business hours.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "The tender is covered under an Integrity Pact (IP) policy, and signing the pact is a preliminary qualification. Bidders refusing to sign are disqualified.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Upon selection, the bidder must execute an agreement containing terms including indemnity and non-disclosure clauses.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "The company must maintain records of policy documents ensuring safe custody.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Company must provide online system access for MIS reports to the Bank by the 10th of the succeeding month.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "The company must remit revenue/commission payable to the Bank every month at the corporate level with complete details.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "Bidders must execute an agreement containing terms and conditions including indemnity, non-disclosure clauses, etc.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "The bank reserves the right to audit the records of the Company at any time.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "Any publicity by the successful bidder using the name of the Bank requires explicit written permission from the Bank.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Each bidder must notify the bank of any errors, faults, omissions, or discrepancies in the RFP document no later than five business days prior to the last date of submission.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "The bank reserves the right to alter the RFP terms and conditions at any time before bid submission by publishing amendments on its website (www.iob.bank.in) or GEM PORTAL.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Bidder communication regarding their Bid is prohibited from the time of bid opening until the contract is awarded; only written communication for additional information is permitted during this period.",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "Bidder(s) are required to submit a duly signed Integrity Pact along with the bid; failure or violation results in disqualification.",
+        "pages": [
+          49
+        ]
+      },
+      {
+        "text": "Bidders must disclose any transgressions with public/government organizations within the last three years preceding bid submission.",
+        "pages": [
+          50
+        ]
+      },
+      {
+        "text": "Bidder(s) must disclose payments made to agents, brokers, or intermediaries in connection with the award of the contract.",
+        "pages": [
+          48
+        ]
+      },
+      {
+        "text": "Bidder(s) must not instigate any third person to commit actions violating the integrity pact principles.",
+        "pages": [
+          50
+        ]
+      },
+      {
+        "text": "Bidders must have a Code of Conduct clearly rejecting the use of bribes and other unethical behavior and a compliance program for the implementation of the code of conduct throughout the company.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "If the Bidder is a partnership or consortium, the Integrity Pact must be signed by all partners and consortium members.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "If the Bidder is a Company, the Pact must be signed by a representative duly authorized by Board resolution.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "In case of joint venture, all the partners are required to sign the integrity pact.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "All rights and remedies stipulated in this Integrity Pact are in addition to other legal rights and remedies under the Contract and/or law and are cumulative.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "The provisions of this Pact will have precedence over the RFP documents with regard to any covered provisions.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "Bidders must have a Code of Conduct clearly rejecting bribes and unethical behavior with a compliance program for implementation throughout the company.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "The Bidder must sign the Integrity Pact; if a partnership, consortium, or joint venture, all partners/members must sign it.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "A Declaration for Compliance form must be submitted on the bidder's letterhead, undertaking to abide by all terms including deviations from technical specifications (if any).",
+        "pages": [
+          55
+        ]
+      },
+      {
+        "text": "Any deviation from the listed technical specifications must be written out in a 'List of deviations' section.",
+        "pages": [
+          55
+        ]
+      },
+      {
+        "text": "A Letter of Satisfaction form is required on the Bank's or Company's letterhead, stating satisfactory performance and no adverse remarks against the bidder.",
+        "pages": [
+          56
+        ]
+      },
+      {
+        "text": "The accepted bidder must execute a Service Level Agreement containing terms and conditions including indemnity and non-disclosure clauses.",
+        "pages": [
+          57
+        ]
+      }
+    ],
+    "eligibility": [
+      {
+        "text": "Bidder must be a Stand-Alone Health Insurance company licensed or registered with the IRDAI.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Bidder should be technologically enabled to provide robust IT systems for sharing and exchanging data with the bank on a real-time basis.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "The bank reserves the right to reject any or all offers based on its own evaluation of suitability, capabilities, track records, reputation among users, and other similar credentials.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "The bank shall not be under any obligation to accept the lowest or any other offer received in response to the tender notice.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Bidders must observe the highest standard of ethics and avoid corrupt practices such as offering, giving, receiving, or soliciting anything of value to influence officials.",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "Fraudulent practices, including misrepresentation of facts or collusive bidding, may lead to the rejection of a proposal, declaration of ineligibility (indefinitely or for a stated period), and exclusion from future contracts.",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "The Bank may disqualify bidders who violate the provisions of the Integrity Pact at any stage of the bidding process.",
+        "pages": [
+          49
+        ]
+      },
+      {
+        "text": "In case of a joint venture, all partners are required to sign the integrity pact.",
+        "pages": [
+          49
+        ]
+      },
+      {
+        "text": "The Bank may debar a bidder from future bidding processes for a minimum period of five years if exclusion is imposed.",
+        "pages": [
+          50
+        ]
+      },
+      {
+        "text": "Violations may include conduct constituting corruption or offenses defined in Chapter IX of Indian Penal Code, Prevention of Corruption Act, Bhartiya Nyaya Sanhita, or GFR 2017.",
+        "pages": [
+          51
+        ]
+      },
+      {
+        "text": "The decision by the Bank regarding a breach of the Pact is final and conclusive on the Bidder.",
+        "pages": [
+          51
+        ]
+      },
+      {
+        "text": "The Bank has appointed Independent External Monitors (IEMs) to review compliance independently and objectively.",
+        "pages": [
+          51
+        ]
+      },
+      {
+        "text": "Monitors have unrestricted access to all project documentation of the Bank and Bidder upon request and demonstration of valid interest.",
+        "pages": [
+          52
+        ]
+      },
+      {
+        "text": "Disputes arising between the parties regarding the Agreement/Pact shall first be referred to IEM, then after examination, to CVC through the Vigilance Dept.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "If the Bidder is a Company, the Pact must be signed by a representative duly authorized by a Board resolution.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "In case of any contradiction between the Integrity Pact and its annexures, the clause in the Integrity Pact will prevail.",
+        "pages": [
+          54
+        ]
+      },
+      {
+        "text": "The Bank has the right to audit the records of the Company, and may impose penalty and Liquidated Damages if performance is not as per satisfaction.",
+        "pages": [
+          57
+        ]
+      },
+      {
+        "text": "The selected Insurance Company shall not have the right to terminate the agreement for convenience; only termination by the Bank or regulatory authority is permitted.",
+        "pages": [
+          57
+        ]
+      }
+    ],
+    "important_dates": [
+      {
+        "text": "Last Date for seeking Clarification: 18.05.2026",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Issue of Clarifications: 27.05.2026",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Last Date and Time for receipt of Proposals: 08.06.2026 upto 5.00 PM",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Date and Time of Opening of Proposals: 10.06.2026, 11.00 AM",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Technical Evaluation by Department: 12.06.2026",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Date of Presentation of shortlisted bidders: 17.06.2026",
+        "pages": [
+          4
+        ]
+      },
+      {
+        "text": "Proposals submitted by the Insurance Company shall be processed by the Bank with speed and efficiency and all decisions thereon should be communicated by it in writing within a reasonable period not exceeding 15 days from receipt.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Proposals submitted by the Insurance Company shall be processed... within a reasonable period not exceeding 15 days from receipt.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "Clarification to RFP and Pre-Bid Queries can be requested on or before 18.05.2026 by 5.00 PM.",
+        "pages": [
+          12
+        ]
+      },
+      {
+        "text": "All proposals shall be valid for a period of 180 days from the last date of submission.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "The last date of submission of proposal is 08.06.2026 by 5 PM.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "The bid must be submitted on or before the timeline stipulated vide clause 1 of the RFP (referenced as E-Tendering portal deadline).",
+        "pages": [
+          11
+        ]
+      },
+      {
+        "text": "The arrangement may renew thereafter at the discretion of the Bank, subject to satisfactory performance.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "MIS reports... shall also be submitted by the 10th of the succeeding month.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "Not later than five business days prior to the last date of submission of response to this RFP.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "VA (Vulnerability Assessment) should be conducted at least on a half-yearly basis",
+        "pages": [
+          42
+        ]
+      },
+      {
+        "text": "PT (Penetration Testing) should be conducted at least on a yearly basis",
+        "pages": [
+          42
+        ]
+      },
+      {
+        "text": "SB shall provide the Bank at least with the half yearly DR testing reports",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "The Bank should be notified within 4 hours of any 'Suspected' breach from the time of breach discovery",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "The period for which such transgression(s) is/are to be reported by the Bidders shall be the last three years to be reckoned from date of bid submission.",
+        "pages": [
+          50
+        ]
+      },
+      {
+        "text": "The validity of this Integrity Pact shall extend up to 5 years or the complete execution of the contract to the satisfaction of both the Bank and the Bidder, including warranty period, whichever is later.",
+        "pages": [
+          52
+        ]
+      },
+      {
+        "text": "In case BIDDER is unsuccessful, this Integrity Pact shall expire after six months from the date of the signing of the contract.",
+        "pages": [
+          52
+        ]
+      },
+      {
+        "text": "The Monitor will submit a written report to the designated Authority of Bank within 4 weeks from the date of reference or intimation to him by the Bank/Bidder...",
+        "pages": [
+          51
+        ]
+      }
+    ],
+    "commercial_requirements": [
+      {
+        "text": "The successful bidder should remit the revenue/commission payable to the bank by the 10th working day of every month at the corporate level with complete details for all the policies issued till end of the previous month.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "The successful bidder shall pay the mutually agreed remuneration/commission due to the Bank on a monthly basis without delay.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "The product wise applicable commission rates should be furnished as per Annexure -4",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "Any expenditure towards integration of APIs, technology or system synchronization etc shall be borne by the successful bidder, as and when required.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "All cost and expenses (whether in terms of time or material or money) incurred by the Applicants in any way associated with the development, preparation and submission of proposal including but not limited to attendance at meetings, discussions, demonstrations, etc. and providing any additional information required by Bank, will be borne entirely and exclusively by the Applicants.",
+        "pages": [
+          14
+        ]
+      },
+      {
+        "text": "Bidders will have to make their travel and stay arrangements at their own cost. Bank will not bear any kind of cost for the same.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "The Bank reserves the absolute and unconditional right to reject the application in response to this Invitation for Proposal if it is not in accordance with the requirements and no correspondence will be entertained by the Bank in the matter.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "Proposals received after the specified time on the last date shall not be eligible for consideration and shall be summarily rejected.",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "text": "The Bank shall arrange to enter into agreement with the selected Stand-Alone Health Insurance Company/ies who shall agree to the terms and conditions stipulated by the Bank.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "It will be the sole responsibility of the Company to provide uninterrupted service to the customer/s.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "The bidder's bid is accepted shall have to execute an agreement containing terms & conditions of contract including indemnity, non-disclosure clauses etc.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "The company should be in a position to remit the revenue / commission payable to the Bank every month at the corporate level with complete details.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "Bank reserves the right to negotiate with L1 insurance company on pricing/commission after allotment of tender anytime during the tenure of the agreement.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Bank shall not be under obligation to accept the lowest or any other offer received in response to this tender notice.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "Bidder should provide estimated potential for next 3 years that Indian Overseas Bank holds to do Standalone health insurance business and earn revenue from the same.",
+        "pages": [
+          35
+        ]
+      },
+      {
+        "text": "Please provide a detailed Business strategy & road map for the Bank to achieve the same.",
+        "pages": [
+          36
+        ]
+      },
+      {
+        "text": "Bidder must ensure and incorporate all necessary security and control features within the application, API, Integrations, OS, Platform, Interface. Server, database, network, logs etc. wherever applicable.",
+        "pages": [
+          40
+        ]
+      },
+      {
+        "text": "SB shall fix any security findings/vulnerabilities without any additional cost to the Bank (or at no extra cost)",
+        "pages": [
+          42
+        ]
+      },
+      {
+        "text": "If replacement is required to close observations, SB must replace solution(s) with solutions meeting specifications of RFP at no extra cost",
+        "pages": [
+          43
+        ]
+      },
+      {
+        "text": "Secure use of open-source technologies: Developer shall disclose all binary executables (i.e., compiled or byte code; source code is not required)",
+        "pages": [
+          42
+        ]
+      },
+      {
+        "text": "Secure exchange of payment messages through secure mechanism but not limited to secure message queues, secure file transfer, secure API.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "SB application should meet the requirements for zoning security and prevent direct access from the user interface layers to the database layers.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "SB to adhere Data localization norms as per regulatory requirements.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "The service provider must ensure compartmentalization techniques must be employed to isolate Bank data from other customers' data.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "SB must ensure integrate devices with Security Information and Event Management (SIEM) systems for continuous monitoring. Monitor access, threats, audit logs, system usage, protection of log information, and administrator/operator activities.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "SB shall provide the Bank at least with the half yearly DR testing reports.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "The Service Provider shall be responsible for any financial losses or penalties (up to the agreed Cap) that may occur due to a Service Provider breach.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Data Breach Notification: The Bank should be “immediately” notified of any confirmed breach without any undue delay. The Bank shall contractually ensure that they are notified within 4 hours of any “Suspected” breach from the time of breach discovery.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "The Service Provider shall support seamless return of data to the Bank without any vendor-lock in.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "Further, as mentioned in the Guidelines all the payments made to Indian Agent/representative have to be in Indian rupees only.",
+        "pages": [
+          47
+        ]
+      },
+      {
+        "text": "The Bidder who has signed the Integrity Pact shall not approach the Courts while representing the matter to IEMs and shall wait for their decision in the matter.",
+        "pages": [
+          48
+        ]
+      },
+      {
+        "text": "Similarly, all payments made to Indian Agent/representative have to be in Indian rupees only.",
+        "pages": [
+          48
+        ]
+      },
+      {
+        "text": "If the Bidder supplied same quantity with similar specification product/systems or subsystems at a lower price... that very price, with due allowance for elapsed time, will be applicable to the present case and the difference in cost would be refunded by the Bidder.",
+        "pages": [
+          49
+        ]
+      },
+      {
+        "text": "The bidder's bid must abide by all terms and conditions stipulated by the Bank in this RFP including all addendum, corrigendum etc.",
+        "pages": [
+          55
+        ]
+      },
+      {
+        "text": "Any deviation from these terms may result in disqualification of bids.",
+        "pages": [
+          55
+        ]
+      }
+    ],
+    "project_duration": [
+      {
+        "text": "This arrangement will be initially for a period of 3 years subject to satisfactory performance and annual review.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "Bank at its sole discretion may renew the arrangement for a further period of 3 years on mutually agreed terms.",
+        "pages": [
+          7
+        ]
+      },
+      {
+        "text": "The tie up between the selected Company and the Bank shall be for a minimum period of 3 years subject to termination, commencing from a date to be determined/advised after completion of the process of selection.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "The arrangement may renew thereafter at the discretion of the Bank, subject to satisfactory performance.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "The tie-up between the selected Company and the Bank shall be for a minimum period of 3 years, subject to termination, commencing from a date to be determined /advised after completion of the process of selection.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Bank at its sole discretion may renew the arrangement for a further period of 3 years or on mutually agreed terms subject to regulatory guidelines or discontinue this arrangement.",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "The validity of this Integrity Pact shall extend up to 5 years or the complete execution of the contract to the satisfaction of both the Bank and the Bidder, including warranty period, whichever is later.",
+        "pages": [
+          52
+        ]
+      }
+    ],
+    "important_conditions": [
+      {
+        "text": "Nothing herein shall be deemed to create any association, partnership, joint venture or relationship of employer and employee between the Bank and the successful bidder or any affiliates or subsidiaries thereof and the successful bidder and the Bank shall be deemed to be independent contractors.",
+        "pages": [
+          8
+        ]
+      },
+      {
+        "text": "The data of the Bank’s customers who have purchased insurance policies of the successful bidder should be kept confidential and secret by the successful bidder who should ensure that it is not used for any purpose other than rendering relevant services to the policy holders and to the Bank.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "No part of the data of the Bank’s customers should be exploited or disclosed to any third party for any purpose other than the purposes as provided under this RFP and the Agreement.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "The successful bidder shall not sub -contract any part of the services without prior written consent of the Bank.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "The successful bidder shall inform the Bank within 24 hours of any regulatory breach, penalty, show cause or warning issued by IRDAI, SEBI, RBI, or regulatory authorities.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "The successful bidder must provide adequate operational support to assist the Bank in sales, training, renewals, claim settlement and grievance redressal.",
+        "pages": [
+          9
+        ]
+      },
+      {
+        "text": "The Bidder shall render himself liable for disqualification/premature termination of contract apart from other legal action as may be warranted for any laxity on its part.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "Any reproduction of this RFP by photocopy/Photostat / Electronic or any other means is strictly prohibited without prior consent of the bank.",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "Bank reserves the right to accept or reject any application without assigning any reason whatsoever at any stage of the process.",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "text": "The selected Bidder shall take all precautions necessary to keep the information totally confidential and under no circumstances it will be disclosed to any third party or competitors.",
+        "pages": [
+          18
+        ]
+      },
+      {
+        "text": "Any vendor/bidder not signing the document [Integrity Pact] or refusing to sign shall be disqualified in the bidding process.",
+        "pages": [
+          19
+        ]
+      },
+      {
+        "text": "The Bank / RBI, or any other regulatory authority shall have right to audit the records of the Company.",
+        "pages": [
+          20,
+          57
+        ]
+      },
+      {
+        "text": "In any condition Bank shall not be liable to pay damages to the Company.",
+        "pages": [
+          20,
+          57
+        ]
+      },
+      {
+        "text": "The selected company shall not terminate the agreement for convenience. The termination, however, would be in accordance with the IRDAI Regulations.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "The Company and its representatives should maintain secrecy and confidentiality of all records and information shared under this contract.",
+        "pages": [
+          19,
+          57
+        ]
+      },
+      {
+        "text": "The company will not raise any dispute with the bank regarding settlement of claim.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "The Bank shall have the right to terminate the agreement by issue of notice without assigning reason and also in the case of breach of contractual obligations by the selected Insurance Company.",
+        "pages": [
+          20,
+          57
+        ]
+      },
+      {
+        "text": "The selected company shall not terminate the agreement for convenience.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "No Assignment. This Agreement shall not be assigned by either party, by operation of law or otherwise, without the prior written consent of the other party.",
+        "pages": [
+          20
+        ]
+      },
+      {
+        "text": "This Request for Proposal (RFP) is not an offer... No contractual obligations whatsoever shall arise from the RFP process unless or until a formal contract is signed and executed.",
+        "pages": [
+          21
+        ]
+      },
+      {
+        "text": "The Bank reserves the right to reject a proposal for award if it determines that the bidder recommended for award has engaged in corrupt or fraudulent practices.",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "No bidder shall contact through any means of communication to the Bank or any of its employees on any matter relating to its Bid, from the time of Bid opening to the time the contract is awarded.",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "The selected bidder shall be the principal employer... and shall be vicariously liable for all the acts, deeds, matters or things...",
+        "pages": [
+          22
+        ]
+      },
+      {
+        "text": "All remuneration, claims, wages dues, etc., of such employees, agents, contractors, sub -contractors, etc., of the selected bidder, shall be paid by the selected bidder alone.",
+        "pages": [
+          23
+        ]
+      },
+      {
+        "text": "The selected bidder must undertake to indemnify Indian Overseas Bank and its officers, employees, and agents against liability... for actual or alleged direct or contributory infringement of, or inducement to infringe, any Indian or foreign patent, trademark or copyright.",
+        "pages": [
+          23
+        ]
+      },
+      {
+        "text": "Further, the selected bidder shall irrevocably indemnify the Bank against all actions, suits, claims, proceedings, losses, damages, liabilities... due to repudiation of claims/ delay in settlement of claims of insured.",
+        "pages": [
+          23
+        ]
+      },
+      {
+        "text": "If our bid for the above arrangement is accepted this bid together with Bank's written acceptance thereof shall constitute a binding contract between us.",
+        "pages": [
+          39
+        ]
+      },
+      {
+        "text": "We have not been blacklisted by any tie-up partner or Public Sector Undertaking (PSU) /PSBs/ Private Banks.",
+        "pages": [
+          39
+        ]
+      },
+      {
+        "text": "Bank is not bound to accept any bid received, and Bank may reject all or any bid/s.",
+        "pages": [
+          39
+        ]
+      },
+      {
+        "text": "Any AI/ML models used by the SB shall not be trained, fine-tuned, or retrained using Bank or Bank customer sensitive data. AI models shall be deployed on-premises by default.",
+        "pages": [
+          40
+        ]
+      },
+      {
+        "text": "SB must have a mechanism for completing the background verification of the officials before onboarding.",
+        "pages": [
+          40
+        ]
+      },
+      {
+        "text": "SB must provide flexibility by providing suitable options such that data can be easily and seamlessly migrated in case if bank decide to switch to another SB or host it on Bank's own premises.",
+        "pages": [
+          41
+        ]
+      },
+      {
+        "text": "All critical and PII data of the bank to be maintained on -premises and physically/logically segregated from other entities' data hosted on SB's premises. Compartmentalization techniques must be employed to isolate Bank data from other customers' data.",
+        "pages": [
+          40
+        ]
+      },
+      {
+        "text": "SB environment should be segregated into militarized zone (MZ) and demilitarized zone (DMZ) separated by Firewall, where any access from an external entity is permitted through DMZ only.",
+        "pages": [
+          40
+        ]
+      },
+      {
+        "text": "SB must ensure the below: a) The security for hypervisors, containers, and Software defined networks b) Proper and adequate incident detection, response, notification, and remediation. c) Strong perimeter security for API gateways and web consoles d) MFA.",
+        "pages": [
+          41
+        ]
+      },
+      {
+        "text": "The service provider must certify the complete destruction of data at all locations, including backups",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "When no longer required, information/data/equipment shall be returned to Bank's control, destroyed, or held until otherwise directed by the Bank",
+        "pages": [
+          43
+        ]
+      },
+      {
+        "text": "The service provider must adhere to the Bank's data retention and destruction policies",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "SB needs to support during any bank regularity audits, not limited to scope, physical visit to SB premises, etc.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "SB must provide forensic investigation support to the Bank when required",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "SB must ensure compartmentalization techniques are employed to isolate Bank data from other customers' data. Details of these techniques must be shared with the Bank.",
+        "pages": [
+          44
+        ]
+      },
+      {
+        "text": "The signing of this Integrity Pact is a preliminary qualification to participate in the aforementioned bidding process.",
+        "pages": [
+          46
+        ]
+      },
+      {
+        "text": "No employee of the bank, personally or through family members, will demand; take a promise for or accept, for self or third person, any material or immaterial benefit which the person is not legally entitled to.",
+        "pages": [
+          46
+        ]
+      },
+      {
+        "text": "The Bank will ensure to provide level playing field to all Bidders alike by treating all Bidders alike during the pre-contract stage and providing same information to all.",
+        "pages": [
+          46
+        ]
+      },
+      {
+        "text": "In case any such preceding misconduct on the part of such official(s) is reported by the Bidder with full and verifiable facts, necessary disciplinary proceedings or criminal proceedings may be initiated, and such a person shall be debarred from further dealings.",
+        "pages": [
+          47
+        ]
+      },
+      {
+        "text": "The Bank will exclude from the process all known prejudiced persons.",
+        "pages": [
+          47
+        ]
+      },
+      {
+        "text": "The Bidder will not, directly or through any other person or firm, offer, promise or give to any of the bank's employees involved in the tender process or the execution of the contract any material or other benefit which he/she is not legally entitled to.",
+        "pages": [
+          47
+        ]
+      },
+      {
+        "text": "The BIDDER will not enter with other Bidders into any undisclosed agreement or understanding, whether formal or informal, to restrict competitiveness or introduce cartelisation.",
+        "pages": [
+          47
+        ]
+      },
+      {
+        "text": "The Bidder further undertakes that it has not given, offered or promised to give, directly or indirectly any bribe, gift, consideration, reward, favour, any material or immaterial benefit or other advantage to any official of the Bank in procuring the Contract.",
+        "pages": [
+          47
+        ]
+      },
+      {
+        "text": "The Bidder who has signed the Integrity Pact shall not approach the Courts while representing the matter to IEMs and shall wait for their decision in the matter.",
+        "pages": [
+          47
+        ]
+      },
+      {
+        "text": "The actions stipulated in this Integrity Pact are without prejudice to any other legal action that may follow in accordance with the provisions of the extant laws in force relating to any civil or criminal proceedings.",
+        "pages": [
+          52
+        ]
+      },
+      {
+        "text": "This Pact is subject to Indian Laws. The place of performance and jurisdiction is as notified by the Bank.",
+        "pages": [
+          52
+        ]
+      },
+      {
+        "text": "All rights and remedies of the parties hereto shall be in addition to all the other legal rights and remedies belonging to such parties under the Contract and/or law and the same shall be deemed to be cumulative...",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "For the sake of brevity, both the Parties agree that this Pact will have precedence over the RFP documents with regard to any of the provisions covered under this Pact.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "Changes and supplements, if any, need to be necessarily made in writing and signed by the duly authorized representatives of the Bidder and the Bank. It is clarified that there are no parallel/ Side agreements in this regard...",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "If the Bidder is a partnership or a consortium, this Pact must be signed by all the partners and consortium members.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "Should one or several provisions of this Pact turn out to be invalid, the remainder of this Pact shall remain valid.",
+        "pages": [
+          52
+        ]
+      },
+      {
+        "text": "Any dispute or difference arising between the parties with regard to the terms of this Agreement/Pact... shall be first referred to IEM...",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "The remainder of this Pact shall remain valid if one or several provisions turn out to be invalid.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "This Pact is subject to Indian laws. The place of performance and jurisdiction is the Head Office/Head Quarters of the Bank.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "If the Bidder is a partnership or consortium, this Pact must be signed by all the partners and consortium members.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "In case of joint venture, all partners are required to sign the integrity pact.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "Any dispute or difference arising between the parties shall be first referred to IEM, who, then after examination, referred to CVC through Vigilance Dept.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "Issues like warranty/Guarantee etc. shall be outside the purview of IEM.",
+        "pages": [
+          53
+        ]
+      },
+      {
+        "text": "In the event of any contradiction between the Integrity Pact and its annexures, the clause in the Integrity Pact will prevail.",
+        "pages": [
+          54
+        ]
+      },
+      {
+        "text": "The Company must maintain all records related to policy documents of the policy holders and ensure its safe custody.",
+        "pages": [
+          57
+        ]
+      },
+      {
+        "text": "The Company should be able to provide online system access for MIS as well as provide MIS reports related to business under this contract to the Bank as per requirements from time to time.",
+        "pages": [
+          57
+        ]
+      },
+      {
+        "text": "It will be the sole responsibility of the Company to provide uninterrupted service to the customer/s.",
+        "pages": [
+          57
+        ]
+      },
+      {
+        "text": "The Company shall indemnify the Bank for breach of confidentiality and obligations by the Company, its representatives and agents at the first demand by the Bank.",
+        "pages": [
+          57
+        ]
+      },
+      {
+        "text": "The Company shall indemnify, protect and save the Bank against all claims, losses, costs, damages, expenses, action suits and other proceedings resulting from infringement of any law pertaining to patent, trademarks, copyrights etc. or such other statutory infringements.",
+        "pages": [
+          57
+        ]
+      },
+      {
+        "text": "The Company should procure necessary licenses, permissions and approvals from the competent authority and comply with all applicable laws in respect of insurance business done by them as well as in relation to the sub-contractors engaged by them.",
+        "pages": [
+          57
+        ]
+      },
+      {
+        "text": "The selected Company shall not terminate the agreement for convenience. The terminations however would be in accordance with the IRDAI Regulations.",
+        "pages": [
+          57
+        ]
+      },
+      {
+        "text": "The Bank may impose penalty and Liquidated Damages if the performance is not as per Bank's satisfaction.",
+        "pages": [
+          57
+        ]
+      },
+      {
+        "text": "The Bank shall have right to Set Off any amount which is due to the Company.",
+        "pages": [
+          57
+        ]
+      },
+      {
+        "text": "The bidder whose bid is accepted shall have to execute an agreement containing terms & conditions of contract including indemnity, non-disclosure clauses etc.",
+        "pages": [
+          57
+        ]
+      }
+    ]
+  }
+}

@@ -111,3 +111,25 @@ instant); a second `npm run dev` run of setup took 1 s. `npm run dev` started El
 - Electron's `loadFile` of the temp export folder when the Windows temp path contains non-ASCII characters.
 - LF line endings after checkout (`.gitattributes` only takes effect for files git re-checks-out: run `git add --renormalize .` once).
 - Console window flashing: child processes use `windowsHide`, but the Python pipeline spawned by uvicorn is launched by `subprocess.Popen` without `CREATE_NO_WINDOW`; it inherits the hidden parent console, which is believed fine.
+
+## Calendar export and German view (branch `yasharth/german-output-ics`)
+
+### Calendar (.ics)
+- `electron/renderer/src/calendar.js` (pure, tested in `calendar.test.mjs`, 54 tests): parses dates from "Important dates" bullets, and from commercial/conditions bullets only when
+  an event word (deadline, submission, opening, Frist, ...) is present. English and German months, numeric day-first (marked `assumed: DD/MM` when both parts are 12 or less
+  and differ; 12/12/2026 is not ambiguous), ISO, ranges, 12h/24h times. No year, no day, two-digit year or an impossible date goes to "needs review", never guessed.
+  All-day events are stored with an inclusive end; the builder writes the exclusive DTEND. Times are floating. UID is a stable hash of run id + bullet text + start.
+- UI: the timeline heading in the summary iframe gets a button (`klaro:calendar` message); `CalendarDialog.jsx` shows the preview. New preload methods `saveIcs`, `openCalendarLink`
+  (main allows only https://calendar.google.com/calendar/render).
+- Limits: a bullet with two unrelated dates yields two events with the same title; titles are the label before ':' or the sentence minus the date; very free-form phrasing ("mid-October") is only listed for review.
+
+### German view
+- `backend/translation/translate_summary.py` (CLI `--target de`): sentence-level segments, values only, ids/order/pages/issuer unchanged, shares the translation cache (`translate_texts` in `translator.py`),
+  output written to `.staging_de` then moved, so a cancel leaves nothing. Output files use the same names as Shrey's `--german-summary`. Fidelity: numbers (separator-insensitive), dates, currency; flags stored in `executive_summary_de.meta.json`, never fixed.
+- Jobs: shares the single worker queue. Starting a translation while a job is active returns 409; an analysis started during a translation queues behind it.
+- `opus-mt-en-de` is a second model; setup downloads it but only warns on failure (offline demo safety). Shrey's `translate_summary_data` is untouched.
+- Speed: measured 0.05 s/segment with the de-en model as proxy (en-de was not installed); the UI estimate uses 0.15 s/segment until measured for real.
+
+### Phase 3 (translation quality, no training)
+Harness at `scripts/translation_ab/` (masking, decoding, glossary variants, chrF round trip, decision rule). Not yet run: it needs the en-de model. Glossary TSVs hold proposals only, all `reviewed=no`.
+Larger models (opus-mt-tc-big-*): the Hugging Face API returned 401 for both, so existence and size are unverified; base en-de is 298 MB. Decision: pending the run.

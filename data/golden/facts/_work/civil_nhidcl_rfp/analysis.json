@@ -1,0 +1,1767 @@
+{
+  "document_name": "chunks",
+  "total_chunks": 15,
+  "total_pass_a_inference_time_seconds": 765.97,
+  "total_pass_b_inference_time_seconds": 823.96,
+  "total_inference_time_seconds": 1589.93,
+  "chunks": [
+    {
+      "chunk_id": 1,
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 30.53,
+      "pass_b_inference_time_seconds": 32.74,
+      "total_inference_time_seconds": 63.27,
+      "information": {
+        "overview": [],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 2,
+      "pages": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 79.7,
+      "pass_b_inference_time_seconds": 65.13,
+      "total_inference_time_seconds": 144.83,
+      "information": {
+        "overview": [
+          {
+            "text": "Bidder shall bear all costs associated with preparation and submission of bid; Employer is not responsible for these costs.",
+            "page": 12
+          },
+          {
+            "text": "Bidder is encouraged to visit the site, examine surroundings (earth, water, aggregates, labour), and obtain necessary information at his own cost and risk.",
+            "page": 13
+          },
+          {
+            "text": "All documents relating to the bid shall be in English language.",
+            "page": 15
+          }
+        ],
+        "scope": [
+          {
+            "text": "Scope covered includes road maintenance works including construction/maintenance of National/State Highways.",
+            "page": 11
+          },
+          {
+            "text": "Bidder must demonstrate availability (owned, leased, or rented) of key equipment for work as stated in Appendix to ITB.",
+            "page": 12
+          },
+          {
+            "text": "Bidder must demonstrate availability of personnel with qualification and experience as stated in Appendix to ITB.",
+            "page": 12
+          },
+          {
+            "text": "Bidders are subject to disqualification for misleading representations or poor performance (abandonment, delays, litigation, financial failures).",
+            "page": 13
+          }
+        ],
+        "requirements": [
+          {
+            "text": "Bidder must submit scanned copies of reports on financial standing and certificate from Chartered Accountant as proof of turnover for last three years.",
+            "page": 11
+          },
+          {
+            "text": "Scanned copy of information regarding any litigation or arbitration during last five years involving the Bidder, including parties, disputed amount, and status.",
+            "page": 11
+          },
+          {
+            "text": "Undertaking that the bidder is not affiliated to firm/entity hired by Employer for preparation of bid documents or supervision of contract.",
+            "page": 11
+          },
+          {
+            "text": "Bidder must upload scanned copies of affidavit on Stamp Paper (attested by Notary Public) certifying information correctness and other certificates as defined in Section-3.",
+            "page": 12
+          },
+          {
+            "text": "Bid must be submitted only once; submitting more than one bid results in disqualification.",
+            "page": 12
+          }
+        ],
+        "eligibility": [
+          {
+            "text": "Each bidder in its name should have achieved a minimum average annual financial turnover (civil engineering construction/maintenance) equal to amount indicated in NIT for last three years ending 31st March of previous financial year, certified by Chartered Accountant.",
+            "page": 11
+          },
+          {
+            "text": "Bidder must satisfactorily complete (not less than 90% of contract value) similar works on National/State Highways during last five years as prime contractor or JV partner.",
+            "page": 11
+          },
+          {
+            "text": "Qualifying experience options include: three works of Rs. 6,75,060 each; two works of Rs. 9,45,084 each; or one work of Rs. 13,50,120.",
+            "page": 11
+          },
+          {
+            "text": "Escalation factors for past works: Year Before (1.1), Two (1.21), Three (1.33), Four (1.46), Five (1.61) to bring value to current financial year 2025-26.",
+            "page": 11
+          },
+          {
+            "text": "Bidder must have available bid capacity greater than total estimated value put to tender, calculated using formula: (A* N* 2.5 - B).",
+            "page": 12
+          }
+        ],
+        "important_dates": [
+          {
+            "text": "Documents to be submitted in physical form must be delivered by 16:00 Hrs on Bid Due Date i.e. 14.04.2026.",
+            "page": 14
+          },
+          {
+            "text": "Bids shall remain valid for a period of 120 days after the deadline date for bid submission specified in Clause 20.",
+            "page": 15
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "The Bidder shall quote single percentage rate above/below the BoQ/scheduled rates on appropriate format enclosed as part of tender document on e-tender portal.",
+            "page": 14
+          },
+          {
+            "text": "All duties, taxes (excluding GST), royalties and other levies payable by the Contractor under the Contract, or for any other cause, shall be included in the rates, prices, and total bid price submitted by the Bidder.",
+            "page": 14
+          },
+          {
+            "text": "The rates and prices quoted by the Bidder shall be fixed for the duration of the Contract and shall not be subject to adjustment.",
+            "page": 14
+          },
+          {
+            "text": "Earnest Money/Bid Security, in the amount as specified in the NIT. (E-Bank guarantee/ Bank guarantee must be in favor of the Employer).",
+            "page": 15
+          },
+          {
+            "text": "Each bidder in its name should have the following; - a) achieved a minimum average annual financial turnover (in all classes of civil engineering construction and maintenance works only) equal to the amount indicated in NIT during last three years ending 31 st March of the previous financial year duly certified by Chartered Accountant.",
+            "page": 11
+          },
+          {
+            "text": "The available bid capacity will be calculated as under: Available Bid capacity = (A* N* 2.5 - B)",
+            "page": 12
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": [
+          {
+            "text": "Bids which are not substantially responsive to the requirements of the Bid Documents, shall be rejected.",
+            "page": 13
+          },
+          {
+            "text": "Failure to submit the certificates/documents as specified above shall make the bid non-responsive.",
+            "page": 11
+          },
+          {
+            "text": "Each Bidder shall submit only one Bid for the Works. A Bidder who submits more than one Bid will cause such bids to be disqualified.",
+            "page": 12
+          },
+          {
+            "text": "The bidder is expected to examine carefully all instructions, conditions of contract, contract data, forms, scope, road maintenance Standards and Specifications, bill of quantities, etc. in the Bid Documents. Failure to comply with the requirements of Bid Documents shall be at the bidder's own risk.",
+            "page": 13
+          },
+          {
+            "text": "The Employer does not assume any responsibility in case the bidder fails to do so and does not take any action, if required, with respect to any relevant addendum.",
+            "page": 13
+          },
+          {
+            "text": "A Bidder may refuse the request [to extend validity] without forfeiting his bid security. A Bidder agreeing to the request will not be required or permitted to modify his bid but will be required to extend the validity of his bid security for a period of the extension, and in compliance with Clause 16 in all respects.",
+            "page": 15
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": 3,
+      "pages": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 48.66,
+      "pass_b_inference_time_seconds": 65.87,
+      "total_inference_time_seconds": 114.53,
+      "information": {
+        "overview": [
+          {
+            "text": "The contract shall be for the whole Works as described in Clause 1 based on the Bill of Quantities submitted by the Bidder.",
+            "page": 15
+          },
+          {
+            "text": "All payments and bid prices shall be made/quoted in Indian Rupees.",
+            "page": 16
+          }
+        ],
+        "scope": [
+          {
+            "text": "The Bidder must include all duties, taxes (excluding GST), royalties, and other levies in the rates, prices, and total bid price.",
+            "page": 15
+          },
+          {
+            "text": "Bid prices and rates are fixed for the duration of the Contract and not subject to adjustment.",
+            "page": 15
+          },
+          {
+            "text": "Evaluation of bids covers eligibility criteria, documents in physical form, compliance with Bidding Documents, Bill of Quantities, Specifications, and Drawings.",
+            "page": 19
+          }
+        ],
+        "requirements": [
+          {
+            "text": "Bidders must submit an Affidavit duly notarized as per the format provided in Section-3.",
+            "page": 15
+          },
+          {
+            "text": "Bids must be submitted via e-tender portal, and physical documents submitted on demand draft for fees/security.",
+            "page": 17
+          },
+          {
+            "text": "Any attempt by a Bidder to influence Employer's processing of bids or award decisions may result in the rejection of his Bid.",
+            "page": 19
+          },
+          {
+            "text": "Documents submitted in physical form shall prevail over documents submitted through online process in case of discrepancy.",
+            "page": 18
+          }
+        ],
+        "eligibility": [
+          {
+            "text": "Bids must remain valid for a period of 120 days after the deadline date for bid submission; shorter periods are rejected.",
+            "page": 15
+          },
+          {
+            "text": "Bidder must furnish Earnest Money/Bid Security in the amount specified in the NIT (Notice Inviting Tender) only.",
+            "page": 15
+          },
+          {
+            "text": "Bid security must be a Bank Guarantee or e-Bank Guarantee from a Scheduled Commercial Bank approved by RBI with net worth not less than Rs. 500 crore.",
+            "page": 16
+          }
+        ],
+        "important_dates": [
+          {
+            "text": "Bids shall remain valid for a period of 120 days after the deadline date for bid submission.",
+            "page": 15
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "The Contract shall be for the whole Works, as described in Clause 1.1 based on the Bill of Quantities submitted by the Bidder.",
+            "page": 15
+          },
+          {
+            "text": "The Bidder shall quote single percentage rate above/below the BoQ/scheduled rates on appropriate format enclosed as part of tender document on e-tender portal.",
+            "page": 15
+          },
+          {
+            "text": "All duties, taxes (excluding GST), royalties and other levies payable by the Contractor under the Contract, or for any other cause, shall be included in the rates, prices, and total bid price submitted by the Bidder.",
+            "page": 15
+          },
+          {
+            "text": "The rates and prices quoted by the Bidder shall be fixed for the duration of the Contract and shall not be subject to adjustment.",
+            "page": 15
+          },
+          {
+            "text": "All payments shall be made in Indian Rupees.",
+            "page": 15
+          },
+          {
+            "text": "The Bidder shall furnish, as part of the Bid, Earnest Money/Bid Security in the amount as specified in the NIT. (E-Bank guarantee/ Bank guarantee must be in favor of the Employer).",
+            "page": 15
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": [
+          {
+            "text": "In case of forfeiture of bid security, the bidder shall also be debarred from participation in the works of MoRTH/NHAI/NHIDCL/Centrally Sponsored Scheme for a period of one year from the bid due date of this work.",
+            "page": 16
+          },
+          {
+            "text": "Any Bid having bid security for lesser value and shorter validity period shall be treated as non-responsive.",
+            "page": 16
+          },
+          {
+            "text": "The acceptance of the guarantees shall also be subject to the conditions that the capital adequacy of the Bank shall not be less than the latest norms prescribed by RBI.",
+            "page": 16
+          },
+          {
+            "text": "The bank guarantee issued by a Cooperative Bank shall not be accepted.",
+            "page": 16
+          },
+          {
+            "text": "In all cases, the amount of Earnest Money, forms and validity shall be announced.",
+            "page": 17
+          },
+          {
+            "text": "Information relating to the examination, clarification, evaluation, and comparison of bids and recommendations for the award of a contract shall not be disclosed to bidders or any other person not officially concerned with such process until the award to the successful Bidder has been announced.",
+            "page": 19
+          },
+          {
+            "text": "Any attempt by a Bidder to influence the Employer's processing of bids or award decisions may result in the rejection of his Bid.",
+            "page": 19
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": 4,
+      "pages": [
+        19,
+        20,
+        21,
+        22
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 68.19,
+      "pass_b_inference_time_seconds": 47.77,
+      "total_inference_time_seconds": 115.96,
+      "information": {
+        "overview": [
+          {
+            "text": "The Employer shall prepare minutes of the Bid opening including information disclosed to those present.",
+            "page": 19
+          },
+          {
+            "text": "Bids accompanied with valid bid security, bid document fee, and tender processing fee will be taken up for evaluation.",
+            "page": 19
+          },
+          {
+            "text": "The Evaluation Committee will finalize the list of responsive bidders whose financial bids are eligible for consideration.",
+            "page": 19
+          },
+          {
+            "text": "The Employer shall inform bidders about the result of technical evaluation by uploading on the web portal giving 7 days time for objections.",
+            "page": 19
+          },
+          {
+            "text": "At the opening of Financial Bids, the names of responsive bidders and their bid prices will be announced.",
+            "page": 19
+          }
+        ],
+        "scope": [
+          {
+            "text": "Technical bids evaluation includes determining if the bid meets eligibility criteria, contains required physical documents, and is substantially responsive.",
+            "page": 19
+          },
+          {
+            "text": "Financial bids responsiveness is determined with respect to remaining bid conditions including bill of quantities, Specifications, and drawings.",
+            "page": 19
+          },
+          {
+            "text": "Employer may require bidders to produce detailed price analyses if the bid is seriously unbalanced in relation to the Employer's estimate of cost.",
+            "page": 20
+          },
+          {
+            "text": "The Contract will be awarded to the bidder with the lowest evaluated Bid price who is substantially responsive.",
+            "page": 20
+          },
+          {
+            "text": "A Letter of Acceptance stating the sum the Employer will pay (Contract Price) will be issued prior to expiration of the bid validity period.",
+            "page": 21
+          },
+          {
+            "text": "The agreement will be signed by the Employer and the successful Bidder after the performance security is furnished.",
+            "page": 21
+          },
+          {
+            "text": "Performance security must be an irrevocable and unconditional guarantee from a Bank for an amount equal to 5% of the Bid Price.",
+            "page": 22
+          }
+        ],
+        "requirements": [
+          {
+            "text": "Bank guarantees accepted include State Bank of India, Indian Nationalised Banks, IDBI/ICICI Bank, Scheduled Commercial Banks with net worth not less than Rs. 500 crore.",
+            "page": 22
+          },
+          {
+            "text": "Cooperative Bank guarantees shall not be accepted for performance security.",
+            "page": 22
+          },
+          {
+            "text": "The performance security shall be valid until 60 days after the Defect Liability Period.",
+            "page": 22
+          },
+          {
+            "text": "Bidder must furnish Performance Security within '10 (ten) days of receipt of Letter of Acceptance.",
+            "page": 22
+          },
+          {
+            "text": "Agreement will be executed within 10 days of receipt of Performance Security.",
+            "page": 22
+          }
+        ],
+        "eligibility": [
+          {
+            "text": "Bids must meet eligibility criteria defined in Clauses 3 and 4 during detailed evaluation.",
+            "page": 19
+          },
+          {
+            "text": "Employer reserves the right to reject any bidder found to have engaged in corrupt, fraudulent, coercive, undesirable, or restrictive practices.",
+            "page": 22
+          },
+          {
+            "text": "A bidder found guilty of such practices shall not be eligible to participate in any tender issued by the Employer for a period of 2 years.",
+            "page": 22
+          }
+        ],
+        "important_dates": [
+          {
+            "text": "Employer will prepare minutes of Bid opening",
+            "page": 19
+          },
+          {
+            "text": "Bid security, bid document fee and Tender processing fee must accompany bids for evaluation",
+            "page": 19
+          },
+          {
+            "text": "7 days time for objections to technical evaluation results",
+            "page": 19
+          },
+          {
+            "text": "Award notification sent prior to expiration of Bid validity period",
+            "page": 21
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "Lowest evaluated Bid price is the award criterion (subject to Clause 31)",
+            "page": 21
+          },
+          {
+            "text": "Performance Security must be irrevocable, unconditional, from a named Indian bank for 5% of Bid Price",
+            "page": 22
+          },
+          {
+            "text": "Employer reserves right to accept or reject any bid and cancel process without liability",
+            "page": 21
+          },
+          {
+            "text": "Bidder must produce detailed price analyses if Bid is seriously unbalanced",
+            "page": 20
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": [
+          {
+            "text": "Process to be Confidential until award announcement",
+            "page": 19
+          },
+          {
+            "text": "Any effort to influence Employer in evaluation/award decisions results in bid rejection",
+            "page": 19
+          },
+          {
+            "text": "Errors in Financial Bids must be accepted by Bidder or Bid rejected and security forfeited",
+            "page": 20
+          },
+          {
+            "text": "Performance Security deemed to be cancelled if not furnished within 10 days of Letter of Acceptance",
+            "page": 22
+          },
+          {
+            "text": "Bidder excluded from future tenders for 2 years if found guilty of corrupt/fraudulent practices",
+            "page": 22
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": 5,
+      "pages": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 52.7,
+      "pass_b_inference_time_seconds": 52.8,
+      "total_inference_time_seconds": 105.5,
+      "information": {
+        "overview": [
+          {
+            "text": "The Employer is Managing Director NHIDCL located at 3rd Floor, PTI Building, 4- Parliament Street, New Delhi-110001.",
+            "page": 24
+          },
+          {
+            "text": "The project involves Balance work for rectification of damages caused to bituminous pavement and road side drain for laying of PHED pipelines in connection with the project work of 'Construction of 2-lane specification road with paved shoulder including Tunnel (300 m) at Rabongla on NH-510' under SARDP-NE Phase- 'A' on the EPC basis in the State of Sikkim.",
+            "page": 24
+          },
+          {
+            "text": "The tender process is a Percentage Rate Contract Basis, specifically referred to as the 'state of Sikkim – 2nd Call'.",
+            "page": 24
+          }
+        ],
+        "scope": [
+          {
+            "text": "Technical requirements include providing Tipper/Dumper Truck (1 unit), Back hoe loader (1 unit), and Tandem Roller (8-10 Ton) (1 unit).",
+            "page": 24
+          },
+          {
+            "text": "One Project Manager with B.E./B.Tech/AMIE in Civil Engineering, minimum 5 years of experience including 3 years on highway constructions/maintenance work of NH/SH is required.",
+            "page": 25
+          },
+          {
+            "text": "The Bidder must ensure availability of key equipment and provide documentary evidence supporting owning/leased/rented status for the specified machines.",
+            "page": 24
+          },
+          {
+            "text": "Qualification and experience of Key Personnel required for administration and execution of the Contract must be provided via upload of biographical data and signed CVs.",
+            "page": 32
+          }
+        ],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "Pre-bid meeting shall be held on 07.04.2026 (1600 Hrs onwards)",
+            "page": 25
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "Bids shall remain valid for the period specified in Clause 15.1.",
+            "page": 32
+          },
+          {
+            "text": "Undertaking regarding availability of minimum cash amounting to 25% of the value of work during implementation of the Contract towards working capital.",
+            "page": 32
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 6,
+      "pages": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 60.03,
+      "pass_b_inference_time_seconds": 56.22,
+      "total_inference_time_seconds": 116.25,
+      "information": {
+        "overview": [
+          {
+            "text": "The tender process is the 2nd Call for Balance work for rectification of damages caused to bituminous pavement and road side drain for laying of PHED pipelines under SARDP-NE Phase-A on an EPC basis in Sikkim.",
+            "page": 37
+          },
+          {
+            "text": "The issuing organization is NHIDCL (National Highways and Infra Dev Corp Ltd) acting under the jurisdiction of PMU-Gyalshing.",
+            "page": 37
+          },
+          {
+            "text": "The contract is awarded on a Percentage Rate Contract Basis in the state of Sikkim.",
+            "page": 37
+          },
+          {
+            "text": "The project location is Package-III (Design Chainage from KM 32.500 to Km 33.600) at Rabongla on NH-510, specifically including a Tunnel (300 m).",
+            "page": 37
+          }
+        ],
+        "scope": [
+          {
+            "text": "The scope includes Balance work for rectification of damages caused to bituminous pavement and road side drain.",
+            "page": 37
+          },
+          {
+            "text": "The scope includes laying of PHED pipelines in connection with the project work.",
+            "page": 39
+          }
+        ],
+        "requirements": [
+          {
+            "text": "Bidders must submit an Affidavit certifying that all statements are true, no work has been abandoned, and no contracts have been rescinded in the last five years.",
+            "page": 33
+          },
+          {
+            "text": "Bidders must maintain availability of minimum cash amounting to 25% of the value of the work as working capital.",
+            "page": 34
+          },
+          {
+            "text": "The bid remains binding for a period specified after the date fixed for receiving tenders, and bidders authorize verification of their statement or reputation by banks or persons requested by the Employer.",
+            "page": 33
+          },
+          {
+            "text": "A Letter of Acceptance (LOA) form must be executed to proceed with the contract.",
+            "page": 36
+          },
+          {
+            "text": "Bidders must furnish a Bank Guarantee/Performance Security in accordance with the Contract stipulations.",
+            "page": 39
+          },
+          {
+            "text": "The Bid form of Tender validity period is specified in the Instructions to Bidders.",
+            "page": 38
+          }
+        ],
+        "eligibility": [
+          {
+            "text": "Bidder liability under guarantees shall cease if no claim or demand in writing is served on or before a specific date mentioned in the guarantee terms.",
+            "page": 38
+          },
+          {
+            "text": "Bidders must certify that information furnished in their application and bid documents is true and correct.",
+            "page": 41
+          }
+        ],
+        "important_dates": [
+          {
+            "text": "The bid shall remain binding and acceptable for a period of days after the date fixed for receiving the tender.",
+            "page": 35
+          },
+          {
+            "text": "Tender validity is specified in the Form of Tender as referenced in the Bid Security Guarantee.",
+            "page": 37
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "Maintain availability of minimum cash amounting to 25% of the value of the work during implementation towards working capital.",
+            "page": 34
+          },
+          {
+            "text": "Bid Security Guarantee required up to Rs. (amount to be filled) for payment upon demand without employer having to substantiate.",
+            "page": 37
+          },
+          {
+            "text": "Performance Security Bank Guarantee required up to Rs. (amount to be filled) as security for compliance with obligations.",
+            "page": 39
+          },
+          {
+            "text": "Bid must be accepted at any time before the expiration of the specified tender validity period.",
+            "page": 35
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": [
+          {
+            "text": "Undertake to pay Employer up to the guaranteed amount upon receipt of first written demand without needing to substantiate the demand if tender is withdrawn within validity period.",
+            "page": 37
+          },
+          {
+            "text": "Bid Security Guarantee remains in force for 45 days beyond the bid validity date, unless extended by Employer.",
+            "page": 38
+          },
+          {
+            "text": "Performance Security Guarantee is valid until 60 days from the date of expiry of the Defects Liability Period.",
+            "page": 39
+          },
+          {
+            "text": "Liability under guarantees ceases unless a claim in writing is served on or before the expiration date stated in the specific clause.",
+            "page": 38
+          },
+          {
+            "text": "Tenderer shall not abandon any work in India nor rescind any contract awarded during the last five years prior to the bid date.",
+            "page": 33
+          },
+          {
+            "text": "Tenderer authorizes Employer to request pertinent information and certify statements as true and correct.",
+            "page": 33
+          },
+          {
+            "text": "Employer reserves the right to reject any or all applications without assigning any reason.",
+            "page": 41
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": 7,
+      "pages": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 45.35,
+      "pass_b_inference_time_seconds": 40.97,
+      "total_inference_time_seconds": 86.32,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP is a percentage rate contract for 'Balance work for rectification of damages caused to bituminous pavement and road side drain for laying of PHED pipelines' under the project 'Construction of 2-lane specification road with paved shoulder including Tunnel (300 m) at Rabongla on NH-510' in Sikkim.",
+            "page": 41
+          },
+          {
+            "text": "The tender is issued by National Highways & Infrastructure Development Corporation Limited (NHIDCL) under the jurisdiction of PMU-Gyalshing.",
+            "page": 42
+          },
+          {
+            "text": "This is the 2nd Call for a Percentage Rate Contract Basis on the EPC basis under SARDP-NE Phase-'A'.",
+            "page": 41
+          }
+        ],
+        "scope": [
+          {
+            "text": "The scope covers rectification of damages caused to bituminous pavement and road side drain for laying of PHED pipelines.",
+            "page": 41
+          },
+          {
+            "text": "Specific location is Design Chainage from KM 32.500 to Km 33.600.",
+            "page": 41
+          },
+          {
+            "text": "The contract includes road assets such as carriageway, embankment, drains, bridges, and other project facilities integral to the road network.",
+            "page": 48
+          },
+          {
+            "text": "The Contractor must maintain road assets and execute, complete, and maintain the Works in conformity with contract provisions.",
+            "page": 47
+          }
+        ],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "Contractor must furnish Performance Security plus additional security within 10 days as per provisions of Clause 32.1 of ITB.",
+            "page": 42
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "Bidder is required to furnish Performance Security plus additional security in the form detailed in Clause 32.2 of ITB for an amount equivalent to Rs...",
+            "page": 42
+          },
+          {
+            "text": "Failure to sign the contract agreement within the stipulated time failing which actions as stipulated in Clause-32.3 of ITB shall be taken.",
+            "page": 42
+          },
+          {
+            "text": "Contract Price is the price stated in the Letter of Acceptance and thereafter as adjusted in accordance with the provisions of the Contract.",
+            "page": 47
+          }
+        ],
+        "project_duration": [
+          {
+            "text": "Intended Completion Date may be revised only by the Engineer by issuing an Extension of Time after approval from the Employer.",
+            "page": 48
+          }
+        ],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 8,
+      "pages": [
+        48,
+        49,
+        50,
+        51
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 65.27,
+      "pass_b_inference_time_seconds": 38.29,
+      "total_inference_time_seconds": 103.56,
+      "information": {
+        "overview": [
+          {
+            "text": "Intended Completion Date is the date from Contract Data on which the Contractor is intended to complete the Works.",
+            "page": 48
+          },
+          {
+            "text": "The Intended Completion Date may be revised only by the Engineer issuing an Extension of Time after Employer approval.",
+            "page": 48
+          },
+          {
+            "text": "Maximum Response Time is the maximum permissible time within which remedial action must be completed prior to a defect exceeding permissible tolerance.",
+            "page": 48
+          },
+          {
+            "text": "Maximum Response Time commences from earliest detection of defect by Contractor, Engineer, or road user.",
+            "page": 48
+          },
+          {
+            "text": "Permissible Tolerance is the maximum permissible amount or quantity of a road-asset defect that will not be treated as non-compliance.",
+            "page": 48
+          },
+          {
+            "text": "Road means the Road or package of roads in network or scattered for which Maintenance Works and Activities are to be carried out.",
+            "page": 48
+          }
+        ],
+        "scope": [
+          {
+            "text": "Road Assets include Main carriageway with shoulders, medians, slip roads, service roads, embankments, cuts, slopes protection, drains, culverts, bridges, over/underpasses, retaining walls, road signs, markings, delineators, guard rails, safety barriers, fencings, parapets, kilometres stones, erosion control measures, and plantations.",
+            "page": 48
+          },
+          {
+            "text": "Road Maintenance Works include maintenance of the road specified in the BOQ and executing other items of road maintenance works as ordered by the Engineer.",
+            "page": 49
+          },
+          {
+            "text": "The Contractor shall maintain specific parts of the Road aspects as specified in the BOQ or as ordered by the Engineer in charge.",
+            "page": 49
+          },
+          {
+            "text": "Maintenance activities shall be planned to repair defects well before they reach maximum condition as per permissible tolerance.",
+            "page": 49
+          },
+          {
+            "text": "Temporary Works are works designed, constructed, installed, and removed by the Contractor that are needed for Works and Activities.",
+            "page": 49
+          },
+          {
+            "text": "Work Order is an instruction issued by the Engineer to the Contractor for execution of certain works specifying time limits that may vary from the approved programme or scope.",
+            "page": 49
+          }
+        ],
+        "requirements": [
+          {
+            "text": "Communications between parties referred to in the Conditions shall be effective only in writing.",
+            "page": 50
+          },
+          {
+            "text": "A notice shall be effective only when delivered as per Indian Law.",
+            "page": 50
+          },
+          {
+            "text": "The Contractor may subcontract any portion of work, up to a limit specified in Contract Data, with Engineer approval but may not assign the Contract without Employer written approval.",
+            "page": 50
+          },
+          {
+            "text": "Subcontracting shall neither alter the Contractor's obligations nor relieve the Contractor from any liability or obligation under the Contract.",
+            "page": 50
+          },
+          {
+            "text": "The Contractor shall employ technical personnel named in the Contract Data or other technical persons approved by the Engineer.",
+            "page": 51
+          }
+        ],
+        "eligibility": [
+          {
+            "text": "Engineer will approve proposed replacement of technical personnel only if their relevant qualifications and abilities are substantially equal to or better than those stated in Contract Data.",
+            "page": 51
+          },
+          {
+            "text": "If personnel stated in Contract Data are not deployed on site within 15 days of notice to proceed, a penalty of 5000/- per day per person is levied for the next 30 days.",
+            "page": 51
+          },
+          {
+            "text": "Beyond the initial penalty period, failure to deploy personnel is treated as a breach of Contract and action will be taken as per Clause 51.",
+            "page": 51
+          },
+          {
+            "text": "The Contractor shall not sub-contract the whole of Works without approval.",
+            "page": 50
+          }
+        ],
+        "important_dates": [
+          {
+            "text": "The Employer may modify the Schedule of Other Contractors and shall notify the Contractor of any such modification.",
+            "page": 50
+          },
+          {
+            "text": "If the personnel stated in the Contract Data are not deployed on site by the Contractor within 15 days of issue of notice to proceed with the work, a penalty of 5000/- per day per person shall be levied for next 30 days...",
+            "page": 51
+          }
+        ],
+        "commercial_requirements": [],
+        "project_duration": [
+          {
+            "text": "The Contractor shall not sub-contract the whole of Works.",
+            "page": 51
+          },
+          {
+            "text": "If any defect exceeds the permissible tolerance, it shall be treated as 'non-compliance'.",
+            "page": 48
+          }
+        ],
+        "important_conditions": [
+          {
+            "text": "Subcontracting shall neither alter the Contractor's obligations, nor relieve the Contractor from any liability or obligation under the Contract.",
+            "page": 50
+          },
+          {
+            "text": "Any such consent shall not relieve the Contractor from any liability or obligation under the Contract and he shall be fully responsible for the acts, defaults and neglects of any of his sub-Contractor, his agents or workmen as if they were the acts, defaults or neglects of the Contractor, his agents and workmen.",
+            "page": 51
+          },
+          {
+            "text": "The Engineer will have no authority to relieve the Contractor of any of his obligations under the Contract.",
+            "page": 50
+          },
+          {
+            "text": "Communications between parties that are referred to in the Conditions shall be effective only in writing. A notice shall be effective only when it is delivered as per Indian Law.",
+            "page": 50
+          },
+          {
+            "text": "Beyond what has been stated in Clauses 7.1 and 7.2, if the Contractor proposes sub-contracting of any part of work during execution of the Works, because of some unforeseen circumstances to enable him to complete the Works as per terms of the Contract, the Employer will consider the following before according approval: a) The Contractor shall not sub-contract the whole of Works.",
+            "page": 51
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": 9,
+      "pages": [
+        51,
+        52,
+        53,
+        54,
+        55,
+        56
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 38.69,
+      "pass_b_inference_time_seconds": 48.44,
+      "total_inference_time_seconds": 87.13,
+      "information": {
+        "overview": [
+          {
+            "text": "The Contractor shall cooperate and share the Site with other Contractors, public authorities, utilities, and the Employer.",
+            "page": 51
+          },
+          {
+            "text": "The Contractor shall commence execution of Maintenance Works on the Start Date and complete them by the Intended Completion Date.",
+            "page": 54
+          }
+        ],
+        "scope": [
+          {
+            "text": "The Contractor's obligations cover the carrying out of all Maintenance Works and Activities as defined in the Contract for keeping the roads in accordance with Road Maintenance Standards.",
+            "page": 53
+          },
+          {
+            "text": "The Engineer shall extend the Intended Completion Date only after approval of the Employer if a Compensation Event occurs or a Variation is issued which makes it impossible for Completion to be achieved by the Intended Completion Date without incurring additional cost.",
+            "page": 56
+          }
+        ],
+        "requirements": [
+          {
+            "text": "The Contractor shall employ the technical personnel named in the Contract Data or other technical persons approved by the Engineer.",
+            "page": 51
+          },
+          {
+            "text": "The Contractor shall use the equipment identified in the bid along with competent operators and adequate stock of spares for smooth operations.",
+            "page": 52
+          },
+          {
+            "text": "Insurance policies and certificates for insurance shall be delivered by the Contractor to the Engineer for the Engineer's approval before the Start Date.",
+            "page": 53
+          },
+          {
+            "text": "The Contractor shall submit to the Engineer for approval a programme within period specified in the contract data showing the general methods, arrangements, order, and timing for all the maintenance works and activities.",
+            "page": 56
+          }
+        ],
+        "eligibility": [
+          {
+            "text": "The Engineer should satisfy himself whether the sub-Contractor so proposed possesses the experience, qualifications and equipment necessary for the job proposed to be entrusted to him in proportion to the quantum of Works to be sub-contracted.",
+            "page": 51
+          }
+        ],
+        "important_dates": [
+          {
+            "text": "The Engineer will approve any proposed replacement of technical personnel only if their relevant qualifications and abilities are substantially equal to or better than those of the personnel stated in the Contract Data.",
+            "page": 51
+          },
+          {
+            "text": "If the personnel stated in the Contract Data are not deployed on site by the Contractor within 15 days of issue of notice to proceed with the work, a penalty of 5000/- per day per person shall be levied for next 30 days.",
+            "page": 51
+          },
+          {
+            "text": "The Employer should extend the Intended Completion Date only after approval of the Employer if a Compensation Event occurs or a Variation is issued which makes it impossible for Completion to be achieved by the Intended Completion Date without the Contractor taking steps to accelerate the remaining Works.",
+            "page": 56
+          },
+          {
+            "text": "The Engineer shall, within 14 days of receiving full justification from the Contractor for extension of Intended Completion Date, will refer to the Employer his recommendation.",
+            "page": 56
+          },
+          {
+            "text": "The Employer shall, in not more than 21 days from the date of receipt of Engineer's recommendation, communicate to the Engineer the acceptance or otherwise.",
+            "page": 56
+          }
+        ],
+        "commercial_requirements": [],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 10,
+      "pages": [
+        56,
+        57,
+        58,
+        59
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 33.72,
+      "pass_b_inference_time_seconds": 45.87,
+      "total_inference_time_seconds": 79.59,
+      "information": {
+        "overview": [
+          {
+            "text": "The programme must show general methods, arrangements, order, and timing for all maintenance works and activities.",
+            "page": 56
+          },
+          {
+            "text": "An update of the Programme shall show actual progress achieved on each activity and its effect on remaining Works timing.",
+            "page": 56
+          }
+        ],
+        "scope": [
+          {
+            "text": "Services include reviewing plans and progress for Maintenance Works during management meetings.",
+            "page": 57
+          },
+          {
+            "text": "Testing scope includes mandatory tests prescribed in Technical Specifications and correctness of test procedures.",
+            "page": 57
+          }
+        ],
+        "requirements": [
+          {
+            "text": "The Contractor shall submit a programme within the period specified in the contract data showing general methods, arrangements, order, and timing for all maintenance works.",
+            "page": 56
+          },
+          {
+            "text": "If the Contractor does not submit an updated Programme within the specified period, the Engineer may withhold amount from payment certificates until submission.",
+            "page": 56
+          },
+          {
+            "text": "The Bill of Quantities shall contain description of items, units, rates and amount used to calculate Contract Price.",
+            "page": 59
+          },
+          {
+            "text": "The Contractor shall submit monthly statements of work value executed less cumulative certified amount, supported by detailed measurements.",
+            "page": 59
+          }
+        ],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "The Engineer will refer the recommendation to the Employer within 14 days of receiving full justification from the Contractor.",
+            "page": 56
+          },
+          {
+            "text": "The Employer shall communicate acceptance or otherwise to the Engineer in not more than 21 days from the date of receipt of the Engineer's recommendation.",
+            "page": 56
+          },
+          {
+            "text": "Variation claims must be submitted within 14 days of the issue of order of Variation work.",
+            "page": 58
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "The Bill of Quantities (BOQ) is used to calculate the Contract Price, with the Contractor paid at BOQ rates for executed work plus accepted/awarded tender premium.",
+            "page": 58
+          },
+          {
+            "text": "Variation items specified in the BOQ shall be carried out at the same rate as given in the BOQ.",
+            "page": 58
+          },
+          {
+            "text": "For Variation items not specified in the BOQ, rates shall be derived from similar items; if no similar item exists, the Contractor must submit a proposed rate supported by analysis within 14 days of the variation order.",
+            "page": 58
+          },
+          {
+            "text": "The Engineer must assess and determine variation rates based on prevailing market rates within one month of submission.",
+            "page": 58
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": [
+          {
+            "text": "If the Contractor fails to correct a defect within the specified time, the Engineer may deduct the cost of correction plus 20 percent additional costs as damages from sums due.",
+            "page": 58
+          },
+          {
+            "text": "The Employer's decision on variation rates is final and binding on the Contractor.",
+            "page": 58
+          },
+          {
+            "text": "The Engineer's approval of the Programme does not alter the Contractor's obligations.",
+            "page": 56
+          },
+          {
+            "text": "Delays totaling more than 30 days require prior written approval of the Employer.",
+            "page": 56
+          },
+          {
+            "text": "The Defects Liability Period for specific works executed by order of the Engineer is 12 months, counted from the Date of Completion.",
+            "page": 57
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": 11,
+      "pages": [
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 45.49,
+      "pass_b_inference_time_seconds": 68.65,
+      "total_inference_time_seconds": 114.14,
+      "information": {
+        "overview": [
+          {
+            "text": "The contract requires a lump sum rate for maintenance items which shall not be measured; payments are subject to meeting specified maintenance requirements.",
+            "page": 59
+          },
+          {
+            "text": "Claims shall not be entertained by the Engineer/Employer due to reduction in quantities of measurable items caused by budgetary constraints.",
+            "page": 59
+          }
+        ],
+        "scope": [
+          {
+            "text": "The Contractor must submit an updated cash flow forecast whenever the Programme is updated.",
+            "page": 59
+          },
+          {
+            "text": "Value of work executed includes valuation of Variations and Compensation Events in monthly payments.",
+            "page": 60
+          },
+          {
+            "text": "Compensation Events include orders for delays exceeding a total of 30 days or effects of Employer's Risks not caused by the Contractor.",
+            "page": 60
+          },
+          {
+            "text": "Rate analysis shall be based on the Standard Data Book and current Schedule of Rates of the district public works division for Variation claims.",
+            "page": 59
+          }
+        ],
+        "requirements": [
+          {
+            "text": "The Engineer/Employer may exclude any item certified in a previous certificate or reduce the proportion of any item previously certified based on latest information.",
+            "page": 60
+          },
+          {
+            "text": "If 'as built' Drawings and/or operation and maintenance manuals are required, the Contractor shall supply them within 28 days from the date of issue of certificate of completion.",
+            "page": 61
+          },
+          {
+            "text": "The Contractor must provide proof of GST payment containing the name of work to claim reimbursement.",
+            "page": 61
+          },
+          {
+            "text": "The final account shall include a detailed account of the total amount considered payable before the end of the Defects Liability Period.",
+            "page": 61
+          }
+        ],
+        "eligibility": [
+          {
+            "text": "Contractors must set up a field laboratory with prescribed equipment within the period specified in the Contract Data.",
+            "page": 63
+          },
+          {
+            "text": "Contractors fail to deploy any of the personnel stated in Contract Data within 45 days of issue of notice to proceed constitutes a fundamental breach.",
+            "page": 63
+          },
+          {
+            "text": "Contractors who violate the provisions of the Child Labour (Prohibition & Regulation) Act, 1986 constitute a fundamental breach.",
+            "page": 63
+          }
+        ],
+        "important_dates": [
+          {
+            "text": "The Contractor shall provide the Engineer with an updated cash flow forecast when the Programme is updated.",
+            "page": 59
+          },
+          {
+            "text": "The rate for Variation item cannot be determined within 14 days of the issue of order, and the Engineer shall assess the claim within one month of submission.",
+            "page": 60
+          },
+          {
+            "text": "The final bill must be submitted by the Contractor within one month of actual completion.",
+            "page": 60
+          },
+          {
+            "text": "If the Final Account is resubmitted unsatisfactorily, the Engineer shall issue a payment certificate within 28 days of receiving the revised account.",
+            "page": 63
+          },
+          {
+            "text": "\"As built\" Drawings and/or operation and maintenance manuals must be supplied within 28 days from the date of issue of certificate of completion.",
+            "page": 63
+          },
+          {
+            "text": "The Employer shall take over the Site and Works within seven days of the Engineer issuing a certificate of Completion.",
+            "page": 62
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "Payments for lump sum items not exceeding quoted amounts are subject to meeting specified maintenance requirements.",
+            "page": 59
+          },
+          {
+            "text": "Claims shall not be entertained due to budgetary constraints on reduction of quantities of measurable items.",
+            "page": 59
+          },
+          {
+            "text": "The Contractor must provide detailed measurement of work executed and submit monthly payment certificates supported by statements of value.",
+            "page": 60
+          },
+          {
+            "text": "Payments shall be adjusted for deductions including security deposit, other recoveries, taxes at source, and GST (exclusive of GST rates but inclusive of levies/duties).",
+            "page": 60
+          },
+          {
+            "text": "The Employer shall pay the Engineer-certified amounts within 28 days.",
+            "page": 60
+          },
+          {
+            "text": "All payments must be made in Indian Rupees.",
+            "page": 61
+          },
+          {
+            "text": "GST shall be reimbursed subject to production of proof of payment by the Contractor.",
+            "page": 61
+          },
+          {
+            "text": "If Drawings/manuals are missing or unapproved, Rs. 5 lakh may be withheld from payments.",
+            "page": 63
+          }
+        ],
+        "project_duration": [
+          {
+            "text": "The security deposit/retention money is retained until Completion of the whole Works and release depends on certification of Defects Liability Period completion.",
+            "page": 61
+          },
+          {
+            "text": "The Performance Security must be valid until a date 60 days after the expiry of the Defects Liability Period (accounting for additional months for BG verification/signing/start).",
+            "page": 62
+          }
+        ],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 12,
+      "pages": [
+        63,
+        64,
+        65,
+        66,
+        67,
+        68
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 51.0,
+      "pass_b_inference_time_seconds": 62.34,
+      "total_inference_time_seconds": 113.34,
+      "information": {
+        "overview": [
+          {
+            "text": "The Employer is the Managing Director, NHIDCL, National Highway & Infrastructure Development Corporation Ltd.",
+            "page": 67
+          },
+          {
+            "text": "The Engineer is the General Manager (Projects) at Project Monitoring Unit-Gylashing, Sikkim.",
+            "page": 67
+          },
+          {
+            "text": "The site is located on NH-510 in Sikkim.",
+            "page": 68
+          }
+        ],
+        "scope": [
+          {
+            "text": "The Contractor must engage all staff and labor, cover their payment, housing, feeding, and transport.",
+            "page": 65
+          },
+          {
+            "text": "The Contractor must comply with various labour laws/regulations applicable during the contract continuance.",
+            "page": 65
+          },
+          {
+            "text": "The Contractor must perform photography/video of the site before work start, mid-way in execution stages, and after completion of each item.",
+            "page": 66
+          },
+          {
+            "text": "The Contractor shall not disclose details of Drawings furnished without prior written approval from the Engineer.",
+            "page": 66
+          },
+          {
+            "text": "Contractors must comply with the provisions of the Apprentices Act, 1961 and associated rules.",
+            "page": 67
+          }
+        ],
+        "requirements": [
+          {
+            "text": "The Contractor shall submit a programme for approval within 30 days from the issue of Letter of Commencement.",
+            "page": 68
+          },
+          {
+            "text": "The Contractor must withhold 1% of the value of work corresponding to an updated programme if submission is delayed.",
+            "page": 68
+          },
+          {
+            "text": "The Contractor must set up a field laboratory with prescribed equipment within 30 days from the date of notice to start work.",
+            "page": 68
+          }
+        ],
+        "eligibility": [
+          {
+            "text": "The Project Manager must hold a B.E., B. Tech, or AMIE in Civil Engineering with 5 years of total experience, including 3 years on highway constructions/maintenance.",
+            "page": 68
+          },
+          {
+            "text": "Subcontracting is not allowed (limit is Nil).",
+            "page": 68
+          }
+        ],
+        "important_dates": [
+          {
+            "text": "The Contractor shall set up a field laboratory with the prescribed equipment within 30 days from the date of notice to start work.",
+            "page": 68
+          },
+          {
+            "text": "The period for submission of the programme for approval of the Engineer shall be 30 days from the issue of Letter of Commencement.",
+            "page": 68
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "Subcontracting is not allowed as the limit of subcontracting is Nil of initial contract price.",
+            "page": 67
+          },
+          {
+            "text": "The amount for insurance is Rs. equivalent to Contract Price, Rs. equivalent to 5% of Contract Price, and Rs. 20 lakhs for multiple incidents.",
+            "page": 68
+          }
+        ],
+        "project_duration": [
+          {
+            "text": "The intended completion date is within 3 months from the start date (derived as 1 month in Contract Data but referenced as Clauses 1.1, 17 & 26 suggesting standard conditions). *Correction based on explicit text on Page 67: The intended completion date for whole of work is 01 month from start date.*",
+            "page": 67
+          },
+          {
+            "text": "The start date shall be within 15 days after the date of issue of the Notice to proceed.",
+            "page": 67
+          },
+          {
+            "text": "[Not explicitly stated]",
+            "page": 63
+          }
+        ],
+        "important_conditions": [
+          {
+            "text": "The Contractor is liable for fundamental breaches including stopping work for 28 days, bankruptcy, failure to correct defects, not maintaining Security Deposit, exceeding aggregate liability limits (defined in Contract Data), failing to provide insurance, corrupt practices, failing to set up field laboratory, not deploying personnel within 45 days, violating Child Labour Act 1986.",
+            "page": 63
+          },
+          {
+            "text": "Upon fundamental breach, the Employer may terminate the contract after granting the Contractor 15 days to make a representation. The Employer may also terminate for convenience at any time.",
+            "page": 63
+          },
+          {
+            "text": "If terminated for default, all Materials on Site, Plant, Equipment, Temporary Works and Works shall be deemed property of the Employer.",
+            "page": 65
+          },
+          {
+            "text": "The Contractor must indemnify the Employer against any actions taken by competent authorities due to contravention of labour laws; if such costs are paid by Employer, they may deduct or recover from the Contractor including performance security.",
+            "page": 66
+          },
+          {
+            "text": "No photograph of the works or any part thereof or plant employed thereon shall be taken, circulated, or published without prior written approval of the Engineer (except pre- and mid-way photography).",
+            "page": 67
+          },
+          {
+            "text": "The Contractor must comply with the Apprentices Act, 1961.",
+            "page": 68
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": 13,
+      "pages": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 70.38,
+      "pass_b_inference_time_seconds": 58.43,
+      "total_inference_time_seconds": 128.81,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP documents cover Road Maintenance Standards, Specifications for Works, and related General Conditions of Contract clauses.",
+            "page": 74
+          },
+          {
+            "text": "The standard form of Performance Security acceptable to the Employer is an unconditional e-Bank Guarantee.",
+            "page": 69
+          }
+        ],
+        "scope": [
+          {
+            "text": "Road maintenance works are covered under Section-7 of the RFP.",
+            "page": 74
+          },
+          {
+            "text": "Carbon footprints shall be evaluated during the execution of the project.",
+            "page": 74
+          },
+          {
+            "text": "Environment friendly machinery like Infrared Recycling Road Maintenance (approved by CRRI/IRC/MoRTH) may be deployed if approved by the Employer.",
+            "page": 74
+          }
+        ],
+        "requirements": [
+          {
+            "text": "The Contractor shall carry out weekly inspection of the project road and submit a report to the Engineer on maintenance works carried out during the week.",
+            "page": 75
+          },
+          {
+            "text": "The Contractor must identify items of work requiring attention for maintenance based on weekly inspections.",
+            "page": 75
+          },
+          {
+            "text": "Any emergency maintenance or replacement work involving emergent nature shall be immediately reported to the Engineer for joint assessment and issue of a work order.",
+            "page": 75
+          },
+          {
+            "text": "Temporary arrangements must be made immediately in emergency situations requiring urgent action for safety reasons before further direction from the Engineer is sought.",
+            "page": 75
+          },
+          {
+            "text": "The Engineer will monitor road conditions and carry out at least fortnightly inspections to verify maintenance standards.",
+            "page": 75
+          },
+          {
+            "text": "Rectification of filling pot-holes and patch repairs with bituminous concrete must follow the Maximum Response Time standard as per Clause 3004 of MoRTH Specifications.",
+            "page": 75
+          }
+        ],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "The period for submission of the programme for approval of Engineer shall be 30 days from the issue of Letter of Commencement.",
+            "page": 68
+          },
+          {
+            "text": "The period for setting up a field laboratory with the prescribed equipment relevant to items of work in BOQ is 30 days from the date of notice to start work.",
+            "page": 68
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "Amounts for insurance are: a) Rupees equivalent to Contract Price, b) Rupees equivalent to 5% of Contract Price, c) Rupees equivalent to 5% of Contract Price, d) Rupees 20 lakhs for multiple incidents.",
+            "page": 68
+          },
+          {
+            "text": "Amount to be withheld for delays in submission of updated programme: 1% of value of work corresponding to the updated programme.",
+            "page": 68
+          },
+          {
+            "text": "Amount of liquidated damages for delay in completion of works is 0.1 percent of the remaining value of contract to be executed, rounded off to the nearest thousand, per day with the minimum of Rs. 10000/- per day.",
+            "page": 68
+          },
+          {
+            "text": "Maximum limit of liquidated damages for delay in completion of work is 10 percent of the Initial Contract Price rounded off to the nearest thousand.",
+            "page": 68
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": [
+          {
+            "text": "The standard form of Performance Security acceptable to the Employer shall be an unconditional e-Bank Guarantee.",
+            "page": 69
+          },
+          {
+            "text": "The Performance Security shall also be forfeited if the Contract is terminated because of a fundamental breach of Contract by the Contractor.",
+            "page": 69
+          },
+          {
+            "text": "The percentage to apply to the value of work not completed representing the Employer's additional cost for completing the work shall be 20 percent.",
+            "page": 69
+          },
+          {
+            "text": "The reasonable cost of removal of equipment and repatriation of the Contractor's personnel employed solely on the works in the event of termination of the contract at the Employer's convenience or because of a fundamental breach of contract by the Employer is to be treated as NIL.",
+            "page": 69
+          },
+          {
+            "text": "Carbon foot prints shall be evaluated during the execution of project. If approved by the Employer, environment friendly machinery like Infrared Recycling Road Maintenance as approved by CRRI/IRC/MoRTH shall be got deployed.",
+            "page": 74
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": 14,
+      "pages": [
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+      ],
+      "word_count": 1800,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 47.53,
+      "pass_b_inference_time_seconds": 52.28,
+      "total_inference_time_seconds": 99.81,
+      "information": {
+        "overview": [
+          {
+            "text": "The RFP is for 'Balance work for rectification of damages caused to bituminous pavement and road side drain for laying of PHED pipelines' under the project of 'Construction of 2-lane specification road with paved shoulder including Tunnel (300 m) at Rabongla on NH-510', Package-III.",
+            "page": 76
+          },
+          {
+            "text": "The work is located from Design Chainage KM 32.500 to Km 33.600 in the State of Sikkim, under jurisdiction of PMU-Gyalshing and NHIDCL.",
+            "page": 76
+          },
+          {
+            "text": "The tender basis is Percentage Rate Contract Basis under the EPC framework.",
+            "page": 76
+          },
+          {
+            "text": "This is the 2nd Call for bidding.",
+            "page": 76
+          }
+        ],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [
+          {
+            "text": "Bid remains binding and may be accepted for a period of 120 days from the last date fixed for Bid Submission.",
+            "page": 83
+          },
+          {
+            "text": "Contractor shall commence work within fifteen (15) days of receipt of the order to commence if Bid is accepted.",
+            "page": 83
+          }
+        ],
+        "commercial_requirements": [
+          {
+            "text": "The Bid shall be submitted on a Percentage Rate Contract Basis.",
+            "page": 83
+          },
+          {
+            "text": "Rates and prices tendered in the Bill of Quantities shall include all equipment, tools, spares, labour, supervision, overheads, consumables, materials, erection, maintenance, testing, profit, taxes (excl GST), duties, general risks, liabilities, obligations, and incidentals.",
+            "page": 85
+          },
+          {
+            "text": "The basis of payment will be actual quantities of items of work carried out and valued at the rates tendered in the BOQ along with accepted/awarded tender premium.",
+            "page": 85
+          },
+          {
+            "text": "Payment for performance based activities shall be indexed on a performance scale of 100 marks, applicable between 80% to 100% average performance; payment is not entitled if average performance is rated less than 80%.",
+            "page": 85
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": []
+      }
+    },
+    {
+      "chunk_id": 15,
+      "pages": [
+        85,
+        86,
+        87,
+        88,
+        89
+      ],
+      "word_count": 1385,
+      "pass_a_success": true,
+      "pass_b_success": true,
+      "pass_a_error": null,
+      "pass_b_error": null,
+      "pass_a_inference_time_seconds": 28.73,
+      "pass_b_inference_time_seconds": 88.16,
+      "total_inference_time_seconds": 116.89,
+      "information": {
+        "overview": [
+          {
+            "text": "The document is a Bill of Quantities (BOQ) for Road Maintenance Works, which must be read in conjunction with Instructions to Bidders, Conditions of Contract, Road Maintenance Standards, and Specifications.",
+            "page": 85
+          },
+          {
+            "text": "Payment basis relies on actual quantities of work carried out valued at tendered rates along with any accepted/awarded tender premium.",
+            "page": 85
+          },
+          {
+            "text": "The BOQ includes estimated quantities for various road construction and maintenance items, including subgrade compaction, base courses, and bituminous concrete layers.",
+            "page": 86
+          }
+        ],
+        "scope": [],
+        "requirements": [],
+        "eligibility": [],
+        "important_dates": [],
+        "commercial_requirements": [
+          {
+            "text": "The quantities given in the Bill of Quantities are estimated quantities. The basis of payment will be actual quantities of items of work carried out and valued at the rates tendered in the BOQ along with accepted/awarded tender premium.",
+            "page": 85
+          },
+          {
+            "text": "The rates and prices tendered in the BOQ shall include all equipment, tools, spares, labour, supervision, overheads, consumables, materials, erection, maintenance, testing of input material delivered, profit, taxes (excl GST) and duties together with general risks, liabilities and obligations set out and implied in the contract.",
+            "page": 85
+          },
+          {
+            "text": "Payment for performance based activities like maintenance of median and existing plants (Item no. 2.1), treatment and repair of pot holes/ruts (Item no. 3.1) and providing route patrol and surveillance, automobile assistance, tow away cranes and ambulance services (Item no. 3.2) shall be indexed on performance scale of 100 marks as given in Table below.",
+            "page": 85
+          },
+          {
+            "text": "Performance assessment for performance based items of work, shall be done through inspection by the Engineer at least two times during the month and overall rating can be done on the basis of average of assessments made during the inspection.",
+            "page": 85
+          },
+          {
+            "text": "The Contractor shall submit at least once in two months video recording of condition of the Project Highway with special emphasis on performance based items.",
+            "page": 85
+          },
+          {
+            "text": "For performance based items of work, the Contractor shall be entitled for receiving payment proportionate to the average percentage performance assessed for achievement between 80% to 100%.",
+            "page": 85
+          },
+          {
+            "text": "The Contractor shall not be entitled for payment of performance based items of work if the average performance is rated less than 80%.",
+            "page": 85
+          },
+          {
+            "text": "A rate or price shall be entered as a single rate as Tender Premium % above/below on the rate/amount in the BOQ.",
+            "page": 85
+          },
+          {
+            "text": "Payment is calculated based on 'Without Taxes' rates provided in the Bill of Quantities for specific items such as Compacting original ground (Item 1), GSB-Plant Mix (Item 2), Wet Mix Macadam (Item 3), etc.",
+            "page": 88
+          }
+        ],
+        "project_duration": [],
+        "important_conditions": [
+          {
+            "text": "Any variation shall be dealt with as per contract provisions.",
+            "page": 85
+          },
+          {
+            "text": "The Bill of Quantities (BOQ) shall be read in conjunction with the Instructions to Bidders, Conditions of Contract, Road Maintenance Standards and Specifications for Road Maintenance Works.",
+            "page": 85
+          },
+          {
+            "text": "The basis of payment will be actual quantities of items of work carried out and valued at the rates tendered in the BOQ along with accepted/awarded tender premium. The accepted/awarded tender premium, the grand total of the project cost shall be applicable for individual items of work to determine payable amount to Contractor for work done subject to other contractual provisions.",
+            "page": 85
+          },
+          {
+            "text": "The Contractor shall not be entitled for payment of performance based items of work if the average performance is rated less than 80%.",
+            "page": 85
+          },
+          {
+            "text": "For performance based items of work, the Contractor shall be entitled for receiving payment proportionate to the average percentage performance assessed for achievement between 80% to 100%.",
+            "page": 85
+          }
+        ]
+      }
+    }
+  ]
+}

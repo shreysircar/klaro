@@ -5,7 +5,7 @@ import path from 'node:path';
 import { repoRoot, utf8Env, venvPython } from './env.mjs';
 
 const run = (cmd, args) => spawnSync(cmd, args, { cwd: repoRoot, env: utf8Env, stdio: 'inherit', shell: false });
-const node = run(process.execPath, ['--test', 'electron/renderer/src/highlight.test.mjs', 'electron/renderer/src/layout.test.mjs']);
+const node = run(process.execPath, ['--test', 'electron/renderer/src/highlight.test.mjs', 'electron/renderer/src/layout.test.mjs', 'electron/renderer/src/calendar.test.mjs']);
 // backend/ has no __init__.py files, so unittest discovery cannot walk it: name the modules.
 const modules = fs.readdirSync(path.join(repoRoot, 'backend', 'evaluation'))
   .filter((f) => /^test_.*\.py$/.test(f))

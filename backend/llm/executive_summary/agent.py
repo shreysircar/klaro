@@ -3,6 +3,9 @@ import json
 import re
 import time
 from pathlib import Path
+import sys
+
+from backend import config
 from backend.config import MODEL_TAG, llm
 from backend.llm.executive_summary.aggregator import org_key
 
@@ -12,6 +15,7 @@ from backend.llm.executive_summary.schema import (
 )
 from backend.llm.executive_summary.prompts import (
     EXECUTIVE_SUMMARY_AGENT_SYSTEM_PROMPT,
+    EXECUTIVE_SUMMARY_AGENT_SYSTEM_PROMPT_V2,
     build_agent_user_prompt,
 )
 
@@ -21,6 +25,23 @@ MODEL = MODEL_TAG
 def load_json(path: Path) -> dict:
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
+
+
+def context_options(prompt_chars: int) -> tuple[dict, str | None]:
+    """Ollama options for the summary call. KLARO_NUM_CTX=0 keeps Ollama's default (4096). Otherwise the context is
+    sized from the prompt plus room for the answer, in steps of 1024, and never above the cap. If the prompt does not
+    fit, the second value is a warning that says how much will be cut (it is never cut silently)."""
+    if config.NUM_CTX <= 0:
+        return {}, None
+    need = int(prompt_chars / config.CHARS_PER_TOKEN) + config.SUMMARY_OUT_TOKENS
+    ctx = min(config.NUM_CTX, -(-need // 1024) * 1024)
+    if need <= config.NUM_CTX:
+        return {"num_ctx": ctx}, None
+    cut = need - config.NUM_CTX
+    return {"num_ctx": ctx}, (
+        f"The facts need about {need} tokens of context but KLARO_NUM_CTX caps it at {config.NUM_CTX}: about {cut} tokens "
+        "of the input will be cut and the summary may miss facts. Raise KLARO_NUM_CTX or lower KLARO_SUMMARY_OUT_TOKENS."
+    )
 
 
 def parse_agent_response(raw_content: str, source_issuing_org: str) -> ExecutiveSummaryOutput:
@@ -122,15 +143,25 @@ def run_executive_summary_agent(aggregated_path: Path, output_path: Path | None 
 
     start_time = time.time()
 
+    system_prompt = EXECUTIVE_SUMMARY_AGENT_SYSTEM_PROMPT_V2 if config.SUMMARY_PROMPT == "v2" else EXECUTIVE_SUMMARY_AGENT_SYSTEM_PROMPT
+    ctx_options, ctx_warning = context_options(len(system_prompt) + len(user_prompt))
+    if ctx_warning:
+        print(f"[WARN] {ctx_warning}", file=sys.stderr)
     response = llm.chat(
         model=MODEL,
         think=False,
-        options={"temperature": 0.1},
+        options={"temperature": 0.1, **ctx_options},
         messages=[
-            {"role": "system", "content": EXECUTIVE_SUMMARY_AGENT_SYSTEM_PROMPT},
+            {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt},
         ],
     )
+    ctx_used = ctx_options.get("num_ctx", 4096)  # 4096: Ollama's default when no num_ctx is sent
+    expected = (len(system_prompt) + len(user_prompt)) / config.CHARS_PER_TOKEN
+    seen = response.prompt_eval_count or 0
+    if seen < 0.75 * expected:  # Ollama drops the overflow without an error; the token count it reports gives it away
+        print(f"[WARN] Ollama read only {seen} of about {int(expected)} prompt tokens (context {ctx_used}): the facts were cut off "
+              f"and the summary covers only part of the document. Set KLARO_NUM_CTX (for example 16384).", file=sys.stderr)
 
     elapsed = time.time() - start_time
     raw_content = response.message.content.strip() if response.message and response.message.content else ""
@@ -183,7 +214,7 @@ def run_executive_summary_agent(aggregated_path: Path, output_path: Path | None 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(summary_output.model_dump_json(indent=2))
 
-    print(f"Inference completed in {elapsed:.2f} seconds.")
+    print(f"Inference completed in {elapsed:.2f} seconds. Prompt {config.SUMMARY_PROMPT}, prompt tokens {response.prompt_eval_count}, context {ctx_used}.")
     print(f"Saved Executive Summary to: {output_path}")
     print("=" * 70)
 

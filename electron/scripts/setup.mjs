@@ -1,6 +1,6 @@
 // One-command setup, run by `npm run setup` and before `npm run dev`. Idempotent: every step checks first.
 // This is the only part of Klaro that uses the network (pip, and the one-time model download from
-// huggingface.co). At run time nothing leaves the machine. KLARO_SKIP_SETUP=1 skips it.
+// huggingface.co, two models). At run time nothing leaves the machine. KLARO_SKIP_SETUP=1 skips it.
 import { spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import fs from 'node:fs';
@@ -84,14 +84,24 @@ const cfg = run(venvPython, ['-c', [
 if (cfg.status !== 0) fail(`Could not read backend/config.py:\n${cfg.stderr}`);
 const conf = JSON.parse(cfg.stdout.trim().split('\n').pop());
 
-// 4. Translation model.
-const check = () => run(venvPython, ['-m', 'backend.translation.translator', '--check'], { encoding: 'utf8' });
-if (check().status === 0) {
+// 4. Translation models: German to English (analysing German RFPs) and English to German (the German view of a summary).
+const check = (src, tgt) => run(venvPython, ['-m', 'backend.translation.translator', '--check', src, tgt], { encoding: 'utf8' });
+const fetchModel = (src, tgt) =>
+  run(venvPython, ['-m', 'backend.translation.fetch_model', src, tgt], { stdio: 'inherit', env: { ...utf8Env, HF_HUB_DISABLE_SYMLINKS_WARNING: '1' } });
+if (check('de', 'en').status === 0) {
   step(4, `German to English translation model OK (${conf.models})`);
 } else {
   step(4, 'downloading the German to English translation model from huggingface.co (one time, about 310 MB)');
-  const r = run(venvPython, ['-m', 'backend.translation.fetch_model'], { stdio: 'inherit', env: { ...utf8Env, HF_HUB_DISABLE_SYMLINKS_WARNING: '1' } });
-  if (r.status !== 0) fail('The model download failed. Check your internet connection, then run `npm run setup` again (it resumes).');
+  if (fetchModel('de', 'en').status !== 0) fail('The model download failed. Check your internet connection, then run `npm run setup` again (it resumes).');
+}
+if (check('en', 'de').status === 0) {
+  console.log(`[setup]   English to German model OK (${conf.models})`);
+} else {
+  console.log('[setup]   downloading the English to German translation model from huggingface.co (one time, about 310 MB)');
+  // Not fatal: it only powers the German view of a summary, so a missing one must not stop the app from starting.
+  if (fetchModel('en', 'de').status !== 0) {
+    console.log('[setup]   WARNING: the English to German model could not be downloaded; the German view stays off. Run `npm run setup` with internet access to retry.');
+  }
 }
 
 // 5. Ollama: never fatal, the app's setup screen guides the user as well.

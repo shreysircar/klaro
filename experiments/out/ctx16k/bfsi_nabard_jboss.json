@@ -1,0 +1,164 @@
+{
+  "overview": {
+    "text": "National Bank for Agriculture and Rural Development (NABARD) is procuring subscription services for Red Hat JBoss Enterprise Application Platform (JBOSS EAP) and Extended Life Support (ELS) for a one-year term. The tender involves supply, implementation, and enabling support services to upgrade from the unsupported JBoss 5 version.",
+    "pages": [
+      1,
+      2,
+      3,
+      10
+    ]
+  },
+  "issuing_organization": "National Bank for Agriculture and Rural Development (NABARD)",
+  "issuing_organization_pages": [],
+  "scope": [
+    {
+      "text": "Supply of Red Hat JBoss EAP support subscription and Red Hat JBoss EAP Extended Life Support (ELS) support subscription.",
+      "pages": [
+        2,
+        3,
+        42,
+        62
+      ]
+    },
+    {
+      "text": "Services include supply, implementation, commissioning, maintenance, upgrades, updates, patches, and technical assistance within 48 hours of purchase order issuance.",
+      "pages": [
+        10,
+        11,
+        17,
+        43,
+        44
+      ]
+    },
+    {
+      "text": "Deliverables include valid support subscriptions, access credentials, documentation, and compliance/audit records for OEM Licensed products only.",
+      "pages": [
+        11,
+        50
+      ]
+    }
+  ],
+  "key_requirements": [
+    {
+      "text": "Bidders must submit EMD of ₹2,76,000 (exempt for MSEs with Udyam Certificate) and a Pre-Contract Integrity Pact on ₹500 stamp paper.",
+      "pages": [
+        5,
+        7,
+        14,
+        15,
+        21
+      ]
+    },
+    {
+      "text": "Successful bidders must submit KYC forms, sign Service Level Agreement (SLA), Non-Disclosure Agreement (NDA), and provide audited financial statements for the last three FYs.",
+      "pages": [
+        7,
+        9,
+        14,
+        20,
+        26
+      ]
+    },
+    {
+      "text": "Bidders must declare no debarment since 01.04.2021 and provide proof of three purchase orders from the last three years.",
+      "pages": [
+        14,
+        18
+      ]
+    }
+  ],
+  "eligibility": [
+    {
+      "text": "Bidders must be duly organized entities capable of independent support and not bankrupt or insolvent.",
+      "pages": [
+        35,
+        52,
+        53
+      ]
+    },
+    {
+      "text": "Violations of the Integrity Pact or incorrect declarations regarding transgressions lead to disqualification and exclusion from future business.",
+      "pages": [
+        20,
+        22,
+        23,
+        24
+      ]
+    }
+  ],
+  "important_dates": [
+    {
+      "text": "Last date for bid submission: 1st October 2025, 3:00 PM; Technical Bid opening: 03rd October 2025.",
+      "pages": [
+        5,
+        6,
+        9
+      ]
+    },
+    {
+      "text": "Bids remain valid for 180 days from the last date of opening; SLA reviewed at least once per fiscal year.",
+      "pages": [
+        8,
+        49
+      ]
+    }
+  ],
+  "commercial_requirements": [
+    {
+      "text": "Prices quoted must remain firm for one year with no escalation; EMD is refundable unless bid is rejected.",
+      "pages": [
+        5,
+        9,
+        10,
+        15
+      ]
+    },
+    {
+      "text": "Payments are released upon supply and acceptance of subscriptions; Service Provider liability for SLA breaches is limited to 10% of the agreement cost.",
+      "pages": [
+        12,
+        52
+      ]
+    }
+  ],
+  "project_duration": [
+    {
+      "text": "Subscription services are valid for one year from activation unless otherwise specified in the purchase order.",
+      "pages": [
+        3,
+        11
+      ]
+    },
+    {
+      "text": "Integrity Pact expires 12 months after last payment for contractors and 6 months after award for other bidders.",
+      "pages": [
+        24
+      ]
+    }
+  ],
+  "important_conditions": [
+    {
+      "text": "Confidential Information must be returned or destroyed upon termination; no side agreements allowed without written changes.",
+      "pages": [
+        25,
+        29,
+        30
+      ]
+    },
+    {
+      "text": "Contract may be terminated for unjustifiable delays, failure to upgrade software, or non-attendance of after-sales calls (3+ occasions).",
+      "pages": [
+        57,
+        64
+      ]
+    },
+    {
+      "text": "Disputes resolved amicably within 30 days, then via sole arbitration in Mumbai under the Arbitration and Conciliation Act, 1996.",
+      "pages": [
+        33,
+        59,
+        60
+      ]
+    }
+  ]
+}
